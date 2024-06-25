@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>DATA 202 (Wrangling and Analytics), Spring 2024 - Syllabus</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/nutshell-1.0.0/nutshell.min.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DATA 202 (Wrangling and Analytics), Spring 2024</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://r.cs.calvin.edu/" rel="" target="">
+ <span class="menu-text">RStudio</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Syllabus</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./notes/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-pencil" role="img">
+</i> 
+ <span class="menu-text">Notes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes/missing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Missing Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes/plotly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Plotly Tips</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes/prayers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prayers for Data Science</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes/quarto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto Documents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes/sklearn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">scikit-learn</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes/tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tool References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true"><i class="bi bi-book-half" role="img">
+</i> 
+ <span class="menu-text">Classes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Week 1</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text">Week1</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./classes/week1/test.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Test</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true"><i class="bi bi-kanban" role="img">
+</i> 
+ <span class="menu-text">Projects</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./midterm-proj.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Midterm Project</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./final-proj.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Project</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true"><i class="bi bi-book-half" role="img">
+</i> 
+ <span class="menu-text">Concepts</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/1intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Intro</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+ <span class="menu-text">2. Wrangling</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/2wrangling/1goals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.1. Goals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/2wrangling/2grammar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.2. Grammar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/2wrangling/3eda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3. Exploratory Data Analysis (EDA)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/2wrangling/4examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4. Examples</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/2wrangling/5perspectives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.5. Perspectives</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
+ <span class="menu-text">3. Visualization</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/3visualization/examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Examples</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/3visualization/goals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Goals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/3visualization/grammar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Grammar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/3visualization/perspectives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Perspectives</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">
+ <span class="menu-text">4. Modeling</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/4modeling/perspectives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5. Perspectives</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="4">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link active" data-scroll-target="#learning-outcomes">Learning Outcomes</a></li>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
+  <li><a href="#staff" id="toc-staff" class="nav-link" data-scroll-target="#staff">Staff</a>
+  <ul>
+  <li><a href="#communication" id="toc-communication" class="nav-link" data-scroll-target="#communication">Communication</a></li>
+  </ul></li>
+  <li><a href="#textbook" id="toc-textbook" class="nav-link" data-scroll-target="#textbook">Textbook</a></li>
+  <li><a href="#technology" id="toc-technology" class="nav-link" data-scroll-target="#technology">Technology</a></li>
+  <li><a href="#class-structure-and-activities" id="toc-class-structure-and-activities" class="nav-link" data-scroll-target="#class-structure-and-activities">Class Structure and Activities</a>
+  <ul>
+  <li><a href="#at-every-week" id="toc-at-every-week" class="nav-link" data-scroll-target="#at-every-week">At every week</a></li>
+  <li><a href="#projects" id="toc-projects" class="nav-link" data-scroll-target="#projects">Projects</a></li>
+  <li><a href="#deadlines-and-late-work-policy" id="toc-deadlines-and-late-work-policy" class="nav-link" data-scroll-target="#deadlines-and-late-work-policy">Deadlines and late work policy</a></li>
+  </ul></li>
+  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading">Grading</a></li>
+  <li><a href="#academic-integrity" id="toc-academic-integrity" class="nav-link" data-scroll-target="#academic-integrity">Academic Integrity</a></li>
+  <li><a href="#special-circumstances" id="toc-special-circumstances" class="nav-link" data-scroll-target="#special-circumstances">Special Circumstances</a></li>
+  <li><a href="#diversity-and-inclusion" id="toc-diversity-and-inclusion" class="nav-link" data-scroll-target="#diversity-and-inclusion">Diversity and Inclusion</a></li>
+  <li><a href="#etiquette-and-wellness" id="toc-etiquette-and-wellness" class="nav-link" data-scroll-target="#etiquette-and-wellness">Etiquette and Wellness</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Syllabus</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="callout callout-style-default callout-note callout-titled" title="Catalog Description">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Catalog Description
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>An introduction to the conceptual foundations and practical skills needed to transform data into useful forms and apply predictive analytics to discover patterns and anticipate trends. Primary focus is on the core skills and concepts needed to pull data from a range of sources; to filter, transform, and combine data sets to prepare them for analysis; and to construct quantitative summaries and basic visualizations. Programming is used throughout to assemble data-processing pipelines. Students will also discuss ethical and social considerations of data collection and data-driven systems.</p>
+<p>Prerequisite: CS 104, CS 106, or CS 108. A minimum grade of C in the chosen course is required.</p>
+</div>
+</div>
+</div>
+<section id="learning-outcomes" class="level1">
+<h1>Learning Outcomes</h1>
+<p>Upon successful completion of this course students will be able to:</p>
+<ul>
+<li>Prepare tabular data for visualization and analytics by constructing generalizable workflows for loading, transforming, joining, and reshaping data.</li>
+<li>Create, interpret, critique, and refine graphical and tabular visualizations of data.</li>
+<li>Translate a real-world need into an appropriate analytics task, considering available data.</li>
+<li>Select analytics methods appropriate to the data and task from among the approaches surveyed in the course.</li>
+<li>Interpret the outcomes of selected predictive analytics techniques.</li>
+<li>Communicate analytics results using reports that clearly motivate the problem and approach, elucidate the data used, and present both the strengths and shortcomings of analytics results.</li>
+<li>Discuss ethical and social considerations of data collection and data-driven systems.</li>
+</ul>
+<p>Additionally, using transparent reproducible workflows and regularly acknowledging limitations will help students practice virtues including integrity, humility, and justice.</p>
+</section>
+<section id="schedule" class="level1">
+<h1>Schedule</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Schedule
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Subject to change. Updates will be made here and on Moodle.</p>
+<style>
+tr:nth-child(even) {
+  background-color: #EAF6F9!important;
+}
+</style>
+<table class="table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 33%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Week</th>
+<th>Topic</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 (Sep 2)</td>
+<td>Intro - purposes and tools</td>
+<td><span class="class" style="color:red"><strong>No Monday (Labor Day)</strong></span></td>
+</tr>
+<tr class="even">
+<td>2 (Sep 9)</td>
+<td>Data visualization concepts</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3 (Sep 16)</td>
+<td>Data visualization practice</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4 (Sep 23</td>
+<td>Data wrangling concepts</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5 (Sep 30</td>
+<td>Data wrangling practice</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>6 (Oct 7)</td>
+<td>Modeling basics</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>7 (Oct 14)</td>
+<td>Linear models</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>8 (Oct 21)</td>
+<td><em>Fall Break</em></td>
+<td><em>Class on Friday will complete week 7</em></td>
+</tr>
+<tr class="odd">
+<td>9 (Oct 28)</td>
+<td>Tree-based models</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10 (Nov 4)</td>
+<td>Ensemble methods</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11 (Nov 11)</td>
+<td>Clustering</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>12 (Nov 18)</td>
+<td>Time-series and SQL</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>13 (Nov 25)</td>
+<td>Interpretable models</td>
+<td><span class="class" style="color:red"><strong>No Wed-Fri (Thanksgiving)</strong></span></td>
+</tr>
+<tr class="even">
+<td>14 (Dec 2)</td>
+<td>Fairness methods</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>15 (Dec 9)</td>
+<td>Missing data, validation methods</td>
+<td><span class="class" style="color:red"><strong>No Friday (Study Day)</strong></span></td>
+</tr>
+<tr class="even">
+<td>16 (Dec 16)</td>
+<td>Final project presentation</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="staff" class="level1">
+<h1>Staff</h1>
+<ul>
+<li>Professor Fernando Pasquini Santos, fs33 %at&amp; calvin.edu</li>
+<li>office hours: at NH291, Tuesdays 9-9:50am, Wednesdays 9:05-10:20 am.</li>
+<li>Teaching assistant: Grace Van Farowe, gev22 %at&amp; calvin.edu</li>
+</ul>
+<section id="communication" class="level2">
+<h2 class="anchored" data-anchor-id="communication">Communication</h2>
+<p>We will use the following communication tools:</p>
+<ul>
+<li>Outside of class, we’ll communicate primarily using the forums on Perusall. See link on Moodle.
+<ul>
+<li>Post <em>questions</em> about assignments, concepts, or when you have problems getting code to run.</li>
+<li>Post <em>answers</em> as well. Answering helps the community and also gives you practice explaining something you just learned.</li>
+<li>Post <em>notes</em> about interesting articles or events.</li>
+</ul></li>
+<li>Use <strong>email</strong> for personal issues.</li>
+<li>Use <strong>Teams</strong> for friendly chat; I’ll redirect most questions about course content to Perusall.</li>
+</ul>
+</section>
+</section>
+<section id="textbook" class="level1">
+<h1>Textbook</h1>
+<p>All readings wil be posted in Perusall. They will be taken from:</p>
+<ul>
+<li><a href="https://learningds.org/intro.html">Learning Data Science</a> by Sam Lau, Joey Gonzalez, and Deb Nolan. (we’ll abbreviate this <strong>LGN</strong>).
+<ul>
+<li>Will be published in late 2023, but the online version is free.</li>
+</ul></li>
+<li><a href="https://clauswilke.com/dataviz/">Fundamentals of Data Visualization</a> by Claus O. Wilke</li>
+</ul>
+</section>
+<section id="technology" class="level1">
+<h1>Technology</h1>
+<p>We will be using <strong>Python</strong> and the following tools:</p>
+<ul>
+<li><strong>pandas</strong> for data wrangling</li>
+<li><strong>Plotly</strong> for data visualization</li>
+<li><strong>scikit-learn</strong> for modeling</li>
+<li><a href="https://quarto.org/"><strong>Quarto</strong></a> for creating reports</li>
+<li><a href="https://r.cs.calvin.edu/">RStudio Server</a>
+<ul>
+<li>The course lab fee funds our contribution towards the shared resources that provide this service. If the fee is a hardship for you, please contact the instructor.</li>
+<li>You may also install <a href="https://posit.co/downloads/">RStudio Desktop</a> on your own computer.</li>
+</ul></li>
+</ul>
+</section>
+<section id="class-structure-and-activities" class="level1">
+<h1>Class Structure and Activities</h1>
+<section id="at-every-week" class="level2">
+<h2 class="anchored" data-anchor-id="at-every-week">At every week</h2>
+<ol type="1">
+<li><strong>Preparation</strong> (before class): Readings and quizzes to prepare you for class.</li>
+<li><strong>Lecture</strong> (in class): We’ll review the material from the preparation, and add some additional content.</li>
+<li><strong>Exercises</strong> to practice what we’re learning. We will usually start some of the week’s exercises in class and finish them at home.</li>
+<li><strong>Project</strong> (outside of class): You will complete two multi-week projects in this class.</li>
+<li><strong>Discussion forums</strong> (outside of class): We will discuss a variety of societal and ethical topics through a Reformed Christian lens.</li>
+</ol>
+<p>We will typically meet in the classroom on Monday and Wednesday and in the lab on Friday. If you have a laptop, please bring it to Monday and Wednesday classes.</p>
+</section>
+<section id="projects" class="level2">
+<h2 class="anchored" data-anchor-id="projects">Projects</h2>
+<p>You will complete two multi-week projects in this class.</p>
+<p>In the <em>Midterm Project</em>, you will practice some parts of the data science lifecycle by <em>reproducing a published visualization of your choice</em> from source data. In the <em>Final Project</em>, you will additionally <em>apply predictive analytics</em>. You may choose to use the same or different dataset. <a href="projects.html">Details about the projects</a></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Teams">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Teams
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Final projects may be completed in teams of up to 3. Teams will have the following additional expectations:</p>
+<ul>
+<li>Teams must submit a team contract about how they will work together</li>
+<li>Teams must convince the instructional staff that each team member learned something substantial from completing the project.</li>
+<li>Each team member must submit an assessment of how they and other team members fulfilled their contract.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="deadlines-and-late-work-policy" class="level2">
+<h2 class="anchored" data-anchor-id="deadlines-and-late-work-policy">Deadlines and late work policy</h2>
+<p>Unless stated otherwise, the assignment submissions are <strong>due by midnight</strong> of the due date. The Moodle calendar will list these due dates/times.</p>
+<p><em>Anything submitted after the dealine is late, unless you have made prior arrangements with us.</em> For each late assignment, you will be charged 10% for each business-day that you are late (e.g., if an assignment is due on Friday, you may turn it in on Monday at 10% off, Tuesday at 20% off and so on) and you need to email us to tell us which assignment you’re submitting late and how late it is. We will not accept work that is more than one week late unless you talk to us about the circumstances and negotiate a late-submission plan. We will generally grant up to 30% for these negotiated plans. We will also grant you 4 grace days with no penalty, no questions asked. Please note that grace days do not apply to the quizzes or the final project, and that we do not accept or negotiate for late work after the last day of class. If there are exceptional circumstances, please talk to us so we can work something out.</p>
+</section>
+</section>
+<section id="grading" class="level1">
+<h1>Grading</h1>
+<p>Unless otherwise arranged, grades will be weighted as follows:</p>
+<ul>
+<li>Quizzes (7, including during final exam time): 35%</li>
+<li>Projects: 30%
+<ul>
+<li>Midterm project: 10%</li>
+<li>Final project: 20%</li>
+</ul></li>
+<li>Exercises (labs and homework): 20%</li>
+<li>Discussion forums: 10%</li>
+<li>Participation: 5%</li>
+</ul>
+<p>Your lowest quiz score will get thrown out.</p>
+<p>Late work will be accepted without penalty if you make prior arrangements or present documentation of a hardship. No late work will be accepted after Reading Recess.</p>
+<p>Changes to this policy may be made at the instructor’s discretion.</p>
+</section>
+<section id="academic-integrity" class="level1">
+<h1>Academic Integrity</h1>
+<p>As the <a href="https://calvin.edu/directory/policies/academic-integrity-policy">Calvin Academic Integrity Policy</a> says, “At Calvin, the student-faculty relationship is based on trust and mutual respect.”</p>
+<p>Data science is a fundamentally collaborative endeavor. Collaboration brings the benefits of multiple perspectives, needed to tackle complex problems faithfully and responsibly. But teamwork also brings the risk of one person doing all of the “learning” for the other. Thus:</p>
+<ul>
+<li><em>Collaboration on homework and labs is encouraged</em>. For integrity, humility, and gratitude, you should acknowledge any help you receive by name in your submission.
+<ul>
+<li>Even if you work side by side with someone, <em>submissions should be your own words and code</em>.</li>
+<li><em>Exception</em>: Some assignments will be pair or team work. The assignment will indicate which.</li>
+<li>It is okay and sometimes encouraged to look up how to do something online! But if you do:
+<ol type="1">
+<li>Record the exact URL that had the information that helped you. (This will help improve our instructional materials for next year.)</li>
+<li>Retype any code yourself, from memory, even if you have to switch back and forth a lot. (This will help <em>you</em> internalize what you’re borrowing.)</li>
+<li>Beware that there is lots of <em>bad</em> code out there. Strive to do better.</li>
+</ol></li>
+</ul></li>
+<li><strong>When</strong> asking for help (and everyone <em>should</em> ask for help when they need it), <em>try to solve the problem on your own first</em>. This is critical. Then, when you ask for help, share <em>what you’ve tried</em> and <em>what leads you to think it’s not working.</em> (not just “It’s not working!!”)</li>
+</ul>
+</section>
+<section id="special-circumstances" class="level1">
+<h1>Special Circumstances</h1>
+<p>Occasionally there are special circumstances that require that course policies be adjusted for a particular student. In such cases, it is the responsibility of the student to inform us of the situation as soon as possible, so that the appropriate arrangements can be made. This includes, but is not limited to, students with documented disabilities.</p>
+<p>Calvin University is committed to providing access to all students. If you need additional accommodations to succeed in this class, please contact Disability Services in the Center for Student Success (disabilityservices@calvin.edu) as soon as possible to explore what arrangements can be made. The three of us (student, instructor, and Disability Services) will work together to come up with an appropriate solution.</p>
+<p>We will give a grade of Incomplete (I) only in unusual circumstances that have been confirmed by the Student Life office.</p>
+</section>
+<section id="diversity-and-inclusion" class="level1">
+<h1>Diversity and Inclusion</h1>
+<p>I intend for this class to be an environment where we equally respect people of every ethnicity, gender, socioeconomic background, political learning, religious background, etc. And I invite your help.</p>
+<p>We will not always do this well. If you or someone else in this class is hurt by something I say or do in class, I would like to work to remedy it. I’ll welcome this feedback in whatever way is comfortable for you: in public, in private, or anonymously, via my department chair (Professor VanderLinden), or via a report to <a href="https://calvin.edu/offices-services/safer-spaces/">Safer Spaces</a>&nbsp;or the&nbsp;<a href="http://www.calvin.edu/go/comments-on-faculty/">provost’s office</a>.</p>
+</section>
+<section id="etiquette-and-wellness" class="level1">
+<h1>Etiquette and Wellness</h1>
+<p>I like to understand education as forming <strong>a community of friends who love knowledge</strong> (and the God from whom all knowledge comes). So as friends and community, we expect to treat each other with respect and courteous communication practices throughout the semester in all venues, including online forums. No personal attacks, trolling, or other kinds of bad language will be tolerated.</p>
+<p>We are not just developing technical skill; we are also developing virtue and character <em>through the</em> acquisition of a technical skill. Please, take advantage of this opportunity.</p>
+<p>Furthermore, a wide range of things can interfere with your learning: trouble concentrating, stress/anxiety, relationship troubles, family situations, food or housing insecurity, substance use, and many more. You are encouraged to care well for yourself by keeping a consistent sleep schedule, eating well, avoiding drugs and alcohol, exercising, and taking time to relax and connect with friends and family.</p>
+<p>Also, learning how to ask for help is an important part of the college experience. Many people on campus are eager to support you. The <a href="https://calvin.edu/offices-services/counseling-and-wellness/">Center for Counseling and Wellness</a> sees one out of five students each year and can connect you with a variety of mental health resources on and off campus. You can also reach out to me, another faculty/staff, a friend, or a family member you trust for help getting connected to support. You are not alone, and help is available!</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

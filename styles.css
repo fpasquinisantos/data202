@@ -1,0 +1,7 @@
+/* css styles */
+h1 {
+  margin-bottom: 0.5rem; /* between paragraphs */
+  border-bottom: 1px solid #dee2e6;
+  border-top: 0px;
+  padding-bottom: 0.2rem;
+}

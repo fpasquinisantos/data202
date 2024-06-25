@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>DATA 202 (Wrangling and Analytics), Spring 2024 - Final Project</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./concepts/1intro.html" rel="next">
+<link href="./midterm-proj.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DATA 202 (Wrangling and Analytics), Spring 2024</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://r.cs.calvin.edu/" rel="" target="">
+ <span class="menu-text">RStudio</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./midterm-proj.html">Projects</a></li><li class="breadcrumb-item"><a href="./final-proj.html">Final Project</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./notes/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-pencil" role="img">
+</i> 
+ <span class="menu-text">Notes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes/missing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Missing Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes/plotly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Plotly Tips</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes/prayers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prayers for Data Science</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes/quarto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto Documents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes/sklearn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">scikit-learn</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes/tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tool References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true"><i class="bi bi-book-half" role="img">
+</i> 
+ <span class="menu-text">Classes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Week1</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./classes/week1/test.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Test</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true"><i class="bi bi-kanban" role="img">
+</i> 
+ <span class="menu-text">Projects</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./midterm-proj.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Midterm Project</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./final-proj.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Final Project</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true"><i class="bi bi-book-half" role="img">
+</i> 
+ <span class="menu-text">Concepts</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/1intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Intro</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">2wrangling</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/2wrangling/1goals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.1. Goals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/2wrangling/2grammar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.2. Grammar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/2wrangling/3eda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3. Exploratory Data Analysis (EDA)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/2wrangling/4examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4. Examples</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/2wrangling/5perspectives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.5. Perspectives</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+ <span class="menu-text">3visualization</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/3visualization/examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Examples</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/3visualization/goals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Goals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/3visualization/grammar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Grammar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/3visualization/perspectives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Perspectives</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
+ <span class="menu-text">4. Modeling</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">
+ <span class="menu-text">4modeling</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/4modeling/perspectives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5. Perspectives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false">
+ <span class="menu-text">3models</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth4 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts/4modeling/3models/linear-models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Linear Models</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="4">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#final-project-a-complete-data-science-process" id="toc-final-project-a-complete-data-science-process" class="nav-link active" data-scroll-target="#final-project-a-complete-data-science-process"><strong>Final Project</strong>: A complete Data Science process</a>
+  <ul>
+  <li><a href="#logistics" id="toc-logistics" class="nav-link" data-scroll-target="#logistics">Logistics</a></li>
+  <li><a href="#milestones" id="toc-milestones" class="nav-link" data-scroll-target="#milestones">Milestones</a></li>
+  <li><a href="#choosing-a-project-and-examples" id="toc-choosing-a-project-and-examples" class="nav-link" data-scroll-target="#choosing-a-project-and-examples">Choosing a project and examples</a></li>
+  <li><a href="#detailed-expectations" id="toc-detailed-expectations" class="nav-link" data-scroll-target="#detailed-expectations">Detailed Expectations</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Final Project</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="final-project-a-complete-data-science-process" class="level2">
+<h2 class="anchored" data-anchor-id="final-project-a-complete-data-science-process"><strong>Final Project</strong>: A complete Data Science process</h2>
+<p><img src="https://r4ds.hadley.nz/diagrams/data-science/base.png" class="img-fluid"></p>
+<p>The goal of this project is to practice a complete data science workflow: question, data, exploration, modeling, and communication. Results will be presented as a report, supporting code, and a brief presentation to the class. Successful outcomes should include visual, analytical, and perspectival components. The report should be at the level of polish and formality of a blog post (more than a class homework assignment, less than an academic paper). The overview and primary visualizations should be intelligible to a non-technical audience; the methods should be described in precise technical language as appropriate.</p>
+<p>An important component of this project is a <em>comparative critique</em> of some related prior work. That is, you are not simply demonstrating that you can perform an analysis, but also that you can evaluate the strengths and weaknesses of others’ analyses. This may be the most important take-away from this class for your future career.</p>
+<section id="logistics" class="level3">
+<h3 class="anchored" data-anchor-id="logistics">Logistics</h3>
+<p><strong>Teams</strong>: Both individual and team projects are permitted, with a mild encouragement towards teams.</p>
+<p><strong>Presentations</strong>: The final course meeting (during the designated final exam period) will be devoted to final project presentations. Feedback on others’ projects will be part of your final project grade, so attendance is mandatory.</p>
+<p>There are two sections of this class, thus two sessions of final project presentations. Refer to the <a href="https://calvin.edu/offices-services/center-for-student-success/registration/exam-schedule/">Calvin exam schedule</a> for the official dates; for 2023, it’s Saturday Dec.&nbsp;9 at 1:30 p.m. and Monday Dec.&nbsp;11 at 1:30 p.m.. Your team must choose which to present at. You are welcome to attend both sessions to see everyone’s work.</p>
+</section>
+<section id="milestones" class="level3">
+<h3 class="anchored" data-anchor-id="milestones">Milestones</h3>
+<ul>
+<li>Nov 11: <strong>Initial proposal</strong>. This should include:
+<ul>
+<li>A tentative <em>topic</em> (kind of data you want to work with, question you’d like to ask). Include a brief description of what drives your interest in it.</li>
+<li>An <em>example</em> or two of some data science work you’ve found on the topic already. See below for some guidance on this. Include the URLs of resources you found, and some brief commentary about each one (does it seem good?)</li>
+<li>A proposal of <em>what you’d like to do</em>. A first step will usually be to do an analysis similar to one of the examples you found, and you may not have much idea beyond that at this time. But if you do have some ideas for what you might want to do differently, this is a good place to include them. Note that your overall task should include some modeling (predictive or otherwise).</li>
+<li>Tentative <em>Teams</em>: If you have already found people who may be interested in working with you, note that here.</li>
+</ul></li>
+<li>Nov 18: <strong>Dataset, exploratory visualization, and summary of prior work</strong>
+<ul>
+<li>You should have the EDA section of your report complete, and a good start on everything before that.</li>
+</ul></li>
+<li>Dec 2: <strong>Initial modeling and visualization</strong></li>
+<li>Dec 12: <strong>Final report</strong></li>
+</ul>
+</section>
+<section id="choosing-a-project-and-examples" class="level3">
+<h3 class="anchored" data-anchor-id="choosing-a-project-and-examples">Choosing a project and examples</h3>
+<p>You can find examples of data science work on sites like Kaggle, TowardsDataScience, Reddit, YouTube, and GitHub. Also check out the TidyTuesday project and r-bloggers.</p>
+<p>Your project should include some modeling, so it should involve more than making visualizations. Predictive modeling is closest to the emphasis of this class, but other kinds of modeling (such as clustering) are often ok.</p>
+<p>Your data should be rich enough to support the kind of modeling you want to do, but not too complex to work with. For example, avoid any dataset larger than 500 MB since it probably won’t fit. Also, avoid image and sound data for similar reasons. (Although if you really want to work with images, there are ways to do this.)</p>
+<p>Some types of projects that have worked well in the past:</p>
+<ul>
+<li><strong>Participating in a Kaggle competition</strong>. It should be a competition that is still open. You don’t need to win, but you should be able to do better than the baseline. You should also do some EDA and/or visualization beyond what’s already been done by others.</li>
+<li><strong>Reproducing a published analysis</strong>. Find a published analysis that you can reproduce, and then extend it in some way. For example, you might find a published analysis that uses a dataset you can’t access, and then find a similar dataset that you can access. Or you might find a published analysis that uses a dataset you can access, and then extend it in some way (e.g., by adding a new feature, or by using a different model).</li>
+</ul>
+<p>Some projects that could work great, but should be discussed with the instructor first:</p>
+<ul>
+<li><strong>Redoing some class activities using a different toolkit</strong>. For example, what if this class were to be taught in JavaScript using <a href="https://observablehq.com/">ObservableHQ</a>? (Talk with Prof Arnold for detailed ideas.)</li>
+<li><strong>Exploring interpretable models</strong>. There are some new types of models coming out that are more interpretable, but we have not gotten to discuss them much in class. Perhaps you could explore one of these models and compare it to a more traditional model.</li>
+<li><strong>Working with a large language model</strong>. For example, could you give ChatGPT some example rows from your dataset, then ask it to write a decision tree for you, and evaluate the result? There are losts of</li>
+</ul>
+<hr>
+</section>
+<section id="detailed-expectations" class="level3">
+<h3 class="anchored" data-anchor-id="detailed-expectations">Detailed Expectations</h3>
+<p><strong>NOTES</strong>:</p>
+<ul>
+<li>You will likely need to make some choices regarding what variables to include, whether to do some pre-processing (e.g., addressing missing values, generating new variables), etc. Clearly state:
+<ul>
+<li><strong>What</strong> decisions you made</li>
+<li><strong>Why</strong> you made them</li>
+<li>What might have been <em>alternative</em> choices.</li>
+</ul></li>
+<li>Tell the “<strong><a href="https://web.stanford.edu/class/cs224u/readings/shieber-writing.pdf">rational reconstruction</a></strong>” of the story of how the analysis was done.
+<ul>
+<li><strong>Don’t</strong> give the play-by-play of everything you tried, every idea you had, etc., but…</li>
+<li><strong>Do</strong> include things you tried that led to an important observation later on.</li>
+</ul></li>
+<li>If you use any code from the Internet, you should acknowledge its source and provide a link.</li>
+<li>You should submit all of the code needed to replicate your results, but <strong>your report should be understandable without looking at the code</strong>.</li>
+<li>Here is a <a href="project/final_proj.Rmd">template</a> (<a href="project/final_proj.html">rendered</a>) that gives one possible outline. You may adapt the outline as needed for your project.</li>
+<li>You’ll submit both slides and a report. See the Midterm project for submission instructions.</li>
+</ul>
+<p>Your report should include the following general elements (though treat this specific outline as a suggestion only; certain reports will need to deviate from this structure in small or large part):</p>
+<ul>
+<li>A succinct but descriptive <strong>title</strong></li>
+<li><strong>Overview</strong>
+<ul>
+<li>A <strong>real-world question</strong> that you’d like to explore, and <em>why</em> it’s interesting.
+<ul>
+<li>This question should be stated in language that is understandable to someone who hasn’t studied data science and doesn’t know the details of your dataset.</li>
+<li>The best questions include motivation from prior literature that gives, for example, some pattern or relationship that you’d <em>expect</em> to find and why.</li>
+</ul></li>
+<li>A brief (2-4 sentences) high-level description of the dataset: what is the dataset about? Where did it come from? What sort of data does it contain?</li>
+</ul></li>
+<li><strong>Prior Work</strong>
+<ul>
+<li>A summary of what you have found that others have done with your data or question. Include URLs and author names.</li>
+<li>A response to their work:
+<ul>
+<li>What did they do well that is inspiring?</li>
+<li>What could they improve on or explore further?</li>
+<li>Do you trust their results? Why or why not?</li>
+</ul></li>
+<li>In what ways do you intend for this project to extend or enhance that prior work? (Save the details of <em>how</em> for the Approach section.)</li>
+</ul></li>
+<li><strong>Approach</strong>
+<ul>
+<li>A <strong>problem description</strong> or <strong>specific question</strong>
+<ul>
+<li>This question should be stated in more specific technical terms than the real-world question.</li>
+<li>It should reference the particular features of your dataset.</li>
+<li>This question ideally helps answer the real-world question, but it’s okay if it doesn’t.</li>
+</ul></li>
+<li>The <strong>approach</strong> that you’ll take to answer that question, probably using some sort of predictive or statistical modeling.</li>
+<li>A description of the data’s <em>provenance</em>: as much as you can, trace the path from the <em>events</em> or <em>measurements</em> all the way to the dataset you’re working with. You might answer:
+<ul>
+<li>where did the data come from originally?</li>
+<li>Where did you download it from? As much as you can tell or speculate, how did it end up available there?</li>
+</ul></li>
+<li>The number of records (rows) in the dataset, and what each one represents.
+<ul>
+<li>Give an example of some part of the data in your dataset.</li>
+<li>Consider writing a simple sentence that conveys the information in the first row, as an example.</li>
+</ul></li>
+<li>A list of the features in the dataset and their types.</li>
+<li>An analysis of the <strong>appropriateness of your dataset</strong> for your approach. (What’s good about it? What do you wish were better?)</li>
+<li><em>This section should also discuss the overall approach of any basic data wrangling needed to get the data into an overall usable form. More specific wrangling may be needed for constructing plots or models later.</em></li>
+</ul></li>
+<li><strong>Exploratory Data Analysis</strong> (EDA)
+<ul>
+<li>Show plots or tables illustrating the <em>distribution</em> of at least two variables in your dataset. Comment on anything interesting you observe.</li>
+<li>Show plots illustrating bivariate relationships for at least 2 pairs of variables. Comment on anything interesting you observe (e.g., strength of relationship, dependence on other factors).</li>
+<li>Summarize your EDA findings: how do your observations inform the modeling?</li>
+</ul></li>
+<li><strong>Modeling</strong>
+<ul>
+<li><em>This section is written for predictive modeling; if you’re doing inferential modeling or clustering, adapt this section as needed.</em></li>
+<li>Describe the <strong>modeling setup</strong>. Clearly state at least:
+<ul>
+<li>what is the target variable you are trying to predict</li>
+<li>which variables (features) you are using to predict it, and why you chose those features</li>
+<li>how you will measure accuracy (can you give meaningful units?)</li>
+<li>what validation method did you choose and why</li>
+</ul></li>
+<li>Fit a basic predictive model using one of the techniques we discussed in class (e.g., Decision Trees, Linear/Logistic Regression, Random Forest)
+<ul>
+<li>Describe why you chose that model (and its features and any hyperparameters)</li>
+<li>Describe what kind of performance you expect from it</li>
+</ul></li>
+<li>Report the results of your basic predictive model via cross-validation.</li>
+<li>Make one or more changes to the predictive model to (attempt to) improve the accuracy. Discuss what changes you made, why you made them, and what the results were.</li>
+<li>The strongest reports will include insightful visualizations of the model, its predictions, and/or its mistakes, and a discussion of what those plots tell us.</li>
+<li>Report on the final accuracy of your best model on the test set, if applicable.</li>
+<li><strong>Alternative</strong>: instead of a supervised prediction task, you can define an unsupervised learning task and use clustering. In this case, clearly state what you want to understand through the clustering, and report your observations.</li>
+</ul></li>
+<li><strong>Findings</strong>: Summarize the analyses you performed and what the results told you. What do your findings say about the real-world and prediction (or clustering) questions you posed?</li>
+<li><strong>Limitations</strong>: What are some limitations of your analyses? Did you notice any potential biases in the data you used or analysis you did? Any other ethical questions raised during this project?</li>
+<li><strong>Future Directions</strong>: What new questions came up following your exploration of this data? Identify at least one question that would require new data or a new analysis approach, and specify what steps would be required.</li>
+</ul>
+<p>You might additionally walk through what the model predicts, and how it does it, for one or two specific examples, ideally ones that aren’t even part of your dataset.</p>
+<p>(Project descriptions originally thanks to <a href="https://scholar.harvard.edu/oamir/home">Ofra Amir</a>)</p>
+<!-- #### Connection to Learning Objectives -->
+<!-- Projects should demonstrate proficiency in the primary learning outcomes of this course: -->
+<!-- | Learning outcome | Evidence in project | -->
+<!-- | ---- | ----- | -->
+<!-- | **Formulate** a question or problem that can be answered by data | Includes a statement of the goal of the project that clearly shows what a successful outcome looks like (e.g., how does the work answer the question? Did the work achieve the goal?) | -->
+<!-- | **Acquire** data responsibly | Describes where the data came from and evaluates the suitability of that source for that data | -->
+<!-- | **Transform** data faithfully into usable forms | Includes some data wrangling (merging multiple data sources, aggregating, re-coding data, identifying and dealing with missing data, etc.) | -->
+<!-- | **Explore** datasets to interrogate their representativeness, build intuition, and generate hypotheses | Includes results of exploratory analytics about data values, completeness, etc. (e.g., exploratory visualizations and/or descriptive statistics); includes some reflection on how the actually available data shaped the project goal / question | -->
+<!-- | **Apply** predictive tools to draw conclusions, evaluating the suitability of these models | Includes a predictive model (regression or classification) that uses two or more features to predict an outcome. Includes a discussion of how modeling decisions were made and on how accurate the model should be on unseen (e.g., future) data, based on quantitative evidence (e.g., cross-validation). | -->
+<!-- | **Communicate** visual and textual data-driven narratives that are useful, faithful, and intelligible to both technical and non-technical audiences | Includes a report in the style of a blog post and a brief presentation | -->
+<!-- | **Analyze** considerations of responsibility and justice in all of the above practices | Demonstrates humility and awareness throughout the project, e.g., includes appropriate caveats with claims, includes discussion of implications of decisions that were made during acquisition / modeling / communication. Identifies potential ethical issues raised by existing data. | -->
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./midterm-proj.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Midterm Project</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./concepts/1intro.html" class="pagination-link">
+        <span class="nav-page-text">1. Intro</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

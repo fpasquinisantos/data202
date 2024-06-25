@@ -1,0 +1,190 @@
+---
+title: "Syllabus"
+format:
+  html: default
+filters:
+  - nutshell
+---
+
+::: {.callout-note collapse="true" title="Catalog Description"}
+An introduction to the conceptual foundations and practical skills needed to transform data into useful forms and apply predictive analytics to discover patterns and anticipate trends. Primary focus is on the core skills and concepts needed to pull data from a range of sources; to filter, transform, and combine data sets to prepare them for analysis; and to construct quantitative summaries and basic visualizations. Programming is used throughout to assemble data-processing pipelines. Students will also discuss ethical and social considerations of data collection and data-driven systems.
+
+Prerequisite: CS 104, CS 106, or CS 108. A minimum grade of C in the chosen course is required.
+:::
+
+# Learning Outcomes
+
+Upon successful completion of this course students will be able to:
+
+-   Prepare tabular data for visualization and analytics by constructing generalizable workflows for loading, transforming, joining, and reshaping data.
+-   Create, interpret, critique, and refine graphical and tabular visualizations of data.
+-   Translate a real-world need into an appropriate analytics task, considering available data.
+-   Select analytics methods appropriate to the data and task from among the approaches surveyed in the course.
+-   Interpret the outcomes of selected predictive analytics techniques.
+-   Communicate analytics results using reports that clearly motivate the problem and approach, elucidate the data used, and present both the strengths and shortcomings of analytics results.
+-   Discuss ethical and social considerations of data collection and data-driven systems.
+
+Additionally, using transparent reproducible workflows and regularly acknowledging limitations will help students practice virtues including integrity, humility, and justice.
+
+# Schedule
+
+::: {.callout-note collapse=true}
+
+# Schedule
+
+Subject to change. Updates will be made here and on Moodle.
+
+<style>
+tr:nth-child(even) {
+  background-color: #EAF6F9!important;
+}
+</style>
+
+| Week        | Topic                            | Notes                                                  |
+|-------------|----------------------------------|--------------------------------------------------------|
+| 1 (Sep 2)   | Intro - purposes and tools       | [**No Monday (Labor Day)**]{.class style="color:red"}  |
+| 2 (Sep 9)   | Data visualization concepts      |                                                        |
+| 3 (Sep 16)  | Data visualization practice      |                                                        |
+| 4 (Sep 23   | Data wrangling concepts          |                                                        |
+| 5 (Sep 30   | Data wrangling practice          |                                                        |
+| 6 (Oct 7)   | Modeling basics                  |                                                        |
+| 7 (Oct 14)  | Linear models                    |                                                        |
+| 8 (Oct 21)  | *Fall Break*                     | *Class on Friday will complete week 7*                 |
+| 9 (Oct 28)  | Tree-based models                |                                                        |
+| 10 (Nov 4)  | Ensemble methods                 |                                                        |
+| 11 (Nov 11) | Clustering                       |                                                        |
+| 12 (Nov 18) | Time-series and SQL              |                                                        |
+| 13 (Nov 25) | Interpretable models             | [**No Wed-Fri (Thanksgiving)**]{.class style="color:red"} |
+| 14 (Dec 2)  | Fairness methods                 |                                                        |
+| 15 (Dec 9)  | Missing data, validation methods | [**No Friday (Study Day)**]{.class style="color:red"}    |
+| 16 (Dec 16) | Final project presentation       |                                                        |
+
+
+:::
+
+# Staff
+
+-   Professor Fernando Pasquini Santos, fs33 %at& calvin.edu
+  - office hours: at NH291, Tuesdays 9-9:50am, Wednesdays 9:05-10:20 am.
+-   Teaching assistant: Grace Van Farowe, gev22 %at& calvin.edu
+
+## Communication
+
+We will use the following communication tools:
+
+-   Outside of class, we'll communicate primarily using the forums on Perusall. See link on Moodle.
+    -   Post *questions* about assignments, concepts, or when you have problems getting code to run.
+    -   Post *answers* as well. Answering helps the community and also gives you practice explaining something you just learned.
+    -   Post *notes* about interesting articles or events.
+-   Use **email** for personal issues.
+-   Use **Teams** for friendly chat; I'll redirect most questions about course content to Perusall.
+
+# Textbook
+
+All readings wil be posted in Perusall. They will be taken from:
+
+-   [Learning Data Science](https://learningds.org/intro.html) by Sam Lau, Joey Gonzalez, and Deb Nolan. (we'll abbreviate this **LGN**).
+    -   Will be published in late 2023, but the online version is free.
+-   [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/) by Claus O. Wilke
+
+# Technology
+
+We will be using **Python** and the following tools:
+
+-   **pandas** for data wrangling
+-   **Plotly** for data visualization
+-   **scikit-learn** for modeling
+-   [**Quarto**](https://quarto.org/) for creating reports
+-   [RStudio Server](https://r.cs.calvin.edu/)
+    -   The course lab fee funds our contribution towards the shared resources that provide this service. If the fee is a hardship for you, please contact the instructor.
+    -   You may also install [RStudio Desktop](https://posit.co/downloads/) on your own computer.
+
+
+# Class Structure and Activities
+
+## At every week
+
+1.  **Preparation** (before class): Readings and quizzes to prepare you for class.
+2.  **Lecture** (in class): We'll review the material from the preparation, and add some additional content.
+3.  **Exercises** to practice what we're learning. We will usually start some of the week's exercises in class and finish them at home.
+4.  **Project** (outside of class): You will complete two multi-week projects in this class.
+5.  **Discussion forums** (outside of class): We will discuss a variety of societal and ethical topics through a Reformed Christian lens.
+
+We will typically meet in the classroom on Monday and Wednesday and in the lab on Friday. If you have a laptop, please bring it to Monday and Wednesday classes.
+
+## Projects
+
+You will complete two multi-week projects in this class.
+
+In the *Midterm Project*, you will practice some parts of the data science lifecycle by *reproducing a published visualization of your choice* from source data. In the *Final Project*, you will additionally *apply predictive analytics*. You may choose to use the same or different dataset. [Details about the projects](projects.html)
+
+::: {.callout-note collapse="true" title="Teams"}
+Final projects may be completed in teams of up to 3. Teams will have the following additional expectations:
+
+-   Teams must submit a team contract about how they will work together
+-   Teams must convince the instructional staff that each team member learned something substantial from completing the project.
+-   Each team member must submit an assessment of how they and other team members fulfilled their contract.
+:::
+
+## Deadlines and late work policy
+
+Unless stated otherwise, the assignment submissions are **due by midnight** of the due date. The Moodle calendar will list these due dates/times.
+
+*Anything submitted after the dealine is late, unless you have made prior arrangements with us.* For each late assignment, you will be charged 10% for each business-day that you are late (e.g., if an assignment is due on Friday, you may turn it in on Monday at 10% off, Tuesday at 20% off and so on) and you need to email us to tell us which assignment you're submitting late and how late it is. We will not accept work that is more than one week late unless you talk to us about the circumstances and negotiate a late-submission plan. We will generally grant up to 30% for these negotiated plans. We will also grant you 4 grace days with no penalty, no questions asked. Please note that grace days do not apply to the quizzes or the final project, and that we do not accept or negotiate for late work after the last day of class. If there are exceptional circumstances, please talk to us so we can work something out.
+
+# Grading
+
+Unless otherwise arranged, grades will be weighted as follows:
+
+-   Quizzes (7, including during final exam time): 35%
+-   Projects: 30%
+    -   Midterm project: 10%
+    -   Final project: 20%
+-   Exercises (labs and homework): 20%
+-   Discussion forums: 10%
+-   Participation: 5%
+
+Your lowest quiz score will get thrown out.
+
+Late work will be accepted without penalty if you make prior arrangements or present documentation of a hardship. No late work will be accepted after Reading Recess.
+
+Changes to this policy may be made at the instructor's discretion.
+
+# Academic Integrity
+
+As the [Calvin Academic Integrity Policy](https://calvin.edu/directory/policies/academic-integrity-policy) says, "At Calvin, the student-faculty relationship is based on trust and mutual respect."
+
+Data science is a fundamentally collaborative endeavor. Collaboration brings the benefits of multiple perspectives, needed to tackle complex problems faithfully and responsibly. But teamwork also brings the risk of one person doing all of the "learning" for the other. Thus:
+
+-   *Collaboration on homework and labs is encouraged*. For integrity, humility, and gratitude, you should acknowledge any help you receive by name in your submission.
+    -   Even if you work side by side with someone, *submissions should be your own words and code*.
+    -   *Exception*: Some assignments will be pair or team work. The assignment will indicate which.
+    -   It is okay and sometimes encouraged to look up how to do something online! But if you do:
+        1.  Record the exact URL that had the information that helped you. (This will help improve our instructional materials for next year.)
+        2.  Retype any code yourself, from memory, even if you have to switch back and forth a lot. (This will help *you* internalize what you're borrowing.)
+        3.  Beware that there is lots of *bad* code out there. Strive to do better.
+-   **When** asking for help (and everyone *should* ask for help when they need it), *try to solve the problem on your own first*. This is critical. Then, when you ask for help, share *what you've tried* and *what leads you to think it's not working.* (not just "It's not working!!")
+
+# Special Circumstances
+
+Occasionally there are special circumstances that require that course policies be adjusted for a particular student. In such cases, it is the responsibility of the student to inform us of the situation as soon as possible, so that the appropriate arrangements can be made. This includes, but is not limited to, students with documented disabilities.
+
+Calvin University is committed to providing access to all students. If you need additional accommodations to succeed in this class, please contact Disability Services in the Center for Student Success (disabilityservices\@calvin.edu) as soon as possible to explore what arrangements can be made. The three of us (student, instructor, and Disability Services) will work together to come up with an appropriate solution.
+
+We will give a grade of Incomplete (I) only in unusual circumstances that have been confirmed by the Student Life office.
+
+# Diversity and Inclusion
+
+I intend for this class to be an environment where we equally respect people of every ethnicity, gender, socioeconomic background, political learning, religious background, etc. And I invite your help.
+
+We will not always do this well. If you or someone else in this class is hurt by something I say or do in class, I would like to work to remedy it. I'll welcome this feedback in whatever way is comfortable for you: in public, in private, or anonymously, via my department chair (Professor VanderLinden), or via a report to [Safer Spaces](https://calvin.edu/offices-services/safer-spaces/) or the [provost's office](http://www.calvin.edu/go/comments-on-faculty/).
+
+# Etiquette and Wellness
+
+I like to understand education as forming **a community of friends who love knowledge** (and the God from whom all knowledge comes). So as friends and community, we expect to treat each other with respect and courteous communication practices throughout the semester in all venues, including online forums. No personal attacks, trolling, or other kinds of bad language will be tolerated.
+
+We are not just developing technical skill; we are also developing virtue and character *through the* acquisition of a technical skill. Please, take advantage of this opportunity.
+
+Furthermore, a wide range of things can interfere with your learning: trouble concentrating, stress/anxiety, relationship troubles, family situations, food or housing insecurity, substance use, and many more. You are encouraged to care well for yourself by keeping a consistent sleep schedule, eating well, avoiding drugs and alcohol, exercising, and taking time to relax and connect with friends and family.
+
+Also, learning how to ask for help is an important part of the college experience. Many people on campus are eager to support you. The [Center for Counseling and Wellness](https://calvin.edu/offices-services/counseling-and-wellness/) sees one out of five students each year and can connect you with a variety of mental health resources on and off campus. You can also reach out to me, another faculty/staff, a friend, or a family member you trust for help getting connected to support. You are not alone, and help is available!
