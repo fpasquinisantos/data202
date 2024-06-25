@@ -1,5 +1,5 @@
 ---
-title: "Quarto Documents"
+title: "Quarto Templates and Tips"
 ---
 
 ## Class Standards

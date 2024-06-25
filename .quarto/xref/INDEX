@@ -230,5 +230,11 @@
   },
   "concepts/4modeling/perspectives.qmd": {
     "perspectives.html": "af8a0134"
+  },
+  "quarto.qmd": {
+    "quarto.html": "2bcddb43"
+  },
+  "tools.qmd": {
+    "tools.html": "24e8fa1c"
   }
 }

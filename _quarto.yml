@@ -11,7 +11,7 @@ project:
   post-render: "rsync -r static/ _site"
 
 website:
-  title: "DATA 202 (Wrangling and Analytics), Spring 2024"
+  title: "DATA 202 (Wrangling and Analytics), Fall 2024"
   site-url: "https://cs.calvin.edu/courses/data/202/fsantos"
   navbar:
     right:
@@ -20,9 +20,6 @@ website:
         href: "https://r.cs.calvin.edu/"
   sidebar:
     contents:
-      - section: "Notes"
-        icon: "pencil"
-        contents: "notes/*"
       - section: "Classes"
         icon: "book-half"
         contents:
