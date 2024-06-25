@@ -1,0 +1,234 @@
+{
+  "final-proj.qmd": {
+    "final-proj.html": "f7fb7a89"
+  },
+  "index.qmd": {
+    "index.html": "472a4c89"
+  },
+  "meetings.qmd": {
+    "meetings.html": "0ecab9ff",
+    "meetings-slides.html": "ee9a417d"
+  },
+  "midterm-proj.qmd": {
+    "midterm-proj.html": "ba7e92b8"
+  },
+  "notes/index.qmd": {
+    "index.html": "e7f53f1b"
+  },
+  "notes/missing.qmd": {
+    "missing.html": "ce92fede"
+  },
+  "notes/pandas.qmd": {
+    "pandas.html": "31b1cd7e"
+  },
+  "notes/plotly.qmd": {
+    "plotly.html": "f22b3404"
+  },
+  "notes/prayers.qmd": {
+    "prayers.html": "18bcadf1"
+  },
+  "notes/quarto.qmd": {
+    "quarto.html": "9dbc211b"
+  },
+  "notes/sklearn.qmd": {
+    "sklearn.html": "51d80f50"
+  },
+  "notes/tools.qmd": {
+    "tools.html": "11672e2f"
+  },
+  "units/01intro/ex01-warmup.qmd": {
+    "ex01-warmup.html": "a2e83079"
+  },
+  "units/01intro/ex02-bikeshare.qmd": {
+    "ex02-bikeshare.html": "122a1ef6"
+  },
+  "units/01intro/index.qmd": {
+    "index.html": "af4e34e6"
+  },
+  "units/01intro/quarto.qmd": {
+    "quarto.html": "8f18bd1a"
+  },
+  "units/01intro/w01d1-welcome.qmd": {
+    "w01d1-welcome.html": "5b70e006"
+  },
+  "units/01intro/w02d1.qmd": {
+    "w02d1.html": "9122d4d8"
+  },
+  "units/03vis1/ex03-vis.qmd": {
+    "ex03-vis.html": "82f7c138"
+  },
+  "units/03vis1/index.qmd": {
+    "index.html": "0ce98b6e"
+  },
+  "units/03vis1/w3d1-vis-principles.qmd": {
+    "w3d1-vis-principles.html": "83b75836"
+  },
+  "units/03vis1/w3d2-vis-design.qmd": {
+    "w3d2-vis-design.html": "097d561d"
+  },
+  "units/04vis2/ex04-plottypes.qmd": {
+    "ex04-plottypes.html": "0bd069c3"
+  },
+  "units/04vis2/index.qmd": {
+    "index.html": "8e415098"
+  },
+  "units/04vis2/w4d1-vis2.qmd": {
+    "w4d1-vis2.html": "165f10ac"
+  },
+  "units/05wrangle1/ex05-bikeshare-wrangling.qmd": {
+    "ex05-bikeshare-wrangling.html": "11ee8066"
+  },
+  "units/05wrangle1/index.qmd": {
+    "index.html": "2b2a05e4"
+  },
+  "units/05wrangle1/w05-wrangling.qmd": {
+    "w05-wrangling.html": "0fd1fa83"
+  },
+  "units/05wrangle1/w05d2-wrangle-hotels.qmd": {
+    "w05d2-wrangle-hotels.html": "0a6289d0"
+  },
+  "units/06wrangle2/ex06-pivot-join-solutions.qmd": {
+    "ex06-pivot-join-solutions.html": "61f26a4f"
+  },
+  "units/06wrangle2/ex06-pivot-join.qmd": {
+    "ex06-pivot-join.html": "064871ce"
+  },
+  "units/06wrangle2/index.qmd": {
+    "index.html": "11860c5f"
+  },
+  "units/06wrangle2/w6-join.qmd": {
+    "w6-join.html": "9c11f893"
+  },
+  "units/06wrangle2/w6-tidy.qmd": {
+    "w6-tidy.html": "cbee34e9"
+  },
+  "units/06wrangle2/w7-tidyvis.qmd": {
+    "w7-tidyvis.html": "057a0e90"
+  },
+  "units/09supervised-intro/ex09-supervised-intro.qmd": {
+    "ex09-supervised-intro.html": "188e1765"
+  },
+  "units/09supervised-intro/index.qmd": {
+    "index.html": "641f52c8"
+  },
+  "units/09supervised-intro/w09-supervised.qmd": {
+    "w09-supervised.html": "1e658efa"
+  },
+  "units/10trees/ex10-metrics.qmd": {
+    "ex10-metrics.html": "05702df8"
+  },
+  "units/10trees/index.qmd": {
+    "index.html": "bdd62f1d"
+  },
+  "units/10trees/w10-trees.qmd": {
+    "w10-trees.html": "0adeca84"
+  },
+  "units/10trees/w10d1-metrics.qmd": {
+    "w10d1-metrics.html": "0a735fe2"
+  },
+  "units/11model-zoo/bayesnets.qmd": {
+    "bayesnets.html": "059ccf46"
+  },
+  "units/11model-zoo/index.qmd": {
+    "index.html": "a8ac6769"
+  },
+  "units/11model-zoo/w111model-types.qmd": {
+    "w111model-types.html": "f77e16e0"
+  },
+  "units/11model-zoo/ex11-bayesnets.qmd": {
+    "ex11-bayesnets.html": "985e1b1d"
+  },
+  "concepts/2. Wrangling/eda.qmd": {
+    "eda.html": "66e0680c"
+  },
+  "concepts/2. Wrangling/examples.qmd": {
+    "examples.html": "0e3fa247"
+  },
+  "concepts/2. Wrangling/goals.qmd": {
+    "goals.html": "9acb0376"
+  },
+  "concepts/2. Wrangling/grammar.qmd": {
+    "grammar.html": "35692b8f"
+  },
+  "concepts/2. Wrangling/perspectives.qmd": {
+    "perspectives.html": "ff6257bc"
+  },
+  "concepts/3. Visualization/examples.qmd": {
+    "examples.html": "425020f9"
+  },
+  "concepts/3. Visualization/goals.qmd": {
+    "goals.html": "4b920e3b"
+  },
+  "concepts/3. Visualization/grammar.qmd": {
+    "grammar.html": "814eb4a2"
+  },
+  "concepts/3. Visualization/perspectives.qmd": {
+    "perspectives.html": "caa1dce4"
+  },
+  "concepts/4. Modeling/perspectives.qmd": {
+    "perspectives.html": "849530e2"
+  },
+  "concepts/intro.qmd": {
+    "intro.html": "28a10c05"
+  },
+  "classes/Week 1/test.qmd": {
+    "test.html": "c33d12ca"
+  },
+  "concepts/2. Wrangling/1goals.qmd": {
+    "1goals.html": "737929f3"
+  },
+  "concepts/2. Wrangling/2grammar.qmd": {
+    "2grammar.html": "99307d8f"
+  },
+  "concepts/2. Wrangling/3eda.qmd": {
+    "3eda.html": "db67f4cd"
+  },
+  "concepts/2. Wrangling/4examples.qmd": {
+    "4examples.html": "d5db8dd1"
+  },
+  "concepts/2. Wrangling/5perspectives.qmd": {
+    "5perspectives.html": "53955517"
+  },
+  "concepts/1intro.qmd": {
+    "1intro.html": "a8c9a5fd"
+  },
+  "concepts/2wrangling/1goals.qmd": {
+    "1goals.html": "b9a5405e"
+  },
+  "concepts/2wrangling/2grammar.qmd": {
+    "2grammar.html": "3c720033"
+  },
+  "concepts/2wrangling/3eda.qmd": {
+    "3eda.html": "85c06256"
+  },
+  "concepts/2wrangling/4examples.qmd": {
+    "4examples.html": "79949182"
+  },
+  "concepts/2wrangling/5perspectives.qmd": {
+    "5perspectives.html": "cf01dcbd"
+  },
+  "concepts/3visualization/examples.qmd": {
+    "examples.html": "c533874c"
+  },
+  "concepts/3visualization/goals.qmd": {
+    "goals.html": "9e718cfe"
+  },
+  "concepts/3visualization/grammar.qmd": {
+    "grammar.html": "08400cfc"
+  },
+  "concepts/3visualization/perspectives.qmd": {
+    "perspectives.html": "8e84ec87"
+  },
+  "concepts/4Modeling/perspectives.qmd": {
+    "perspectives.html": "64f07eeb"
+  },
+  "classes/week1/test.qmd": {
+    "test.html": "34fde796"
+  },
+  "concepts/4modeling/3models/linear-models.qmd": {
+    "linear-models.html": "4ec776c0"
+  },
+  "concepts/4modeling/perspectives.qmd": {
+    "perspectives.html": "af8a0134"
+  }
+}
