@@ -1,0 +1,9 @@
+---
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+---
+
+# 09-11 - Wrangling - selecting, filtering and deriving (Handout)

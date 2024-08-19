@@ -1,0 +1,9 @@
+---
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+---
+
+# 09-25 - Types of plots (Handout)

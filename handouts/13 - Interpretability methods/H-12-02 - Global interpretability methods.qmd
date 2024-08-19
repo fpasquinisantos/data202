@@ -1,0 +1,9 @@
+---
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+---
+
+# 12-02 - Global interpretability methods (Handout)

@@ -1,0 +1,9 @@
+---
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+---
+
+# 12-09 - Project Pitching (Handout)

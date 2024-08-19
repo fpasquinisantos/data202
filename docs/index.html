@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>DATA 202 (Wrangling and Analytics), Fall 2024 - Syllabus</title>
+<title>Syllabus – DATA 202 (Wrangling and Analytics), Fall 2024</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -46,7 +46,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -55,6 +61,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -69,89 +76,66 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">DATA 202 (Wrangling and Analytics), Fall 2024</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Syllabus</span></a>
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://r.cs.calvin.edu/" rel="" target="">
- <span class="menu-text">RStudio</span></a>
+    <a class="nav-link" href="https://r.cs.calvin.edu/"> 
+<span class="menu-text">RStudio</span></a>
   </li>  
 </ul>
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Syllabus</li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Syllabus</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
     </div>
   </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tool References</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true"><i class="bi bi-book-half" role="img">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true"><i class="bi bi-kanban" role="img">
 </i> 
- <span class="menu-text">Classes</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Projects</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
- <span class="menu-text">Week 1</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./classes/week1/test.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Test</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true"><i class="bi bi-kanban" role="img">
-</i> 
- <span class="menu-text">Projects</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./midterm-proj.html" class="sidebar-item-text sidebar-link">
@@ -168,109 +152,32 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true"><i class="bi bi-book-half" role="img">
-</i> 
- <span class="menu-text">Concepts</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Slides</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./concepts/1intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1. Intro</span></a>
-  </div>
-</li>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
- <span class="menu-text">2. Wrangling</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
+            <a href="./slides/01 - Introduction/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">01 - Introduction</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./concepts/2wrangling/1goals.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.1. Goals</span></a>
+  <a href="./slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">09-04 - What is, application areas and workflow</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./concepts/2wrangling/2grammar.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.2. Grammar</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./concepts/2wrangling/3eda.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.3. Exploratory Data Analysis (EDA)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./concepts/2wrangling/4examples.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.4. Examples</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./concepts/2wrangling/5perspectives.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.5. Perspectives</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
- <span class="menu-text">3. Visualization</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./concepts/3visualization/examples.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4. Examples</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./concepts/3visualization/goals.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1. Goals</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./concepts/3visualization/grammar.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Grammar</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./concepts/3visualization/perspectives.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5. Perspectives</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
- <span class="menu-text">4. Modeling</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./concepts/4modeling/perspectives.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.5. Perspectives</span></a>
+  <a href="./slides/01 - Introduction/S-09-06 - Lab practice 1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">09-06 - Lab practice 1</span></a>
   </div>
 </li>
       </ul>
@@ -280,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="4">
@@ -294,10 +201,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#communication" id="toc-communication" class="nav-link" data-scroll-target="#communication">Communication</a></li>
   </ul></li>
   <li><a href="#textbook" id="toc-textbook" class="nav-link" data-scroll-target="#textbook">Textbook</a></li>
-  <li><a href="#technology" id="toc-technology" class="nav-link" data-scroll-target="#technology">Technology</a></li>
+  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
   <li><a href="#class-structure-and-activities" id="toc-class-structure-and-activities" class="nav-link" data-scroll-target="#class-structure-and-activities">Class Structure and Activities</a>
   <ul>
-  <li><a href="#at-every-week" id="toc-at-every-week" class="nav-link" data-scroll-target="#at-every-week">At every week</a></li>
+  <li><a href="#every-week" id="toc-every-week" class="nav-link" data-scroll-target="#every-week">Every week</a></li>
+  <li><a href="#every-other-week" id="toc-every-other-week" class="nav-link" data-scroll-target="#every-other-week">Every other week</a></li>
   <li><a href="#projects" id="toc-projects" class="nav-link" data-scroll-target="#projects">Projects</a></li>
   <li><a href="#deadlines-and-late-work-policy" id="toc-deadlines-and-late-work-policy" class="nav-link" data-scroll-target="#deadlines-and-late-work-policy">Deadlines and late work policy</a></li>
   </ul></li>
@@ -327,7 +235,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <div class="callout callout-style-default callout-note callout-titled" title="Catalog Description">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
@@ -380,16 +290,18 @@ tr:nth-child(even) {
   background-color: #EAF6F9!important;
 }
 </style>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 12%">
-<col style="width: 33%">
-<col style="width: 54%">
+<col style="width: 29%">
+<col style="width: 19%">
+<col style="width: 37%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Week</th>
 <th>Topic</th>
+<th>Reading chapters</th>
 <th>Notes</th>
 </tr>
 </thead>
@@ -397,81 +309,97 @@ tr:nth-child(even) {
 <tr class="odd">
 <td>1 (Sep 2)</td>
 <td>Intro - purposes and tools</td>
-<td><span class="class" style="color:red"><strong>No Monday (Labor Day)</strong></span></td>
+<td>LGN 1-5</td>
+<td>No Monday (Labor Day)</td>
 </tr>
 <tr class="even">
 <td>2 (Sep 9)</td>
-<td>Data visualization concepts</td>
+<td>Wrangling 1</td>
+<td>LGN 6</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>3 (Sep 16)</td>
-<td>Data visualization practice</td>
+<td>Wrangling 2</td>
+<td>LGN 8-9</td>
 <td></td>
 </tr>
 <tr class="even">
-<td>4 (Sep 23</td>
-<td>Data wrangling concepts</td>
+<td>4 (Sep 23)</td>
+<td>Visualization 1</td>
+<td>Wilke 2-5</td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>5 (Sep 30</td>
-<td>Data wrangling practice</td>
+<td>5 (Sep 30)</td>
+<td>Visualization 2</td>
+<td>LGN 10-11</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>6 (Oct 7)</td>
 <td>Modeling basics</td>
+<td>sklearn user guide</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>7 (Oct 14)</td>
 <td>Linear models</td>
+<td>sklearn user guide</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>8 (Oct 21)</td>
 <td><em>Fall Break</em></td>
-<td><em>Class on Friday will complete week 7</em></td>
+<td></td>
+<td>Class on Friday will complete week 7</td>
 </tr>
 <tr class="odd">
 <td>9 (Oct 28)</td>
 <td>Tree-based models</td>
+<td>sklearn user guide</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>10 (Nov 4)</td>
 <td>Ensemble methods</td>
+<td>sklearn user guide</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>11 (Nov 11)</td>
-<td>Clustering</td>
+<td>Unsupervised learning</td>
+<td>sklearn user guide</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>12 (Nov 18)</td>
-<td>Time-series and SQL</td>
+<td>Time-series and missing data</td>
+<td>LGN 7</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>13 (Nov 25)</td>
-<td>Interpretable models</td>
-<td><span class="class" style="color:red"><strong>No Wed-Fri (Thanksgiving)</strong></span></td>
+<td>Fairness methods</td>
+<td>BHN 2</td>
+<td>No Wed-Fri (Thanksgiving)</td>
 </tr>
 <tr class="even">
 <td>14 (Dec 2)</td>
-<td>Fairness methods</td>
+<td>Interpretability methods</td>
+<td>Molnar 3</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>15 (Dec 9)</td>
-<td>Missing data, validation methods</td>
-<td><span class="class" style="color:red"><strong>No Friday (Study Day)</strong></span></td>
+<td>Project pitching and wrap-up</td>
+<td></td>
+<td>No Friday (Study Day)</td>
 </tr>
 <tr class="even">
 <td>16 (Dec 16)</td>
 <td>Final project presentation</td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
@@ -483,9 +411,12 @@ tr:nth-child(even) {
 <section id="staff" class="level1">
 <h1>Staff</h1>
 <ul>
-<li>Professor Fernando Pasquini Santos, fs33 %at&amp; calvin.edu</li>
-<li>office hours: at NH291, Tuesdays 9-9:50am, Wednesdays 9:05-10:20 am.</li>
-<li>Teaching assistant: Grace Van Farowe, gev22 %at&amp; calvin.edu</li>
+<li>Professor Fernando Pasquini Santos - fs33\*\*at\*\*calvin.edu
+<ul>
+<li>office hours: at NH291, Mondays 4-5 pm, Wednesdays 11-12 am</li>
+</ul></li>
+<li>Lab assistant: TBA</li>
+<li>Grader: TBA</li>
 </ul>
 <section id="communication" class="level2">
 <h2 class="anchored" data-anchor-id="communication">Communication</h2>
@@ -500,25 +431,25 @@ tr:nth-child(even) {
 <li>Use <strong>email</strong> for personal issues.</li>
 <li>Use <strong>Teams</strong> for friendly chat; I’ll redirect most questions about course content to Perusall.</li>
 </ul>
+<p>You’ll generally find us responsive on Monday through Friday, but less so on the weekend, particularly Sunday. You’re free to schedule your work as best works for you, but we’ll be trying to observe a Sabbath in our own schedules.</p>
 </section>
 </section>
 <section id="textbook" class="level1">
 <h1>Textbook</h1>
 <p>All readings wil be posted in Perusall. They will be taken from:</p>
 <ul>
-<li><a href="https://learningds.org/intro.html">Learning Data Science</a> by Sam Lau, Joey Gonzalez, and Deb Nolan. (we’ll abbreviate this <strong>LGN</strong>).
-<ul>
-<li>Will be published in late 2023, but the online version is free.</li>
-</ul></li>
-<li><a href="https://clauswilke.com/dataviz/">Fundamentals of Data Visualization</a> by Claus O. Wilke</li>
+<li><a href="https://learningds.org/intro.html">Learning Data Science</a> by Sam Lau, Joey Gonzalez, and Deb Nolan. (we’ll abbreviate this <strong>LGN</strong>).</li>
+<li><a href="https://clauswilke.com/dataviz/">Fundamentals of Data Visualization</a> by Claus O. Wilke (we’ll abbreviate this as <strong>Wilke</strong>)</li>
+<li><a href="https://christophm.github.io/interpretable-ml-book/">Interpretable Machine Learning: A Guide for Making Black Box Models Explainable</a> by Christoph Molnar. (we’ll abbreviate this as <strong>Molnar</strong>)</li>
+<li><a href="https://fairmlbook.org/">Fairness and machine learning Limitations and Opportunities</a> by Solon Barocas, Moritz Hardt, Arvind Narayanan. (we’ll abbreviate this <strong>BHN</strong>)</li>
 </ul>
 </section>
-<section id="technology" class="level1">
-<h1>Technology</h1>
+<section id="tools" class="level1">
+<h1>Tools</h1>
 <p>We will be using <strong>Python</strong> and the following tools:</p>
 <ul>
 <li><strong>pandas</strong> for data wrangling</li>
-<li><strong>Plotly</strong> for data visualization</li>
+<li><strong>plotly</strong> for data visualization</li>
 <li><strong>scikit-learn</strong> for modeling</li>
 <li><a href="https://quarto.org/"><strong>Quarto</strong></a> for creating reports</li>
 <li><a href="https://r.cs.calvin.edu/">RStudio Server</a>
@@ -530,16 +461,22 @@ tr:nth-child(even) {
 </section>
 <section id="class-structure-and-activities" class="level1">
 <h1>Class Structure and Activities</h1>
-<section id="at-every-week" class="level2">
-<h2 class="anchored" data-anchor-id="at-every-week">At every week</h2>
+<section id="every-week" class="level2">
+<h2 class="anchored" data-anchor-id="every-week">Every week</h2>
 <ol type="1">
-<li><strong>Preparation</strong> (before class): Readings and quizzes to prepare you for class.</li>
+<li><strong>Preparation</strong> (before class): Readings and quizzes to prepare you for class (on Perusall)</li>
 <li><strong>Lecture</strong> (in class): We’ll review the material from the preparation, and add some additional content.</li>
-<li><strong>Exercises</strong> to practice what we’re learning. We will usually start some of the week’s exercises in class and finish them at home.</li>
-<li><strong>Project</strong> (outside of class): You will complete two multi-week projects in this class.</li>
-<li><strong>Discussion forums</strong> (outside of class): We will discuss a variety of societal and ethical topics through a Reformed Christian lens.</li>
+<li><strong>Exercises</strong> To practice what we’re learning. We will usually start some of the week’s exercises in class and finish them at home.</li>
 </ol>
-<p>We will typically meet in the classroom on Monday and Wednesday and in the lab on Friday. If you have a laptop, please bring it to Monday and Wednesday classes.</p>
+<p>We will typically meet in the classroom on Monday and Wednesday and in the lab on Friday.</p>
+<p>If you have a laptop, please bring it to Monday and Wednesday classes.</p>
+</section>
+<section id="every-other-week" class="level2">
+<h2 class="anchored" data-anchor-id="every-other-week">Every other week</h2>
+<ol type="1">
+<li><strong>Perspectives readings</strong>: you’ll read an article about data science and their wider societal implications. After this reading, you will be asked to make comments on the text and interact with your colleagues responses. Perusall has many nice tools to make this a nice shared reading experience. Try not to do it just for the sake of getting the assignment done and get the grade.</li>
+<li><strong>Quizzes</strong> (6 on total): usually <strong>on Fridays</strong>, we will have a 15 to 20 minute quiz on Moodle reviewing and applying the concepts we got from the unit. The quiz will be done in classroom, so you will want to bring your laptop or any other device.</li>
+</ol>
 </section>
 <section id="projects" class="level2">
 <h2 class="anchored" data-anchor-id="projects">Projects</h2>
@@ -577,15 +514,14 @@ Teams
 <h1>Grading</h1>
 <p>Unless otherwise arranged, grades will be weighted as follows:</p>
 <ul>
-<li>Quizzes (7, including during final exam time): 35%</li>
-<li>Projects: 30%
+<li>Quizzes (6): 30%</li>
+<li>Projects: 35%
 <ul>
 <li>Midterm project: 10%</li>
-<li>Final project: 20%</li>
+<li>Final project: 25%</li>
 </ul></li>
-<li>Exercises (labs and homework): 20%</li>
+<li>Exercises (lab/homework): 25%</li>
 <li>Discussion forums: 10%</li>
-<li>Participation: 5%</li>
 </ul>
 <p>Your lowest quiz score will get thrown out.</p>
 <p>Late work will be accepted without penalty if you make prior arrangements or present documentation of a hardship. No late work will be accepted after Reading Recess.</p>
@@ -667,18 +603,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -710,11 +635,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/cs\.calvin\.edu\/courses\/data\/202\/fsantos");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -724,8 +688,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -737,7 +710,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -781,6 +877,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -806,6 +903,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -866,6 +989,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

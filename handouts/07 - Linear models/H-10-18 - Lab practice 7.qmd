@@ -1,0 +1,9 @@
+---
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+---
+
+# 10-18 - Lab practice 7 (Handout)

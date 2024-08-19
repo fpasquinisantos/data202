@@ -1,0 +1,9 @@
+---
+format:
+  docx:
+    toc: false
+    number-sections: true
+    number-depth: 1
+---
+
+# 09-04 - What is, application areas and workflow (Handout)

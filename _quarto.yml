@@ -8,7 +8,32 @@ project:
     - "!*-template.qmd"
     - "!*-wip.qmd"
     - "!*scraps.qmd"
-  post-render: "rsync -r static/ _site"
+    - "!slides/02*/*"
+    - "!slides/03*/*"
+    - "!slides/04*/*"
+    - "!slides/05*/*"
+    - "!slides/06*/*"
+    - "!slides/07*/*"
+    - "!slides/08*/*"
+    - "!slides/09*/*"
+    - "!slides/10*/*"
+    - "!slides/11*/*"
+    - "!slides/12*/*"
+    - "!slides/13*/*"
+    - "!slides/14*/*"
+    - "!handouts/02*/*"
+    - "!handouts/03*/*"
+    - "!handouts/04*/*"
+    - "!handouts/05*/*"
+    - "!handouts/06*/*"
+    - "!handouts/07*/*"
+    - "!handouts/08*/*"
+    - "!handouts/09*/*"
+    - "!handouts/10*/*"
+    - "!handouts/11*/*"
+    - "!handouts/12*/*"
+    - "!handouts/13*/*"
+    - "!handouts/14*/*"
 
 website:
   title: "DATA 202 (Wrangling and Analytics), Fall 2024"
@@ -20,27 +45,14 @@ website:
         href: "https://r.cs.calvin.edu/"
   sidebar:
     contents:
-      - section: "Classes"
-        icon: "book-half"
-        contents:
-          - section: "Week 1"
-            contents: "classes/week1/*"
+      - tools.qmd
       - section: "Projects"
         icon: "kanban"
         contents:
           - midterm-proj.qmd
           - final-proj.qmd
-      - section: "Concepts"
-        icon: "book-half"
-        contents:
-        - "concepts/1intro.qmd"
-        - section: "2. Wrangling"
-          contents: "concepts/2wrangling/*"
-        - section: "3. Visualization"
-          contents: "concepts/3visualization/*"
-        - section: "4. Modeling"
-          contents: "concepts/4modeling/*"
-
+      - auto: "slides/"
+        icon: "person-workspace"
   page-navigation: true
 
 format:

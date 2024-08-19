@@ -139,7 +139,6 @@ This template includes a suggested outline for your report. You may choose to or
 print("`````python")
 print(open('midterm-proj-template.qmd').read())
 print(("`````"))
-
 ```
 
 :::

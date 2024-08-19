@@ -1,0 +1,39 @@
+---
+title: "01 - Introduction"
+format:
+  html:
+    toc-expand: 4
+---
+
+Objectives for this unit:
+
+## Introduction to programming
+- Understand what are programs, codes and algorithms.
+- Understand what is a programming language and how it can be tricky to use them.
+
+## Variables and Objects
+- Describe what variables and objects are in Python, and differentiate between them.
+- Declare and initialize variables with different data types (e.g., integers, floats, strings).
+- Identify and apply the rules for naming variables in Python.
+- Convert between data types (int(), float(), str()).
+- Understand the rules for the "=" operator for assignments.
+- Understand the rules for compound assignments.
+- Swap values between variables using assignment.
+
+## Input and output
+- Use the input() function to read data from the user.
+- Use the print() function to display information to the user.
+- Format output using different methods (e.g., string concatenation, f-strings).
+
+## Comments and programming style
+- Explain the importance of following programming style
+- Explain the importance of commenting code for readability and maintainability.
+- Use the # symbol to write single-line comments in Python.
+- Use triple quotes (''' or """) to write multi-line comments in Python.
+
+## Math operations
+- Perform addition, subtraction, multiplication, and division using Python operators.
+- Explain and use the modulus, exponentiation, and floor division operators.
+- Understand and apply the rules of operator precedence in expressions.
+- Import the math module and explain its purpose.
+- Use common math functions (e.g., sqrt(), ceil(), floor(), pow()) to perform mathematical calculations.

@@ -1,0 +1,9 @@
+---
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+---
+
+# 10-07 - Model types, definitions, k-nearest neighbors (Handout)

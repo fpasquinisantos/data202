@@ -236,5 +236,21 @@
   },
   "tools.qmd": {
     "tools.html": "24e8fa1c"
+  },
+  "slides/01 - Introduction/index.qmd": {
+    "index.html": "b7e15d1c"
+  },
+  "handouts/01 - Introduction/H-09-04 - What is, application areas and workflow.qmd": {
+    "H-09-04---What-is,-application-areas-and-workflow.tex": "ec6e1ecb",
+    "H-09-04 - What is, application areas and workflow.docx": "3852ecc9"
+  },
+  "handouts/01 - Introduction/H-09-06 - Lab practice 1.qmd": {
+    "H-09-06 - Lab practice 1.docx": "82cdb2e7"
+  },
+  "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.qmd": {
+    "S-09-04 - What is, application areas and workflow.html": "4b0acd82"
+  },
+  "slides/01 - Introduction/S-09-06 - Lab practice 1.qmd": {
+    "S-09-06 - Lab practice 1.html": "a790c68b"
   }
 }

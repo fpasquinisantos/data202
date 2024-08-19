@@ -40,33 +40,33 @@ tr:nth-child(even) {
 }
 </style>
 
-| Week        | Topic                            | Notes                                                  |
-|-------------|----------------------------------|--------------------------------------------------------|
-| 1 (Sep 2)   | Intro - purposes and tools       | [**No Monday (Labor Day)**]{.class style="color:red"}  |
-| 2 (Sep 9)   | Data visualization concepts      |                                                        |
-| 3 (Sep 16)  | Data visualization practice      |                                                        |
-| 4 (Sep 23   | Data wrangling concepts          |                                                        |
-| 5 (Sep 30   | Data wrangling practice          |                                                        |
-| 6 (Oct 7)   | Modeling basics                  |                                                        |
-| 7 (Oct 14)  | Linear models                    |                                                        |
-| 8 (Oct 21)  | *Fall Break*                     | *Class on Friday will complete week 7*                 |
-| 9 (Oct 28)  | Tree-based models                |                                                        |
-| 10 (Nov 4)  | Ensemble methods                 |                                                        |
-| 11 (Nov 11) | Clustering                       |                                                        |
-| 12 (Nov 18) | Time-series and SQL              |                                                        |
-| 13 (Nov 25) | Interpretable models             | [**No Wed-Fri (Thanksgiving)**]{.class style="color:red"} |
-| 14 (Dec 2)  | Fairness methods                 |                                                        |
-| 15 (Dec 9)  | Missing data, validation methods | [**No Friday (Study Day)**]{.class style="color:red"}    |
-| 16 (Dec 16) | Final project presentation       |                                                        |
-
+| Week        | Topic                        | Reading chapters   | Notes                                |
+|-------------|------------------------------|--------------------|--------------------------------------|
+| 1 (Sep 2)   | Intro - purposes and tools   | LGN 1-5            | No Monday (Labor Day)                |
+| 2 (Sep 9)   | Wrangling 1                  | LGN 6              |                                      |
+| 3 (Sep 16)  | Wrangling 2                  | LGN 8-9            |                                      |
+| 4 (Sep 23)   | Visualization 1              | Wilke 2-5          |                                      |
+| 5 (Sep 30)   | Visualization 2              | LGN 10-11          |                                      |
+| 6 (Oct 7)   | Modeling basics              | sklearn user guide |                                      |
+| 7 (Oct 14)  | Linear models                | sklearn user guide |                                      |
+| 8 (Oct 21)  | _Fall Break_                 |                    | Class on Friday will complete week 7 |
+| 9 (Oct 28)  | Tree-based models            | sklearn user guide |                                      |
+| 10 (Nov 4)  | Ensemble methods             | sklearn user guide |                                      |
+| 11 (Nov 11) | Unsupervised learning        | sklearn user guide |                                      |
+| 12 (Nov 18) | Time-series and missing data | LGN 7              |                                      |
+| 13 (Nov 25) | Fairness methods             | BHN 2              | No Wed-Fri (Thanksgiving)            |
+| 14 (Dec 2)  | Interpretability methods     | Molnar 3           |                                      |
+| 15 (Dec 9)  | Project pitching and wrap-up |                    | No Friday (Study Day)                |
+| 16 (Dec 16) | Final project presentation   |                    |                                      |
 
 :::
 
 # Staff
 
--   Professor Fernando Pasquini Santos, fs33 %at& calvin.edu
-  - office hours: at NH291, Tuesdays 9-9:50am, Wednesdays 9:05-10:20 am.
--   Teaching assistant: Grace Van Farowe, gev22 %at& calvin.edu
+-   Professor Fernando Pasquini Santos - fs33\\\*\\\*at\\\*\\\*calvin.edu
+    -   office hours: at NH291, Mondays 4-5 pm, Wednesdays 11-12 am
+-   Lab assistant: TBA
+-   Grader: TBA
 
 ## Communication
 
@@ -79,38 +79,45 @@ We will use the following communication tools:
 -   Use **email** for personal issues.
 -   Use **Teams** for friendly chat; I'll redirect most questions about course content to Perusall.
 
+You'll generally find us responsive on Monday through Friday, but less so on the weekend, particularly Sunday. You're free to schedule your work as best works for you, but we'll be trying to observe a Sabbath in our own schedules.
+
 # Textbook
 
 All readings wil be posted in Perusall. They will be taken from:
 
 -   [Learning Data Science](https://learningds.org/intro.html) by Sam Lau, Joey Gonzalez, and Deb Nolan. (we'll abbreviate this **LGN**).
-    -   Will be published in late 2023, but the online version is free.
--   [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/) by Claus O. Wilke
+-   [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/) by Claus O. Wilke (we'll abbreviate this as **Wilke**)
+-   [Interpretable Machine Learning: A Guide for Making Black Box Models Explainable](https://christophm.github.io/interpretable-ml-book/) by Christoph Molnar. (we'll abbreviate this as **Molnar**)
+-   [Fairness and machine learning Limitations and Opportunities](https://fairmlbook.org/) by Solon Barocas, Moritz Hardt, Arvind Narayanan. (we'll abbreviate this **BHN**)
 
-# Technology
+# Tools
 
 We will be using **Python** and the following tools:
 
 -   **pandas** for data wrangling
--   **Plotly** for data visualization
+-   **plotly** for data visualization
 -   **scikit-learn** for modeling
 -   [**Quarto**](https://quarto.org/) for creating reports
 -   [RStudio Server](https://r.cs.calvin.edu/)
     -   The course lab fee funds our contribution towards the shared resources that provide this service. If the fee is a hardship for you, please contact the instructor.
     -   You may also install [RStudio Desktop](https://posit.co/downloads/) on your own computer.
 
-
 # Class Structure and Activities
 
-## At every week
+## Every week
 
-1.  **Preparation** (before class): Readings and quizzes to prepare you for class.
+1.  **Preparation** (before class): Readings and quizzes to prepare you for class (on Perusall)
 2.  **Lecture** (in class): We'll review the material from the preparation, and add some additional content.
-3.  **Exercises** to practice what we're learning. We will usually start some of the week's exercises in class and finish them at home.
-4.  **Project** (outside of class): You will complete two multi-week projects in this class.
-5.  **Discussion forums** (outside of class): We will discuss a variety of societal and ethical topics through a Reformed Christian lens.
+3.  **Exercises** To practice what we're learning. We will usually start some of the week's exercises in class and finish them at home.
 
-We will typically meet in the classroom on Monday and Wednesday and in the lab on Friday. If you have a laptop, please bring it to Monday and Wednesday classes.
+We will typically meet in the classroom on Monday and Wednesday and in the lab on Friday.
+
+If you have a laptop, please bring it to Monday and Wednesday classes.
+
+## Every other week
+
+1. **Perspectives readings**: you'll read an article about data science and their wider societal implications. After this reading, you will be asked to make comments on the text and interact with your colleagues responses. Perusall has many nice tools to make this a nice shared reading experience. Try not to do it just for the sake of getting the assignment done and get the grade.
+2. **Quizzes** (6 on total): usually **on Fridays**, we will have a 15 to 20 minute quiz on Moodle reviewing and applying the concepts we got from the unit. The quiz will be done in classroom, so you will want to bring your laptop or any other device.
 
 ## Projects
 
@@ -136,13 +143,12 @@ Unless stated otherwise, the assignment submissions are **due by midnight** of t
 
 Unless otherwise arranged, grades will be weighted as follows:
 
--   Quizzes (7, including during final exam time): 35%
--   Projects: 30%
+-   Quizzes (6): 30%
+-   Projects: 35%
     -   Midterm project: 10%
-    -   Final project: 20%
--   Exercises (labs and homework): 20%
+    -   Final project: 25%
+-   Exercises (lab/homework): 25%
 -   Discussion forums: 10%
--   Participation: 5%
 
 Your lowest quiz score will get thrown out.
 

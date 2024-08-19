@@ -1,0 +1,19 @@
+---
+execute:
+  echo: true
+format:
+  revealjs:
+    menu: 
+      openButton: false
+    slide-level: 2
+    navigation-mode: linear
+    transition: slide
+    scrollable: true
+    smaller: true
+    simplemenu:
+      scale: 0.5
+revealjs-plugins:
+    - simplemenu
+---
+
+# 09-25 - Types of plots
