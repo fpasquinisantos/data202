@@ -1,0 +1,12 @@
+---
+title: "03 - Wrangling 2"
+format:
+  html:
+    toc-expand: 4
+---
+
+Learning objectives for this week:
+
+- Grouping rows and summarize columns ("split, apply, combine").
+- Performing pivot operations on dataframes to reshape data.
+- Joining multiple dataframes using different types of joins (inner, outer, left, right).

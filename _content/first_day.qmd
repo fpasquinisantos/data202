@@ -1,0 +1,81 @@
+# Introductions {data-stack-name="introductions"}
+
+## Objectives
+
+Upon successful completion of this course students will be able to:
+
+-   Prepare tabular data for visualization and analytics by constructing generalizable workflows for loading, transforming, joining, and reshaping data.
+-   Create, interpret, critique, and refine graphical and tabular visualizations of data.
+-   Translate a real-world need into an appropriate analytics task, considering available data.
+-   Select analytics methods appropriate to the data and task from among the approaches surveyed in the course.
+-   Interpret the outcomes of selected predictive analytics techniques.
+-   Communicate analytics results using reports that clearly motivate the problem and approach, elucidate the data used, and present both the strengths and shortcomings of analytics results.
+-   Discuss ethical and social considerations of data collection and data-driven systems.
+
+Additionally, using transparent reproducible workflows and regularly acknowledging limitations will help students practice virtues including integrity, humility, and justice.
+
+## Let's know each other
+
+Stand up and sit when someone says what you would say:
+
+- 1st round: major
+- 2nd round: favorite sport
+- 3rd round: favorite board game
+
+## Who am I?
+
+### Prof. Fernando Santos
+
+- From São Carlos, Brazil
+  - Portuguese, not Spanish!
+  - Cerrado ("brazilian savannah"), not jungle!
+- Major in computer engineering, PhD in complex systems modeling
+- Married to Jemima, dad of Suzana (6) and Natanael (4)
+
+## Our relationship
+
+Heidelberg Catechism Q&A 107:
+
+When god forbids envy, hatred, and anger, he commands us to [h] love our neighbor as ourselves; to show [i] patience, peace, [j] meekness, [k] mercy, and all kindness, towards him, [l] and prevent his hurt as much as in us lies' and that we [m] do good, even to our enemies.
+
+[a]: [Mat. 5:21](https://biblia.com/bible/esv/Matt%205.21),[22](https://biblia.com/bible/esv/Mat.%205.22); [Prov. 12:18](https://biblia.com/bible/esv/Prov.%2012.18); [Mat. 26:52](https://biblia.com/bible/esv/Matt%2026.52)\
+[b]: [Eph. 4:26](https://biblia.com/bible/esv/Eph.%204.26); [Rom. 12:19](https://biblia.com/bible/esv/Rom.%2012.19); [Mat. 5:39](https://biblia.com/bible/esv/Matt%205.39),[40](https://biblia.com/bible/esv/Mat.%205.40)\
+[c]: [Mat. 4:5](https://biblia.com/bible/esv/Matt%204.5),[6](https://biblia.com/bible/esv/Mat.%204.6),[7](https://biblia.com/bible/esv/Mat.%204.7); [Col. 2:23](https://biblia.com/bible/esv/Col.%202.23)\
+[d]: [Gen. 9:6](https://biblia.com/bible/esv/Gen.%209.6); [Mat. 26:52](https://biblia.com/bible/esv/Matt%2026.52); [Rom. 13:4](https://biblia.com/bible/esv/Rom.%2013.4)\
+[e]: [James 1:20](https://biblia.com/bible/esv/James%201.20); [Gal. 5:20](https://biblia.com/bible/esv/Gal.%205.20)\
+[f]: [Rom. 1:29](https://biblia.com/bible/esv/Rom.%201.29); [1John 2:9](https://biblia.com/bible/esv/1%20John%202.9)\
+[g]: [1John 3:15](https://biblia.com/bible/esv/1%20John%203.15)\
+[h]: [Mat. 22:39](https://biblia.com/bible/esv/Matt%2022.39); [Mat. 7:12](https://biblia.com/bible/esv/Matt%207.12)\
+[i]: [Rom. 12:10](https://biblia.com/bible/esv/Rom.%2012.10)\
+[j]: [Eph. 4:2](https://biblia.com/bible/esv/Eph.%204.2); [Gal. 6:1](https://biblia.com/bible/esv/Gal.%206.1),[2](https://biblia.com/bible/esv/Gal%206.2); [Mat. 5:5](https://biblia.com/bible/esv/Matt%205.5); [Rom. 12:18](https://biblia.com/bible/esv/Rom.%2012.18)\
+[k]: [Ex. 23:5](https://biblia.com/bible/esv/Exod.%2023.5)\
+[l]: [Mat. 5:45](https://biblia.com/bible/esv/Matt%205.45)\
+[m]: [Rom. 12:20](https://biblia.com/bible/esv/Rom.%2012.20)
+
+---
+
+- How can I make this course lovely to you?
+	- Sometimes, it is even not lovely to me...
+	- Together we can make it!
+- Let's make "a community of people who love knowledge"
+  - Not easy! We need God.
+  - Get to know each other more. Change seats whenever you can!
+
+---
+
+- Come to my office in the next days to grab a treat and chat!
+
+## Syllabus Bingo
+
+<style>
+table, td, th {
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+</style>
+
+|   |   |
+|:-----------------------:|:---------------------------:|:----------------:|
+| Quizzes               | Websites I need to register | Study sessions |
+| Software we are using | Office hours                | ChatGPT        |
+| Readings              | Diversity and inclusion     | Schedule       |
+

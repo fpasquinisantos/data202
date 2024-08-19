@@ -1,0 +1,11 @@
+---
+title: 10 - Unsupervised learning"
+format:
+  html:
+    toc-expand: 4
+---
+
+Learning objectives for this week:
+
+- Use and interpret k-means clustering.
+- Use PCA and explain its role in dimensionality reduction.

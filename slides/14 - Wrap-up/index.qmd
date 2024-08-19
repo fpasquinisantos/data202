@@ -1,0 +1,11 @@
+---
+title: 14 - Wrap-up"
+format:
+  html:
+    toc-expand: 4
+---
+
+Learning objectives for this week:
+
+- Project pitching
+- Summarize what we learn and point to other topics

@@ -1,0 +1,13 @@
+---
+title: "04 - Visualization 1"
+format:
+  html:
+    toc-expand: 4
+---
+
+Learning objectives for this week:
+
+- Identify and describe the basic elements of a plot (title, axis labels, legend, etc.).
+- Map dataframe columns to elements of plots
+- Customize and setting plot parameters
+- Create and interpret various types of plots (line, bar, scatter, histogram, etc.).

@@ -1,0 +1,13 @@
+---
+title: "05 - Visualization 2"
+format:
+  html:
+    toc-expand: 4
+---
+
+Learning objectives for this week:
+
+- Create and interpret various types of plots (line, bar, scatter, histogram, etc.).
+- Analyze and critique differents kinds of visualizations.
+- Implement interactive visualizations in plotly.
+- Explore the concept of sonification and its applications in data science.

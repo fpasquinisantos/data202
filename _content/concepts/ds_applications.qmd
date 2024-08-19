@@ -1,0 +1,101 @@
+
+# Defining data science {data-stack-name="defining"}
+
+## What is this for?
+- The search for meaningfulness in reality [[meaningfulness (Dooyeweerd)]]
+- What meaning is found?
+	- What is explanation? Some notions...
+	- Verbs:
+		- Describe/characterize: what is the current level of CO2 in the atmosphere?
+		- Relate: what factors are associated with CO2 levels?
+		- Infer/predict: can we conclude that CO2 levels are rising?
+- For that, we can rely on information/data. Why using data? "Knowledge that is true, explicit and accessible"
+	- Ideals of amplifying reasoning / perception (curiosity)
+	- Ideals of transparency (humility, hospitality, integrity - more in wrangling/visualization)
+		- Ex.: expert knowledges and tacit knowledges are not based on data
+	- Ideals of automation (responsibility, justice and due - more in modeling)
+	- Limits of data:
+		- only acting based on past and **re**-presentation
+		- .... #to_do
+- The iterative process of finding meaningfulness in data ("if not sufficient, go to next step")
+	- LATOUR'S PAPER ON STRATEGIES FOR GETTING INSIGHT FROM DATA [[referência circulante (Latour)]]
+	- Observe (collect, "reify")
+	- Visualize (re-represent)
+	- Wrangle (re-represent)
+	- Model (automate and amplify)
+- Ethics of curiosity = ethics of visibility + ethics of attention (love/desire)
+	- What am I doing in order to predict? Should I? Am I sacrificing something because of my impetus to know? What is the amount of hubris reflected in my choosing of features for my prediction? People trying to have knowledge about anything given knowledge about anything...
+	- Philosophy of statistics: relying on the law of large numbers, which presupposes that outcomes of repeated random events form predictable patterns - in other words, that whatever is being observed is a repetition of the same thing.
+		- and that does not acknowledge that God is at work, in eventness and narrative (grace and contigency).
+  
+# Application Areas {data-stack-name="applications"}
+
+- Sciences (green)
+	- trust
+	- feasibility
+- Humanities (yellow)
+	- privacy
+- Health (red)
+	- privacy
+	- 
+- Law & Policy (brown)
+	- privacy
+	- discrimination
+	- manipulation
+- Business (orange)
+	- discrimination
+	- manipulation
+- Industry (blue)
+	- risk
+- Art, Sports & Entertainment (purple)
+	- manipulation
+
+- SHOW WHAT IS NOT BEING COVERED! especially SCM
+
+speaking Dooyeweerdian:
+- sciences (anterior aspects)
+- social aspect (humanities etc)
+- economic and juridical (business and governance)
+- formative (tech and health)
+- aesthetic (art, entertainment, hobbies)
+- caritative (health)
+  
+# Types of data {data-stack-name="types"}
+
+... are there other irreducible types? Tem a ver com a inter-relação entre os tokens/símbolos, e a metáfora a que apontam (número é distância, etc).
+### Numerical
+Discrete and categorical variables
+### Structures and databases
+- Dataframes
+- Spreadsheets
+- SQL
+- ...?
+### Time-series
+IMPORTANT TO SHOW THAT THERE ARE SPECIFIC METHODS AND MODELS... STUDENTS USUALLY DON'T GET IT
+- Features (dates, lagged features) – see [https://scikit-learn.org/stable/auto_examples/applications/plot_cyclical_feature_engineering.html](https://scikit-learn.org/stable/auto_examples/applications/plot_cyclical_feature_engineering.html) and the slides I showed the last day
+###  Event / Duration/ Survival
+### Text / Language
+- LLMs
+### Image
+### Video
+### Geospatial
+
+# Types of data {data-stack-name="tools"}
+
+### Programming languages
+- Python or R?
+- Why? Why not others? Why not just Excel?
+	- Arguments...
+
+### Libraries
+- Pandas
+	- We have newer data manipulating libraries today
+- Plotly
+- https://streamlit.io/ or shiny
+
+### Reproducible workflows
+- Jupyter Notebooks and Quarto
+
+## Skills, Knowledge and Virtues
+- Is it possible to separate skill from virtue?
+- Show the seven virtues and how they are related

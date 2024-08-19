@@ -4,7 +4,6 @@ project:
   render:
     - "*.qmd"
     - "!private"
-    - "!*-soln.qmd"
     - "!*-template.qmd"
     - "!*-wip.qmd"
     - "!*scraps.qmd"

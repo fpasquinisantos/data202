@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cs.calvin.edu/courses/data/202/fsantos/midterm-proj.html</loc>
-    <lastmod>2024-07-30T19:43:24.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cs.calvin.edu/courses/data/202/fsantos/slides/01 - Introduction/index.html</loc>
-    <lastmod>2024-08-19T14:56:06.433Z</lastmod>
-  </url>
-  <url>
     <loc>https://cs.calvin.edu/courses/data/202/fsantos/slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html</loc>
-    <lastmod>2024-08-19T14:30:47.031Z</lastmod>
+    <lastmod>2024-08-19T16:19:34.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cs.calvin.edu/courses/data/202/fsantos/tools.html</loc>
+    <lastmod>2024-08-19T16:18:50.623Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cs.calvin.edu/courses/data/202/fsantos/slides/01 - Introduction/S-09-06 - Lab practice 1.html</loc>
+    <lastmod>2024-08-19T14:30:47.035Z</lastmod>
   </url>
   <url>
     <loc>https://cs.calvin.edu/courses/data/202/fsantos/index.html</loc>
@@ -21,15 +21,19 @@
     <lastmod>2024-06-25T20:10:53.368Z</lastmod>
   </url>
   <url>
+    <loc>https://cs.calvin.edu/courses/data/202/fsantos/prayers.html</loc>
+    <lastmod>2024-08-19T16:16:06.107Z</lastmod>
+  </url>
+  <url>
     <loc>https://cs.calvin.edu/courses/data/202/fsantos/quarto.html</loc>
     <lastmod>2024-06-25T20:10:55.948Z</lastmod>
   </url>
   <url>
-    <loc>https://cs.calvin.edu/courses/data/202/fsantos/slides/01 - Introduction/S-09-06 - Lab practice 1.html</loc>
-    <lastmod>2024-08-19T14:30:47.035Z</lastmod>
+    <loc>https://cs.calvin.edu/courses/data/202/fsantos/slides/01 - Introduction/index.html</loc>
+    <lastmod>2024-08-19T15:55:50.356Z</lastmod>
   </url>
   <url>
-    <loc>https://cs.calvin.edu/courses/data/202/fsantos/tools.html</loc>
-    <lastmod>2024-07-30T19:46:03.000Z</lastmod>
+    <loc>https://cs.calvin.edu/courses/data/202/fsantos/midterm-proj.html</loc>
+    <lastmod>2024-07-30T19:43:24.000Z</lastmod>
   </url>
 </urlset>

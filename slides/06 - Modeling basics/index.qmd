@@ -1,0 +1,12 @@
+---
+title: "06 - Modeling basics"
+format:
+  html:
+    toc-expand: 4
+---
+
+Learning objectives for this week:
+
+- Define different types of models used in data science.
+- Understand and use the k-nearest neighbors algorithm and its applications.
+- Perform train-test split and cross-validation to evaluate model performance.

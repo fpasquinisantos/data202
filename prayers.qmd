@@ -1,0 +1,55 @@
+This semester, we pray according to this general pattern:
+
+- **Monday**: for us as students, as citizens and as neighbors
+- **Wednesday**: for those affected by what we study
+- **Friday**: *lectio continua*, open to what God will say. (This semester we will choose a reading from the week’s Lectionary.)
+
+## Monday prayers - for us as students
+
+### For this class
+
+{{< include /_prayers/class.qmd >}}
+
+### For practices
+
+{{< include /_prayers/practicing.qmd >}}
+
+### Go and work
+
+{{< include /_prayers/go-and-work.qmd >}}
+
+### God the Maker
+
+{{< include /_prayers/god-the-maker.qmd >}}
+
+### Kyrie
+
+{{< include /_prayers/kyrie.qmd >}}
+
+### Vocational doubt
+
+{{< include /_prayers/kyrie.qmd >}}
+
+### Bad jobs
+
+{{< include /_prayers/kyrie.qmd >}}
+
+<!--
+
+## Wednesday prayers
+
+### Curiosity and data science
+
+### Discrimination
+
+### Love and compassion through data
+
+### Deception in visualization
+
+### Ethics of prediction
+
+### Living within automation
+
+### Eloquence and transparency
+
+-->

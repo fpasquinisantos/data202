@@ -327,15 +327,275 @@
     <div class="slides">
 
 
-<section id="what-is-application-areas-and-workflow" class="title-slide slide level1 center">
-<h1>09-04 - What is, application areas and workflow</h1>
+<section id="introduction" class="title-slide slide level1 center">
+<h1>09-04 - Introduction</h1>
+<div class="smaller">
+<blockquote>
+<p>Go and work<br>
+Honor the One who is working on you.<br>
+Do so by making beautiful things,<br>
+Be serving in beautiful ways,<br>
+By speaking up for the weak whose beauty is being maligned,<br>
+By filling this city with the aroma of good and beautiful work</p>
+<p>Reflect the beautiful work of your heavenly Father,<br>
+Nourished now by the grace and mercy of Christ,<br>
+In the power of the Holy Spirit.</p>
+<p>God has already accomplished the great work.<br>
+God goes before you and behind you.<br>
+God works at your side.</p>
+<p>(Matthew Kaemingk &amp; Cory B. Willson, <em>Work and Worship</em>, p.&nbsp;140)</p>
+</blockquote>
+</div>
+</section>
+
+<section>
+<section id="introductions" class="title-slide slide level1 center" data-stack-name="introductions">
+<h1>Introductions</h1>
+
+</section>
+<section id="objectives" class="slide level2">
+<h2>Objectives</h2>
+<p>Upon successful completion of this course students will be able to:</p>
+<ul>
+<li>Prepare tabular data for visualization and analytics by constructing generalizable workflows for loading, transforming, joining, and reshaping data.</li>
+<li>Create, interpret, critique, and refine graphical and tabular visualizations of data.</li>
+<li>Translate a real-world need into an appropriate analytics task, considering available data.</li>
+<li>Select analytics methods appropriate to the data and task from among the approaches surveyed in the course.</li>
+<li>Interpret the outcomes of selected predictive analytics techniques.</li>
+<li>Communicate analytics results using reports that clearly motivate the problem and approach, elucidate the data used, and present both the strengths and shortcomings of analytics results.</li>
+<li>Discuss ethical and social considerations of data collection and data-driven systems.</li>
+</ul>
+<p>Additionally, using transparent reproducible workflows and regularly acknowledging limitations will help students practice virtues including integrity, humility, and justice.</p>
+</section>
+<section id="lets-know-each-other" class="slide level2">
+<h2>Let’s know each other</h2>
+<p>Stand up and sit when someone says what you would say:</p>
+<ul>
+<li>1st round: major</li>
+<li>2nd round: favorite sport</li>
+<li>3rd round: favorite board game</li>
+</ul>
+</section>
+<section id="who-am-i" class="slide level2">
+<h2>Who am I?</h2>
+<h3 id="prof.-fernando-santos">Prof.&nbsp;Fernando Santos</h3>
+<ul>
+<li>From São Carlos, Brazil
+<ul>
+<li>Portuguese, not Spanish!</li>
+<li>Cerrado (“brazilian savannah”), not jungle!</li>
+</ul></li>
+<li>Major in computer engineering, PhD in complex systems modeling</li>
+<li>Married to Jemima, dad of Suzana (6) and Natanael (4)</li>
+</ul>
+</section>
+<section id="our-relationship" class="slide level2">
+<h2>Our relationship</h2>
+<p>Heidelberg Catechism Q&amp;A 107:</p>
+<p>When god forbids envy, hatred, and anger, he commands us to [h] love our neighbor as ourselves; to show [i] patience, peace, [j] meekness, [k] mercy, and all kindness, towards him, [l] and prevent his hurt as much as in us lies’ and that we [m] do good, even to our enemies.</p>
+<p>[a]:&nbsp;<a href="https://biblia.com/bible/esv/Matt%205.21">Mat. 5:21</a>,<a href="https://biblia.com/bible/esv/Mat.%205.22">22</a>;&nbsp;<a href="https://biblia.com/bible/esv/Prov.%2012.18">Prov. 12:18</a>;&nbsp;<a href="https://biblia.com/bible/esv/Matt%2026.52">Mat. 26:52</a><br>
+[b]:&nbsp;<a href="https://biblia.com/bible/esv/Eph.%204.26">Eph. 4:26</a>;&nbsp;<a href="https://biblia.com/bible/esv/Rom.%2012.19">Rom. 12:19</a>;&nbsp;<a href="https://biblia.com/bible/esv/Matt%205.39">Mat. 5:39</a>,<a href="https://biblia.com/bible/esv/Mat.%205.40">40</a><br>
+[c]:&nbsp;<a href="https://biblia.com/bible/esv/Matt%204.5">Mat. 4:5</a>,<a href="https://biblia.com/bible/esv/Mat.%204.6">6</a>,<a href="https://biblia.com/bible/esv/Mat.%204.7">7</a>;&nbsp;<a href="https://biblia.com/bible/esv/Col.%202.23">Col. 2:23</a><br>
+[d]:&nbsp;<a href="https://biblia.com/bible/esv/Gen.%209.6">Gen.&nbsp;9:6</a>;&nbsp;<a href="https://biblia.com/bible/esv/Matt%2026.52">Mat. 26:52</a>;&nbsp;<a href="https://biblia.com/bible/esv/Rom.%2013.4">Rom. 13:4</a><br>
+[e]:&nbsp;<a href="https://biblia.com/bible/esv/James%201.20">James 1:20</a>;&nbsp;<a href="https://biblia.com/bible/esv/Gal.%205.20">Gal. 5:20</a><br>
+[f]:&nbsp;<a href="https://biblia.com/bible/esv/Rom.%201.29">Rom. 1:29</a>;&nbsp;<a href="https://biblia.com/bible/esv/1%20John%202.9">1John 2:9</a><br>
+[g]:&nbsp;<a href="https://biblia.com/bible/esv/1%20John%203.15">1John 3:15</a><br>
+[h]:&nbsp;<a href="https://biblia.com/bible/esv/Matt%2022.39">Mat. 22:39</a>;&nbsp;<a href="https://biblia.com/bible/esv/Matt%207.12">Mat. 7:12</a><br>
+[i]:&nbsp;<a href="https://biblia.com/bible/esv/Rom.%2012.10">Rom. 12:10</a><br>
+[j]:&nbsp;<a href="https://biblia.com/bible/esv/Eph.%204.2">Eph. 4:2</a>;&nbsp;<a href="https://biblia.com/bible/esv/Gal.%206.1">Gal. 6:1</a>,<a href="https://biblia.com/bible/esv/Gal%206.2">2</a>;&nbsp;<a href="https://biblia.com/bible/esv/Matt%205.5">Mat. 5:5</a>;&nbsp;<a href="https://biblia.com/bible/esv/Rom.%2012.18">Rom. 12:18</a><br>
+[k]:&nbsp;<a href="https://biblia.com/bible/esv/Exod.%2023.5">Ex. 23:5</a><br>
+[l]:&nbsp;<a href="https://biblia.com/bible/esv/Matt%205.45">Mat. 5:45</a><br>
+[m]:&nbsp;<a href="https://biblia.com/bible/esv/Rom.%2012.20">Rom. 12:20</a></p>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>How can I make this course lovely to you?
+<ul>
+<li>Sometimes, it is even not lovely to me…</li>
+<li>Together we can make it!</li>
+</ul></li>
+<li>Let’s make “a community of people who love knowledge”
+<ul>
+<li>Not easy! We need God.</li>
+<li>Get to know each other more. Change seats whenever you can!</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Come to my office in the next days to grab a treat and chat!</li>
+</ul>
+</section>
+<section id="syllabus-bingo" class="slide level2">
+<h2>Syllabus Bingo</h2>
+<style>
+table, td, th {
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+</style>
+<table class="caption-top">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 40%">
+<col style="width: 25%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Quizzes</td>
+<td style="text-align: center;">Websites I need to register</td>
+<td style="text-align: center;">Study sessions</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Software we are using</td>
+<td style="text-align: center;">Office hours</td>
+<td style="text-align: center;">ChatGPT</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Readings</td>
+<td style="text-align: center;">Diversity and inclusion</td>
+<td style="text-align: center;">Schedule</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section>
+<section id="defining-data-science" class="title-slide slide level1 center" data-stack-name="defining">
+<h1>Defining data science</h1>
+
+</section>
+<section id="what-is-this-for" class="slide level2">
+<h2>What is this for?</h2>
+<ul>
+<li>The search for meaningfulness in reality [[meaningfulness (Dooyeweerd)]]</li>
+<li>What meaning is found?
+<ul>
+<li>What is explanation? Some notions…</li>
+<li>Verbs:
+<ul>
+<li>Describe/characterize: what is the current level of CO2 in the atmosphere?</li>
+<li>Relate: what factors are associated with CO2 levels?</li>
+<li>Infer/predict: can we conclude that CO2 levels are rising?</li>
+</ul></li>
+</ul></li>
+<li>For that, we can rely on information/data. Why using data? “Knowledge that is true, explicit and accessible”
+<ul>
+<li>Ideals of amplifying reasoning / perception (curiosity)</li>
+<li>Ideals of transparency (humility, hospitality, integrity - more in wrangling/visualization)
+<ul>
+<li>Ex.: expert knowledges and tacit knowledges are not based on data</li>
+</ul></li>
+<li>Ideals of automation (responsibility, justice and due - more in modeling)</li>
+<li>Limits of data:
+<ul>
+<li>only acting based on past and <strong>re</strong>-presentation</li>
+<li>…. #to_do</li>
+</ul></li>
+</ul></li>
+<li>The iterative process of finding meaningfulness in data (“if not sufficient, go to next step”)
+<ul>
+<li>LATOUR’S PAPER ON STRATEGIES FOR GETTING INSIGHT FROM DATA [[referência circulante (Latour)]]</li>
+<li>Observe (collect, “reify”)</li>
+<li>Visualize (re-represent)</li>
+<li>Wrangle (re-represent)</li>
+<li>Model (automate and amplify)</li>
+</ul></li>
+<li>Ethics of curiosity = ethics of visibility + ethics of attention (love/desire)
+<ul>
+<li>What am I doing in order to predict? Should I? Am I sacrificing something because of my impetus to know? What is the amount of hubris reflected in my choosing of features for my prediction? People trying to have knowledge about anything given knowledge about anything…</li>
+<li>Philosophy of statistics: relying on the law of large numbers, which presupposes that outcomes of repeated random events form predictable patterns - in other words, that whatever is being observed is a repetition of the same thing.
+<ul>
+<li>and that does not acknowledge that God is at work, in eventness and narrative (grace and contigency).</li>
+</ul></li>
+</ul></li>
+</ul>
+</section></section>
+<section id="application-areas" class="title-slide slide level1 center" data-stack-name="applications">
+<h1>Application Areas</h1>
+<ul>
+<li>Sciences (green)
+<ul>
+<li>trust</li>
+<li>feasibility</li>
+</ul></li>
+<li>Humanities (yellow)
+<ul>
+<li>privacy</li>
+</ul></li>
+<li>Health (red)
+<ul>
+<li>privacy</li>
+<li></li>
+</ul></li>
+<li>Law &amp; Policy (brown)
+<ul>
+<li>privacy</li>
+<li>discrimination</li>
+<li>manipulation</li>
+</ul></li>
+<li>Business (orange)
+<ul>
+<li>discrimination</li>
+<li>manipulation</li>
+</ul></li>
+<li>Industry (blue)
+<ul>
+<li>risk</li>
+</ul></li>
+<li>Art, Sports &amp; Entertainment (purple)
+<ul>
+<li>manipulation</li>
+</ul></li>
+<li>SHOW WHAT IS NOT BEING COVERED! especially SCM</li>
+</ul>
+<p>speaking Dooyeweerdian: - sciences (anterior aspects) - social aspect (humanities etc) - economic and juridical (business and governance) - formative (tech and health) - aesthetic (art, entertainment, hobbies) - caritative (health)</p>
+</section>
+
+<section id="types-of-data" class="title-slide slide level1 center" data-stack-name="types">
+<h1>Types of data</h1>
+<p>… are there other irreducible types? Tem a ver com a inter-relação entre os tokens/símbolos, e a metáfora a que apontam (número é distância, etc). ### Numerical Discrete and categorical variables ### Structures and databases - Dataframes - Spreadsheets - SQL - …? ### Time-series IMPORTANT TO SHOW THAT THERE ARE SPECIFIC METHODS AND MODELS… STUDENTS USUALLY DON’T GET IT - Features (dates, lagged features) – see&nbsp;<a href="https://scikit-learn.org/stable/auto_examples/applications/plot_cyclical_feature_engineering.html">https://scikit-learn.org/stable/auto_examples/applications/plot_cyclical_feature_engineering.html</a>&nbsp;and the slides I showed the last day ### Event / Duration/ Survival ### Text / Language - LLMs ### Image ### Video ### Geospatial</p>
+</section>
+
+<section>
+<section id="types-of-data-1" class="title-slide slide level1 center" data-stack-name="tools">
+<h1>Types of data</h1>
+
+</section>
+<h3 id="programming-languages">Programming languages</h3>
+<ul>
+<li>Python or R?</li>
+<li>Why? Why not others? Why not just Excel?
+<ul>
+<li>Arguments…</li>
+</ul></li>
+</ul>
+<h3 id="libraries">Libraries</h3>
+<ul>
+<li>Pandas
+<ul>
+<li>We have newer data manipulating libraries today</li>
+</ul></li>
+<li>Plotly</li>
+<li>https://streamlit.io/ or shiny</li>
+</ul>
+<h3 id="reproducible-workflows">Reproducible workflows</h3>
+<ul>
+<li>Jupyter Notebooks and Quarto</li>
+</ul>
+<section id="skills-knowledge-and-virtues" class="slide level2">
+<h2>Skills, Knowledge and Virtues</h2>
+<ul>
+<li>Is it possible to separate skill from virtue?</li>
+<li>Show the seven virtues and how they are related</li>
+</ul>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

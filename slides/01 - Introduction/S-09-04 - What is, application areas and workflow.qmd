@@ -16,4 +16,14 @@ revealjs-plugins:
     - simplemenu
 ---
 
-# 09-04 - What is, application areas and workflow
+# 09-04 - Introduction
+
+::: {.smaller}
+
+{{< include /_prayers/go-and-work.qmd >}}
+
+:::
+
+{{< include /_content/first_day.qmd >}}
+
+{{< include /_content/concepts/ds_applications.qmd >}}

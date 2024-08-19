@@ -1,0 +1,16 @@
+---
+title: "02 - Wrangling 1"
+format:
+  html:
+    toc-expand: 4
+---
+
+Learning objectives for this week:
+
+- Creating and loading pandas dataframes
+- Accessing dataframe rows and columns
+- Evaluating summary statistics in dataframes
+- Selecting dataframes
+- Filtering dataframes
+- Deriving new dataframe columns
+- Understanding data types and string operations in dataframes
