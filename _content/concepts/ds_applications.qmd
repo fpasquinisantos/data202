@@ -1,101 +1,351 @@
 
 # Defining data science {data-stack-name="defining"}
 
-## What is this for?
-- The search for meaningfulness in reality [[meaningfulness (Dooyeweerd)]]
-- What meaning is found?
-	- What is explanation? Some notions...
-	- Verbs:
-		- Describe/characterize: what is the current level of CO2 in the atmosphere?
-		- Relate: what factors are associated with CO2 levels?
-		- Infer/predict: can we conclude that CO2 levels are rising?
-- For that, we can rely on information/data. Why using data? "Knowledge that is true, explicit and accessible"
-	- Ideals of amplifying reasoning / perception (curiosity)
-	- Ideals of transparency (humility, hospitality, integrity - more in wrangling/visualization)
-		- Ex.: expert knowledges and tacit knowledges are not based on data
-	- Ideals of automation (responsibility, justice and due - more in modeling)
-	- Limits of data:
-		- only acting based on past and **re**-presentation
-		- .... #to_do
-- The iterative process of finding meaningfulness in data ("if not sufficient, go to next step")
-	- LATOUR'S PAPER ON STRATEGIES FOR GETTING INSIGHT FROM DATA [[referência circulante (Latour)]]
-	- Observe (collect, "reify")
-	- Visualize (re-represent)
-	- Wrangle (re-represent)
-	- Model (automate and amplify)
-- Ethics of curiosity = ethics of visibility + ethics of attention (love/desire)
-	- What am I doing in order to predict? Should I? Am I sacrificing something because of my impetus to know? What is the amount of hubris reflected in my choosing of features for my prediction? People trying to have knowledge about anything given knowledge about anything...
-	- Philosophy of statistics: relying on the law of large numbers, which presupposes that outcomes of repeated random events form predictable patterns - in other words, that whatever is being observed is a repetition of the same thing.
-		- and that does not acknowledge that God is at work, in eventness and narrative (grace and contigency).
-  
-# Application Areas {data-stack-name="applications"}
+A search for **meaningfulness** in creation, using data.
 
-- Sciences (green)
-	- trust
-	- feasibility
-- Humanities (yellow)
-	- privacy
-- Health (red)
-	- privacy
-	- 
-- Law & Policy (brown)
-	- privacy
-	- discrimination
-	- manipulation
-- Business (orange)
-	- discrimination
-	- manipulation
-- Industry (blue)
-	- risk
-- Art, Sports & Entertainment (purple)
-	- manipulation
+- **Describe/characterize**: what is the current level of CO2 in the atmosphere?
+- **Relate**: what factors are associated with CO2 levels?
+- **Infer/predict**: can we conclude that CO2 levels are rising?
 
-- SHOW WHAT IS NOT BEING COVERED! especially SCM
+## Why data?
 
-speaking Dooyeweerdian:
-- sciences (anterior aspects)
-- social aspect (humanities etc)
-- economic and juridical (business and governance)
-- formative (tech and health)
-- aesthetic (art, entertainment, hobbies)
-- caritative (health)
+A form of recording experience and information...
+
+- Explicit, accessible, transparent
+- Amplifies reasoning and perception
+- Can be automated
+
+## However, data are also limited.
+
+They can be:
+
+-   **imprecise** (including: what it can mean for someone may not mean the same thing for another);
+-   **ambiguous** (may mean multiple things depending on the context);
+-   **not comprehensive** enough (or what we call *biased* - it is limited to some specific population or situation and thus is not generalizable);
+-   **distorted** ("artifacts" - we cannot always be sure it is being transmitted or recorded faithfully);
+-   or even **not timely enough** (things changed since we got them).
+
+## Data science lifecycles
+
+![](/img/lifecycle.png)
+
+## Do we need everything?
+
+- It depends on the level of insight...
+
+![](/img/data_meaning.png)
   
 # Types of data {data-stack-name="types"}
 
-... are there other irreducible types? Tem a ver com a inter-relação entre os tokens/símbolos, e a metáfora a que apontam (número é distância, etc).
-### Numerical
-Discrete and categorical variables
-### Structures and databases
-- Dataframes
-- Spreadsheets
-- SQL
-- ...?
-### Time-series
-IMPORTANT TO SHOW THAT THERE ARE SPECIFIC METHODS AND MODELS... STUDENTS USUALLY DON'T GET IT
-- Features (dates, lagged features) – see [https://scikit-learn.org/stable/auto_examples/applications/plot_cyclical_feature_engineering.html](https://scikit-learn.org/stable/auto_examples/applications/plot_cyclical_feature_engineering.html) and the slides I showed the last day
-###  Event / Duration/ Survival
-### Text / Language
-- LLMs
-### Image
-### Video
-### Geospatial
+- Numerical
+- Categorical
+- Time-series
+- Event / duration / survival
+- Text
+- Image
+- Video
+- Geospatial
 
-# Types of data {data-stack-name="tools"}
+## Structures and databases
+- Tables
+- Spreadsheets (Excel, etc.)
+- Dataframes (pandas)
+- SQL databases
+- Hierarchical (XML, JSON, YAML)
+- And many others...
 
-### Programming languages
-- Python or R?
-- Why? Why not others? Why not just Excel?
-	- Arguments...
+## Application Areas
 
-### Libraries
-- Pandas
-	- We have newer data manipulating libraries today
-- Plotly
-- https://streamlit.io/ or shiny
+- <span style="color:green">Natural Sciences🔬</span>
+- <span style="color:olive">Humanities🏛️</span>
+- <span style="color:red">Health🩺</span>
+- <span style="color:brown">Law & Policy⚖️</span>
+- <span style="color:orange">Business📈</span>
+- <span style="color:blue">Industry🏭</span>
+- <span style="color:purple">Art, Sports & Entertainment🎭</span>
 
-### Reproducible workflows
-- Jupyter Notebooks and Quarto
+# A Worked Example {data-stack-name="example"}
 
-## Skills, Knowledge and Virtues
-- Is it possible to separate skill from virtue?
-- Show the seven virtues and how they are related
+## The data {.smaller}
+
+```{python}
+#| include: false
+import pandas as pd
+import plotly.express as px
+
+votes = pd.read_csv("../../data/un_uk_us_tr.csv")
+```
+
+```{python}
+votes
+```
+
+::: aside
+Erik Voeten "Data and Analyses of Voting in the UN General Assembly" Routledge Handbook of International Organization, edited by Bob Reinalda (published May 27, 2013). Available at <http://ssrn.com/abstract=2111149>
+:::
+
+---
+
+## {.smaller}
+
+```{python}
+#| echo: true
+#| code-line-numbers: "1"
+px.scatter(votes, x='year', y='percent_yes')
+```
+
+---
+
+## {.smaller}
+
+```{python}
+#| echo: true
+#| code-line-numbers: "2"
+px.scatter(votes, x='year', y='percent_yes',
+    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1)
+```
+
+---
+
+## {.smaller}
+
+```{python}
+#| echo: true
+#| code-line-numbers: "2"
+px.scatter(votes, x='year', y='percent_yes',
+	color='country',
+    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1)
+```
+
+
+---
+
+## {.smaller}
+
+```{python}
+#| echo: true
+#| code-line-numbers: "4"
+px.scatter(votes, x='year', y='percent_yes',
+	color='country',
+    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1,
+	trendline='lowess')
+```
+
+
+---
+
+## {.smaller}
+
+```{python}
+#| echo: true
+#| code-line-numbers: "6"
+px.scatter(votes, x='year', y='percent_yes',
+	color='country',
+    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1,
+    labels={"percent_yes": "% Yes Votes", "year": "Year", "country": "Country"},
+	trendline='lowess',
+    title="Percentage of 'Yes' votes in the UN General Assembly")
+```
+
+---
+
+## {.smaller}
+
+```{python}
+#| echo: true
+#| code-line-numbers: "7"
+px.scatter(votes, x='year', y='percent_yes',
+	color='country',
+    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1,
+    labels={"percent_yes": "% Yes Votes", "year": "Year", "country": "Country"},
+	trendline='lowess',
+    title="Percentage of 'Yes' votes in the UN General Assembly"
+).update_traces(marker_size=2) # Smaller markers
+```
+
+---
+
+## {.smaller}
+
+```{python}
+#| echo: true
+#| code-line-numbers: "8"
+px.scatter(votes, x='year', y='percent_yes',
+	color='country',
+    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1,
+    labels={"percent_yes": "% Yes Votes", "year": "Year", "country": "Country"},
+	trendline='lowess',
+    title="Percentage of 'Yes' votes in the UN General Assembly"
+).update_traces(marker_size=2 # Smaller markers
+).for_each_annotation(lambda a: a.update(text=a.text.split("=", 1)[-1])) # Remove the "issue="
+```
+
+---
+
+## {.smaller}
+
+```{python}
+#| echo: true
+#| code-line-numbers: "9"
+px.scatter(votes, x='year', y='percent_yes',
+	color='country',
+    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1,
+    labels={"percent_yes": "% Yes Votes", "year": "Year", "country": "Country"},
+	trendline='lowess',
+    title="Percentage of 'Yes' votes in the UN General Assembly"
+).update_traces(marker_size=2 # Smaller markers
+).for_each_annotation(lambda a: a.update(text=a.text.split("=", 1)[-1]) # Remove the "issue="
+).update_yaxes(tickformat=",.0%") # Percent labels
+```
+
+# Tools {data-stack-name="tools"}
+
+## Python or R? {.smaller}
+
+| **Criteria**              | **Python**                                                        | **R**                                                           |
+|---------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------|
+| **Community and Support**  | Large and growing community, with extensive resources and tutorials available. Popular in industry and academia. | Strong community in academia, especially in fields like statistics, bioinformatics, and social sciences. |
+| **Ease of Learning**      | Easier for beginners, especially with programming experience.    | Steeper learning curve, particularly for those new to programming. |
+| **Data Visualization**     | Strong, with libraries like Matplotlib, Seaborn, Plotly, and Bokeh. Interactive visualizations are well-supported. | Excellent, with ggplot2 being one of the most powerful visualization libraries. However, interactive visualizations are less integrated. |
+| **Machine Learning**       | Extensive support with libraries like scikit-learn, TensorFlow, and PyTorch. Broad adoption in industry. | Adequate support for machine learning, though Python libraries are more robust and widely used in industry. |
+| **Statistical Analysis**   | Good for general-purpose analysis; extensive libraries, though more basic for advanced statistical techniques. | Excellent for complex statistical analysis; originally designed for statisticians and excels in this area. |
+| **Integration and Flexibility** | Highly flexible, integrates well with other languages and systems (e.g., C, C++, Java, SQL). Versatile for many tasks beyond data science. | Primarily focused on statistical computing, less flexible for other types of programming or integration with non-statistical systems. |
+| **Performance and Scalability** | Generally faster for large datasets, especially with optimized libraries (e.g., NumPy, Dask). Better for large-scale production environments. | Can be slower with large datasets, though packages like data.table improve performance. Not as well-suited for big data as Python. |
+| **Deployment**             | Strong tools for deploying models in production (e.g., Flask, FastAPI, Streamlit). Easy to integrate with web services and databases. | More challenging to deploy in production; Shiny can be used for web applications but is less flexible than Python tools. |
+
+## Why programming? {.smaller}
+
+- Why not just Excel?
+  - Indeed, it can be useful for simple tasks.
+- However, Python/R are...
+	- more reproducible
+	- more scalable
+	- easier to automate
+	- more analytics libraries
+	- more visualization libraries
+	- more integration with other tools
+	- large community and ecosystem
+	- open-source and free to use
+	- although: harder to learn and use
+
+---
+
+![](/img/data_excel.jpg)
+
+## Libraries
+
+- **Data manipulation and analysis**: pandas
+  - Alternatives: [Ibis](https://ibis-project.org/), [Polars](https://pola.rs/), [Dask](https://www.dask.org/)
+- **Visualization**: plotly
+  - Alternatives: [matplotlib](https://matplotlib.org/), [seaborn](https://seaborn.pydata.org/), [altair](https://altair-viz.github.io/)
+
+## Communication and publishing platforms
+
+- Jupyter Notebooks in [Google Colab](https://colab.research.google.com/) (we'll be using those)
+  - Other useful publishing platforms: [Streamlit](https://streamlit.io/) and [Shiny](https://shiny.posit.co/)
+
+# Skills, Knowledge and Virtues {data-stack-name="skills"}
+
+- *Skill*: how to work with the tools
+- *Knowledge*: understanding the underlying concepts
+- *Dispositions* (*virtues*): habits of using these skills wisely
+
+  - All of them need to be developed and practiced *in community*.
+
+## Curiosity
+
+Thomas Aquinas speaks of the difference between *studiositas* (virtue) and *curiositas* (vice) (see more in this [interesting article](https://www.jstor.org/stable/44504870)).
+
+There are at least 7 vices of curiosity:
+
+- ARROGANCE: seeking knowledge of things that no one is supposed to know;
+  
+- NOSYNESS: seeking knowledge that may belong to some people, but not to us;
+  
+- DISTRACTION: seeking knowledge of things that are not convenient to know at a certain time;
+
+- IMMODERATION: wanting to know something with an unhealthy desire (all forms of curiosity are failures of temperance, but this label helps to isolate this specific aspect);
+  
+- IMPERTINENCE: seeking to know things in a more certain way than one can know, doing violence to the object of knowledge;
+  
+- SUPERFICIALITY: disrespecting the object of knowledge, being content with a superficial understanding and quickly moving on to something else;
+  
+- POSSESSIVENESS: delighting not in the object of knowledge, but in the act of knowing it. It resembles, on an intellectual level, the vice of greed.
+
+--- 
+
+So we will practice:
+
+* Noticing and reporting our analysis decisions and possible alternatives
+* Acknowledging limitations
+* Validation of results
+
+## Integrity
+
+It’s tempting to say something that isn’t entirely true, or to manipulate the collection/analysis/reporting process to yield the answer you want.
+
+So we will practice:
+
+* Evaluating claims that others use data to make
+* Clearly articulating our analysis decisions and rationale
+* Reproducibility
+* Using exploratory analytics to validate data against assumptions
+
+## Hospitality
+
+We can choose to use our tools to elucidate and clarify, rather than obscure.
+
+So we will practice:
+
+* Clear visual communication
+* Clarity of code and process
+* Writing explanations that are accessible and appropriate to audience.
+
+## Compassion and Justice
+
+Data Science can both cause harm and reveal it.
+
+So we will:
+
+* Study examples of how data might cause harm
+* Study examples of how harm might be mitigated or revealed
+
+# Our itinerary {data-stack-name="itinerary"}
+
+## {.smaller}
+
+1. Manipulating dataframes
+   1. Selecting
+   2. Filtering
+   3. Grouping
+   4. Reshaping
+   5. Joining
+2. Visualizing data
+   1. Types
+   2. Mappings
+   3. Critique
+3. Modeling data (only an overview; we won't go too deep)
+   1. Linear models
+      1. Linear regression
+      2. Logistic regressing
+      3. Regularization methods
+   2. Tree-based models
+   3. Ensemble methods
+      1. Random forests
+      2. Bagging, boosting and stacking
+   4. Unsupervised learning
+      1. Basic clustering with k-means
+      2. Dimensionality reduction with PCA
+   5. Some ways to deal with time-series data
+   6. Some ways to deal with missing data
+   7. Some ways to deal with fairness
+   8. Some ways to deal with interpretability
+
+## What we will not cover
+
+- Neural networks and deep learning
+- Some linear methdos (SVMs, polynomial regression, LDA, GLMs, GAMs)
+- Optimization algorithms (gradient descent, bayesian, genetic)
+- Causal models (SEM, SCM, etc)
+- Probabilistic graphical models (Bayesian networks, Markov models)
+- Lots of unsupervised methods (association rule learning, autoencoders, SOMs)

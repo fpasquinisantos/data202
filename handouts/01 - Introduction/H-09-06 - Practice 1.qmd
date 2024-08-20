@@ -1,0 +1,20 @@
+---
+format:
+  ipynb:
+    toc: false
+    number-sections: true
+    number-depth: 1
+title: 09-06 - Lab practice 1
+---
+
+# test
+
+testing
+
+as
+
+```{python}
+x = 1
+```
+
+testing

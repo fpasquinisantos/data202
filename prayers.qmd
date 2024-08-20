@@ -24,15 +24,15 @@ This semester, we pray according to this general pattern:
 
 ### Kyrie
 
-{{< include /_prayers/kyrie.qmd >}}
+{{< include /_prayers/kyrie-in-work.qmd >}}
 
 ### Vocational doubt
 
-{{< include /_prayers/kyrie.qmd >}}
+{{< include /_prayers/pray-vocational-doubt.qmd >}}
 
 ### Bad jobs
 
-{{< include /_prayers/kyrie.qmd >}}
+{{< include /_prayers/prayer-bad-jobs.qmd >}}
 
 <!--
 

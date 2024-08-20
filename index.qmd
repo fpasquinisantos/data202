@@ -42,7 +42,7 @@ tr:nth-child(even) {
 
 | Week        | Topic                        | Reading chapters   | Notes                                |
 |-------------|------------------------------|--------------------|--------------------------------------|
-| 1 (Sep 2)   | Intro - purposes and tools   | LGN 1-5            | No Monday (Labor Day)                |
+| 1 (Sep 2)   | Intro - purposes and tools   | LGN 1,2, 5         | No Monday (Labor Day)                |
 | 2 (Sep 9)   | Wrangling 1                  | LGN 6              |                                      |
 | 3 (Sep 16)  | Wrangling 2                  | LGN 8-9            |                                      |
 | 4 (Sep 23)   | Visualization 1              | Wilke 2-5          |                                      |

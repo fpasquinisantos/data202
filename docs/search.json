@@ -1,93 +1,88 @@
 [
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#objectives",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#objectives",
+    "objectID": "prayers.html",
+    "href": "prayers.html",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Objectives",
-    "text": "Objectives\nUpon successful completion of this course students will be able to:\n\nPrepare tabular data for visualization and analytics by constructing generalizable workflows for loading, transforming, joining, and reshaping data.\nCreate, interpret, critique, and refine graphical and tabular visualizations of data.\nTranslate a real-world need into an appropriate analytics task, considering available data.\nSelect analytics methods appropriate to the data and task from among the approaches surveyed in the course.\nInterpret the outcomes of selected predictive analytics techniques.\nCommunicate analytics results using reports that clearly motivate the problem and approach, elucidate the data used, and present both the strengths and shortcomings of analytics results.\nDiscuss ethical and social considerations of data collection and data-driven systems.\n\nAdditionally, using transparent reproducible workflows and regularly acknowledging limitations will help students practice virtues including integrity, humility, and justice.",
+    "section": "",
+    "text": "This semester, we pray according to this general pattern:"
+  },
+  {
+    "objectID": "prayers.html#monday-prayers---for-us-as-students",
+    "href": "prayers.html#monday-prayers---for-us-as-students",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Monday prayers - for us as students",
+    "text": "Monday prayers - for us as students\n\nFor this class\n\nDear Heavenly Father,\nWe invite Your presence into this classroom.\nLet Your light shine upon us, illuminating the path of learning, so we may contemplate your beauty and love in everything you made.\nMay this classroom be a place of respect, fellowship, and growth. Help us to be open to new ideas, to embrace challenges, and to support one another in our academic endeavors. Bless this class so that it may be a space where minds are enriched, friendships are formed, and hearts are touched.\nGuide our imaginations and desires towards your love and justice, so that we may respond adequately to your call to be Christ’s agents of renewal in the world.\nThrough our Lord Jesus Christ, your Son, who lives and reigns with you in the unity of the Holy Spirit, one God, for ever and ever.\nAmen.\n\n\n\nFor practices\n\nDear Heavenly Father,\nWe start this day asking for your joy and strength in this moment when we are practicing these data science skills.\nPlease let this be a moment of true fellowship and character building in our community of learning.\nBe with us in any difficulties we face. Give us a disposition to help, and humility to be helped.\nGive us wisdom to discern your beauty and justice as we study and practice.\nMay everything we do and learn here be offered to you in praise, gratitude and service to our neighbors.\nIn Jesus name we pray. Amen.\n\n\n\nGo and work\n\nGo and work\nHonor the One who is working on you.\nDo so by making beautiful things,\nBe serving in beautiful ways,\nBy speaking up for the weak whose beauty is being maligned,\nBy filling this city with the aroma of good and beautiful work\nReflect the beautiful work of your heavenly Father,\nNourished now by the grace and mercy of Christ,\nIn the power of the Holy Spirit.\nGod has already accomplished the great work.\nGod goes before you and behind you.\nGod works at your side.\n(Matthew Kaemingk & Cory B. Willson, Work and Worship, p. 140)\n\n\n\nGod the Maker\n\nVERSE 1:\nWe bring our time, we bring our treasure,\nwe lay them down before Your throne.\nYou will make them something greater,\nmore than we could ever know. (chorus)\n\nVERSE 2:\nWe bring our gifts, we bring our power\nplace them in Your sov’reign hand.\nYou will take what we have given,\nYou will use it for Your plan. (chorus)\n\nCHORUS:\nGlory be to God, the Maker\nglory be to God, Creator\nTake our time, use our treasure\nturn them into something greater:\nGlory be to God, the Maker.\n\nVERSE 3:\nThough our hearts are weak from failure,\nbroken dreams and failed attempts,\nshow us that in ev’ry season,\nYou will fill our emptiness. (chorus)\n(God the Maker, The Porter’s Gate)\n\n\n\nKyrie\n\nLet us confess to God those things that are wrong in our work:\nThat the presence of God at work is often overlooked;\nThat creative people are often subjected to long, boring and unrelenting routines;\nThat skills are undeveloped through lack of training;\nThat resources are wasted in shoddy work and the production of unwanted goods;\nThat the maximisation of profit often excludes concern for people;\nThat men and women are discriminated against because of age, race, gender, disability, lack of skill and length of employment;\nThat the poor stand so little chance against the power of the rich, and the world’s destitute are forgotten.\n\n\nLord, have mercy upon us. Forgive us our sins and help us to amend our lives. Amen.\n(https://www.theologyofwork.org/work-in-worship)\n\n\n\nVocational doubt\n\nLord, we pray for ourselves in our daily study and work.\n\nWe give thanks for the skills we already have; we pray for wise and good use of these skills in building your kingdom.\n\nWe pray for those thinking about changing their study and/or work - especially those unhappy or insecure; those feeling undervalued or unfulfilled; those feeling that are in the wrong place; those who can’t wait for 5pm on Friday.\n\nWe pray for those with no sense of direction or purpose or vocation, for those drifting,\nfor those wanting to do a particular job, but unable through disability, illness, lack of confidence or lack of opportunity;\nfor those who are unemployed.\nWe pray for those at school or college now making decisions which will affect our working lives. We pray for all Careers Advisers.\n\nWe pray for those who are teaching us;\nfor our colleagues,\nfor our administrators.\n\n\n\nBad jobs\n\nLord, we remember that there are some who find themselves working on projects whose value they doubt or whose likely outcome they disapprove.\nHelp them, Lord, to decide whether to stay on in the hope of effecting change or whether to leave.  Especially we pray for those forced by economic necessity to remain in uncongenial work.\nMay they know your forgiveness,\nand may the world of science and technology be ever open to your redeeming Spirit,\nthat your will may be fulfilled in all that we do.\nAmen.\n(David Welbourn)"
+  },
+  {
+    "objectID": "midterm-proj.html",
+    "href": "midterm-proj.html",
+    "title": "Midterm Project",
+    "section": "",
+    "text": "Replicate and critique a visual.\nFor this project you will pick some existing data science work (a newspapar article, blog post, report, research paper, etc.) and replicate a visual from it using the data wrangling and plotting tools we’re studying.\nYou will then critique the original visualization and propose alternative designs.\nThe project will be done in teams of between 1 and 3. You will submit a single report and make a joint presentation.",
     "crumbs": [
       "Syllabus",
-      "Slides",
-      "01 - Introduction",
-      "09-04 - Introduction"
+      "Projects",
+      "Midterm Project"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#lets-know-each-other",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#lets-know-each-other",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Let’s know each other",
-    "text": "Let’s know each other\nStand up and sit when someone says what you would say:\n\n1st round: major\n2nd round: favorite sport\n3rd round: favorite board game",
+    "objectID": "midterm-proj.html#milestones",
+    "href": "midterm-proj.html#milestones",
+    "title": "Midterm Project",
+    "section": "Milestones",
+    "text": "Milestones\n\nWeek 3: Identify possible plots\nThis was done as part of Discussion 2.\n\n\n\n\n\n\nHow to pick a plot?\n\n\n\n\n\nYou can pick one of these approaches:\n\nOrganization-centered: Pick an organization that you’re interested in (company, NGO, government agency, sports team, hospital, school, scientific community, etc.) and find some graphic that is helpful for them as they make decisions.\nIssue-centered: Pick an issue that’s important to you. Find a news article or opinion piece about that issue and try to replicate a visual that they’d use to support their claims. The strongest such projects will pick a claim that you disagree with.\n\n\n\n\n\n\nWeek 4: Plot selection and initial analysis\nUpload a screenshot of one or more potential plots to the Plot Gallery. Your post should include:\n\nScreenshot: A screenshot of the plot (image)\nClaim or Purpose: What the author is trying to say with this plot\nSource: URL, or some other similarly clear description of how to get to the original plot\nEach row is: A short phrase of what each row of the plot dataframe represents (e.g., “The data has one row per day and rider type”.\nData dictionary: A table of (possible) variable names and what they (probably) represent\nData Sources: Potential sources for the data, in the form of URLs or similar. Try downloading and opening the data if you can; report on any anticipated difficulties.\n\nYou don’t have to fill in everything for the initial post; you can come back and fill it in later.\n\n\n\n\n\n\nImportant\n\n\n\nThe plot you choose to replicate should have at least 3 variables.\nIf you really want to make a plot that has fewer than 3 variables, you should be able to explain why it’s still interesting and worth doing.\n\n\n\n\n\n\n\n\nOther Plot Selection Guidelines\n\n\n\nThe plot you choose to replicate:\n\nShould make an interesting claim.\n\nShouldn’t just be about something (e.g., “number of wins by each athlete”)\nMost interesting claims are about relationships (e.g,. “the highest paid athletes don’t necessarily win more”)\nA claim finishes the sentence: “The article uses this graphic to back up the claim that BLANK”.\nIf the article doesn’t make a claim, make one up. Imagine that you’ve gotten in an argument with someone and you show them this plot to back up your claim; what claim were you trying to make?\n\nShould involve at least 3 variables.\n\nIdeally they have to come from several separate data sources that you have to bring together.\n\nShould have some room for improvement, i.e., you’d be interested in trying a different way of presenting the data.\n\nIf you are really stuck, I can simply assign something to do, but I’m hoping to avoid that.\n\n\n\n\nWeek 5: Data\nFind and load the data; write a brief critique of the data.\nFor this milestone, your report should be complete through the “Data” section. See the Report Template below.\n\n\n\n\n\n\nData Selection Guidelines\n\n\n\nThe data you find:\n\nShould come from a reputable source.\n\nIf you use an aggregation site like OurWorldInData, try to track down where they got the data.\n\nShould require at least a little bit of wrangling\n\nBeware of sites where you can download exactly the data for a specific plot\n“Download data for this chart” links are red flags that you may be getting already-wrangled data.\n\n\nSee Some questions to ask if you’re working with data that you didn’t collect yourself.\nIf the wrangling is especially straightforward, you can add depth by:\n\nFinding a different source for the same data\nCritiquing the data collection process\nDescribing alternative choices that could have been made in the data collection or wrangling process and what the consequences of those choices might be.\n\n\n\n\n\nWeek 6: Initial plot and ideas\nMake an initial plot and a todo list of things to improve; sketch ideas for alternative ways to plot the same data.\nYour report should be complete through the “Wrangling” section and have some initial work in the “Replication” and “Alternatives” sections.\n\n\nWeek 8: Presentation and Report\nPresent the original, replication, and alternative plots to the class and in a Quarto report.",
     "crumbs": [
       "Syllabus",
-      "Slides",
-      "01 - Introduction",
-      "09-04 - Introduction"
+      "Projects",
+      "Midterm Project"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#who-am-i",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#who-am-i",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Who am I?",
-    "text": "Who am I?\nProf. Fernando Santos\n\nFrom São Carlos, Brazil\n\nPortuguese, not Spanish!\nCerrado (“brazilian savannah”), not jungle!\n\nMajor in computer engineering, PhD in complex systems modeling\nMarried to Jemima, dad of Suzana (6) and Natanael (4)",
+    "objectID": "midterm-proj.html#report-and-presentation-details",
+    "href": "midterm-proj.html#report-and-presentation-details",
+    "title": "Midterm Project",
+    "section": "Report and Presentation Details",
+    "text": "Report and Presentation Details\n\nReport Content\nYour report should include the following sections:\n\nOverview of the original plot (include a screenshot) and the claim it makes.\nDesign of the original plot. (plot type, effectiveness)\nData (where’d you get it, anything interesting about it or what you had to do with it)\nWrangling (what did you have to do to get it into a form that you could plot?)\nReplication (show your replication of the original plot)\nAlternative 1: what did you change? why?\nAlternative 2: (same, but can be a sketch rather than a full plot)\nSummary: one or two take-aways\n\n\n\nReport Template\nThis template includes a suggested outline for your report. You may choose to organize your report differently if you have a good reason.\n\n\n\n\n\n\nClick to show the Report Template\n\n\n\n\n\n---\ntitle: \"A title\"\nauthor:\n    - \"Your name\"\n    - \"Partner name\"\nformat:\n  html:\n    embed-resources: true\n    code-tools: true\n    code-fold: true\n---\n\n```{python}\n#| echo: true\nimport pandas as pd\nimport plotly.express as px\n```\n\n```{python}\n#| echo: false\n# Hack to make plotly work in RStudio\nif 'r' in globals() and r['.Platform$GUI'] == \"RStudio\" and r['suppressMessages(requireNamespace(\"htmltools\"))']:\n  r[\".GlobalEnv$to_html &lt;- function(x) { print(htmltools::HTML(x)) }\"] and None\n  def show_plot(p): r.to_html(p._repr_html_())\nelse:\n  def show_plot(p): return p\n```\n\nðŸš§\nThis template is intended to help you structure your report. Remove placeholders like this and make it your own. Not every question needs to be answered for every project, and some projects will have additional questions. **Your final report should not include any \"under construction\" or template text.**\n\n## Overview\n\nðŸš§\nWe are interested in TOPIC because STORY. So we chose to replicate a plot from [this article] (INCLUDE THE COMPLETE URL TO THE ARTICLE).\n\nðŸš§\nOriginal visualization:\n\n![](https://example.com/your-url-here)\n\nðŸš§\nClaim:\n\n&gt; You can put the claim in a \"block quote\" like this.\n&gt; A concise statement (ideally a quote) of the claim that the article uses the visualization to make (or the claim you invented if there wasn't a clear one)\n\n\n## Design\n\nðŸš§\nWhat overall type of visualization was chosen? Why might the author have chosen it?\nðŸš§\nWhat variables are being shown?\nðŸš§\nWhat visual cues (aka retinal variables or aesthetics) were chosen to represent those data variables?\nðŸš§\n    For at least one of these variables, describe what makes that choice appropriate or inappropriate.\nðŸš§\nOverall, what about the visual makes it effective, or ineffective, for making its claim?\n\n\n## Data\n\n### Data Overview\n\nðŸš§\nWhether you were able to find the original data (if not, why not?)\nðŸš§\nWhere the data came from\nðŸš§\n    Direct URL and/or specific instructions for how to obtain it.\nðŸš§\n    Under what terms is the source allowing you to use the data?\nðŸš§\n    Try to trace it upstream as close to the source as you can.\nðŸš§\n    Who worked with the data on its way to you? (Include names and roles, if applicable.)\nðŸš§\n    What processing may have happened to it: was it aggregated? Anonymized? etc.\nðŸš§\nWhat might we need to know about the data collection process in order to interpret the data correctly? (e.g., If itâ€™s from a surveyâ€“who was surveyed?)\n\n### Data Details\n\nðŸš§\n```{r load-data}\n# your code to load the data here\n```\n\nðŸš§\nA low-level description of the size and structure of the data.\nðŸš§\nHow many rows are there?\nWhat does a single row represent? (Translate the first observation in the dataset into an English sentence.)\nðŸš§\nWhat might be interesting to know about what information the data does, and doesnâ€™t, provide?\n\n\n### Wrangling\n\nðŸš§\nDescribe, at a broad level, what you need to do to the data to make it into the form you need for the plot. (e.g., what data types need fixing, whether you need to pivot, what filtering is needed, etc.)\n\nðŸš§\nAdd code blocks, with appropriate names, for wrangling steps. **Explain the *why* for any choices you make (like filtering data).**\n\n## Replication\n\nðŸš§\nInclude your replication, along with all code needed.\nðŸš§\nBriefly describe any difficulties you encountered, both those you overcame and those you still have not. (Itâ€™s ok to not have a perfect graph here. If the essential structure is there, donâ€™t worry if the details are a bit different. Focus your attention on making an interesting and polished alternative design.)\nðŸš§\n\n\n## Alternatives\n\nðŸš§\nDescribe at least two alternative design choices that could be made in visualizing your data. For each design, include the following sections\n\n### Alternative 1: Design\n\nðŸš§\nWhat choice did the original visual make? (e.g., to use a particular aesthetic mapping or glyph)\nðŸš§\nWhat choice does your alternative design make instead? (It should be a reasonable choice, but it doesnâ€™t have to be an improvement.)\nðŸš§\nHow does that change affect how the visual supports the original claim? Can your redesign now support some different claim?\n\n### Implementation\n\nðŸš§\nMake a solid attempt to implement your best alternative design.\nIf creating it using plotly is too challenging, you may include a high-fidelity sketch of what the plot would look like (using PowerPoint, a vector graphics tool, or a good-quality scan of a paper or whiteboard), along with a clear description of what youâ€™d need to figure out in order to produce it with code.\n\n## Summary\n\nðŸš§\nNow that youâ€™ve gone through the whole process, how has your understanding of, and belief in, the original articleâ€™s claim changed?\nðŸš§\nHow faithful was your replication?\nðŸš§\nCompare your original and alternative designs. Which is best for what purpose?\nðŸš§\nWhat follow-up questions and ideas do you have about the data or visualization you worked with?\nðŸš§\nHow do you feel about this whole experience?\n\n## Acknowledgments\n\nðŸš§\nInclude the full names of any students outside your team who helped you and a brief description of how they helped.\n\n### License\n\nSharing: Would you be okay with sharing your project, and if so, how?\n\nIdeally we'd make a public gallery with all projects, screenshots, and code, but you could choose to:\n\n- Go anonymous (choices: \"anon\" or \"names\")\n- Don't share code? (choices: \"code\" or \"screenshots\" or \"just title\")\n- Restrict to just future students (choices: \"public\" or \"students\").\n\nso, e.g., you might say \"anon, code, students\" or \"names, screenshots, public\".\n\n\n\n\n\nReport Style\nYour report should be:\n\nunderstandable by itself: a reader should not need to see your discussion posts or prior submissions.\nreproducible – if a new version of the data becomes available, anyone should be able to re-run your code and get an updated plot. Things to avoid:\n\npaths that only work on your computer\nmaking modifications to your raw data (e.g., editing it in Excel)\nhard-coding row numbers or other things that are likely to change\n\nunderstandable without the code: a reader should be able to skip over all of the code and understand all of the results.\nAt least one of your visuals (either the original or alternative design) should be high quality, with effort spent getting the details right.\nClean up any messy outputs from code (debugging, etc.)\nWrite succinctly. Bulleted lists are fine when they’re clear.\nUse ordinary text formatting (not headings, blockquotes, etc.) for ordinary prose. Reserve headings and block quotes for headings and quotes.\nFormat your code cleanly. If lazy, select the code and click “Reformat Code” on the Code menu. (Make sure you save first.)\nRead through the report before submitting. Check that you don’t have placeholder text, the headings make sense, etc.\n\nAcademic Integrity: If you take any code from elsewhere, you must state very clearly where it came from and how you changed it. This includes ChatGPT and other AI tools. If you find a plot and it has Plotly code already, I advise against looking at it, and possibly even finding a different plot. Code using a different toolkit (e.g., R) is probably okay.\n\n\nPresentation\nTo practice making data-driven arguments, this project includes a brief presentation, done on VoiceThread.\nKeep it short and simple. The slides should be as follows:\n\nOriginal Plot and Claim\nData (where’d you get it, anything interesting about it or what you had to do with it)\nReplication\nAlternative 1: what did you change? why?\nAlternative 2: (same)\nSummary: one or two take-aways\n\nUse a presentation tool like Google Slides or PowerPoint.\nUse voice comments to narrate. Each team member should make at least one comment.",
     "crumbs": [
       "Syllabus",
-      "Slides",
-      "01 - Introduction",
-      "09-04 - Introduction"
+      "Projects",
+      "Midterm Project"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#our-relationship",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#our-relationship",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Our relationship",
-    "text": "Our relationship\nHeidelberg Catechism Q&A 107:\nWhen god forbids envy, hatred, and anger, he commands us to [h] love our neighbor as ourselves; to show [i] patience, peace, [j] meekness, [k] mercy, and all kindness, towards him, [l] and prevent his hurt as much as in us lies’ and that we [m] do good, even to our enemies.\n[a]: Mat. 5:21,22; Prov. 12:18; Mat. 26:52\n[b]: Eph. 4:26; Rom. 12:19; Mat. 5:39,40\n[c]: Mat. 4:5,6,7; Col. 2:23\n[d]: Gen. 9:6; Mat. 26:52; Rom. 13:4\n[e]: James 1:20; Gal. 5:20\n[f]: Rom. 1:29; 1John 2:9\n[g]: 1John 3:15\n[h]: Mat. 22:39; Mat. 7:12\n[i]: Rom. 12:10\n[j]: Eph. 4:2; Gal. 6:1,2; Mat. 5:5; Rom. 12:18\n[k]: Ex. 23:5\n[l]: Mat. 5:45\n[m]: Rom. 12:20",
+    "objectID": "midterm-proj.html#logistics",
+    "href": "midterm-proj.html#logistics",
+    "title": "Midterm Project",
+    "section": "Logistics",
+    "text": "Logistics\n\nReport Submission\n\nIf your dataset is less than 10 MB: submit a .zip file with your entire project folder.\nOtherwise: submit just the HTML (and make sure the instructions are very clear about how to get the data)\n\nUse the header from the template, which includes these important settings:\n\nKeep code-tools: true in the header so we can see your source code.\nMake sure you keep embed-resources: true so we can see any images.\n\n\n\n\n\nShared Projects\nRStudio (Posit Workbench) has a feature called Shared Projects that many teams will find helpful.\nTo use it, one person should create a new project in the ~/rprojects folder. Then, they should go to the projects menu in the top-right corner and choose “Share Project”. Type the username of another team member (the part of their email before the @calvin.edu) in the textbox and click Add.\n\n\n\n\n\n\nrprojects folder\n\n\n\nFor shared projects to work, you must create your project within the ~/rprojects folder, i.e., the folder named rprojects within your home (~) folder.",
     "crumbs": [
       "Syllabus",
-      "Slides",
-      "01 - Introduction",
-      "09-04 - Introduction"
+      "Projects",
+      "Midterm Project"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#syllabus-bingo",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#syllabus-bingo",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Syllabus Bingo",
-    "text": "Syllabus Bingo\n\n\n\n\n\n\n\n\n\nQuizzes\nWebsites I need to register\nStudy sessions\n\n\nSoftware we are using\nOffice hours\nChatGPT\n\n\nReadings\nDiversity and inclusion\nSchedule",
+    "objectID": "midterm-proj.html#checklist",
+    "href": "midterm-proj.html#checklist",
+    "title": "Midterm Project",
+    "section": "Checklist",
+    "text": "Checklist\nThe following is the minimal requirements for the project. The project should also go into depth in some area.\n\nOverview\n\nIncludes a screenshot of the original plot\nIncludes a description of the claim made by the original plot (or the claim you’re making if the original doesn’t make a claim)\nIncludes a link to the original plot\n\nDesign\n\nNames the type of the original plot (scatter, bar, etc.)\nIdentifies the variables used in the original plot\nIdentifies the visual cue that each variable is mapped to.\nDiscusses the effectiveness of the original plot\n\nData\n\nIdentifies the source of the data used for the replication (including a link if possible)\nIndicates how many rows and columns are in the data (e.g., “the data has 100 rows and 5 columns”)\nDescribes what a single row represents (e.g., “one row per day per rider type”)\nDescribes the variables in the data (e.g., “the data has columns for date, rider type, and number of rides”)\n\nWrangling\n\nDescribes the overall process of wrangling the data (e.g., “I had to combine data from sources X and Y, then filter out rows that aren’t Z, then calculate the average number of rides per day”)\nIncludes code blocks that show the wrangling process\nGives an example of the data after wrangling (e.g., the .head() and the .info())\n\nReplication\n\nIncludes the replication of the original plot\nReplication has the same general type of plot as the original (can be different in unimportant details like specific colors used, extra annonatiotns, etc.)\nReplication has the same general variables as the original, mapped to the same general visual cues\nDescribes any difficulties encountered in the replication process\nDescribes any relevant differences between the original and replication\n\nAlternatives\n\nIncludes textual descriptions of two alternative ways to plot the same data that are different in a substantive way (e.g., not just a different color scheme) from each other and from the original plot.\nIncludes images of both alternatives. Ideally they’re implemented in code using actual data, but in case that’s too challenging, a detailed and clear sketch on paper or PowerPoint or some online tool is also fine. The sketch should show all the necessary elements and should be understandable without additional explanation.\n\nSummary\n\nIncludes a reflection on the claim of the original plot and how well the original plot supports that claim.\nIncludes a comparison between the original design and at least of the alternative designs that specifies which design is better for what purpose.\n\nAppendix\n\nReport includes a description of where the depth in the project is, i.e., in what areas you went beyond the bare minimal requirements. See “Depth Somewhere” above.\nReport includes what terms you’d be willing to have your report shared under (see the “License” section of the template.)\nReport includes a list of sources used (e.g., specific links to StackOverflow, ChatGPT shared-conversation links, etc.), and the full names of any students outside your team.\n\nMeta\n\nReport was produced using a reproducible workflow (typically Quarto)\nReport is titled appropriately\nAuthors are listed correctly\nReport is concise\nReport is self-contained\nReport is understandable without reading the code\nNo placeholder text remains.\nReport is formatted cleanly (check headings, code outputs, etc.); check that the file shows up correctly on your local computer before submitting.",
     "crumbs": [
       "Syllabus",
-      "Slides",
-      "01 - Introduction",
-      "09-04 - Introduction"
+      "Projects",
+      "Midterm Project"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#what-is-this-for",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#what-is-this-for",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "What is this for?",
-    "text": "What is this for?\n\nThe search for meaningfulness in reality [[meaningfulness (Dooyeweerd)]]\nWhat meaning is found?\n\nWhat is explanation? Some notions…\nVerbs:\n\nDescribe/characterize: what is the current level of CO2 in the atmosphere?\nRelate: what factors are associated with CO2 levels?\nInfer/predict: can we conclude that CO2 levels are rising?\n\n\nFor that, we can rely on information/data. Why using data? “Knowledge that is true, explicit and accessible”\n\nIdeals of amplifying reasoning / perception (curiosity)\nIdeals of transparency (humility, hospitality, integrity - more in wrangling/visualization)\n\nEx.: expert knowledges and tacit knowledges are not based on data\n\nIdeals of automation (responsibility, justice and due - more in modeling)\nLimits of data:\n\nonly acting based on past and re-presentation\n…. #to_do\n\n\nThe iterative process of finding meaningfulness in data (“if not sufficient, go to next step”)\n\nLATOUR’S PAPER ON STRATEGIES FOR GETTING INSIGHT FROM DATA [[referência circulante (Latour)]]\nObserve (collect, “reify”)\nVisualize (re-represent)\nWrangle (re-represent)\nModel (automate and amplify)\n\nEthics of curiosity = ethics of visibility + ethics of attention (love/desire)\n\nWhat am I doing in order to predict? Should I? Am I sacrificing something because of my impetus to know? What is the amount of hubris reflected in my choosing of features for my prediction? People trying to have knowledge about anything given knowledge about anything…\nPhilosophy of statistics: relying on the law of large numbers, which presupposes that outcomes of repeated random events form predictable patterns - in other words, that whatever is being observed is a repetition of the same thing.\n\nand that does not acknowledge that God is at work, in eventness and narrative (grace and contigency).",
+    "objectID": "midterm-proj.html#purpose",
+    "href": "midterm-proj.html#purpose",
+    "title": "Midterm Project",
+    "section": "Purpose",
+    "text": "Purpose\nThe project will explore the intersection between three things:\n\nThe data\nThe visualization\nThe story that the visualization tells about the data (and, indirectly, about the world)\n\nThe three components to this project involve each of these three things:\n\nData: Obtain some real-world dataset. Trace where it came from and how it’s structured. Load it and process it using the data science toolkit we’re studying to a form that’s appropriate for making the visualization.\nVisualization: Replicate (re-create) a visualization that someone else already made based on that data. Evaluate some of the choices and assumptions that were made in the visualization process: in what ways does the visualization faithfully represent the data (or not)? What sort of stories does the chosen visualization amplify?\nStory: Consider the story that the original source told using the visualization. Is that story accurate? complete? clearly articulated? How did choices in the data collection, preparation, and visualization affect the storytelling? Are there other stories that the data might also be telling?\n\nThis project addresses our course-level learning objectives in this way:\n\nTechnical skills: manipulating data, constructing visualizations, and creating reports.\nCommunication: analyzing choices made in visualization and text with respect to how it tells a story about data. Proposing and implementing changes to improve the clarity of communication.\nEthics and Critical Thinking: identify potential ethical questions (e.g., of transparency, diversity, etc.) that emerge in the process of obtaining, manipulating, and communicating with data.",
     "crumbs": [
       "Syllabus",
-      "Slides",
-      "01 - Introduction",
-      "09-04 - Introduction"
-    ]
-  },
-  {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#skills-knowledge-and-virtues",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#skills-knowledge-and-virtues",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Skills, Knowledge and Virtues",
-    "text": "Skills, Knowledge and Virtues\n\nIs it possible to separate skill from virtue?\nShow the seven virtues and how they are related",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "01 - Introduction",
-      "09-04 - Introduction"
+      "Projects",
+      "Midterm Project"
     ]
   },
   {
@@ -146,6 +141,58 @@
     ]
   },
   {
+    "objectID": "quarto.html",
+    "href": "quarto.html",
+    "title": "Quarto Templates and Tips",
+    "section": "",
+    "text": "Your qmd files should generally start like this:\n---\ntitle: \"A title\"\nauthor: \"Your name\"\nformat:\n  html:\n    embed-resources: true\n    code-tools: true\n    code-fold: true\n---\n\n```{python}\n#| echo: true\nimport numpy as np\nimport pandas as pd\nimport plotly.express as px\npd.options.plotting.backend = \"plotly\"\n```\n\n```{python}\n#| echo: false\n# Hack to make plotly work in RStudio\nif 'r' in globals() and r['.Platform$GUI'] == \"RStudio\" and r['suppressMessages(requireNamespace(\"htmltools\"))']:\n  r[\".GlobalEnv$to_html &lt;- function(x) { print(htmltools::HTML(x)) }\"] and None\n  def show_plot(p): r.to_html(p._repr_html_())\nelse:\n  def show_plot(p): return p\n```\n\n\n\n\n\n\nYAML Explanation\n\n\n\n\n\nThe embed-resources option makes the HTML file self-contained, so you can share it with others. The code-tools option adds a button to the top of the document that lets you run all the code chunks at once. The code-fold option lets you collapse code chunks in the document. (You may omit this option if you prefer to see all the code.)\n\n\n\n\n\n\n\n\n\nPlotly Explanation\n\n\n\n\n\nPlotly works fine in Quarto rendered documents, but to have plots show up in the RStudio editor when you run a chunk, you’ll need to include that hack and surround your plot with show_plot().\nYou are not expected to understand this hack; just copy and paste it into your document.\nOnce this bug in RStudio is fixed we can remove this hack."
+  },
+  {
+    "objectID": "quarto.html#class-standards",
+    "href": "quarto.html#class-standards",
+    "title": "Quarto Templates and Tips",
+    "section": "",
+    "text": "Your qmd files should generally start like this:\n---\ntitle: \"A title\"\nauthor: \"Your name\"\nformat:\n  html:\n    embed-resources: true\n    code-tools: true\n    code-fold: true\n---\n\n```{python}\n#| echo: true\nimport numpy as np\nimport pandas as pd\nimport plotly.express as px\npd.options.plotting.backend = \"plotly\"\n```\n\n```{python}\n#| echo: false\n# Hack to make plotly work in RStudio\nif 'r' in globals() and r['.Platform$GUI'] == \"RStudio\" and r['suppressMessages(requireNamespace(\"htmltools\"))']:\n  r[\".GlobalEnv$to_html &lt;- function(x) { print(htmltools::HTML(x)) }\"] and None\n  def show_plot(p): r.to_html(p._repr_html_())\nelse:\n  def show_plot(p): return p\n```\n\n\n\n\n\n\nYAML Explanation\n\n\n\n\n\nThe embed-resources option makes the HTML file self-contained, so you can share it with others. The code-tools option adds a button to the top of the document that lets you run all the code chunks at once. The code-fold option lets you collapse code chunks in the document. (You may omit this option if you prefer to see all the code.)\n\n\n\n\n\n\n\n\n\nPlotly Explanation\n\n\n\n\n\nPlotly works fine in Quarto rendered documents, but to have plots show up in the RStudio editor when you run a chunk, you’ll need to include that hack and surround your plot with show_plot().\nYou are not expected to understand this hack; just copy and paste it into your document.\nOnce this bug in RStudio is fixed we can remove this hack."
+  },
+  {
+    "objectID": "quarto.html#chunk-options",
+    "href": "quarto.html#chunk-options",
+    "title": "Quarto Templates and Tips",
+    "section": "Chunk Options",
+    "text": "Chunk Options\n```{python}\n#| echo: false\n#| include: false\n# This code won't get shown because echo is false.\nx = 2\n# but it still runs.\nprint(\"This output won't show because include is false\")\n```"
+  },
+  {
+    "objectID": "quarto.html#computations-in-text",
+    "href": "quarto.html#computations-in-text",
+    "title": "Quarto Templates and Tips",
+    "section": "Computations in Text",
+    "text": "Computations in Text\nprint out the Markdown you want to include in the document, and use the asis output option. Turn off echo so that the code isn’t included in the document.\nNote: The hidden chunk shouldn’t do any non-obvious calculation. Do that in a different chunk and assign the result to a variable.\n```{python}\n#| echo: false\nnum_rows = daily_rides.shape[0]\n```\n```{python}\n#| echo: false\n#| output: asis\nprint(\"\"\"\nThere are {num_rows} rows in the data frame.\n\nEach row represents a day of data.\n\"\"\".format(num_rows=num_rows))\n```\n\n\n\n\n\n\nSome Python string tips\n\n\n\nTriple-quoted strings (\"\"\") can span multiple lines. They can also have single quotes in them.\nThe format method on strings fills in {} blanks with the values of the named arguments. (You can also use f-strings (f\"There are {num_rows} rows in the data frame.\") if you know what those are.)"
+  },
+  {
+    "objectID": "final-proj.html",
+    "href": "final-proj.html",
+    "title": "Final Project",
+    "section": "",
+    "text": "The goal of this project is to practice a complete data science workflow: question, data, exploration, modeling, and communication. Results will be presented as a report, supporting code, and a brief presentation to the class. Successful outcomes should include visual, analytical, and perspectival components. The report should be at the level of polish and formality of a blog post (more than a class homework assignment, less than an academic paper). The overview and primary visualizations should be intelligible to a non-technical audience; the methods should be described in precise technical language as appropriate.\nAn important component of this project is a comparative critique of some related prior work. That is, you are not simply demonstrating that you can perform an analysis, but also that you can evaluate the strengths and weaknesses of others’ analyses. This may be the most important take-away from this class for your future career.\n\n\nTeams: Both individual and team projects are permitted, with a mild encouragement towards teams.\nPresentations: The final course meeting (during the designated final exam period) will be devoted to final project presentations. Feedback on others’ projects will be part of your final project grade, so attendance is mandatory.\nThere are two sections of this class, thus two sessions of final project presentations. Refer to the Calvin exam schedule for the official dates; for 2023, it’s Saturday Dec. 9 at 1:30 p.m. and Monday Dec. 11 at 1:30 p.m.. Your team must choose which to present at. You are welcome to attend both sessions to see everyone’s work.\n\n\n\n\nNov 11: Initial proposal. This should include:\n\nA tentative topic (kind of data you want to work with, question you’d like to ask). Include a brief description of what drives your interest in it.\nAn example or two of some data science work you’ve found on the topic already. See below for some guidance on this. Include the URLs of resources you found, and some brief commentary about each one (does it seem good?)\nA proposal of what you’d like to do. A first step will usually be to do an analysis similar to one of the examples you found, and you may not have much idea beyond that at this time. But if you do have some ideas for what you might want to do differently, this is a good place to include them. Note that your overall task should include some modeling (predictive or otherwise).\nTentative Teams: If you have already found people who may be interested in working with you, note that here.\n\nNov 18: Dataset, exploratory visualization, and summary of prior work\n\nYou should have the EDA section of your report complete, and a good start on everything before that.\n\nDec 2: Initial modeling and visualization\nDec 12: Final report\n\n\n\n\nYou can find examples of data science work on sites like Kaggle, TowardsDataScience, Reddit, YouTube, and GitHub. Also check out the TidyTuesday project and r-bloggers.\nYour project should include some modeling, so it should involve more than making visualizations. Predictive modeling is closest to the emphasis of this class, but other kinds of modeling (such as clustering) are often ok.\nYour data should be rich enough to support the kind of modeling you want to do, but not too complex to work with. For example, avoid any dataset larger than 500 MB since it probably won’t fit. Also, avoid image and sound data for similar reasons. (Although if you really want to work with images, there are ways to do this.)\nSome types of projects that have worked well in the past:\n\nParticipating in a Kaggle competition. It should be a competition that is still open. You don’t need to win, but you should be able to do better than the baseline. You should also do some EDA and/or visualization beyond what’s already been done by others.\nReproducing a published analysis. Find a published analysis that you can reproduce, and then extend it in some way. For example, you might find a published analysis that uses a dataset you can’t access, and then find a similar dataset that you can access. Or you might find a published analysis that uses a dataset you can access, and then extend it in some way (e.g., by adding a new feature, or by using a different model).\n\nSome projects that could work great, but should be discussed with the instructor first:\n\nRedoing some class activities using a different toolkit. For example, what if this class were to be taught in JavaScript using ObservableHQ? (Talk with Prof Arnold for detailed ideas.)\nExploring interpretable models. There are some new types of models coming out that are more interpretable, but we have not gotten to discuss them much in class. Perhaps you could explore one of these models and compare it to a more traditional model.\nWorking with a large language model. For example, could you give ChatGPT some example rows from your dataset, then ask it to write a decision tree for you, and evaluate the result? There are losts of\n\n\n\n\n\nNOTES:\n\nYou will likely need to make some choices regarding what variables to include, whether to do some pre-processing (e.g., addressing missing values, generating new variables), etc. Clearly state:\n\nWhat decisions you made\nWhy you made them\nWhat might have been alternative choices.\n\nTell the “rational reconstruction” of the story of how the analysis was done.\n\nDon’t give the play-by-play of everything you tried, every idea you had, etc., but…\nDo include things you tried that led to an important observation later on.\n\nIf you use any code from the Internet, you should acknowledge its source and provide a link.\nYou should submit all of the code needed to replicate your results, but your report should be understandable without looking at the code.\nHere is a template (rendered) that gives one possible outline. You may adapt the outline as needed for your project.\nYou’ll submit both slides and a report. See the Midterm project for submission instructions.\n\nYour report should include the following general elements (though treat this specific outline as a suggestion only; certain reports will need to deviate from this structure in small or large part):\n\nA succinct but descriptive title\nOverview\n\nA real-world question that you’d like to explore, and why it’s interesting.\n\nThis question should be stated in language that is understandable to someone who hasn’t studied data science and doesn’t know the details of your dataset.\nThe best questions include motivation from prior literature that gives, for example, some pattern or relationship that you’d expect to find and why.\n\nA brief (2-4 sentences) high-level description of the dataset: what is the dataset about? Where did it come from? What sort of data does it contain?\n\nPrior Work\n\nA summary of what you have found that others have done with your data or question. Include URLs and author names.\nA response to their work:\n\nWhat did they do well that is inspiring?\nWhat could they improve on or explore further?\nDo you trust their results? Why or why not?\n\nIn what ways do you intend for this project to extend or enhance that prior work? (Save the details of how for the Approach section.)\n\nApproach\n\nA problem description or specific question\n\nThis question should be stated in more specific technical terms than the real-world question.\nIt should reference the particular features of your dataset.\nThis question ideally helps answer the real-world question, but it’s okay if it doesn’t.\n\nThe approach that you’ll take to answer that question, probably using some sort of predictive or statistical modeling.\nA description of the data’s provenance: as much as you can, trace the path from the events or measurements all the way to the dataset you’re working with. You might answer:\n\nwhere did the data come from originally?\nWhere did you download it from? As much as you can tell or speculate, how did it end up available there?\n\nThe number of records (rows) in the dataset, and what each one represents.\n\nGive an example of some part of the data in your dataset.\nConsider writing a simple sentence that conveys the information in the first row, as an example.\n\nA list of the features in the dataset and their types.\nAn analysis of the appropriateness of your dataset for your approach. (What’s good about it? What do you wish were better?)\nThis section should also discuss the overall approach of any basic data wrangling needed to get the data into an overall usable form. More specific wrangling may be needed for constructing plots or models later.\n\nExploratory Data Analysis (EDA)\n\nShow plots or tables illustrating the distribution of at least two variables in your dataset. Comment on anything interesting you observe.\nShow plots illustrating bivariate relationships for at least 2 pairs of variables. Comment on anything interesting you observe (e.g., strength of relationship, dependence on other factors).\nSummarize your EDA findings: how do your observations inform the modeling?\n\nModeling\n\nThis section is written for predictive modeling; if you’re doing inferential modeling or clustering, adapt this section as needed.\nDescribe the modeling setup. Clearly state at least:\n\nwhat is the target variable you are trying to predict\nwhich variables (features) you are using to predict it, and why you chose those features\nhow you will measure accuracy (can you give meaningful units?)\nwhat validation method did you choose and why\n\nFit a basic predictive model using one of the techniques we discussed in class (e.g., Decision Trees, Linear/Logistic Regression, Random Forest)\n\nDescribe why you chose that model (and its features and any hyperparameters)\nDescribe what kind of performance you expect from it\n\nReport the results of your basic predictive model via cross-validation.\nMake one or more changes to the predictive model to (attempt to) improve the accuracy. Discuss what changes you made, why you made them, and what the results were.\nThe strongest reports will include insightful visualizations of the model, its predictions, and/or its mistakes, and a discussion of what those plots tell us.\nReport on the final accuracy of your best model on the test set, if applicable.\nAlternative: instead of a supervised prediction task, you can define an unsupervised learning task and use clustering. In this case, clearly state what you want to understand through the clustering, and report your observations.\n\nFindings: Summarize the analyses you performed and what the results told you. What do your findings say about the real-world and prediction (or clustering) questions you posed?\nLimitations: What are some limitations of your analyses? Did you notice any potential biases in the data you used or analysis you did? Any other ethical questions raised during this project?\nFuture Directions: What new questions came up following your exploration of this data? Identify at least one question that would require new data or a new analysis approach, and specify what steps would be required.\n\nYou might additionally walk through what the model predicts, and how it does it, for one or two specific examples, ideally ones that aren’t even part of your dataset.\n(Project descriptions originally thanks to Ofra Amir)",
+    "crumbs": [
+      "Syllabus",
+      "Projects",
+      "Final Project"
+    ]
+  },
+  {
+    "objectID": "final-proj.html#final-project-a-complete-data-science-process",
+    "href": "final-proj.html#final-project-a-complete-data-science-process",
+    "title": "Final Project",
+    "section": "",
+    "text": "The goal of this project is to practice a complete data science workflow: question, data, exploration, modeling, and communication. Results will be presented as a report, supporting code, and a brief presentation to the class. Successful outcomes should include visual, analytical, and perspectival components. The report should be at the level of polish and formality of a blog post (more than a class homework assignment, less than an academic paper). The overview and primary visualizations should be intelligible to a non-technical audience; the methods should be described in precise technical language as appropriate.\nAn important component of this project is a comparative critique of some related prior work. That is, you are not simply demonstrating that you can perform an analysis, but also that you can evaluate the strengths and weaknesses of others’ analyses. This may be the most important take-away from this class for your future career.\n\n\nTeams: Both individual and team projects are permitted, with a mild encouragement towards teams.\nPresentations: The final course meeting (during the designated final exam period) will be devoted to final project presentations. Feedback on others’ projects will be part of your final project grade, so attendance is mandatory.\nThere are two sections of this class, thus two sessions of final project presentations. Refer to the Calvin exam schedule for the official dates; for 2023, it’s Saturday Dec. 9 at 1:30 p.m. and Monday Dec. 11 at 1:30 p.m.. Your team must choose which to present at. You are welcome to attend both sessions to see everyone’s work.\n\n\n\n\nNov 11: Initial proposal. This should include:\n\nA tentative topic (kind of data you want to work with, question you’d like to ask). Include a brief description of what drives your interest in it.\nAn example or two of some data science work you’ve found on the topic already. See below for some guidance on this. Include the URLs of resources you found, and some brief commentary about each one (does it seem good?)\nA proposal of what you’d like to do. A first step will usually be to do an analysis similar to one of the examples you found, and you may not have much idea beyond that at this time. But if you do have some ideas for what you might want to do differently, this is a good place to include them. Note that your overall task should include some modeling (predictive or otherwise).\nTentative Teams: If you have already found people who may be interested in working with you, note that here.\n\nNov 18: Dataset, exploratory visualization, and summary of prior work\n\nYou should have the EDA section of your report complete, and a good start on everything before that.\n\nDec 2: Initial modeling and visualization\nDec 12: Final report\n\n\n\n\nYou can find examples of data science work on sites like Kaggle, TowardsDataScience, Reddit, YouTube, and GitHub. Also check out the TidyTuesday project and r-bloggers.\nYour project should include some modeling, so it should involve more than making visualizations. Predictive modeling is closest to the emphasis of this class, but other kinds of modeling (such as clustering) are often ok.\nYour data should be rich enough to support the kind of modeling you want to do, but not too complex to work with. For example, avoid any dataset larger than 500 MB since it probably won’t fit. Also, avoid image and sound data for similar reasons. (Although if you really want to work with images, there are ways to do this.)\nSome types of projects that have worked well in the past:\n\nParticipating in a Kaggle competition. It should be a competition that is still open. You don’t need to win, but you should be able to do better than the baseline. You should also do some EDA and/or visualization beyond what’s already been done by others.\nReproducing a published analysis. Find a published analysis that you can reproduce, and then extend it in some way. For example, you might find a published analysis that uses a dataset you can’t access, and then find a similar dataset that you can access. Or you might find a published analysis that uses a dataset you can access, and then extend it in some way (e.g., by adding a new feature, or by using a different model).\n\nSome projects that could work great, but should be discussed with the instructor first:\n\nRedoing some class activities using a different toolkit. For example, what if this class were to be taught in JavaScript using ObservableHQ? (Talk with Prof Arnold for detailed ideas.)\nExploring interpretable models. There are some new types of models coming out that are more interpretable, but we have not gotten to discuss them much in class. Perhaps you could explore one of these models and compare it to a more traditional model.\nWorking with a large language model. For example, could you give ChatGPT some example rows from your dataset, then ask it to write a decision tree for you, and evaluate the result? There are losts of\n\n\n\n\n\nNOTES:\n\nYou will likely need to make some choices regarding what variables to include, whether to do some pre-processing (e.g., addressing missing values, generating new variables), etc. Clearly state:\n\nWhat decisions you made\nWhy you made them\nWhat might have been alternative choices.\n\nTell the “rational reconstruction” of the story of how the analysis was done.\n\nDon’t give the play-by-play of everything you tried, every idea you had, etc., but…\nDo include things you tried that led to an important observation later on.\n\nIf you use any code from the Internet, you should acknowledge its source and provide a link.\nYou should submit all of the code needed to replicate your results, but your report should be understandable without looking at the code.\nHere is a template (rendered) that gives one possible outline. You may adapt the outline as needed for your project.\nYou’ll submit both slides and a report. See the Midterm project for submission instructions.\n\nYour report should include the following general elements (though treat this specific outline as a suggestion only; certain reports will need to deviate from this structure in small or large part):\n\nA succinct but descriptive title\nOverview\n\nA real-world question that you’d like to explore, and why it’s interesting.\n\nThis question should be stated in language that is understandable to someone who hasn’t studied data science and doesn’t know the details of your dataset.\nThe best questions include motivation from prior literature that gives, for example, some pattern or relationship that you’d expect to find and why.\n\nA brief (2-4 sentences) high-level description of the dataset: what is the dataset about? Where did it come from? What sort of data does it contain?\n\nPrior Work\n\nA summary of what you have found that others have done with your data or question. Include URLs and author names.\nA response to their work:\n\nWhat did they do well that is inspiring?\nWhat could they improve on or explore further?\nDo you trust their results? Why or why not?\n\nIn what ways do you intend for this project to extend or enhance that prior work? (Save the details of how for the Approach section.)\n\nApproach\n\nA problem description or specific question\n\nThis question should be stated in more specific technical terms than the real-world question.\nIt should reference the particular features of your dataset.\nThis question ideally helps answer the real-world question, but it’s okay if it doesn’t.\n\nThe approach that you’ll take to answer that question, probably using some sort of predictive or statistical modeling.\nA description of the data’s provenance: as much as you can, trace the path from the events or measurements all the way to the dataset you’re working with. You might answer:\n\nwhere did the data come from originally?\nWhere did you download it from? As much as you can tell or speculate, how did it end up available there?\n\nThe number of records (rows) in the dataset, and what each one represents.\n\nGive an example of some part of the data in your dataset.\nConsider writing a simple sentence that conveys the information in the first row, as an example.\n\nA list of the features in the dataset and their types.\nAn analysis of the appropriateness of your dataset for your approach. (What’s good about it? What do you wish were better?)\nThis section should also discuss the overall approach of any basic data wrangling needed to get the data into an overall usable form. More specific wrangling may be needed for constructing plots or models later.\n\nExploratory Data Analysis (EDA)\n\nShow plots or tables illustrating the distribution of at least two variables in your dataset. Comment on anything interesting you observe.\nShow plots illustrating bivariate relationships for at least 2 pairs of variables. Comment on anything interesting you observe (e.g., strength of relationship, dependence on other factors).\nSummarize your EDA findings: how do your observations inform the modeling?\n\nModeling\n\nThis section is written for predictive modeling; if you’re doing inferential modeling or clustering, adapt this section as needed.\nDescribe the modeling setup. Clearly state at least:\n\nwhat is the target variable you are trying to predict\nwhich variables (features) you are using to predict it, and why you chose those features\nhow you will measure accuracy (can you give meaningful units?)\nwhat validation method did you choose and why\n\nFit a basic predictive model using one of the techniques we discussed in class (e.g., Decision Trees, Linear/Logistic Regression, Random Forest)\n\nDescribe why you chose that model (and its features and any hyperparameters)\nDescribe what kind of performance you expect from it\n\nReport the results of your basic predictive model via cross-validation.\nMake one or more changes to the predictive model to (attempt to) improve the accuracy. Discuss what changes you made, why you made them, and what the results were.\nThe strongest reports will include insightful visualizations of the model, its predictions, and/or its mistakes, and a discussion of what those plots tell us.\nReport on the final accuracy of your best model on the test set, if applicable.\nAlternative: instead of a supervised prediction task, you can define an unsupervised learning task and use clustering. In this case, clearly state what you want to understand through the clustering, and report your observations.\n\nFindings: Summarize the analyses you performed and what the results told you. What do your findings say about the real-world and prediction (or clustering) questions you posed?\nLimitations: What are some limitations of your analyses? Did you notice any potential biases in the data you used or analysis you did? Any other ethical questions raised during this project?\nFuture Directions: What new questions came up following your exploration of this data? Identify at least one question that would require new data or a new analysis approach, and specify what steps would be required.\n\nYou might additionally walk through what the model predicts, and how it does it, for one or two specific examples, ideally ones that aren’t even part of your dataset.\n(Project descriptions originally thanks to Ofra Amir)",
+    "crumbs": [
+      "Syllabus",
+      "Projects",
+      "Final Project"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Syllabus",
@@ -188,58 +235,6 @@
     "text": "Deadlines and late work policy\nUnless stated otherwise, the assignment submissions are due by midnight of the due date. The Moodle calendar will list these due dates/times.\nAnything submitted after the dealine is late, unless you have made prior arrangements with us. For each late assignment, you will be charged 10% for each business-day that you are late (e.g., if an assignment is due on Friday, you may turn it in on Monday at 10% off, Tuesday at 20% off and so on) and you need to email us to tell us which assignment you’re submitting late and how late it is. We will not accept work that is more than one week late unless you talk to us about the circumstances and negotiate a late-submission plan. We will generally grant up to 30% for these negotiated plans. We will also grant you 4 grace days with no penalty, no questions asked. Please note that grace days do not apply to the quizzes or the final project, and that we do not accept or negotiate for late work after the last day of class. If there are exceptional circumstances, please talk to us so we can work something out."
   },
   {
-    "objectID": "final-proj.html",
-    "href": "final-proj.html",
-    "title": "Final Project",
-    "section": "",
-    "text": "The goal of this project is to practice a complete data science workflow: question, data, exploration, modeling, and communication. Results will be presented as a report, supporting code, and a brief presentation to the class. Successful outcomes should include visual, analytical, and perspectival components. The report should be at the level of polish and formality of a blog post (more than a class homework assignment, less than an academic paper). The overview and primary visualizations should be intelligible to a non-technical audience; the methods should be described in precise technical language as appropriate.\nAn important component of this project is a comparative critique of some related prior work. That is, you are not simply demonstrating that you can perform an analysis, but also that you can evaluate the strengths and weaknesses of others’ analyses. This may be the most important take-away from this class for your future career.\n\n\nTeams: Both individual and team projects are permitted, with a mild encouragement towards teams.\nPresentations: The final course meeting (during the designated final exam period) will be devoted to final project presentations. Feedback on others’ projects will be part of your final project grade, so attendance is mandatory.\nThere are two sections of this class, thus two sessions of final project presentations. Refer to the Calvin exam schedule for the official dates; for 2023, it’s Saturday Dec. 9 at 1:30 p.m. and Monday Dec. 11 at 1:30 p.m.. Your team must choose which to present at. You are welcome to attend both sessions to see everyone’s work.\n\n\n\n\nNov 11: Initial proposal. This should include:\n\nA tentative topic (kind of data you want to work with, question you’d like to ask). Include a brief description of what drives your interest in it.\nAn example or two of some data science work you’ve found on the topic already. See below for some guidance on this. Include the URLs of resources you found, and some brief commentary about each one (does it seem good?)\nA proposal of what you’d like to do. A first step will usually be to do an analysis similar to one of the examples you found, and you may not have much idea beyond that at this time. But if you do have some ideas for what you might want to do differently, this is a good place to include them. Note that your overall task should include some modeling (predictive or otherwise).\nTentative Teams: If you have already found people who may be interested in working with you, note that here.\n\nNov 18: Dataset, exploratory visualization, and summary of prior work\n\nYou should have the EDA section of your report complete, and a good start on everything before that.\n\nDec 2: Initial modeling and visualization\nDec 12: Final report\n\n\n\n\nYou can find examples of data science work on sites like Kaggle, TowardsDataScience, Reddit, YouTube, and GitHub. Also check out the TidyTuesday project and r-bloggers.\nYour project should include some modeling, so it should involve more than making visualizations. Predictive modeling is closest to the emphasis of this class, but other kinds of modeling (such as clustering) are often ok.\nYour data should be rich enough to support the kind of modeling you want to do, but not too complex to work with. For example, avoid any dataset larger than 500 MB since it probably won’t fit. Also, avoid image and sound data for similar reasons. (Although if you really want to work with images, there are ways to do this.)\nSome types of projects that have worked well in the past:\n\nParticipating in a Kaggle competition. It should be a competition that is still open. You don’t need to win, but you should be able to do better than the baseline. You should also do some EDA and/or visualization beyond what’s already been done by others.\nReproducing a published analysis. Find a published analysis that you can reproduce, and then extend it in some way. For example, you might find a published analysis that uses a dataset you can’t access, and then find a similar dataset that you can access. Or you might find a published analysis that uses a dataset you can access, and then extend it in some way (e.g., by adding a new feature, or by using a different model).\n\nSome projects that could work great, but should be discussed with the instructor first:\n\nRedoing some class activities using a different toolkit. For example, what if this class were to be taught in JavaScript using ObservableHQ? (Talk with Prof Arnold for detailed ideas.)\nExploring interpretable models. There are some new types of models coming out that are more interpretable, but we have not gotten to discuss them much in class. Perhaps you could explore one of these models and compare it to a more traditional model.\nWorking with a large language model. For example, could you give ChatGPT some example rows from your dataset, then ask it to write a decision tree for you, and evaluate the result? There are losts of\n\n\n\n\n\nNOTES:\n\nYou will likely need to make some choices regarding what variables to include, whether to do some pre-processing (e.g., addressing missing values, generating new variables), etc. Clearly state:\n\nWhat decisions you made\nWhy you made them\nWhat might have been alternative choices.\n\nTell the “rational reconstruction” of the story of how the analysis was done.\n\nDon’t give the play-by-play of everything you tried, every idea you had, etc., but…\nDo include things you tried that led to an important observation later on.\n\nIf you use any code from the Internet, you should acknowledge its source and provide a link.\nYou should submit all of the code needed to replicate your results, but your report should be understandable without looking at the code.\nHere is a template (rendered) that gives one possible outline. You may adapt the outline as needed for your project.\nYou’ll submit both slides and a report. See the Midterm project for submission instructions.\n\nYour report should include the following general elements (though treat this specific outline as a suggestion only; certain reports will need to deviate from this structure in small or large part):\n\nA succinct but descriptive title\nOverview\n\nA real-world question that you’d like to explore, and why it’s interesting.\n\nThis question should be stated in language that is understandable to someone who hasn’t studied data science and doesn’t know the details of your dataset.\nThe best questions include motivation from prior literature that gives, for example, some pattern or relationship that you’d expect to find and why.\n\nA brief (2-4 sentences) high-level description of the dataset: what is the dataset about? Where did it come from? What sort of data does it contain?\n\nPrior Work\n\nA summary of what you have found that others have done with your data or question. Include URLs and author names.\nA response to their work:\n\nWhat did they do well that is inspiring?\nWhat could they improve on or explore further?\nDo you trust their results? Why or why not?\n\nIn what ways do you intend for this project to extend or enhance that prior work? (Save the details of how for the Approach section.)\n\nApproach\n\nA problem description or specific question\n\nThis question should be stated in more specific technical terms than the real-world question.\nIt should reference the particular features of your dataset.\nThis question ideally helps answer the real-world question, but it’s okay if it doesn’t.\n\nThe approach that you’ll take to answer that question, probably using some sort of predictive or statistical modeling.\nA description of the data’s provenance: as much as you can, trace the path from the events or measurements all the way to the dataset you’re working with. You might answer:\n\nwhere did the data come from originally?\nWhere did you download it from? As much as you can tell or speculate, how did it end up available there?\n\nThe number of records (rows) in the dataset, and what each one represents.\n\nGive an example of some part of the data in your dataset.\nConsider writing a simple sentence that conveys the information in the first row, as an example.\n\nA list of the features in the dataset and their types.\nAn analysis of the appropriateness of your dataset for your approach. (What’s good about it? What do you wish were better?)\nThis section should also discuss the overall approach of any basic data wrangling needed to get the data into an overall usable form. More specific wrangling may be needed for constructing plots or models later.\n\nExploratory Data Analysis (EDA)\n\nShow plots or tables illustrating the distribution of at least two variables in your dataset. Comment on anything interesting you observe.\nShow plots illustrating bivariate relationships for at least 2 pairs of variables. Comment on anything interesting you observe (e.g., strength of relationship, dependence on other factors).\nSummarize your EDA findings: how do your observations inform the modeling?\n\nModeling\n\nThis section is written for predictive modeling; if you’re doing inferential modeling or clustering, adapt this section as needed.\nDescribe the modeling setup. Clearly state at least:\n\nwhat is the target variable you are trying to predict\nwhich variables (features) you are using to predict it, and why you chose those features\nhow you will measure accuracy (can you give meaningful units?)\nwhat validation method did you choose and why\n\nFit a basic predictive model using one of the techniques we discussed in class (e.g., Decision Trees, Linear/Logistic Regression, Random Forest)\n\nDescribe why you chose that model (and its features and any hyperparameters)\nDescribe what kind of performance you expect from it\n\nReport the results of your basic predictive model via cross-validation.\nMake one or more changes to the predictive model to (attempt to) improve the accuracy. Discuss what changes you made, why you made them, and what the results were.\nThe strongest reports will include insightful visualizations of the model, its predictions, and/or its mistakes, and a discussion of what those plots tell us.\nReport on the final accuracy of your best model on the test set, if applicable.\nAlternative: instead of a supervised prediction task, you can define an unsupervised learning task and use clustering. In this case, clearly state what you want to understand through the clustering, and report your observations.\n\nFindings: Summarize the analyses you performed and what the results told you. What do your findings say about the real-world and prediction (or clustering) questions you posed?\nLimitations: What are some limitations of your analyses? Did you notice any potential biases in the data you used or analysis you did? Any other ethical questions raised during this project?\nFuture Directions: What new questions came up following your exploration of this data? Identify at least one question that would require new data or a new analysis approach, and specify what steps would be required.\n\nYou might additionally walk through what the model predicts, and how it does it, for one or two specific examples, ideally ones that aren’t even part of your dataset.\n(Project descriptions originally thanks to Ofra Amir)",
-    "crumbs": [
-      "Syllabus",
-      "Projects",
-      "Final Project"
-    ]
-  },
-  {
-    "objectID": "final-proj.html#final-project-a-complete-data-science-process",
-    "href": "final-proj.html#final-project-a-complete-data-science-process",
-    "title": "Final Project",
-    "section": "",
-    "text": "The goal of this project is to practice a complete data science workflow: question, data, exploration, modeling, and communication. Results will be presented as a report, supporting code, and a brief presentation to the class. Successful outcomes should include visual, analytical, and perspectival components. The report should be at the level of polish and formality of a blog post (more than a class homework assignment, less than an academic paper). The overview and primary visualizations should be intelligible to a non-technical audience; the methods should be described in precise technical language as appropriate.\nAn important component of this project is a comparative critique of some related prior work. That is, you are not simply demonstrating that you can perform an analysis, but also that you can evaluate the strengths and weaknesses of others’ analyses. This may be the most important take-away from this class for your future career.\n\n\nTeams: Both individual and team projects are permitted, with a mild encouragement towards teams.\nPresentations: The final course meeting (during the designated final exam period) will be devoted to final project presentations. Feedback on others’ projects will be part of your final project grade, so attendance is mandatory.\nThere are two sections of this class, thus two sessions of final project presentations. Refer to the Calvin exam schedule for the official dates; for 2023, it’s Saturday Dec. 9 at 1:30 p.m. and Monday Dec. 11 at 1:30 p.m.. Your team must choose which to present at. You are welcome to attend both sessions to see everyone’s work.\n\n\n\n\nNov 11: Initial proposal. This should include:\n\nA tentative topic (kind of data you want to work with, question you’d like to ask). Include a brief description of what drives your interest in it.\nAn example or two of some data science work you’ve found on the topic already. See below for some guidance on this. Include the URLs of resources you found, and some brief commentary about each one (does it seem good?)\nA proposal of what you’d like to do. A first step will usually be to do an analysis similar to one of the examples you found, and you may not have much idea beyond that at this time. But if you do have some ideas for what you might want to do differently, this is a good place to include them. Note that your overall task should include some modeling (predictive or otherwise).\nTentative Teams: If you have already found people who may be interested in working with you, note that here.\n\nNov 18: Dataset, exploratory visualization, and summary of prior work\n\nYou should have the EDA section of your report complete, and a good start on everything before that.\n\nDec 2: Initial modeling and visualization\nDec 12: Final report\n\n\n\n\nYou can find examples of data science work on sites like Kaggle, TowardsDataScience, Reddit, YouTube, and GitHub. Also check out the TidyTuesday project and r-bloggers.\nYour project should include some modeling, so it should involve more than making visualizations. Predictive modeling is closest to the emphasis of this class, but other kinds of modeling (such as clustering) are often ok.\nYour data should be rich enough to support the kind of modeling you want to do, but not too complex to work with. For example, avoid any dataset larger than 500 MB since it probably won’t fit. Also, avoid image and sound data for similar reasons. (Although if you really want to work with images, there are ways to do this.)\nSome types of projects that have worked well in the past:\n\nParticipating in a Kaggle competition. It should be a competition that is still open. You don’t need to win, but you should be able to do better than the baseline. You should also do some EDA and/or visualization beyond what’s already been done by others.\nReproducing a published analysis. Find a published analysis that you can reproduce, and then extend it in some way. For example, you might find a published analysis that uses a dataset you can’t access, and then find a similar dataset that you can access. Or you might find a published analysis that uses a dataset you can access, and then extend it in some way (e.g., by adding a new feature, or by using a different model).\n\nSome projects that could work great, but should be discussed with the instructor first:\n\nRedoing some class activities using a different toolkit. For example, what if this class were to be taught in JavaScript using ObservableHQ? (Talk with Prof Arnold for detailed ideas.)\nExploring interpretable models. There are some new types of models coming out that are more interpretable, but we have not gotten to discuss them much in class. Perhaps you could explore one of these models and compare it to a more traditional model.\nWorking with a large language model. For example, could you give ChatGPT some example rows from your dataset, then ask it to write a decision tree for you, and evaluate the result? There are losts of\n\n\n\n\n\nNOTES:\n\nYou will likely need to make some choices regarding what variables to include, whether to do some pre-processing (e.g., addressing missing values, generating new variables), etc. Clearly state:\n\nWhat decisions you made\nWhy you made them\nWhat might have been alternative choices.\n\nTell the “rational reconstruction” of the story of how the analysis was done.\n\nDon’t give the play-by-play of everything you tried, every idea you had, etc., but…\nDo include things you tried that led to an important observation later on.\n\nIf you use any code from the Internet, you should acknowledge its source and provide a link.\nYou should submit all of the code needed to replicate your results, but your report should be understandable without looking at the code.\nHere is a template (rendered) that gives one possible outline. You may adapt the outline as needed for your project.\nYou’ll submit both slides and a report. See the Midterm project for submission instructions.\n\nYour report should include the following general elements (though treat this specific outline as a suggestion only; certain reports will need to deviate from this structure in small or large part):\n\nA succinct but descriptive title\nOverview\n\nA real-world question that you’d like to explore, and why it’s interesting.\n\nThis question should be stated in language that is understandable to someone who hasn’t studied data science and doesn’t know the details of your dataset.\nThe best questions include motivation from prior literature that gives, for example, some pattern or relationship that you’d expect to find and why.\n\nA brief (2-4 sentences) high-level description of the dataset: what is the dataset about? Where did it come from? What sort of data does it contain?\n\nPrior Work\n\nA summary of what you have found that others have done with your data or question. Include URLs and author names.\nA response to their work:\n\nWhat did they do well that is inspiring?\nWhat could they improve on or explore further?\nDo you trust their results? Why or why not?\n\nIn what ways do you intend for this project to extend or enhance that prior work? (Save the details of how for the Approach section.)\n\nApproach\n\nA problem description or specific question\n\nThis question should be stated in more specific technical terms than the real-world question.\nIt should reference the particular features of your dataset.\nThis question ideally helps answer the real-world question, but it’s okay if it doesn’t.\n\nThe approach that you’ll take to answer that question, probably using some sort of predictive or statistical modeling.\nA description of the data’s provenance: as much as you can, trace the path from the events or measurements all the way to the dataset you’re working with. You might answer:\n\nwhere did the data come from originally?\nWhere did you download it from? As much as you can tell or speculate, how did it end up available there?\n\nThe number of records (rows) in the dataset, and what each one represents.\n\nGive an example of some part of the data in your dataset.\nConsider writing a simple sentence that conveys the information in the first row, as an example.\n\nA list of the features in the dataset and their types.\nAn analysis of the appropriateness of your dataset for your approach. (What’s good about it? What do you wish were better?)\nThis section should also discuss the overall approach of any basic data wrangling needed to get the data into an overall usable form. More specific wrangling may be needed for constructing plots or models later.\n\nExploratory Data Analysis (EDA)\n\nShow plots or tables illustrating the distribution of at least two variables in your dataset. Comment on anything interesting you observe.\nShow plots illustrating bivariate relationships for at least 2 pairs of variables. Comment on anything interesting you observe (e.g., strength of relationship, dependence on other factors).\nSummarize your EDA findings: how do your observations inform the modeling?\n\nModeling\n\nThis section is written for predictive modeling; if you’re doing inferential modeling or clustering, adapt this section as needed.\nDescribe the modeling setup. Clearly state at least:\n\nwhat is the target variable you are trying to predict\nwhich variables (features) you are using to predict it, and why you chose those features\nhow you will measure accuracy (can you give meaningful units?)\nwhat validation method did you choose and why\n\nFit a basic predictive model using one of the techniques we discussed in class (e.g., Decision Trees, Linear/Logistic Regression, Random Forest)\n\nDescribe why you chose that model (and its features and any hyperparameters)\nDescribe what kind of performance you expect from it\n\nReport the results of your basic predictive model via cross-validation.\nMake one or more changes to the predictive model to (attempt to) improve the accuracy. Discuss what changes you made, why you made them, and what the results were.\nThe strongest reports will include insightful visualizations of the model, its predictions, and/or its mistakes, and a discussion of what those plots tell us.\nReport on the final accuracy of your best model on the test set, if applicable.\nAlternative: instead of a supervised prediction task, you can define an unsupervised learning task and use clustering. In this case, clearly state what you want to understand through the clustering, and report your observations.\n\nFindings: Summarize the analyses you performed and what the results told you. What do your findings say about the real-world and prediction (or clustering) questions you posed?\nLimitations: What are some limitations of your analyses? Did you notice any potential biases in the data you used or analysis you did? Any other ethical questions raised during this project?\nFuture Directions: What new questions came up following your exploration of this data? Identify at least one question that would require new data or a new analysis approach, and specify what steps would be required.\n\nYou might additionally walk through what the model predicts, and how it does it, for one or two specific examples, ideally ones that aren’t even part of your dataset.\n(Project descriptions originally thanks to Ofra Amir)",
-    "crumbs": [
-      "Syllabus",
-      "Projects",
-      "Final Project"
-    ]
-  },
-  {
-    "objectID": "quarto.html",
-    "href": "quarto.html",
-    "title": "Quarto Templates and Tips",
-    "section": "",
-    "text": "Your qmd files should generally start like this:\n---\ntitle: \"A title\"\nauthor: \"Your name\"\nformat:\n  html:\n    embed-resources: true\n    code-tools: true\n    code-fold: true\n---\n\n```{python}\n#| echo: true\nimport numpy as np\nimport pandas as pd\nimport plotly.express as px\npd.options.plotting.backend = \"plotly\"\n```\n\n```{python}\n#| echo: false\n# Hack to make plotly work in RStudio\nif 'r' in globals() and r['.Platform$GUI'] == \"RStudio\" and r['suppressMessages(requireNamespace(\"htmltools\"))']:\n  r[\".GlobalEnv$to_html &lt;- function(x) { print(htmltools::HTML(x)) }\"] and None\n  def show_plot(p): r.to_html(p._repr_html_())\nelse:\n  def show_plot(p): return p\n```\n\n\n\n\n\n\nYAML Explanation\n\n\n\n\n\nThe embed-resources option makes the HTML file self-contained, so you can share it with others. The code-tools option adds a button to the top of the document that lets you run all the code chunks at once. The code-fold option lets you collapse code chunks in the document. (You may omit this option if you prefer to see all the code.)\n\n\n\n\n\n\n\n\n\nPlotly Explanation\n\n\n\n\n\nPlotly works fine in Quarto rendered documents, but to have plots show up in the RStudio editor when you run a chunk, you’ll need to include that hack and surround your plot with show_plot().\nYou are not expected to understand this hack; just copy and paste it into your document.\nOnce this bug in RStudio is fixed we can remove this hack."
-  },
-  {
-    "objectID": "quarto.html#class-standards",
-    "href": "quarto.html#class-standards",
-    "title": "Quarto Templates and Tips",
-    "section": "",
-    "text": "Your qmd files should generally start like this:\n---\ntitle: \"A title\"\nauthor: \"Your name\"\nformat:\n  html:\n    embed-resources: true\n    code-tools: true\n    code-fold: true\n---\n\n```{python}\n#| echo: true\nimport numpy as np\nimport pandas as pd\nimport plotly.express as px\npd.options.plotting.backend = \"plotly\"\n```\n\n```{python}\n#| echo: false\n# Hack to make plotly work in RStudio\nif 'r' in globals() and r['.Platform$GUI'] == \"RStudio\" and r['suppressMessages(requireNamespace(\"htmltools\"))']:\n  r[\".GlobalEnv$to_html &lt;- function(x) { print(htmltools::HTML(x)) }\"] and None\n  def show_plot(p): r.to_html(p._repr_html_())\nelse:\n  def show_plot(p): return p\n```\n\n\n\n\n\n\nYAML Explanation\n\n\n\n\n\nThe embed-resources option makes the HTML file self-contained, so you can share it with others. The code-tools option adds a button to the top of the document that lets you run all the code chunks at once. The code-fold option lets you collapse code chunks in the document. (You may omit this option if you prefer to see all the code.)\n\n\n\n\n\n\n\n\n\nPlotly Explanation\n\n\n\n\n\nPlotly works fine in Quarto rendered documents, but to have plots show up in the RStudio editor when you run a chunk, you’ll need to include that hack and surround your plot with show_plot().\nYou are not expected to understand this hack; just copy and paste it into your document.\nOnce this bug in RStudio is fixed we can remove this hack."
-  },
-  {
-    "objectID": "quarto.html#chunk-options",
-    "href": "quarto.html#chunk-options",
-    "title": "Quarto Templates and Tips",
-    "section": "Chunk Options",
-    "text": "Chunk Options\n```{python}\n#| echo: false\n#| include: false\n# This code won't get shown because echo is false.\nx = 2\n# but it still runs.\nprint(\"This output won't show because include is false\")\n```"
-  },
-  {
-    "objectID": "quarto.html#computations-in-text",
-    "href": "quarto.html#computations-in-text",
-    "title": "Quarto Templates and Tips",
-    "section": "Computations in Text",
-    "text": "Computations in Text\nprint out the Markdown you want to include in the document, and use the asis output option. Turn off echo so that the code isn’t included in the document.\nNote: The hidden chunk shouldn’t do any non-obvious calculation. Do that in a different chunk and assign the result to a variable.\n```{python}\n#| echo: false\nnum_rows = daily_rides.shape[0]\n```\n```{python}\n#| echo: false\n#| output: asis\nprint(\"\"\"\nThere are {num_rows} rows in the data frame.\n\nEach row represents a day of data.\n\"\"\".format(num_rows=num_rows))\n```\n\n\n\n\n\n\nSome Python string tips\n\n\n\nTriple-quoted strings (\"\"\") can span multiple lines. They can also have single quotes in them.\nThe format method on strings fills in {} blanks with the values of the named arguments. (You can also use f-strings (f\"There are {num_rows} rows in the data frame.\") if you know what those are.)"
-  },
-  {
     "objectID": "slides/01 - Introduction/index.html",
     "href": "slides/01 - Introduction/index.html",
     "title": "01 - Introduction",
@@ -252,75 +247,406 @@
     ]
   },
   {
-    "objectID": "midterm-proj.html",
-    "href": "midterm-proj.html",
-    "title": "Midterm Project",
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "",
-    "text": "Replicate and critique a visual.\nFor this project you will pick some existing data science work (a newspapar article, blog post, report, research paper, etc.) and replicate a visual from it using the data wrangling and plotting tools we’re studying.\nYou will then critique the original visualization and propose alternative designs.\nThe project will be done in teams of between 1 and 3. You will submit a single report and make a joint presentation.",
+    "text": "Dear Heavenly Father,\nWe invite Your presence into this classroom.\nLet Your light shine upon us, illuminating the path of learning, so we may contemplate your beauty and love in everything you made.\nMay this classroom be a place of respect, fellowship, and growth. Help us to be open to new ideas, to embrace challenges, and to support one another in our academic endeavors. Bless this class so that it may be a space where minds are enriched, friendships are formed, and hearts are touched.\nGuide our imaginations and desires towards your love and justice, so that we may respond adequately to your call to be Christ’s agents of renewal in the world.\nThrough our Lord Jesus Christ, your Son, who lives and reigns with you in the unity of the Holy Spirit, one God, for ever and ever.\nAmen.",
     "crumbs": [
       "Syllabus",
-      "Projects",
-      "Midterm Project"
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
     ]
   },
   {
-    "objectID": "midterm-proj.html#milestones",
-    "href": "midterm-proj.html#milestones",
-    "title": "Midterm Project",
-    "section": "Milestones",
-    "text": "Milestones\n\nWeek 3: Identify possible plots\nThis was done as part of Discussion 2.\n\n\n\n\n\n\nHow to pick a plot?\n\n\n\n\n\nYou can pick one of these approaches:\n\nOrganization-centered: Pick an organization that you’re interested in (company, NGO, government agency, sports team, hospital, school, scientific community, etc.) and find some graphic that is helpful for them as they make decisions.\nIssue-centered: Pick an issue that’s important to you. Find a news article or opinion piece about that issue and try to replicate a visual that they’d use to support their claims. The strongest such projects will pick a claim that you disagree with.\n\n\n\n\n\n\nWeek 4: Plot selection and initial analysis\nUpload a screenshot of one or more potential plots to the Plot Gallery. Your post should include:\n\nScreenshot: A screenshot of the plot (image)\nClaim or Purpose: What the author is trying to say with this plot\nSource: URL, or some other similarly clear description of how to get to the original plot\nEach row is: A short phrase of what each row of the plot dataframe represents (e.g., “The data has one row per day and rider type”.\nData dictionary: A table of (possible) variable names and what they (probably) represent\nData Sources: Potential sources for the data, in the form of URLs or similar. Try downloading and opening the data if you can; report on any anticipated difficulties.\n\nYou don’t have to fill in everything for the initial post; you can come back and fill it in later.\n\n\n\n\n\n\nImportant\n\n\n\nThe plot you choose to replicate should have at least 3 variables.\nIf you really want to make a plot that has fewer than 3 variables, you should be able to explain why it’s still interesting and worth doing.\n\n\n\n\n\n\n\n\nOther Plot Selection Guidelines\n\n\n\nThe plot you choose to replicate:\n\nShould make an interesting claim.\n\nShouldn’t just be about something (e.g., “number of wins by each athlete”)\nMost interesting claims are about relationships (e.g,. “the highest paid athletes don’t necessarily win more”)\nA claim finishes the sentence: “The article uses this graphic to back up the claim that BLANK”.\nIf the article doesn’t make a claim, make one up. Imagine that you’ve gotten in an argument with someone and you show them this plot to back up your claim; what claim were you trying to make?\n\nShould involve at least 3 variables.\n\nIdeally they have to come from several separate data sources that you have to bring together.\n\nShould have some room for improvement, i.e., you’d be interested in trying a different way of presenting the data.\n\nIf you are really stuck, I can simply assign something to do, but I’m hoping to avoid that.\n\n\n\n\nWeek 5: Data\nFind and load the data; write a brief critique of the data.\nFor this milestone, your report should be complete through the “Data” section. See the Report Template below.\n\n\n\n\n\n\nData Selection Guidelines\n\n\n\nThe data you find:\n\nShould come from a reputable source.\n\nIf you use an aggregation site like OurWorldInData, try to track down where they got the data.\n\nShould require at least a little bit of wrangling\n\nBeware of sites where you can download exactly the data for a specific plot\n“Download data for this chart” links are red flags that you may be getting already-wrangled data.\n\n\nSee Some questions to ask if you’re working with data that you didn’t collect yourself.\nIf the wrangling is especially straightforward, you can add depth by:\n\nFinding a different source for the same data\nCritiquing the data collection process\nDescribing alternative choices that could have been made in the data collection or wrangling process and what the consequences of those choices might be.\n\n\n\n\n\nWeek 6: Initial plot and ideas\nMake an initial plot and a todo list of things to improve; sketch ideas for alternative ways to plot the same data.\nYour report should be complete through the “Wrangling” section and have some initial work in the “Replication” and “Alternatives” sections.\n\n\nWeek 8: Presentation and Report\nPresent the original, replication, and alternative plots to the class and in a Quarto report.",
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#objectives",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#objectives",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Objectives",
+    "text": "Objectives\nUpon successful completion of this course students will be able to:\n\nPrepare tabular data for visualization and analytics by constructing generalizable workflows for loading, transforming, joining, and reshaping data.\nCreate, interpret, critique, and refine graphical and tabular visualizations of data.\nTranslate a real-world need into an appropriate analytics task, considering available data.\nSelect analytics methods appropriate to the data and task from among the approaches surveyed in the course.\nInterpret the outcomes of selected predictive analytics techniques.\nCommunicate analytics results using reports that clearly motivate the problem and approach, elucidate the data used, and present both the strengths and shortcomings of analytics results.\nDiscuss ethical and social considerations of data collection and data-driven systems.\n\nAdditionally, using transparent reproducible workflows and regularly acknowledging limitations will help students practice virtues including integrity, humility, and justice.",
     "crumbs": [
       "Syllabus",
-      "Projects",
-      "Midterm Project"
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
     ]
   },
   {
-    "objectID": "midterm-proj.html#report-and-presentation-details",
-    "href": "midterm-proj.html#report-and-presentation-details",
-    "title": "Midterm Project",
-    "section": "Report and Presentation Details",
-    "text": "Report and Presentation Details\n\nReport Content\nYour report should include the following sections:\n\nOverview of the original plot (include a screenshot) and the claim it makes.\nDesign of the original plot. (plot type, effectiveness)\nData (where’d you get it, anything interesting about it or what you had to do with it)\nWrangling (what did you have to do to get it into a form that you could plot?)\nReplication (show your replication of the original plot)\nAlternative 1: what did you change? why?\nAlternative 2: (same, but can be a sketch rather than a full plot)\nSummary: one or two take-aways\n\n\n\nReport Template\nThis template includes a suggested outline for your report. You may choose to organize your report differently if you have a good reason.\n\n\n\n\n\n\nClick to show the Report Template\n\n\n\n\n\n---\ntitle: \"A title\"\nauthor:\n    - \"Your name\"\n    - \"Partner name\"\nformat:\n  html:\n    embed-resources: true\n    code-tools: true\n    code-fold: true\n---\n\n```{python}\n#| echo: true\nimport pandas as pd\nimport plotly.express as px\n```\n\n```{python}\n#| echo: false\n# Hack to make plotly work in RStudio\nif 'r' in globals() and r['.Platform$GUI'] == \"RStudio\" and r['suppressMessages(requireNamespace(\"htmltools\"))']:\n  r[\".GlobalEnv$to_html &lt;- function(x) { print(htmltools::HTML(x)) }\"] and None\n  def show_plot(p): r.to_html(p._repr_html_())\nelse:\n  def show_plot(p): return p\n```\n\n🚧\nThis template is intended to help you structure your report. Remove placeholders like this and make it your own. Not every question needs to be answered for every project, and some projects will have additional questions. **Your final report should not include any \"under construction\" or template text.**\n\n## Overview\n\n🚧\nWe are interested in TOPIC because STORY. So we chose to replicate a plot from [this article] (INCLUDE THE COMPLETE URL TO THE ARTICLE).\n\n🚧\nOriginal visualization:\n\n![](https://example.com/your-url-here)\n\n🚧\nClaim:\n\n&gt; You can put the claim in a \"block quote\" like this.\n&gt; A concise statement (ideally a quote) of the claim that the article uses the visualization to make (or the claim you invented if there wasn't a clear one)\n\n\n## Design\n\n🚧\nWhat overall type of visualization was chosen? Why might the author have chosen it?\n🚧\nWhat variables are being shown?\n🚧\nWhat visual cues (aka retinal variables or aesthetics) were chosen to represent those data variables?\n🚧\n    For at least one of these variables, describe what makes that choice appropriate or inappropriate.\n🚧\nOverall, what about the visual makes it effective, or ineffective, for making its claim?\n\n\n## Data\n\n### Data Overview\n\n🚧\nWhether you were able to find the original data (if not, why not?)\n🚧\nWhere the data came from\n🚧\n    Direct URL and/or specific instructions for how to obtain it.\n🚧\n    Under what terms is the source allowing you to use the data?\n🚧\n    Try to trace it upstream as close to the source as you can.\n🚧\n    Who worked with the data on its way to you? (Include names and roles, if applicable.)\n🚧\n    What processing may have happened to it: was it aggregated? Anonymized? etc.\n🚧\nWhat might we need to know about the data collection process in order to interpret the data correctly? (e.g., If it’s from a survey–who was surveyed?)\n\n### Data Details\n\n🚧\n```{r load-data}\n# your code to load the data here\n```\n\n🚧\nA low-level description of the size and structure of the data.\n🚧\nHow many rows are there?\nWhat does a single row represent? (Translate the first observation in the dataset into an English sentence.)\n🚧\nWhat might be interesting to know about what information the data does, and doesn’t, provide?\n\n\n### Wrangling\n\n🚧\nDescribe, at a broad level, what you need to do to the data to make it into the form you need for the plot. (e.g., what data types need fixing, whether you need to pivot, what filtering is needed, etc.)\n\n🚧\nAdd code blocks, with appropriate names, for wrangling steps. **Explain the *why* for any choices you make (like filtering data).**\n\n## Replication\n\n🚧\nInclude your replication, along with all code needed.\n🚧\nBriefly describe any difficulties you encountered, both those you overcame and those you still have not. (It’s ok to not have a perfect graph here. If the essential structure is there, don’t worry if the details are a bit different. Focus your attention on making an interesting and polished alternative design.)\n🚧\n\n\n## Alternatives\n\n🚧\nDescribe at least two alternative design choices that could be made in visualizing your data. For each design, include the following sections\n\n### Alternative 1: Design\n\n🚧\nWhat choice did the original visual make? (e.g., to use a particular aesthetic mapping or glyph)\n🚧\nWhat choice does your alternative design make instead? (It should be a reasonable choice, but it doesn’t have to be an improvement.)\n🚧\nHow does that change affect how the visual supports the original claim? Can your redesign now support some different claim?\n\n### Implementation\n\n🚧\nMake a solid attempt to implement your best alternative design.\nIf creating it using plotly is too challenging, you may include a high-fidelity sketch of what the plot would look like (using PowerPoint, a vector graphics tool, or a good-quality scan of a paper or whiteboard), along with a clear description of what you’d need to figure out in order to produce it with code.\n\n## Summary\n\n🚧\nNow that you’ve gone through the whole process, how has your understanding of, and belief in, the original article’s claim changed?\n🚧\nHow faithful was your replication?\n🚧\nCompare your original and alternative designs. Which is best for what purpose?\n🚧\nWhat follow-up questions and ideas do you have about the data or visualization you worked with?\n🚧\nHow do you feel about this whole experience?\n\n## Acknowledgments\n\n🚧\nInclude the full names of any students outside your team who helped you and a brief description of how they helped.\n\n### License\n\nSharing: Would you be okay with sharing your project, and if so, how?\n\nIdeally we'd make a public gallery with all projects, screenshots, and code, but you could choose to:\n\n- Go anonymous (choices: \"anon\" or \"names\")\n- Don't share code? (choices: \"code\" or \"screenshots\" or \"just title\")\n- Restrict to just future students (choices: \"public\" or \"students\").\n\nso, e.g., you might say \"anon, code, students\" or \"names, screenshots, public\".\n\n\n\n\n\nReport Style\nYour report should be:\n\nunderstandable by itself: a reader should not need to see your discussion posts or prior submissions.\nreproducible – if a new version of the data becomes available, anyone should be able to re-run your code and get an updated plot. Things to avoid:\n\npaths that only work on your computer\nmaking modifications to your raw data (e.g., editing it in Excel)\nhard-coding row numbers or other things that are likely to change\n\nunderstandable without the code: a reader should be able to skip over all of the code and understand all of the results.\nAt least one of your visuals (either the original or alternative design) should be high quality, with effort spent getting the details right.\nClean up any messy outputs from code (debugging, etc.)\nWrite succinctly. Bulleted lists are fine when they’re clear.\nUse ordinary text formatting (not headings, blockquotes, etc.) for ordinary prose. Reserve headings and block quotes for headings and quotes.\nFormat your code cleanly. If lazy, select the code and click “Reformat Code” on the Code menu. (Make sure you save first.)\nRead through the report before submitting. Check that you don’t have placeholder text, the headings make sense, etc.\n\nAcademic Integrity: If you take any code from elsewhere, you must state very clearly where it came from and how you changed it. This includes ChatGPT and other AI tools. If you find a plot and it has Plotly code already, I advise against looking at it, and possibly even finding a different plot. Code using a different toolkit (e.g., R) is probably okay.\n\n\nPresentation\nTo practice making data-driven arguments, this project includes a brief presentation, done on VoiceThread.\nKeep it short and simple. The slides should be as follows:\n\nOriginal Plot and Claim\nData (where’d you get it, anything interesting about it or what you had to do with it)\nReplication\nAlternative 1: what did you change? why?\nAlternative 2: (same)\nSummary: one or two take-aways\n\nUse a presentation tool like Google Slides or PowerPoint.\nUse voice comments to narrate. Each team member should make at least one comment.",
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#lets-know-each-other",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#lets-know-each-other",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Let’s know each other",
+    "text": "Let’s know each other\nStand up and sit when someone says what you would say:\n\n1st round: major\n2nd round: favorite sport\n3rd round: favorite board game",
     "crumbs": [
       "Syllabus",
-      "Projects",
-      "Midterm Project"
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
     ]
   },
   {
-    "objectID": "midterm-proj.html#logistics",
-    "href": "midterm-proj.html#logistics",
-    "title": "Midterm Project",
-    "section": "Logistics",
-    "text": "Logistics\n\nReport Submission\n\nIf your dataset is less than 10 MB: submit a .zip file with your entire project folder.\nOtherwise: submit just the HTML (and make sure the instructions are very clear about how to get the data)\n\nUse the header from the template, which includes these important settings:\n\nKeep code-tools: true in the header so we can see your source code.\nMake sure you keep embed-resources: true so we can see any images.\n\n\n\n\n\nShared Projects\nRStudio (Posit Workbench) has a feature called Shared Projects that many teams will find helpful.\nTo use it, one person should create a new project in the ~/rprojects folder. Then, they should go to the projects menu in the top-right corner and choose “Share Project”. Type the username of another team member (the part of their email before the @calvin.edu) in the textbox and click Add.\n\n\n\n\n\n\nrprojects folder\n\n\n\nFor shared projects to work, you must create your project within the ~/rprojects folder, i.e., the folder named rprojects within your home (~) folder.",
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#who-am-i",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#who-am-i",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Who am I?",
+    "text": "Who am I?\nProf. Fernando Santos\n\nFrom São Carlos, Brazil 🇧🇷\n\nPortuguese, not Spanish!\nCerrado (“brazilian savannah”), not jungle!\n\nMajor in computer engineering, PhD in complex systems modeling\nMarried to Jemima, dad of Suzana (6) and Natanael (4)",
     "crumbs": [
       "Syllabus",
-      "Projects",
-      "Midterm Project"
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
     ]
   },
   {
-    "objectID": "midterm-proj.html#checklist",
-    "href": "midterm-proj.html#checklist",
-    "title": "Midterm Project",
-    "section": "Checklist",
-    "text": "Checklist\nThe following is the minimal requirements for the project. The project should also go into depth in some area.\n\nOverview\n\nIncludes a screenshot of the original plot\nIncludes a description of the claim made by the original plot (or the claim you’re making if the original doesn’t make a claim)\nIncludes a link to the original plot\n\nDesign\n\nNames the type of the original plot (scatter, bar, etc.)\nIdentifies the variables used in the original plot\nIdentifies the visual cue that each variable is mapped to.\nDiscusses the effectiveness of the original plot\n\nData\n\nIdentifies the source of the data used for the replication (including a link if possible)\nIndicates how many rows and columns are in the data (e.g., “the data has 100 rows and 5 columns”)\nDescribes what a single row represents (e.g., “one row per day per rider type”)\nDescribes the variables in the data (e.g., “the data has columns for date, rider type, and number of rides”)\n\nWrangling\n\nDescribes the overall process of wrangling the data (e.g., “I had to combine data from sources X and Y, then filter out rows that aren’t Z, then calculate the average number of rides per day”)\nIncludes code blocks that show the wrangling process\nGives an example of the data after wrangling (e.g., the .head() and the .info())\n\nReplication\n\nIncludes the replication of the original plot\nReplication has the same general type of plot as the original (can be different in unimportant details like specific colors used, extra annonatiotns, etc.)\nReplication has the same general variables as the original, mapped to the same general visual cues\nDescribes any difficulties encountered in the replication process\nDescribes any relevant differences between the original and replication\n\nAlternatives\n\nIncludes textual descriptions of two alternative ways to plot the same data that are different in a substantive way (e.g., not just a different color scheme) from each other and from the original plot.\nIncludes images of both alternatives. Ideally they’re implemented in code using actual data, but in case that’s too challenging, a detailed and clear sketch on paper or PowerPoint or some online tool is also fine. The sketch should show all the necessary elements and should be understandable without additional explanation.\n\nSummary\n\nIncludes a reflection on the claim of the original plot and how well the original plot supports that claim.\nIncludes a comparison between the original design and at least of the alternative designs that specifies which design is better for what purpose.\n\nAppendix\n\nReport includes a description of where the depth in the project is, i.e., in what areas you went beyond the bare minimal requirements. See “Depth Somewhere” above.\nReport includes what terms you’d be willing to have your report shared under (see the “License” section of the template.)\nReport includes a list of sources used (e.g., specific links to StackOverflow, ChatGPT shared-conversation links, etc.), and the full names of any students outside your team.\n\nMeta\n\nReport was produced using a reproducible workflow (typically Quarto)\nReport is titled appropriately\nAuthors are listed correctly\nReport is concise\nReport is self-contained\nReport is understandable without reading the code\nNo placeholder text remains.\nReport is formatted cleanly (check headings, code outputs, etc.); check that the file shows up correctly on your local computer before submitting.",
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#our-relationship",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#our-relationship",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Our relationship",
+    "text": "Our relationship\nHeidelberg Catechism Q&A 107:\nWhen god forbids envy, hatred, and anger, he commands us to [h] love our neighbor as ourselves; to show [i] patience, peace, [j] meekness, [k] mercy, and all kindness, towards him, [l] and prevent his hurt as much as in us lies’ and that we [m] do good, even to our enemies.\n\n[a]: Mat. 5:21,22; Prov. 12:18; Mat. 26:52\n[b]: Eph. 4:26; Rom. 12:19; Mat. 5:39,40\n[c]: Mat. 4:5,6,7; Col. 2:23\n[d]: Gen. 9:6; Mat. 26:52; Rom. 13:4\n[e]: James 1:20; Gal. 5:20\n[f]: Rom. 1:29; 1John 2:9\n[g]: 1John 3:15\n[h]: Mat. 22:39; Mat. 7:12\n[i]: Rom. 12:10\n[j]: Eph. 4:2; Gal. 6:1,2; Mat. 5:5; Rom. 12:18\n[k]: Ex. 23:5\n[l]: Mat. 5:45\n[m]: Rom. 12:20",
     "crumbs": [
       "Syllabus",
-      "Projects",
-      "Midterm Project"
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
     ]
   },
   {
-    "objectID": "midterm-proj.html#purpose",
-    "href": "midterm-proj.html#purpose",
-    "title": "Midterm Project",
-    "section": "Purpose",
-    "text": "Purpose\nThe project will explore the intersection between three things:\n\nThe data\nThe visualization\nThe story that the visualization tells about the data (and, indirectly, about the world)\n\nThe three components to this project involve each of these three things:\n\nData: Obtain some real-world dataset. Trace where it came from and how it’s structured. Load it and process it using the data science toolkit we’re studying to a form that’s appropriate for making the visualization.\nVisualization: Replicate (re-create) a visualization that someone else already made based on that data. Evaluate some of the choices and assumptions that were made in the visualization process: in what ways does the visualization faithfully represent the data (or not)? What sort of stories does the chosen visualization amplify?\nStory: Consider the story that the original source told using the visualization. Is that story accurate? complete? clearly articulated? How did choices in the data collection, preparation, and visualization affect the storytelling? Are there other stories that the data might also be telling?\n\nThis project addresses our course-level learning objectives in this way:\n\nTechnical skills: manipulating data, constructing visualizations, and creating reports.\nCommunication: analyzing choices made in visualization and text with respect to how it tells a story about data. Proposing and implementing changes to improve the clarity of communication.\nEthics and Critical Thinking: identify potential ethical questions (e.g., of transparency, diversity, etc.) that emerge in the process of obtaining, manipulating, and communicating with data.",
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#syllabus-bingo",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#syllabus-bingo",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Syllabus Bingo",
+    "text": "Syllabus Bingo\n\n\n\n\n\n\n\n\n\nQuizzes\nWebsites I need to register\nStudy sessions\n\n\nSoftware we are using\nOffice hours\nChatGPT\n\n\nReadings\nDiversity and inclusion\nSchedule",
     "crumbs": [
       "Syllabus",
-      "Projects",
-      "Midterm Project"
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#why-data",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#why-data",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Why data?",
+    "text": "Why data?\nA form of recording experience and information…\n\nExplicit, accessible, transparent\nAmplifies reasoning and perception\nCan be automated",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#however-data-are-also-limited.",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#however-data-are-also-limited.",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "However, data are also limited.",
+    "text": "However, data are also limited.\nThey can be:\n\nimprecise (including: what it can mean for someone may not mean the same thing for another);\nambiguous (may mean multiple things depending on the context);\nnot comprehensive enough (or what we call biased - it is limited to some specific population or situation and thus is not generalizable);\ndistorted (“artifacts” - we cannot always be sure it is being transmitted or recorded faithfully);\nor even not timely enough (things changed since we got them).",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#data-science-lifecycles",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#data-science-lifecycles",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Data science lifecycles",
+    "text": "Data science lifecycles",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#do-we-need-everything",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#do-we-need-everything",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Do we need everything?",
+    "text": "Do we need everything?\n\nIt depends on the level of insight…",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#structures-and-databases",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#structures-and-databases",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Structures and databases",
+    "text": "Structures and databases\n\nTables\nSpreadsheets (Excel, etc.)\nDataframes (pandas)\nSQL databases\nHierarchical (XML, JSON, YAML)\nAnd many others…",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#application-areas",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#application-areas",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Application Areas",
+    "text": "Application Areas\n\nNatural Sciences🔬\nHumanities🏛️\nHealth🩺\nLaw & Policy⚖️\nBusiness📈\nIndustry🏭\nArt, Sports & Entertainment🎭",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#the-data",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#the-data",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "The data",
+    "text": "The data\n\nvotes\n\n\n\n\n\n\n\n\ncountry\nyear\nissue\npercent_yes\n\n\n\n\n0\nTurkey\n1946\nColonialism\n0.800000\n\n\n1\nTurkey\n1946\nEconomic development\n0.600000\n\n\n2\nTurkey\n1946\nHuman rights\n0.000000\n\n\n3\nTurkey\n1947\nColonialism\n0.222222\n\n\n4\nTurkey\n1947\nEconomic development\n0.500000\n\n\n...\n...\n...\n...\n...\n\n\n1207\nUS\n2019\nArms control and disarmament\n0.187500\n\n\n1208\nUS\n2019\nEconomic development\n0.187500\n\n\n1209\nUS\n2019\nHuman rights\n0.357143\n\n\n1210\nUS\n2019\nPalestinian conflict\n0.000000\n\n\n1211\nUS\n2019\nNuclear weapons and material\n0.058824\n\n\n\n\n1212 rows × 4 columns\n\n\n\n\n\nErik Voeten “Data and Analyses of Voting in the UN General Assembly” Routledge Handbook of International Organization, edited by Bob Reinalda (published May 27, 2013). Available at http://ssrn.com/abstract=2111149",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-1",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-1",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "px.scatter(votes, x='year', y='percent_yes')",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-2",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-2",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "px.scatter(votes, x='year', y='percent_yes',\n    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1)",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-3",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-3",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "px.scatter(votes, x='year', y='percent_yes',\n    color='country',\n    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1)",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-4",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-4",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "px.scatter(votes, x='year', y='percent_yes',\n    color='country',\n    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1,\n    trendline='lowess')",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-5",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-5",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "px.scatter(votes, x='year', y='percent_yes',\n    color='country',\n    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1,\n    labels={\"percent_yes\": \"% Yes Votes\", \"year\": \"Year\", \"country\": \"Country\"},\n    trendline='lowess',\n    title=\"Percentage of 'Yes' votes in the UN General Assembly\")",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-6",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-6",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "px.scatter(votes, x='year', y='percent_yes',\n    color='country',\n    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1,\n    labels={\"percent_yes\": \"% Yes Votes\", \"year\": \"Year\", \"country\": \"Country\"},\n    trendline='lowess',\n    title=\"Percentage of 'Yes' votes in the UN General Assembly\"\n).update_traces(marker_size=2) # Smaller markers",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-7",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-7",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "px.scatter(votes, x='year', y='percent_yes',\n    color='country',\n    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1,\n    labels={\"percent_yes\": \"% Yes Votes\", \"year\": \"Year\", \"country\": \"Country\"},\n    trendline='lowess',\n    title=\"Percentage of 'Yes' votes in the UN General Assembly\"\n).update_traces(marker_size=2 # Smaller markers\n).for_each_annotation(lambda a: a.update(text=a.text.split(\"=\", 1)[-1])) # Remove the \"issue=\"",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-8",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-8",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "px.scatter(votes, x='year', y='percent_yes',\n    color='country',\n    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1,\n    labels={\"percent_yes\": \"% Yes Votes\", \"year\": \"Year\", \"country\": \"Country\"},\n    trendline='lowess',\n    title=\"Percentage of 'Yes' votes in the UN General Assembly\"\n).update_traces(marker_size=2 # Smaller markers\n).for_each_annotation(lambda a: a.update(text=a.text.split(\"=\", 1)[-1]) # Remove the \"issue=\"\n).update_yaxes(tickformat=\",.0%\") # Percent labels",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#python-or-r",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#python-or-r",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Python or R?",
+    "text": "Python or R?\n\n\n\n\n\n\n\n\nCriteria\nPython\nR\n\n\n\n\nCommunity and Support\nLarge and growing community, with extensive resources and tutorials available. Popular in industry and academia.\nStrong community in academia, especially in fields like statistics, bioinformatics, and social sciences.\n\n\nEase of Learning\nEasier for beginners, especially with programming experience.\nSteeper learning curve, particularly for those new to programming.\n\n\nData Visualization\nStrong, with libraries like Matplotlib, Seaborn, Plotly, and Bokeh. Interactive visualizations are well-supported.\nExcellent, with ggplot2 being one of the most powerful visualization libraries. However, interactive visualizations are less integrated.\n\n\nMachine Learning\nExtensive support with libraries like scikit-learn, TensorFlow, and PyTorch. Broad adoption in industry.\nAdequate support for machine learning, though Python libraries are more robust and widely used in industry.\n\n\nStatistical Analysis\nGood for general-purpose analysis; extensive libraries, though more basic for advanced statistical techniques.\nExcellent for complex statistical analysis; originally designed for statisticians and excels in this area.\n\n\nIntegration and Flexibility\nHighly flexible, integrates well with other languages and systems (e.g., C, C++, Java, SQL). Versatile for many tasks beyond data science.\nPrimarily focused on statistical computing, less flexible for other types of programming or integration with non-statistical systems.\n\n\nPerformance and Scalability\nGenerally faster for large datasets, especially with optimized libraries (e.g., NumPy, Dask). Better for large-scale production environments.\nCan be slower with large datasets, though packages like data.table improve performance. Not as well-suited for big data as Python.\n\n\nDeployment\nStrong tools for deploying models in production (e.g., Flask, FastAPI, Streamlit). Easy to integrate with web services and databases.\nMore challenging to deploy in production; Shiny can be used for web applications but is less flexible than Python tools.",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#why-programming",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#why-programming",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Why programming?",
+    "text": "Why programming?\n\nWhy not just Excel?\n\nIndeed, it can be useful for simple tasks.\n\nHowever, Python/R are…\n\nmore reproducible\nmore scalable\neasier to automate\nmore analytics libraries\nmore visualization libraries\nmore integration with other tools\nlarge community and ecosystem\nopen-source and free to use\nalthough: harder to learn and use",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#libraries",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#libraries",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Libraries",
+    "text": "Libraries\n\nData manipulation and analysis: pandas\n\nAlternatives: Ibis, Polars, Dask\n\nVisualization: plotly\n\nAlternatives: matplotlib, seaborn, altair",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#communication-and-publishing-platforms",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#communication-and-publishing-platforms",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Communication and publishing platforms",
+    "text": "Communication and publishing platforms\n\nJupyter Notebooks in Google Colab (we’ll be using those)\n\nOther useful publishing platforms: Streamlit and Shiny",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#curiosity",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#curiosity",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Curiosity",
+    "text": "Curiosity\nThomas Aquinas speaks of the difference between studiositas (virtue) and curiositas (vice) (see more in this interesting article).\nThere are at least 7 vices of curiosity:\n\nARROGANCE: seeking knowledge of things that no one is supposed to know;\nNOSYNESS: seeking knowledge that may belong to some people, but not to us;\nDISTRACTION: seeking knowledge of things that are not convenient to know at a certain time;\nIMMODERATION: wanting to know something with an unhealthy desire (all forms of curiosity are failures of temperance, but this label helps to isolate this specific aspect);\nIMPERTINENCE: seeking to know things in a more certain way than one can know, doing violence to the object of knowledge;\nSUPERFICIALITY: disrespecting the object of knowledge, being content with a superficial understanding and quickly moving on to something else;\nPOSSESSIVENESS: delighting not in the object of knowledge, but in the act of knowing it. It resembles, on an intellectual level, the vice of greed.",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#integrity",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#integrity",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Integrity",
+    "text": "Integrity\nIt’s tempting to say something that isn’t entirely true, or to manipulate the collection/analysis/reporting process to yield the answer you want.\nSo we will practice:\n\nEvaluating claims that others use data to make\nClearly articulating our analysis decisions and rationale\nReproducibility\nUsing exploratory analytics to validate data against assumptions",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#hospitality",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#hospitality",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Hospitality",
+    "text": "Hospitality\nWe can choose to use our tools to elucidate and clarify, rather than obscure.\nSo we will practice:\n\nClear visual communication\nClarity of code and process\nWriting explanations that are accessible and appropriate to audience.",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#compassion-and-justice",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#compassion-and-justice",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Compassion and Justice",
+    "text": "Compassion and Justice\nData Science can both cause harm and reveal it.\nSo we will:\n\nStudy examples of how data might cause harm\nStudy examples of how harm might be mitigated or revealed",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-9",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-9",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "Manipulating dataframes\n\nSelecting\nFiltering\nGrouping\nReshaping\nJoining\n\nVisualizing data\n\nTypes\nMappings\nCritique\n\nModeling data (only an overview; we won’t go too deep)\n\nLinear models\n\nLinear regression\nLogistic regressing\nRegularization methods\n\nTree-based models\nEnsemble methods\n\nRandom forests\nBagging, boosting and stacking\n\nUnsupervised learning\n\nBasic clustering with k-means\nDimensionality reduction with PCA\n\nSome ways to deal with time-series data\nSome ways to deal with missing data\nSome ways to deal with fairness\nSome ways to deal with interpretability",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#what-we-will-not-cover",
+    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#what-we-will-not-cover",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "What we will not cover",
+    "text": "What we will not cover\n\nNeural networks and deep learning\nSome linear methdos (SVMs, polynomial regression, LDA, GLMs, GAMs)\nOptimization algorithms (gradient descent, bayesian, genetic)\nCausal models (SEM, SCM, etc)\nProbabilistic graphical models (Bayesian networks, Markov models)\nLots of unsupervised methods (association rule learning, autoencoders, SOMs)",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction",
+      "09-04 - Introduction"
     ]
   }
 ]

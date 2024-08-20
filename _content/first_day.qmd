@@ -26,7 +26,7 @@ Stand up and sit when someone says what you would say:
 
 ### Prof. Fernando Santos
 
-- From São Carlos, Brazil
+- From São Carlos, Brazil 🇧🇷
   - Portuguese, not Spanish!
   - Cerrado ("brazilian savannah"), not jungle!
 - Major in computer engineering, PhD in complex systems modeling
@@ -37,6 +37,8 @@ Stand up and sit when someone says what you would say:
 Heidelberg Catechism Q&A 107:
 
 When god forbids envy, hatred, and anger, he commands us to [h] love our neighbor as ourselves; to show [i] patience, peace, [j] meekness, [k] mercy, and all kindness, towards him, [l] and prevent his hurt as much as in us lies' and that we [m] do good, even to our enemies.
+
+::: {.smaller}
 
 [a]: [Mat. 5:21](https://biblia.com/bible/esv/Matt%205.21),[22](https://biblia.com/bible/esv/Mat.%205.22); [Prov. 12:18](https://biblia.com/bible/esv/Prov.%2012.18); [Mat. 26:52](https://biblia.com/bible/esv/Matt%2026.52)\
 [b]: [Eph. 4:26](https://biblia.com/bible/esv/Eph.%204.26); [Rom. 12:19](https://biblia.com/bible/esv/Rom.%2012.19); [Mat. 5:39](https://biblia.com/bible/esv/Matt%205.39),[40](https://biblia.com/bible/esv/Mat.%205.40)\
@@ -52,6 +54,8 @@ When god forbids envy, hatred, and anger, he commands us to [h] love our neighbo
 [l]: [Mat. 5:45](https://biblia.com/bible/esv/Matt%205.45)\
 [m]: [Rom. 12:20](https://biblia.com/bible/esv/Rom.%2012.20)
 
+:::
+
 ---
 
 - How can I make this course lovely to you?
@@ -59,10 +63,7 @@ When god forbids envy, hatred, and anger, he commands us to [h] love our neighbo
 	- Together we can make it!
 - Let's make "a community of people who love knowledge"
   - Not easy! We need God.
-  - Get to know each other more. Change seats whenever you can!
-
----
-
+  - Get to know each other more. Change seats whenever you
 - Come to my office in the next days to grab a treat and chat!
 
 ## Syllabus Bingo

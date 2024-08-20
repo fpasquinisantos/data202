@@ -255,5 +255,9 @@
   },
   "prayers.qmd": {
     "prayers.html": "71b77acc"
+  },
+  "handouts/01 - Introduction/H-09-06 - Practice 1.qmd": {
+    "H-09-06 - Practice 1.docx": "37f3f899",
+    "H-09-06 - Practice 1.ipynb": "cf6ebe46"
   }
 }
