@@ -16,7 +16,7 @@ revealjs-plugins:
     - simplemenu
 ---
 
-# 09-04 - Introduction
+# 09-04 - First day
 
 ##
 

@@ -1,0 +1,1 @@
+Explain how each of the following steps—data wrangling, data visualization, and data modeling—contributes to increasing the depth of insight into a dataset. Provide an example of how each step might be applied in a data science project.

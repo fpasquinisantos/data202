@@ -259,5 +259,8 @@
   "handouts/01 - Introduction/H-09-06 - Practice 1.qmd": {
     "H-09-06 - Practice 1.docx": "37f3f899",
     "H-09-06 - Practice 1.ipynb": "cf6ebe46"
+  },
+  "handouts/02 - Wrangling 1/H-09-09 - Wrangling - basic operations.qmd": {
+    "H-09-09---Wrangling---basic-operations.tex": "4bb6b83f"
   }
 }

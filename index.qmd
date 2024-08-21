@@ -94,13 +94,10 @@ All readings wil be posted in Perusall. They will be taken from:
 
 We will be using **Python** and the following tools:
 
+-   **Google Colab Notebooks** for programming and exercises
 -   **pandas** for data wrangling
 -   **plotly** for data visualization
 -   **scikit-learn** for modeling
--   [**Quarto**](https://quarto.org/) for creating reports
--   [RStudio Server](https://r.cs.calvin.edu/)
-    -   The course lab fee funds our contribution towards the shared resources that provide this service. If the fee is a hardship for you, please contact the instructor.
-    -   You may also install [RStudio Desktop](https://posit.co/downloads/) on your own computer.
 
 # Class Structure and Activities
 

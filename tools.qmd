@@ -11,9 +11,8 @@ title: "Tool References"
 
 ## Tutorials
 
-- Quarto tutorial: [hello](https://quarto.org/docs/get-started/hello/rstudio.html), [computations](https://quarto.org/docs/get-started/computations/rstudio.html), [authoring](https://quarto.org/docs/get-started/authoring/rstudio.html)
-  - [Markdown](https://www.markdowntutorial.com/)
-  - See also our [in-class tutorial](../units/01intro/quarto.qmd)
+- [Google Colab Overview](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
+  - [Markdown Guide](https://colab.research.google.com/notebooks/markdown_guide.ipynb)
 - [Pandas Tutor](https://pandastutor.com/index.html)
 
 ### Python tutorials
@@ -51,14 +50,3 @@ title: "Tool References"
 ### Examples of using sklearn
 
 - [Examples from scikit-learn 1.3.2 documentation](https://scikit-learn.org/stable/auto_examples/index.html)
-
-### How Trees Work
-
-- [Decision Trees](https://scikit-learn.org/stable/modules/tree.html)
-- [Understanding Tree Structure](https://scikit-learn.org/stable/auto_examples/tree/plot_unveil_tree_structure.html#sphx-glr-auto-examples-tree-plot-unveil-tree-structure-py)
-
-### Preprocessing
-
-Unfortunately, even though decision trees do support categorical data in theory, the sklearn implementation does not. You have to one-hot-encode categorical data.
-
-This [sklearn example page](https://scikit-learn.org/stable/auto_examples/ensemble/plot_gradient_boosting_categorical.html#sphx-glr-auto-examples-ensemble-plot-gradient-boosting-categorical-py) shows several ways of doing this.
