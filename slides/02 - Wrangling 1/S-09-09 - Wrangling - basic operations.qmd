@@ -3,15 +3,15 @@ execute:
   echo: true
 format:
   revealjs:
-    menu: 
-      openButton: false
+    menu: false
     slide-level: 2
     navigation-mode: linear
     transition: slide
     scrollable: true
-    smaller: true
     simplemenu:
-      scale: 0.5
+        barhtml:
+            header: "<div class='menubar'><a href='index.html'>back</a><ul class='menu'></ul>"
+        scale: 0.67
 revealjs-plugins:
     - simplemenu
 ---

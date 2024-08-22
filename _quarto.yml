@@ -40,8 +40,8 @@ website:
   navbar:
     right:
       - index.qmd
-      - text: "RStudio"
-        href: "https://r.cs.calvin.edu/"
+      - text: "Google Colab"
+        href: "https://colab.research.google.com/"
   sidebar:
     contents:
       - tools.qmd

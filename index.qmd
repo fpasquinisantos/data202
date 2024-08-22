@@ -94,7 +94,7 @@ All readings wil be posted in Perusall. They will be taken from:
 
 We will be using **Python** and the following tools:
 
--   **Google Colab Notebooks** for programming and exercises
+-   **Google Colab Notebooks** for practices
 -   **pandas** for data wrangling
 -   **plotly** for data visualization
 -   **scikit-learn** for modeling
@@ -105,7 +105,7 @@ We will be using **Python** and the following tools:
 
 1.  **Preparation** (before class): Readings and quizzes to prepare you for class (on Perusall)
 2.  **Lecture** (in class): We'll review the material from the preparation, and add some additional content.
-3.  **Exercises** To practice what we're learning. We will usually start some of the week's exercises in class and finish them at home.
+3.  **Practice exercises** We will usually start some of the week's practice in class and finish them at home.
 
 We will typically meet in the classroom on Monday and Wednesday and in the lab on Friday.
 
@@ -144,7 +144,7 @@ Unless otherwise arranged, grades will be weighted as follows:
 -   Projects: 35%
     -   Midterm project: 10%
     -   Final project: 25%
--   Exercises (lab/homework): 25%
+-   Practice exercises: 25%
 -   Discussion forums: 10%
 
 Your lowest quiz score will get thrown out.

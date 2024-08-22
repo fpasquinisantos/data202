@@ -9,9 +9,9 @@ format:
     transition: slide
     scrollable: true
     simplemenu:
+        scale: 0.6
         barhtml:
-            header: "<div class='menubar'><ul class='menu'></ul></div>"
-        scale: 0.67
+            header: "<div class='menubar'><a href='index.html'>back</a><ul class='menu'></ul>"
 revealjs-plugins:
     - simplemenu
 ---
