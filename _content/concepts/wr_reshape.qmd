@@ -1,0 +1,73 @@
+# Tidying Data {data-stack-name="tidying"}
+
+# String operations
+
+# Date operations
+
+# Reshaping Data with Melt and Pivot
+
+## Dataset: Calories Ingested by Meals
+
+### Data Description
+
+- **Date** Date of the meal
+- **Day**: Day of the week.
+- **Type** 
+
+### Example Data
+
+| PersonID | Day    | Breakfast | Lunch | Dinner |
+|----------|--------|-----------|-------|--------|
+| 1        | Monday | 400       | 600   | 800    |
+| 1        | Tuesday| 350       | 550   | 750    |
+| 2        | Monday | 500       | 700   | 900    |
+| 2        | Tuesday| 450       | 650   | 850    |
+| 3        | Monday | 300       | 500   | 700    |
+
+## Melting the Data
+
+### **Objective: Transform the Data to Long Format**
+
+- **Goal**: Convert the dataset so that each meal's calories are in a single column with meal type specified.
+
+```python
+import pandas as pd
+
+# Example dataset
+data = {
+    'PersonID': [1, 1, 2, 2, 3],
+    'Day': ['Monday', 'Tuesday', 'Monday', 'Tuesday', 'Monday'],
+    'Breakfast': [400, 350, 500, 450, 300],
+    'Lunch': [600, 550, 700, 650, 500],
+    'Dinner': [800, 750, 900, 850, 700]
+}
+
+df = pd.DataFrame(data)
+
+# Melt the DataFrame to have a single column for calories and a meal type column
+melted_df = pd.melt(df, id_vars=['PersonID', 'Day'], value_vars=['Breakfast', 'Lunch', 'Dinner'],
+                     var_name='Meal', value_name='Calories')
+print(melted_df)
+```
+
+## Pivoting the Data
+
+### **Objective: Reshape Data to Wide Format**
+
+- **Goal**: Create a summary table that shows the average calories ingested per meal type by day.
+
+```python
+# Pivot the melted DataFrame to get average calories by Day and Meal
+pivot_table = melted_df.pivot_table(values='Calories', index='Day', columns='Meal', aggfunc='mean')
+print(pivot_table)
+```
+
+## Key Points
+
+- **`melt()`**: Transforms data from wide to long format, making it easier to analyze specific categories.
+- **`pivot_table()`**: Reshapes data from long to wide format, summarizing information with aggregate functions.
+
+- Reshaping helps in better understanding and analyzing data patterns by organizing information into more useful formats.
+```
+
+This slide demonstrates how to use the `melt` and `pivot` functions to reshape data related to calorie intake across different meals, illustrating the flexibility of data manipulation in Pandas. Let me know if you need any more details or adjustments!

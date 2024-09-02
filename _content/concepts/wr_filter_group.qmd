@@ -1,0 +1,248 @@
+# Filtering {data-stack-name="filtering"}
+
+## 1. Filter by a Single Condition
+
+```{python}
+#| echo: false
+import pandas as pd
+
+# Load the dataset
+students = pd.read_csv('../../data/student-mat.csv')
+```
+
+```{python}
+# Filter rows where 'age' is greater than 18
+students_age_filtered = students[students['age'] > 18]
+students_age_filtered.head()
+```
+
+---
+
+- In the same way, let's now filter rows where 'G3' is greater than 15.
+
+<!---
+```python
+students_grade_filtered = students[students['G3'] > 15]
+print(students_grade_filtered.head())
+```
+-->
+
+## 2. Filter by Multiple Conditions
+
+```{python}
+# Filter rows where 'age' > 18 and 'G3' > 15
+students_multiple_conditions = students[(students['age'] > 18) & (students['G3'] > 15)]
+students_multiple_conditions.head()
+```
+
+---
+
+- In the same way, let's now filter rows where 'age' <= 18 OR 'studytime' = 4.
+
+<!---
+  ```python
+  # Filter rows where 'age' <= 18 or 'studytime' = 4
+  students_or_condition = students[(students['age'] <= 18) | (students['studytime'] == 4)]
+  print(students_or_condition.head())
+  ```
+-->
+
+## 3. Filter by Categorical Column
+
+```{python}
+# Filter rows where 'school' is 'GP'
+students_school_gp = students[students['school'] == 'GP']
+students_school_gp.head()
+```
+
+---
+
+- In the same way, let's now filter rows where 'activities' (extra-curricular activities) is 'yes'.
+  
+<!---
+  ```python
+  # Filter rows where 'activities' is 'yes'
+  students_activities_yes = students[students['activities'] == 'yes']
+  print(students_activities_yes.head())
+  ```
+-->
+
+## Filtering with the `query()` method
+
+```{python}
+# Filter using query method
+students_query = students.query("famsize == 'GT3' and famsup == 'no'")
+students_query.head()
+```
+
+---
+
+- In the same way, let's now filter rows where `failures < 2` and `higher == yes`.
+
+<!---
+  ```python
+  # Filter using query method
+  students_query_education = students.query("failures < 2 and higher == 'yes'")
+  print(students_query_education.head())
+  ```
+-->
+
+## Key Points
+
+- **Single Condition**: Use simple boolean conditions for basic filtering.
+- **Multiple Conditions**: Combine conditions using `&` (and) or `|` (or) operators.
+- **`query()` Method**: Use `query()` for a more readable and expressive way to filter.
+
+
+# Grouping / Aggregating {data-stack-name="grouping"}
+
+## Why?
+
+- Quickly compute summary statistics (e.g., mean, sum, count) across different categories or groups.
+- Thus, we can identify trends, patterns, or differences between groups.
+
+- Main idea:
+    1. *Split* the data in groups
+    2. *Apply* some operation (count, sum, mean, etc)
+    3. *Combine* again in a new dataframe.
+
+## Example 1: Calculate mean of final grade (`G3`) for each school
+
+- Let's group by school:
+
+```{python}
+# Group by 'school' and calculate mean of 'G3'
+students_grouped_school = students.groupby('school')
+print(students_grouped_school)
+print(type(students_grouped_school))
+```
+
+---
+
+What is the following code doing?
+
+```{python}
+for school, group in students.groupby("school"):
+  print(school, "has students with mean age", group["age"].mean())
+```
+
+## Checking group size
+
+```{python}
+students.groupby("school").size()
+```
+
+```{python}
+students.groupby(["school", "sex"]).size()
+```
+
+## Aggregating
+
+```{python}
+students_by_school = (
+  students
+  .groupby("school", as_index=False)
+  .agg(mean_G3=('G3', 'mean'))
+)
+students_by_school
+```
+
+## Lazy method
+
+```{python}
+students.groupby(["school", "sex"])['G3'].mean()
+```
+
+- Problem: not so easy to understand, and doesn't set the right column name!
+
+---
+
+Your turn: let's now group by `sex` and calculate average age. Test the more explicit and the more lazy methods.
+
+<!---
+    ```python
+    # Group by 'sex' and calculate mean age
+    students_grouped_sex = students.groupby('sex')['age'].mean()
+    print(students_grouped_sex)
+    ```
+-->
+
+## Grouping by multiple columns
+
+```{python}
+# Group by 'school' and 'sex' and calculate mean of 'G3'
+students_grouped_school_sex = (
+    students
+    .groupby(['school', 'sex'])
+    .agg(mean_G3=('G3', 'mean'))
+)
+students_grouped_school_sex
+```
+
+## Custom Aggregation with `agg()`
+
+```{python}
+# Custom aggregation functions
+custom_agg = students.groupby('school')['G3'].agg(['mean', 'max', lambda x: x.mean() + 1])
+print(custom_agg)
+```
+
+## Multiple functions with `agg()`
+
+```{python}
+# Aggregation with multiple functions
+multi_agg = students.groupby('school').agg({
+  'age': ['mean', 'median'],
+  'G3': ['mean', 'std', 'max']
+})
+print(multi_agg)
+```
+
+# Exploratory Data Analysis {data-stack-name="EDA"}
+
+##
+
+- A first look at the dataset, in order to visualize and summarize their main characteristics
+  - Understand the data structure, detect patterns, identify anomalies, test hypotheses, and check assumptions.
+
+---
+
+## {.smaller}
+
+- In our student dataset, we can ask, for example:
+   - What is the distribution of student ages?
+   - How many students are in each school ('GP' vs. 'MS')?
+   - Do male and female students have different average grades?
+   - How do grades vary based on the mother's education level (Medu)?
+   - Does having internet access at home influence grades?
+   - What is the relationship between family educational support (famsup) and student performance?
+   - Does the family relationship quality (famrel) affect free time or study time?
+
+---
+
+- Let's try to create some visualizations for these questions!
+
+# Love and visilibily {data-stack-name="visibility"}
+
+Hagar, who is Sarah's Egyptian servant, flees into the desert after mistreatment by Sarah. There, she encounters an angel of the Lord who speaks to her and points to a fountain of water. In response to this divine encounter, Hagar declares:
+
+> “So she called the name of the Lord who spoke to her, ‘You are a God of seeing,’ for she said, ‘Truly here I have seen him who looks after me.’”
+— Genesis 16:13 (ESV)
+
+---
+
+What if we understand data collection and dissemination as a form of love and compassion?
+
+> "The common gaze is surveillance for the common good, inflected with a preferential optic for those who are poor." (Eric Stoddard, p. 41)
+
+> "Corporations accumulate vast domains of new knowledge from us, but not for us." (p. 11)
+
+- What is, instead of watching people, we could "watch for", "watch with", and "watch over" people?
+
+![](../../img/commongaze.jpg)
+
+---
+
+- Maybe we could call that "comveillance": the practice of watching with one another in solidarity.
+- Privacy is not an absolute value: crime and injustice needs to be brought to light!
+- The question could be: **who is allowed to watch whom?**

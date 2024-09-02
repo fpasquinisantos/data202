@@ -261,6 +261,29 @@
     "H-09-06 - Practice 1.ipynb": "cf6ebe46"
   },
   "handouts/02 - Wrangling 1/H-09-09 - Wrangling - basic operations.qmd": {
-    "H-09-09---Wrangling---basic-operations.tex": "4bb6b83f"
+    "H-09-09---Wrangling---basic-operations.tex": "4bb6b83f",
+    "H-09-09 - Wrangling - basic operations.ipynb": "38990945"
+  },
+  "handouts/02 - Wrangling 1/H-09-11 - Wrangling - selecting, filtering and deriving.qmd": {
+    "H-09-11---Wrangling---selecting,-filtering-and-deriving.tex": "9e57b833",
+    "H-09-11 - Wrangling - selecting, filtering and deriving.ipynb": "347f79fd"
+  },
+  "handouts/02 - Wrangling 1/H-09-13 - Practice 2.qmd": {
+    "H-09-13 - Practice 2.ipynb": "9844fbe3"
+  },
+  "slides/02 - Wrangling 1/S-09-11 - Wrangling - selecting, filtering and deriving.qmd": {
+    "S-09-11 - Wrangling - selecting, filtering and deriving.html": "71a7b96a"
+  },
+  "slides/02 - Wrangling 1/index.qmd": {
+    "index.html": "175acb85"
+  },
+  "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.qmd": {
+    "S-09-09 - Wrangling - basic operations.html": "bedc3dde"
+  },
+  "handouts/02 - Wrangling 1/H-09-11 - Wrangling - filtering and grouping.qmd": {
+    "H-09-11 - Wrangling - filtering and grouping.ipynb": "cecac957"
+  },
+  "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.qmd": {
+    "S-09-11 - Wrangling - filtering and deriving.html": "474de81d"
   }
 }

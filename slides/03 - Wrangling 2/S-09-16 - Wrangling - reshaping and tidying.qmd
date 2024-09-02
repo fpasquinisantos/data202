@@ -9,11 +9,11 @@ format:
     transition: slide
     scrollable: true
     simplemenu:
+        scale: 0.6
         barhtml:
             header: "<div class='menubar'><a href='index.html'>back</a><ul class='menu'></ul>"
-        scale: 0.67
 revealjs-plugins:
     - simplemenu
 ---
 
-# 09-11 - Wrangling - selecting, filtering and deriving
+# 09-16 - Wrangling - grouping and pivoting

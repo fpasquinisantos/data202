@@ -1,5 +1,742 @@
 [
   {
+    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#section",
+    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#section",
+    "title": "1. Filter by a Single Condition",
+    "section": "",
+    "text": "Heavenly Father,\nWe come before You, seeking wisdom and discernment in our work with data. Grant us the understanding to represent information truthfully and fairly, knowing that each data point reflects the reality of lives, stories, and experiences.\nGuide our minds as we organize, analyze, and interpret data, so that our actions may honor Your principles of justice and truth. Help us to avoid bias, to present findings transparently, and to use data in ways that uplift and inform rather than mislead or harm.\nMay our efforts in data wrangling and analysis be instruments of clarity, bringing light to hidden truths, and contributing positively to the world around us. Teach us to be humble in our knowledge, always seeking to learn and grow, and to use our skills with integrity and care.\nIn Your wisdom, we trust. Amen.",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-11 - Wrangling - filtering and grouping"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#retrieval",
+    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#retrieval",
+    "title": "1. Filter by a Single Condition",
+    "section": "Retrieval",
+    "text": "Retrieval\nOur dataset for this class is about alcohol consumption by secondary school students. The data were obtained in a survey of students math and portuguese language courses, in two schools, and can be found at Kaggle.\nEach row represents a student, and the columns are:\n\nschool - student’s school (binary: ‘GP’ - Gabriel Pereira or ‘MS’ - Mousinho da Silveira)\nsex - student’s sex (binary: ‘F’ - female or ‘M’ - male)\nage - student’s age (numeric: from 15 to 22)\naddress - student’s home address type (binary: ‘U’ - urban or ‘R’ - rural)\nfamsize - family size (binary: ‘LE3’ - less or equal to 3 or ‘GT3’ - greater than 3)\nPstatus - parent’s cohabitation status (binary: ‘T’ - living together or ‘A’ - apart)\nMedu - mother’s education (numeric: 0 - none, 1 - primary education (4th grade), 2 – 5th to 9th grade, 3 – secondary education or 4 – higher education)\nFedu - father’s education (numeric: 0 - none, 1 - primary education (4th grade), 2 – 5th to 9th grade, 3 – secondary education or 4 – higher education)\nMjob - mother’s job (nominal: ‘teacher’, ‘health’ care related, civil ‘services’ (e.g. administrative or police), ‘at_home’ or ‘other’)\nFjob - father’s job (nominal: ‘teacher’, ‘health’ care related, civil ‘services’ (e.g. administrative or police), ‘at_home’ or ‘other’)\nreason - reason to choose this school (nominal: close to ‘home’, school ‘reputation’, ‘course’ preference or ‘other’)\nguardian - student’s guardian (nominal: ‘mother’, ‘father’ or ‘other’)\ntraveltime - home to school travel time (numeric: 1 - &lt;15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, or 4 - &gt;1 hour)\nstudytime - weekly study time (numeric: 1 - &lt;2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, or 4 - &gt;10 hours)\nfailures - number of past class failures (numeric: n if 1&lt;=n&lt;3, else 4)\nschoolsup - extra educational support (binary: yes or no)\nfamsup - family educational support (binary: yes or no)\npaid - extra paid classes within the course subject (Math or Portuguese) (binary: yes or no)\nactivities - extra-curricular activities (binary: yes or no)\nnursery - attended nursery school (binary: yes or no)\nhigher - wants to take higher education (binary: yes or no)\ninternet - Internet access at home (binary: yes or no)\nromantic - with a romantic relationship (binary: yes or no)\nfamrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)\nfreetime - free time after school (numeric: from 1 - very low to 5 - very high)\ngoout - going out with friends (numeric: from 1 - very low to 5 - very high)\nDalc - workday alcohol consumption (numeric: from 1 - very low to 5 - very high)\nWalc - weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)\nhealth - current health status (numeric: from 1 - very bad to 5 - very good)\nabsences - number of school absences (numeric: from 0 to 93)\nG1 - first period grade (numeric: from 0 to 20)\nG2 - second period grade (numeric: from 0 to 20)\nG3 - final grade (numeric: from 0 to 20, output target)\n\nLet’s retrieve what we learned last time:",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-11 - Wrangling - filtering and grouping"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filter-by-multiple-conditions",
+    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filter-by-multiple-conditions",
+    "title": "1. Filter by a Single Condition",
+    "section": "2. Filter by Multiple Conditions",
+    "text": "2. Filter by Multiple Conditions\n\n# Filter rows where 'age' &gt; 18 and 'G3' &gt; 15\nstudents_multiple_conditions = students[(students['age'] &gt; 18) & (students['G3'] &gt; 15)]\nstudents_multiple_conditions.head()\n\n\n\n\n\n\n\n\nschool\nsex\nage\naddress\nfamsize\nPstatus\nMedu\nFedu\nMjob\nFjob\n...\nfamrel\nfreetime\ngoout\nDalc\nWalc\nhealth\nabsences\nG1\nG2\nG3\n\n\n\n\n306\nGP\nM\n20\nU\nGT3\nA\n3\n2\nservices\nother\n...\n5\n5\n3\n1\n1\n5\n0\n17\n18\n18\n\n\n\n\n1 rows × 33 columns",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-11 - Wrangling - filtering and grouping"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filter-by-categorical-column",
+    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filter-by-categorical-column",
+    "title": "1. Filter by a Single Condition",
+    "section": "3. Filter by Categorical Column",
+    "text": "3. Filter by Categorical Column\n\n# Filter rows where 'school' is 'GP'\nstudents_school_gp = students[students['school'] == 'GP']\nstudents_school_gp.head()\n\n\n\n\n\n\n\n\nschool\nsex\nage\naddress\nfamsize\nPstatus\nMedu\nFedu\nMjob\nFjob\n...\nfamrel\nfreetime\ngoout\nDalc\nWalc\nhealth\nabsences\nG1\nG2\nG3\n\n\n\n\n0\nGP\nF\n18\nU\nGT3\nA\n4\n4\nat_home\nteacher\n...\n4\n3\n4\n1\n1\n3\n6\n5\n6\n6\n\n\n1\nGP\nF\n17\nU\nGT3\nT\n1\n1\nat_home\nother\n...\n5\n3\n3\n1\n1\n3\n4\n5\n5\n6\n\n\n2\nGP\nF\n15\nU\nLE3\nT\n1\n1\nat_home\nother\n...\n4\n3\n2\n2\n3\n3\n10\n7\n8\n10\n\n\n3\nGP\nF\n15\nU\nGT3\nT\n4\n2\nhealth\nservices\n...\n3\n2\n2\n1\n1\n5\n2\n15\n14\n15\n\n\n4\nGP\nF\n16\nU\nGT3\nT\n3\n3\nother\nother\n...\n4\n3\n2\n1\n2\n5\n4\n6\n10\n10\n\n\n\n\n5 rows × 33 columns",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-11 - Wrangling - filtering and grouping"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filtering-with-the-query-method",
+    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filtering-with-the-query-method",
+    "title": "1. Filter by a Single Condition",
+    "section": "Filtering with the query() method",
+    "text": "Filtering with the query() method\n1. Filter with query() Method\n\n# Filter using query method\nstudents_query = students.query(\"famsize == 'GT3' and famsup == 'no'\")\nstudents_query.head()\n\n\n\n\n\n\n\n\nschool\nsex\nage\naddress\nfamsize\nPstatus\nMedu\nFedu\nMjob\nFjob\n...\nfamrel\nfreetime\ngoout\nDalc\nWalc\nhealth\nabsences\nG1\nG2\nG3\n\n\n\n\n0\nGP\nF\n18\nU\nGT3\nA\n4\n4\nat_home\nteacher\n...\n4\n3\n4\n1\n1\n3\n6\n5\n6\n6\n\n\n20\nGP\nM\n15\nU\nGT3\nT\n4\n3\nteacher\nother\n...\n4\n4\n1\n1\n1\n1\n0\n13\n14\n15\n\n\n27\nGP\nM\n15\nU\nGT3\nT\n4\n2\nhealth\nservices\n...\n2\n2\n4\n2\n4\n1\n4\n15\n16\n15\n\n\n47\nGP\nM\n16\nU\nGT3\nT\n4\n3\nhealth\nservices\n...\n4\n2\n2\n1\n1\n2\n4\n19\n19\n20\n\n\n55\nGP\nF\n16\nU\nGT3\nA\n2\n1\nother\nother\n...\n5\n3\n4\n1\n1\n2\n8\n8\n9\n10\n\n\n\n\n5 rows × 33 columns",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-11 - Wrangling - filtering and grouping"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#key-points",
+    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#key-points",
+    "title": "1. Filter by a Single Condition",
+    "section": "Key Points",
+    "text": "Key Points\n\nSingle Condition: Use simple boolean conditions for basic filtering.\nMultiple Conditions: Combine conditions using & (and) or | (or) operators.\nquery() Method: Use query() for a more readable and expressive way to filter.",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-11 - Wrangling - filtering and grouping"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#why",
+    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#why",
+    "title": "1. Filter by a Single Condition",
+    "section": "Why?",
+    "text": "Why?\n\nQuickly compute summary statistics (e.g., mean, sum, count) across different categories or groups.\nThus, we can identify trends, patterns, or differences between groups.\nMain idea:\n\nSplit the data in groups\nApply some operation (count, sum, mean, etc)\nCombine again in a new dataframe.",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-11 - Wrangling - filtering and grouping"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#example-1-calculate-mean-of-final-grade-g3-for-each-school",
+    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#example-1-calculate-mean-of-final-grade-g3-for-each-school",
+    "title": "1. Filter by a Single Condition",
+    "section": "Example 1: Calculate mean of final grade (G3) for each school",
+    "text": "Example 1: Calculate mean of final grade (G3) for each school\n\nLet’s group by school:\n\n\n# Group by 'school' and calculate mean of 'G3'\nstudents_grouped_school = students.groupby('school')\nprint(students_grouped_school)\nprint(type(students_grouped_school))\n\n&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x71eb8c238ca0&gt;\n&lt;class 'pandas.core.groupby.generic.DataFrameGroupBy'&gt;",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-11 - Wrangling - filtering and grouping"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#checking-group-size",
+    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#checking-group-size",
+    "title": "1. Filter by a Single Condition",
+    "section": "Checking group size",
+    "text": "Checking group size\n\nstudents.groupby(\"school\").size()\n\nschool\nGP    349\nMS     46\ndtype: int64\n\n\n\nstudents.groupby([\"school\", \"sex\"]).size()\n\nschool  sex\nGP      F      183\n        M      166\nMS      F       25\n        M       21\ndtype: int64",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-11 - Wrangling - filtering and grouping"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#aggregating",
+    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#aggregating",
+    "title": "1. Filter by a Single Condition",
+    "section": "Aggregating",
+    "text": "Aggregating\n\nstudents_by_school = (\n  students\n  .groupby(\"school\", as_index=False)\n  .agg(mean_G3=('G3', 'mean'))\n)\nstudents_by_school\n\n\n\n\n\n\n\n\nschool\nmean_G3\n\n\n\n\n0\nGP\n10.489971\n\n\n1\nMS\n9.847826",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-11 - Wrangling - filtering and grouping"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#lazy-method",
+    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#lazy-method",
+    "title": "1. Filter by a Single Condition",
+    "section": "Lazy method",
+    "text": "Lazy method\n\nstudents.groupby([\"school\", \"sex\"])['G3'].mean()\n\nschool  sex\nGP      F       9.972678\n        M      11.060241\nMS      F       9.920000\n        M       9.761905\nName: G3, dtype: float64\n\n\n\nProblem: not so easy to understand, and doesn’t set the right column name!",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-11 - Wrangling - filtering and grouping"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#grouping-by-multiple-columns",
+    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#grouping-by-multiple-columns",
+    "title": "1. Filter by a Single Condition",
+    "section": "Grouping by multiple columns",
+    "text": "Grouping by multiple columns\n\n# Group by 'school' and 'sex' and calculate mean of 'G3'\nstudents_grouped_school_sex = (\n    students\n    .groupby(['school', 'sex'])\n    .agg(mean_G3=('G3', 'mean'))\n)\nstudents_grouped_school_sex\n\n\n\n\n\n\n\n\n\nmean_G3\n\n\nschool\nsex\n\n\n\n\n\nGP\nF\n9.972678\n\n\nM\n11.060241\n\n\nMS\nF\n9.920000\n\n\nM\n9.761905",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-11 - Wrangling - filtering and grouping"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#custom-aggregation-with-agg",
+    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#custom-aggregation-with-agg",
+    "title": "1. Filter by a Single Condition",
+    "section": "Custom Aggregation with agg()",
+    "text": "Custom Aggregation with agg()\n\n# Custom aggregation functions\ncustom_agg = students.groupby('school')['G3'].agg(['mean', 'max', lambda x: x.mean() + 1])\nprint(custom_agg)\n\n             mean  max  &lt;lambda_0&gt;\nschool                            \nGP      10.489971   20   11.489971\nMS       9.847826   19   10.847826",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-11 - Wrangling - filtering and grouping"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#multiple-functions-with-agg",
+    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#multiple-functions-with-agg",
+    "title": "1. Filter by a Single Condition",
+    "section": "Multiple functions with agg()",
+    "text": "Multiple functions with agg()\n\n# Aggregation with multiple functions\nmulti_agg = students.groupby('school').agg({\n  'age': ['mean', 'median'],\n  'G3': ['mean', 'std', 'max']\n})\nprint(multi_agg)\n\n              age                G3              \n             mean median       mean       std max\nschool                                           \nGP      16.521490   16.0  10.489971  4.625397  20\nMS      18.021739   18.0   9.847826  4.237229  19",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-11 - Wrangling - filtering and grouping"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#section-1",
+    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#section-1",
+    "title": "1. Filter by a Single Condition",
+    "section": "",
+    "text": "A first look at the dataset, in order to visualize and summarize their main characteristics\n\nUnderstand the data structure, detect patterns, identify anomalies, test hypotheses, and check assumptions.",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-11 - Wrangling - filtering and grouping"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "Go and work\nHonor the One who is working on you.\nDo so by making beautiful things,\nBe serving in beautiful ways,\nBy speaking up for the weak whose beauty is being maligned,\nBy filling this city with the aroma of good and beautiful work\nReflect the beautiful work of your heavenly Father,\nNourished now by the grace and mercy of Christ,\nIn the power of the Holy Spirit.\nGod has already accomplished the great work.\nGod goes before you and behind you.\nGod works at your side.\n(Matthew Kaemingk & Cory B. Willson, Work and Worship, p. 140)",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#retrieval",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#retrieval",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Retrieval",
+    "text": "Retrieval\n\nWhat are some types of data?\nWhat are some structures and databases used to handle data?",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-1",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-1",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "Data doesn’t come neatly wrapped.\nWrangling decisions have big impacts on analysis and conclusions!",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#the-grammar-of-wrangling",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#the-grammar-of-wrangling",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "The grammar of wrangling",
+    "text": "The grammar of wrangling\n\nOperations:\n\nselect (rows and columns)\nadd/drop columns and rows\nsort\ncalculate summaries\nfilter\ngroup/aggregate\nreshape\njoin",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#pandas",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#pandas",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "pandas",
+    "text": "pandas\n“pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.” https://pandas.pydata.org/\nYou can import the library by doing:\n\nimport pandas as pd\n\n\nThe alias pd is a common convention for referencing Pandas.",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#the-dataframe",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#the-dataframe",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "The Dataframe",
+    "text": "The Dataframe\nBasically, “enhanced 2-dimensional tables with rich functionality”: - Multiple Data Types: Supports various data types in a single structure. - Data Manipulation: Built-in functions for sorting, filtering, and grouping. - Indexing: Efficient access and retrieval of data. - Integration: Easy integration with other Python tools and libraries. - Analysis: Advanced operations, statistical functions, and more.",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-2",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-2",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "You can create a DataFrame from various data sources, such as lists, dictionaries, or external files.\nHere’s an example using a dictionary:\n\n# Example data\ndata = {\n    'Occupation': ['Engineer', 'Doctor', 'Teacher', 'Artist', 'Nurse', 'Developer'],\n    'Gender': ['Male', 'Female', 'Female', 'Male', 'Female', 'Male'],\n    'Age': [32, 45, 29, 41, 35, 28],\n    'Level of Education': ['Bachelor', 'PhD', 'Master', 'High School', 'Bachelor', 'Master'],\n    'Weight': [78, 65, 58, 80, 60, 75],\n    'Height': [175, 160, 168, 180, 155, 170]\n}\n\n# Creating the DataFrame\ndf = pd.DataFrame(data)\n\nprint(df)\n\n  Occupation  Gender  Age Level of Education  Weight  Height\n0   Engineer    Male   32           Bachelor      78     175\n1     Doctor  Female   45                PhD      65     160\n2    Teacher  Female   29             Master      58     168\n3     Artist    Male   41        High School      80     180\n4      Nurse  Female   35           Bachelor      60     155\n5  Developer    Male   28             Master      75     170",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-csv-files",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-csv-files",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Loading from CSV Files",
+    "text": "Loading from CSV Files\n\nCSV (Comma-Separated Values) is a common format for storing tabular data.\nExample: Department of Education College Scorecard\n\nSimplified dataset for this exercise: https://calvin-data-science.github.io/data202/data/college_scorecard.csv\n\nTry to load this csv file using the function pd.read_csv(). Use the CSV file as argument!",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-excel-files",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-excel-files",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Loading from Excel Files",
+    "text": "Loading from Excel Files\n\nimport pandas as pd\n\n# Loading an Excel file into a DataFrame\ndf_excel = pd.read_excel('data.xlsx', sheet_name='Sheet1')\n\n# Displaying the first few rows\nprint(df_excel.head())",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-other-file-formats",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-other-file-formats",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Loading from Other File Formats",
+    "text": "Loading from Other File Formats\nPandas can load data from various other formats, including:\n\nJSON: JavaScript Object Notation.\n\n  df_json = pd.read_json('data.json')\n\nSQL Databases: Loading data directly from databases.\n\nfrom sqlalchemy import create_engine\nengine = create_engine('sqlite:///:memory:')\ndf_sql = pd.read_sql('SELECT * FROM table_name', con=engine)\n\nHTML Tables: Extracting data from web pages.\n\ndf_html = pd.read_html('https://example.com')[0]",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#handling-data-while-loading",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#handling-data-while-loading",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Handling Data while Loading",
+    "text": "Handling Data while Loading\n\nWhile loading data, Pandas provides several options to handle:\n\nMissing Values: na_values, fillna()\nDate Parsing: parse_dates, date_parser\nData Types: dtype parameter to specify column data types\nCustom Delimiters: sep for specifying delimiters in text files",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#example-missing-values",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#example-missing-values",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Example: missing values",
+    "text": "Example: missing values\ndf_custom = pd.read_csv('data.csv', na_values=['NA', '?'], parse_dates=['date_column'])",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#selecting-a-row",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#selecting-a-row",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Selecting a row",
+    "text": "Selecting a row\niloc = locate by integer index\n\ndf.iloc[0]\n\nOccupation            Engineer\nGender                    Male\nAge                         32\nLevel of Education    Bachelor\nWeight                      78\nHeight                     175\nName: 0, dtype: object",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#selecting-a-column",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#selecting-a-column",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Selecting a column",
+    "text": "Selecting a column\n\ndf[\"Occupation\"]\n\n0     Engineer\n1       Doctor\n2      Teacher\n3       Artist\n4        Nurse\n5    Developer\nName: Occupation, dtype: object",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#adding-rows",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#adding-rows",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Adding rows",
+    "text": "Adding rows\nHere’s a slide about adding and dropping rows in a Pandas DataFrame:\nSlide 15: Adding and Dropping Rows in Pandas\n# Adding and Dropping Rows in Pandas\n\n## Adding Rows\n\n### 1. Using `append()` method\n\n- **Appending a Single Row**\n\n  ```python\n  # Create a new row as a dictionary\n  new_row = {'Name': 'Eve', 'Gender': 'Female', 'Age': 28, 'Occupation': 'Teacher', 'Education Level': 'Bachelor', 'Height': 165, 'Weight': 55}\n  \n  # Append the new row to the DataFrame\n  df = df.append(new_row, ignore_index=True)",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#removing-rows",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#removing-rows",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Removing Rows",
+    "text": "Removing Rows\n1. using drop() Method\n\nDropping Rows by Index\n# Drop rows with specific index labels\ndf = df.drop([2, 4], axis=0)  # Drops rows with index 2 and 4",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#adding-columns",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#adding-columns",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Adding Columns",
+    "text": "Adding Columns\n1. Using Direct Assignment\n\nAdding a Single Column\n# Add a new column with default values\ndf['NewColumn'] = [10, 20, 30, 40, 50]  # List should match the length of the DataFrame\n\n# Add a new column based on existing columns\ndf['BMI'] = df['Weight'] / (df['Height'] / 100) ** 2",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#removing-columns",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#removing-columns",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Removing Columns",
+    "text": "Removing Columns\n1. Using drop() Method\n\nDropping Single or Multiple Columns\n# Drop a single column\ndf = df.drop('NewColumn', axis=1)\n\n# Drop multiple columns\ndf = df.drop(['BMI', 'Country'], axis=1)",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-3",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-3",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "Example: Sorting by a single column\n\n\n# Sorting by a single column in ascending order\nsorted_df = df.sort_values(by='Age')\n\n# Sorting by a single column in descending order\nsorted_df_desc = df.sort_values(by='Age', ascending=False)\n\nsorted_df_desc.head()\n\n\n\n\n\n\n\n\nOccupation\nGender\nAge\nLevel of Education\nWeight\nHeight\n\n\n\n\n1\nDoctor\nFemale\n45\nPhD\n65\n160\n\n\n3\nArtist\nMale\n41\nHigh School\n80\n180\n\n\n4\nNurse\nFemale\n35\nBachelor\n60\n155\n\n\n0\nEngineer\nMale\n32\nBachelor\n78\n175\n\n\n2\nTeacher\nFemale\n29\nMaster\n58\n168",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#sorting-by-multiple-columns",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#sorting-by-multiple-columns",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Sorting by Multiple Columns",
+    "text": "Sorting by Multiple Columns\n\n# Sorting by multiple columns: 'Occupation' ascending, then 'Age' descending\nsorted_multi = df.sort_values(by=['Occupation', 'Age'], ascending=[True, False])\n\nsorted_multi.head()\n\n\n\n\n\n\n\n\nOccupation\nGender\nAge\nLevel of Education\nWeight\nHeight\n\n\n\n\n3\nArtist\nMale\n41\nHigh School\n80\n180\n\n\n5\nDeveloper\nMale\n28\nMaster\n75\n170\n\n\n1\nDoctor\nFemale\n45\nPhD\n65\n160\n\n\n0\nEngineer\nMale\n32\nBachelor\n78\n175\n\n\n4\nNurse\nFemale\n35\nBachelor\n60\n155",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-4",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-4",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "Pandas provides easy methods to calculate summary statistics for numerical data.\ndf.describe(): Generates summary statistics for all numerical columns:\n\nCount: Number of non-null entries.\nMean: Average value.\nStandard Deviation (std): Measures data spread.\nMinimum (min) and Maximum (max): Smallest and largest values.\n25%, 50%, 75% Percentiles: Values below which 25%, 50%, and 75% of the data fall.\n\n\n\ndf.describe()\n\n\n\n\n\n\n\n\nAge\nWeight\nHeight\n\n\n\n\ncount\n6.00000\n6.000000\n6.000000\n\n\nmean\n35.00000\n69.333333\n168.000000\n\n\nstd\n6.78233\n9.542886\n9.273618\n\n\nmin\n28.00000\n58.000000\n155.000000\n\n\n25%\n29.75000\n61.250000\n162.000000\n\n\n50%\n33.50000\n70.000000\n169.000000\n\n\n75%\n39.50000\n77.250000\n173.750000\n\n\nmax\n45.00000\n80.000000\n180.000000",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#additional-methods",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#additional-methods",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Additional Methods",
+    "text": "Additional Methods\n\nMean: df['Age'].mean() — Average age of persons.\nMedian: df['Height'].median() — Median height.\nMode: df['Gender'].mode() — Most frequent gender.\nValue Counts: df['Occupation'].value_counts() — Count of each occupation.\n\nUse these methods to quickly gain insights into your dataset!",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-5",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-5",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "The table has the function of treating multiplicity itself, distributing it and deriving from it as many effects as possible (Michel Foucault 1997)\n\n\n“All things are vectors” (Alfred North Whitehead, 1960)\n\n\nA Medieval Calendar, November, English psalter (MS. Royal 1DX, f. 14, British Library).\nFor details, see Marchese, Francis T. 2013. “Tables and Early Information Visualization.” In Knowledge Visu­alization Currents, edited by Francis T. Marchese and Ebad Banissi, 35-61. London: Springer",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#vectorization",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#vectorization",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Vectorization",
+    "text": "Vectorization\n\nHow does that affect our knowledge? Is everything reducible to this “rule”?\n\nSimple limitations: narrative text, graph data, structured data, etc.\nWhat is the reasoning we use to consider one row in a list? How do we consider that the “columns” can correctly describe them?",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#categorization",
+    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#categorization",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Categorization",
+    "text": "Categorization\n\n“You must distinguish between the holy and the common, between the unclean and the clean.” Leviticus 10.10 (NIV)\n\n\nWhen we categorize, we attribute order.",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1",
+      "09-09 - Wrangling - basic operations"
+    ]
+  },
+  {
+    "objectID": "midterm-proj.html",
+    "href": "midterm-proj.html",
+    "title": "Midterm Project",
+    "section": "",
+    "text": "Replicate and critique a visual.\nFor this project you will pick some existing data science work (a newspapar article, blog post, report, research paper, etc.) and replicate a visual from it using the data wrangling and plotting tools we’re studying.\nYou will then critique the original visualization and propose alternative designs.\nThe project will be done in teams of between 1 and 3. You will submit a single report and make a joint presentation.",
+    "crumbs": [
+      "Syllabus",
+      "Projects",
+      "Midterm Project"
+    ]
+  },
+  {
+    "objectID": "midterm-proj.html#milestones",
+    "href": "midterm-proj.html#milestones",
+    "title": "Midterm Project",
+    "section": "Milestones",
+    "text": "Milestones\n\nWeek 3: Identify possible plots\nThis was done as part of Discussion 2.\n\n\n\n\n\n\nHow to pick a plot?\n\n\n\n\n\nYou can pick one of these approaches:\n\nOrganization-centered: Pick an organization that you’re interested in (company, NGO, government agency, sports team, hospital, school, scientific community, etc.) and find some graphic that is helpful for them as they make decisions.\nIssue-centered: Pick an issue that’s important to you. Find a news article or opinion piece about that issue and try to replicate a visual that they’d use to support their claims. The strongest such projects will pick a claim that you disagree with.\n\n\n\n\n\n\nWeek 4: Plot selection and initial analysis\nUpload a screenshot of one or more potential plots to the Plot Gallery. Your post should include:\n\nScreenshot: A screenshot of the plot (image)\nClaim or Purpose: What the author is trying to say with this plot\nSource: URL, or some other similarly clear description of how to get to the original plot\nEach row is: A short phrase of what each row of the plot dataframe represents (e.g., “The data has one row per day and rider type”.\nData dictionary: A table of (possible) variable names and what they (probably) represent\nData Sources: Potential sources for the data, in the form of URLs or similar. Try downloading and opening the data if you can; report on any anticipated difficulties.\n\nYou don’t have to fill in everything for the initial post; you can come back and fill it in later.\n\n\n\n\n\n\nImportant\n\n\n\nThe plot you choose to replicate should have at least 3 variables.\nIf you really want to make a plot that has fewer than 3 variables, you should be able to explain why it’s still interesting and worth doing.\n\n\n\n\n\n\n\n\nOther Plot Selection Guidelines\n\n\n\nThe plot you choose to replicate:\n\nShould make an interesting claim.\n\nShouldn’t just be about something (e.g., “number of wins by each athlete”)\nMost interesting claims are about relationships (e.g,. “the highest paid athletes don’t necessarily win more”)\nA claim finishes the sentence: “The article uses this graphic to back up the claim that BLANK”.\nIf the article doesn’t make a claim, make one up. Imagine that you’ve gotten in an argument with someone and you show them this plot to back up your claim; what claim were you trying to make?\n\nShould involve at least 3 variables.\n\nIdeally they have to come from several separate data sources that you have to bring together.\n\nShould have some room for improvement, i.e., you’d be interested in trying a different way of presenting the data.\n\nIf you are really stuck, I can simply assign something to do, but I’m hoping to avoid that.\n\n\n\n\nWeek 5: Data\nFind and load the data; write a brief critique of the data.\nFor this milestone, your report should be complete through the “Data” section. See the Report Template below.\n\n\n\n\n\n\nData Selection Guidelines\n\n\n\nThe data you find:\n\nShould come from a reputable source.\n\nIf you use an aggregation site like OurWorldInData, try to track down where they got the data.\n\nShould require at least a little bit of wrangling\n\nBeware of sites where you can download exactly the data for a specific plot\n“Download data for this chart” links are red flags that you may be getting already-wrangled data.\n\n\nSee Some questions to ask if you’re working with data that you didn’t collect yourself.\nIf the wrangling is especially straightforward, you can add depth by:\n\nFinding a different source for the same data\nCritiquing the data collection process\nDescribing alternative choices that could have been made in the data collection or wrangling process and what the consequences of those choices might be.\n\n\n\n\n\nWeek 6: Initial plot and ideas\nMake an initial plot and a todo list of things to improve; sketch ideas for alternative ways to plot the same data.\nYour report should be complete through the “Wrangling” section and have some initial work in the “Replication” and “Alternatives” sections.\n\n\nWeek 8: Presentation and Report\nPresent the original, replication, and alternative plots to the class and in a Quarto report.",
+    "crumbs": [
+      "Syllabus",
+      "Projects",
+      "Midterm Project"
+    ]
+  },
+  {
+    "objectID": "midterm-proj.html#report-and-presentation-details",
+    "href": "midterm-proj.html#report-and-presentation-details",
+    "title": "Midterm Project",
+    "section": "Report and Presentation Details",
+    "text": "Report and Presentation Details\n\nReport Content\nYour report should include the following sections:\n\nOverview of the original plot (include a screenshot) and the claim it makes.\nDesign of the original plot. (plot type, effectiveness)\nData (where’d you get it, anything interesting about it or what you had to do with it)\nWrangling (what did you have to do to get it into a form that you could plot?)\nReplication (show your replication of the original plot)\nAlternative 1: what did you change? why?\nAlternative 2: (same, but can be a sketch rather than a full plot)\nSummary: one or two take-aways\n\n\n\nReport Template\nThis template includes a suggested outline for your report. You may choose to organize your report differently if you have a good reason.\n\n\n\n\n\n\nClick to show the Report Template\n\n\n\n\n\n---\ntitle: \"A title\"\nauthor:\n    - \"Your name\"\n    - \"Partner name\"\nformat:\n  html:\n    embed-resources: true\n    code-tools: true\n    code-fold: true\n---\n\n```{python}\n#| echo: true\nimport pandas as pd\nimport plotly.express as px\n```\n\n```{python}\n#| echo: false\n# Hack to make plotly work in RStudio\nif 'r' in globals() and r['.Platform$GUI'] == \"RStudio\" and r['suppressMessages(requireNamespace(\"htmltools\"))']:\n  r[\".GlobalEnv$to_html &lt;- function(x) { print(htmltools::HTML(x)) }\"] and None\n  def show_plot(p): r.to_html(p._repr_html_())\nelse:\n  def show_plot(p): return p\n```\n\n🚧\nThis template is intended to help you structure your report. Remove placeholders like this and make it your own. Not every question needs to be answered for every project, and some projects will have additional questions. **Your final report should not include any \"under construction\" or template text.**\n\n## Overview\n\n🚧\nWe are interested in TOPIC because STORY. So we chose to replicate a plot from [this article] (INCLUDE THE COMPLETE URL TO THE ARTICLE).\n\n🚧\nOriginal visualization:\n\n![](https://example.com/your-url-here)\n\n🚧\nClaim:\n\n&gt; You can put the claim in a \"block quote\" like this.\n&gt; A concise statement (ideally a quote) of the claim that the article uses the visualization to make (or the claim you invented if there wasn't a clear one)\n\n\n## Design\n\n🚧\nWhat overall type of visualization was chosen? Why might the author have chosen it?\n🚧\nWhat variables are being shown?\n🚧\nWhat visual cues (aka retinal variables or aesthetics) were chosen to represent those data variables?\n🚧\n    For at least one of these variables, describe what makes that choice appropriate or inappropriate.\n🚧\nOverall, what about the visual makes it effective, or ineffective, for making its claim?\n\n\n## Data\n\n### Data Overview\n\n🚧\nWhether you were able to find the original data (if not, why not?)\n🚧\nWhere the data came from\n🚧\n    Direct URL and/or specific instructions for how to obtain it.\n🚧\n    Under what terms is the source allowing you to use the data?\n🚧\n    Try to trace it upstream as close to the source as you can.\n🚧\n    Who worked with the data on its way to you? (Include names and roles, if applicable.)\n🚧\n    What processing may have happened to it: was it aggregated? Anonymized? etc.\n🚧\nWhat might we need to know about the data collection process in order to interpret the data correctly? (e.g., If it’s from a survey–who was surveyed?)\n\n### Data Details\n\n🚧\n```{r load-data}\n# your code to load the data here\n```\n\n🚧\nA low-level description of the size and structure of the data.\n🚧\nHow many rows are there?\nWhat does a single row represent? (Translate the first observation in the dataset into an English sentence.)\n🚧\nWhat might be interesting to know about what information the data does, and doesn’t, provide?\n\n\n### Wrangling\n\n🚧\nDescribe, at a broad level, what you need to do to the data to make it into the form you need for the plot. (e.g., what data types need fixing, whether you need to pivot, what filtering is needed, etc.)\n\n🚧\nAdd code blocks, with appropriate names, for wrangling steps. **Explain the *why* for any choices you make (like filtering data).**\n\n## Replication\n\n🚧\nInclude your replication, along with all code needed.\n🚧\nBriefly describe any difficulties you encountered, both those you overcame and those you still have not. (It’s ok to not have a perfect graph here. If the essential structure is there, don’t worry if the details are a bit different. Focus your attention on making an interesting and polished alternative design.)\n🚧\n\n\n## Alternatives\n\n🚧\nDescribe at least two alternative design choices that could be made in visualizing your data. For each design, include the following sections\n\n### Alternative 1: Design\n\n🚧\nWhat choice did the original visual make? (e.g., to use a particular aesthetic mapping or glyph)\n🚧\nWhat choice does your alternative design make instead? (It should be a reasonable choice, but it doesn’t have to be an improvement.)\n🚧\nHow does that change affect how the visual supports the original claim? Can your redesign now support some different claim?\n\n### Implementation\n\n🚧\nMake a solid attempt to implement your best alternative design.\nIf creating it using plotly is too challenging, you may include a high-fidelity sketch of what the plot would look like (using PowerPoint, a vector graphics tool, or a good-quality scan of a paper or whiteboard), along with a clear description of what you’d need to figure out in order to produce it with code.\n\n## Summary\n\n🚧\nNow that you’ve gone through the whole process, how has your understanding of, and belief in, the original article’s claim changed?\n🚧\nHow faithful was your replication?\n🚧\nCompare your original and alternative designs. Which is best for what purpose?\n🚧\nWhat follow-up questions and ideas do you have about the data or visualization you worked with?\n🚧\nHow do you feel about this whole experience?\n\n## Acknowledgments\n\n🚧\nInclude the full names of any students outside your team who helped you and a brief description of how they helped.\n\n### License\n\nSharing: Would you be okay with sharing your project, and if so, how?\n\nIdeally we'd make a public gallery with all projects, screenshots, and code, but you could choose to:\n\n- Go anonymous (choices: \"anon\" or \"names\")\n- Don't share code? (choices: \"code\" or \"screenshots\" or \"just title\")\n- Restrict to just future students (choices: \"public\" or \"students\").\n\nso, e.g., you might say \"anon, code, students\" or \"names, screenshots, public\".\n\n\n\n\n\nReport Style\nYour report should be:\n\nunderstandable by itself: a reader should not need to see your discussion posts or prior submissions.\nreproducible – if a new version of the data becomes available, anyone should be able to re-run your code and get an updated plot. Things to avoid:\n\npaths that only work on your computer\nmaking modifications to your raw data (e.g., editing it in Excel)\nhard-coding row numbers or other things that are likely to change\n\nunderstandable without the code: a reader should be able to skip over all of the code and understand all of the results.\nAt least one of your visuals (either the original or alternative design) should be high quality, with effort spent getting the details right.\nClean up any messy outputs from code (debugging, etc.)\nWrite succinctly. Bulleted lists are fine when they’re clear.\nUse ordinary text formatting (not headings, blockquotes, etc.) for ordinary prose. Reserve headings and block quotes for headings and quotes.\nFormat your code cleanly. If lazy, select the code and click “Reformat Code” on the Code menu. (Make sure you save first.)\nRead through the report before submitting. Check that you don’t have placeholder text, the headings make sense, etc.\n\nAcademic Integrity: If you take any code from elsewhere, you must state very clearly where it came from and how you changed it. This includes ChatGPT and other AI tools. If you find a plot and it has Plotly code already, I advise against looking at it, and possibly even finding a different plot. Code using a different toolkit (e.g., R) is probably okay.\n\n\nPresentation\nTo practice making data-driven arguments, this project includes a brief presentation, done on VoiceThread.\nKeep it short and simple. The slides should be as follows:\n\nOriginal Plot and Claim\nData (where’d you get it, anything interesting about it or what you had to do with it)\nReplication\nAlternative 1: what did you change? why?\nAlternative 2: (same)\nSummary: one or two take-aways\n\nUse a presentation tool like Google Slides or PowerPoint.\nUse voice comments to narrate. Each team member should make at least one comment.",
+    "crumbs": [
+      "Syllabus",
+      "Projects",
+      "Midterm Project"
+    ]
+  },
+  {
+    "objectID": "midterm-proj.html#logistics",
+    "href": "midterm-proj.html#logistics",
+    "title": "Midterm Project",
+    "section": "Logistics",
+    "text": "Logistics\n\nReport Submission\n\nIf your dataset is less than 10 MB: submit a .zip file with your entire project folder.\nOtherwise: submit just the HTML (and make sure the instructions are very clear about how to get the data)\n\nUse the header from the template, which includes these important settings:\n\nKeep code-tools: true in the header so we can see your source code.\nMake sure you keep embed-resources: true so we can see any images.\n\n\n\n\n\nShared Projects\nRStudio (Posit Workbench) has a feature called Shared Projects that many teams will find helpful.\nTo use it, one person should create a new project in the ~/rprojects folder. Then, they should go to the projects menu in the top-right corner and choose “Share Project”. Type the username of another team member (the part of their email before the @calvin.edu) in the textbox and click Add.\n\n\n\n\n\n\nrprojects folder\n\n\n\nFor shared projects to work, you must create your project within the ~/rprojects folder, i.e., the folder named rprojects within your home (~) folder.",
+    "crumbs": [
+      "Syllabus",
+      "Projects",
+      "Midterm Project"
+    ]
+  },
+  {
+    "objectID": "midterm-proj.html#checklist",
+    "href": "midterm-proj.html#checklist",
+    "title": "Midterm Project",
+    "section": "Checklist",
+    "text": "Checklist\nThe following is the minimal requirements for the project. The project should also go into depth in some area.\n\nOverview\n\nIncludes a screenshot of the original plot\nIncludes a description of the claim made by the original plot (or the claim you’re making if the original doesn’t make a claim)\nIncludes a link to the original plot\n\nDesign\n\nNames the type of the original plot (scatter, bar, etc.)\nIdentifies the variables used in the original plot\nIdentifies the visual cue that each variable is mapped to.\nDiscusses the effectiveness of the original plot\n\nData\n\nIdentifies the source of the data used for the replication (including a link if possible)\nIndicates how many rows and columns are in the data (e.g., “the data has 100 rows and 5 columns”)\nDescribes what a single row represents (e.g., “one row per day per rider type”)\nDescribes the variables in the data (e.g., “the data has columns for date, rider type, and number of rides”)\n\nWrangling\n\nDescribes the overall process of wrangling the data (e.g., “I had to combine data from sources X and Y, then filter out rows that aren’t Z, then calculate the average number of rides per day”)\nIncludes code blocks that show the wrangling process\nGives an example of the data after wrangling (e.g., the .head() and the .info())\n\nReplication\n\nIncludes the replication of the original plot\nReplication has the same general type of plot as the original (can be different in unimportant details like specific colors used, extra annonatiotns, etc.)\nReplication has the same general variables as the original, mapped to the same general visual cues\nDescribes any difficulties encountered in the replication process\nDescribes any relevant differences between the original and replication\n\nAlternatives\n\nIncludes textual descriptions of two alternative ways to plot the same data that are different in a substantive way (e.g., not just a different color scheme) from each other and from the original plot.\nIncludes images of both alternatives. Ideally they’re implemented in code using actual data, but in case that’s too challenging, a detailed and clear sketch on paper or PowerPoint or some online tool is also fine. The sketch should show all the necessary elements and should be understandable without additional explanation.\n\nSummary\n\nIncludes a reflection on the claim of the original plot and how well the original plot supports that claim.\nIncludes a comparison between the original design and at least of the alternative designs that specifies which design is better for what purpose.\n\nAppendix\n\nReport includes a description of where the depth in the project is, i.e., in what areas you went beyond the bare minimal requirements. See “Depth Somewhere” above.\nReport includes what terms you’d be willing to have your report shared under (see the “License” section of the template.)\nReport includes a list of sources used (e.g., specific links to StackOverflow, ChatGPT shared-conversation links, etc.), and the full names of any students outside your team.\n\nMeta\n\nReport was produced using a reproducible workflow (typically Quarto)\nReport is titled appropriately\nAuthors are listed correctly\nReport is concise\nReport is self-contained\nReport is understandable without reading the code\nNo placeholder text remains.\nReport is formatted cleanly (check headings, code outputs, etc.); check that the file shows up correctly on your local computer before submitting.",
+    "crumbs": [
+      "Syllabus",
+      "Projects",
+      "Midterm Project"
+    ]
+  },
+  {
+    "objectID": "midterm-proj.html#purpose",
+    "href": "midterm-proj.html#purpose",
+    "title": "Midterm Project",
+    "section": "Purpose",
+    "text": "Purpose\nThe project will explore the intersection between three things:\n\nThe data\nThe visualization\nThe story that the visualization tells about the data (and, indirectly, about the world)\n\nThe three components to this project involve each of these three things:\n\nData: Obtain some real-world dataset. Trace where it came from and how it’s structured. Load it and process it using the data science toolkit we’re studying to a form that’s appropriate for making the visualization.\nVisualization: Replicate (re-create) a visualization that someone else already made based on that data. Evaluate some of the choices and assumptions that were made in the visualization process: in what ways does the visualization faithfully represent the data (or not)? What sort of stories does the chosen visualization amplify?\nStory: Consider the story that the original source told using the visualization. Is that story accurate? complete? clearly articulated? How did choices in the data collection, preparation, and visualization affect the storytelling? Are there other stories that the data might also be telling?\n\nThis project addresses our course-level learning objectives in this way:\n\nTechnical skills: manipulating data, constructing visualizations, and creating reports.\nCommunication: analyzing choices made in visualization and text with respect to how it tells a story about data. Proposing and implementing changes to improve the clarity of communication.\nEthics and Critical Thinking: identify potential ethical questions (e.g., of transparency, diversity, etc.) that emerge in the process of obtaining, manipulating, and communicating with data.",
+    "crumbs": [
+      "Syllabus",
+      "Projects",
+      "Midterm Project"
+    ]
+  },
+  {
+    "objectID": "tools.html",
+    "href": "tools.html",
+    "title": "Tool References",
+    "section": "",
+    "text": "Markdown\npandas\nPlotly Express or this one\nNovartis Graphics Principles Cheatsheet",
+    "crumbs": [
+      "Syllabus",
+      "Tool References"
+    ]
+  },
+  {
+    "objectID": "tools.html#cheatsheets",
+    "href": "tools.html#cheatsheets",
+    "title": "Tool References",
+    "section": "",
+    "text": "Markdown\npandas\nPlotly Express or this one\nNovartis Graphics Principles Cheatsheet",
+    "crumbs": [
+      "Syllabus",
+      "Tool References"
+    ]
+  },
+  {
+    "objectID": "tools.html#tutorials",
+    "href": "tools.html#tutorials",
+    "title": "Tool References",
+    "section": "Tutorials",
+    "text": "Tutorials\n\nGoogle Colab Overview\n\nMarkdown Guide\n\nPandas Tutor\n\n\nPython tutorials\n\nThe “official” Python tutorial\nCodecademy’s “Learn Python” Tutorial\nfuturecoder python tutorial: nicely done, but only covers the basics\neducative python tutorial: not quite as slick as futurecoder, but it covers some important things that are missing there.\nW3Schools Python Tutorial and Quiz\nKaggle tutorials:\n\nlearn python\nlearn pandas",
+    "crumbs": [
+      "Syllabus",
+      "Tool References"
+    ]
+  },
+  {
+    "objectID": "tools.html#reference-materials",
+    "href": "tools.html#reference-materials",
+    "title": "Tool References",
+    "section": "Reference Materials",
+    "text": "Reference Materials\n\nPlotly (ignore everything in the Plotly docs about “Dash”)\nPython Data Science Handbook\nPython documentation. Especially useful:\n\nbuilt-in functions\ndata types\nother built-in functionality (“standard library”)\nRegular Expression How-To\nthe language reference has way more than you ever wanted to know about Python",
+    "crumbs": [
+      "Syllabus",
+      "Tool References"
+    ]
+  },
+  {
+    "objectID": "tools.html#scikit-learn",
+    "href": "tools.html#scikit-learn",
+    "title": "Tool References",
+    "section": "Scikit-Learn",
+    "text": "Scikit-Learn\nName: scikit-learn, abbreviated sklearn (but not “scikit”); “sci” for “science”, “kit” for “toolkit”\n\nReferences\n\nGetting Started\nUser guide\nGlossary\n\n\n\nExamples of using sklearn\n\nExamples from scikit-learn 1.3.2 documentation",
+    "crumbs": [
+      "Syllabus",
+      "Tool References"
+    ]
+  },
+  {
+    "objectID": "slides/01 - Introduction/index.html",
+    "href": "slides/01 - Introduction/index.html",
+    "title": "01 - Introduction",
+    "section": "",
+    "text": "Learning objectives for this week:\n\nObserve data science as the efforts of finding meaningfulness in data and automating decisions with data.\nDescribe the typical workflow in a data science project.\nIdentify some application areas of data science.\nIdentify types of datasets used in data science.\nExplore some of the tools that are currently used in data science.\nReflect on skills and virtues that are required for this practice.",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "01 - Introduction"
+    ]
+  },
+  {
+    "objectID": "final-proj.html",
+    "href": "final-proj.html",
+    "title": "Final Project",
+    "section": "",
+    "text": "The goal of this project is to practice a complete data science workflow: question, data, exploration, modeling, and communication. Results will be presented as a report, supporting code, and a brief presentation to the class. Successful outcomes should include visual, analytical, and perspectival components. The report should be at the level of polish and formality of a blog post (more than a class homework assignment, less than an academic paper). The overview and primary visualizations should be intelligible to a non-technical audience; the methods should be described in precise technical language as appropriate.\nAn important component of this project is a comparative critique of some related prior work. That is, you are not simply demonstrating that you can perform an analysis, but also that you can evaluate the strengths and weaknesses of others’ analyses. This may be the most important take-away from this class for your future career.\n\n\nTeams: Both individual and team projects are permitted, with a mild encouragement towards teams.\nPresentations: The final course meeting (during the designated final exam period) will be devoted to final project presentations. Feedback on others’ projects will be part of your final project grade, so attendance is mandatory.\nThere are two sections of this class, thus two sessions of final project presentations. Refer to the Calvin exam schedule for the official dates; for 2023, it’s Saturday Dec. 9 at 1:30 p.m. and Monday Dec. 11 at 1:30 p.m.. Your team must choose which to present at. You are welcome to attend both sessions to see everyone’s work.\n\n\n\n\nNov 11: Initial proposal. This should include:\n\nA tentative topic (kind of data you want to work with, question you’d like to ask). Include a brief description of what drives your interest in it.\nAn example or two of some data science work you’ve found on the topic already. See below for some guidance on this. Include the URLs of resources you found, and some brief commentary about each one (does it seem good?)\nA proposal of what you’d like to do. A first step will usually be to do an analysis similar to one of the examples you found, and you may not have much idea beyond that at this time. But if you do have some ideas for what you might want to do differently, this is a good place to include them. Note that your overall task should include some modeling (predictive or otherwise).\nTentative Teams: If you have already found people who may be interested in working with you, note that here.\n\nNov 18: Dataset, exploratory visualization, and summary of prior work\n\nYou should have the EDA section of your report complete, and a good start on everything before that.\n\nDec 2: Initial modeling and visualization\nDec 12: Final report\n\n\n\n\nYou can find examples of data science work on sites like Kaggle, TowardsDataScience, Reddit, YouTube, and GitHub. Also check out the TidyTuesday project and r-bloggers.\nYour project should include some modeling, so it should involve more than making visualizations. Predictive modeling is closest to the emphasis of this class, but other kinds of modeling (such as clustering) are often ok.\nYour data should be rich enough to support the kind of modeling you want to do, but not too complex to work with. For example, avoid any dataset larger than 500 MB since it probably won’t fit. Also, avoid image and sound data for similar reasons. (Although if you really want to work with images, there are ways to do this.)\nSome types of projects that have worked well in the past:\n\nParticipating in a Kaggle competition. It should be a competition that is still open. You don’t need to win, but you should be able to do better than the baseline. You should also do some EDA and/or visualization beyond what’s already been done by others.\nReproducing a published analysis. Find a published analysis that you can reproduce, and then extend it in some way. For example, you might find a published analysis that uses a dataset you can’t access, and then find a similar dataset that you can access. Or you might find a published analysis that uses a dataset you can access, and then extend it in some way (e.g., by adding a new feature, or by using a different model).\n\nSome projects that could work great, but should be discussed with the instructor first:\n\nRedoing some class activities using a different toolkit. For example, what if this class were to be taught in JavaScript using ObservableHQ? (Talk with Prof Arnold for detailed ideas.)\nExploring interpretable models. There are some new types of models coming out that are more interpretable, but we have not gotten to discuss them much in class. Perhaps you could explore one of these models and compare it to a more traditional model.\nWorking with a large language model. For example, could you give ChatGPT some example rows from your dataset, then ask it to write a decision tree for you, and evaluate the result? There are losts of\n\n\n\n\n\nNOTES:\n\nYou will likely need to make some choices regarding what variables to include, whether to do some pre-processing (e.g., addressing missing values, generating new variables), etc. Clearly state:\n\nWhat decisions you made\nWhy you made them\nWhat might have been alternative choices.\n\nTell the “rational reconstruction” of the story of how the analysis was done.\n\nDon’t give the play-by-play of everything you tried, every idea you had, etc., but…\nDo include things you tried that led to an important observation later on.\n\nIf you use any code from the Internet, you should acknowledge its source and provide a link.\nYou should submit all of the code needed to replicate your results, but your report should be understandable without looking at the code.\nHere is a template (rendered) that gives one possible outline. You may adapt the outline as needed for your project.\nYou’ll submit both slides and a report. See the Midterm project for submission instructions.\n\nYour report should include the following general elements (though treat this specific outline as a suggestion only; certain reports will need to deviate from this structure in small or large part):\n\nA succinct but descriptive title\nOverview\n\nA real-world question that you’d like to explore, and why it’s interesting.\n\nThis question should be stated in language that is understandable to someone who hasn’t studied data science and doesn’t know the details of your dataset.\nThe best questions include motivation from prior literature that gives, for example, some pattern or relationship that you’d expect to find and why.\n\nA brief (2-4 sentences) high-level description of the dataset: what is the dataset about? Where did it come from? What sort of data does it contain?\n\nPrior Work\n\nA summary of what you have found that others have done with your data or question. Include URLs and author names.\nA response to their work:\n\nWhat did they do well that is inspiring?\nWhat could they improve on or explore further?\nDo you trust their results? Why or why not?\n\nIn what ways do you intend for this project to extend or enhance that prior work? (Save the details of how for the Approach section.)\n\nApproach\n\nA problem description or specific question\n\nThis question should be stated in more specific technical terms than the real-world question.\nIt should reference the particular features of your dataset.\nThis question ideally helps answer the real-world question, but it’s okay if it doesn’t.\n\nThe approach that you’ll take to answer that question, probably using some sort of predictive or statistical modeling.\nA description of the data’s provenance: as much as you can, trace the path from the events or measurements all the way to the dataset you’re working with. You might answer:\n\nwhere did the data come from originally?\nWhere did you download it from? As much as you can tell or speculate, how did it end up available there?\n\nThe number of records (rows) in the dataset, and what each one represents.\n\nGive an example of some part of the data in your dataset.\nConsider writing a simple sentence that conveys the information in the first row, as an example.\n\nA list of the features in the dataset and their types.\nAn analysis of the appropriateness of your dataset for your approach. (What’s good about it? What do you wish were better?)\nThis section should also discuss the overall approach of any basic data wrangling needed to get the data into an overall usable form. More specific wrangling may be needed for constructing plots or models later.\n\nExploratory Data Analysis (EDA)\n\nShow plots or tables illustrating the distribution of at least two variables in your dataset. Comment on anything interesting you observe.\nShow plots illustrating bivariate relationships for at least 2 pairs of variables. Comment on anything interesting you observe (e.g., strength of relationship, dependence on other factors).\nSummarize your EDA findings: how do your observations inform the modeling?\n\nModeling\n\nThis section is written for predictive modeling; if you’re doing inferential modeling or clustering, adapt this section as needed.\nDescribe the modeling setup. Clearly state at least:\n\nwhat is the target variable you are trying to predict\nwhich variables (features) you are using to predict it, and why you chose those features\nhow you will measure accuracy (can you give meaningful units?)\nwhat validation method did you choose and why\n\nFit a basic predictive model using one of the techniques we discussed in class (e.g., Decision Trees, Linear/Logistic Regression, Random Forest)\n\nDescribe why you chose that model (and its features and any hyperparameters)\nDescribe what kind of performance you expect from it\n\nReport the results of your basic predictive model via cross-validation.\nMake one or more changes to the predictive model to (attempt to) improve the accuracy. Discuss what changes you made, why you made them, and what the results were.\nThe strongest reports will include insightful visualizations of the model, its predictions, and/or its mistakes, and a discussion of what those plots tell us.\nReport on the final accuracy of your best model on the test set, if applicable.\nAlternative: instead of a supervised prediction task, you can define an unsupervised learning task and use clustering. In this case, clearly state what you want to understand through the clustering, and report your observations.\n\nFindings: Summarize the analyses you performed and what the results told you. What do your findings say about the real-world and prediction (or clustering) questions you posed?\nLimitations: What are some limitations of your analyses? Did you notice any potential biases in the data you used or analysis you did? Any other ethical questions raised during this project?\nFuture Directions: What new questions came up following your exploration of this data? Identify at least one question that would require new data or a new analysis approach, and specify what steps would be required.\n\nYou might additionally walk through what the model predicts, and how it does it, for one or two specific examples, ideally ones that aren’t even part of your dataset.\n(Project descriptions originally thanks to Ofra Amir)",
+    "crumbs": [
+      "Syllabus",
+      "Projects",
+      "Final Project"
+    ]
+  },
+  {
+    "objectID": "final-proj.html#final-project-a-complete-data-science-process",
+    "href": "final-proj.html#final-project-a-complete-data-science-process",
+    "title": "Final Project",
+    "section": "",
+    "text": "The goal of this project is to practice a complete data science workflow: question, data, exploration, modeling, and communication. Results will be presented as a report, supporting code, and a brief presentation to the class. Successful outcomes should include visual, analytical, and perspectival components. The report should be at the level of polish and formality of a blog post (more than a class homework assignment, less than an academic paper). The overview and primary visualizations should be intelligible to a non-technical audience; the methods should be described in precise technical language as appropriate.\nAn important component of this project is a comparative critique of some related prior work. That is, you are not simply demonstrating that you can perform an analysis, but also that you can evaluate the strengths and weaknesses of others’ analyses. This may be the most important take-away from this class for your future career.\n\n\nTeams: Both individual and team projects are permitted, with a mild encouragement towards teams.\nPresentations: The final course meeting (during the designated final exam period) will be devoted to final project presentations. Feedback on others’ projects will be part of your final project grade, so attendance is mandatory.\nThere are two sections of this class, thus two sessions of final project presentations. Refer to the Calvin exam schedule for the official dates; for 2023, it’s Saturday Dec. 9 at 1:30 p.m. and Monday Dec. 11 at 1:30 p.m.. Your team must choose which to present at. You are welcome to attend both sessions to see everyone’s work.\n\n\n\n\nNov 11: Initial proposal. This should include:\n\nA tentative topic (kind of data you want to work with, question you’d like to ask). Include a brief description of what drives your interest in it.\nAn example or two of some data science work you’ve found on the topic already. See below for some guidance on this. Include the URLs of resources you found, and some brief commentary about each one (does it seem good?)\nA proposal of what you’d like to do. A first step will usually be to do an analysis similar to one of the examples you found, and you may not have much idea beyond that at this time. But if you do have some ideas for what you might want to do differently, this is a good place to include them. Note that your overall task should include some modeling (predictive or otherwise).\nTentative Teams: If you have already found people who may be interested in working with you, note that here.\n\nNov 18: Dataset, exploratory visualization, and summary of prior work\n\nYou should have the EDA section of your report complete, and a good start on everything before that.\n\nDec 2: Initial modeling and visualization\nDec 12: Final report\n\n\n\n\nYou can find examples of data science work on sites like Kaggle, TowardsDataScience, Reddit, YouTube, and GitHub. Also check out the TidyTuesday project and r-bloggers.\nYour project should include some modeling, so it should involve more than making visualizations. Predictive modeling is closest to the emphasis of this class, but other kinds of modeling (such as clustering) are often ok.\nYour data should be rich enough to support the kind of modeling you want to do, but not too complex to work with. For example, avoid any dataset larger than 500 MB since it probably won’t fit. Also, avoid image and sound data for similar reasons. (Although if you really want to work with images, there are ways to do this.)\nSome types of projects that have worked well in the past:\n\nParticipating in a Kaggle competition. It should be a competition that is still open. You don’t need to win, but you should be able to do better than the baseline. You should also do some EDA and/or visualization beyond what’s already been done by others.\nReproducing a published analysis. Find a published analysis that you can reproduce, and then extend it in some way. For example, you might find a published analysis that uses a dataset you can’t access, and then find a similar dataset that you can access. Or you might find a published analysis that uses a dataset you can access, and then extend it in some way (e.g., by adding a new feature, or by using a different model).\n\nSome projects that could work great, but should be discussed with the instructor first:\n\nRedoing some class activities using a different toolkit. For example, what if this class were to be taught in JavaScript using ObservableHQ? (Talk with Prof Arnold for detailed ideas.)\nExploring interpretable models. There are some new types of models coming out that are more interpretable, but we have not gotten to discuss them much in class. Perhaps you could explore one of these models and compare it to a more traditional model.\nWorking with a large language model. For example, could you give ChatGPT some example rows from your dataset, then ask it to write a decision tree for you, and evaluate the result? There are losts of\n\n\n\n\n\nNOTES:\n\nYou will likely need to make some choices regarding what variables to include, whether to do some pre-processing (e.g., addressing missing values, generating new variables), etc. Clearly state:\n\nWhat decisions you made\nWhy you made them\nWhat might have been alternative choices.\n\nTell the “rational reconstruction” of the story of how the analysis was done.\n\nDon’t give the play-by-play of everything you tried, every idea you had, etc., but…\nDo include things you tried that led to an important observation later on.\n\nIf you use any code from the Internet, you should acknowledge its source and provide a link.\nYou should submit all of the code needed to replicate your results, but your report should be understandable without looking at the code.\nHere is a template (rendered) that gives one possible outline. You may adapt the outline as needed for your project.\nYou’ll submit both slides and a report. See the Midterm project for submission instructions.\n\nYour report should include the following general elements (though treat this specific outline as a suggestion only; certain reports will need to deviate from this structure in small or large part):\n\nA succinct but descriptive title\nOverview\n\nA real-world question that you’d like to explore, and why it’s interesting.\n\nThis question should be stated in language that is understandable to someone who hasn’t studied data science and doesn’t know the details of your dataset.\nThe best questions include motivation from prior literature that gives, for example, some pattern or relationship that you’d expect to find and why.\n\nA brief (2-4 sentences) high-level description of the dataset: what is the dataset about? Where did it come from? What sort of data does it contain?\n\nPrior Work\n\nA summary of what you have found that others have done with your data or question. Include URLs and author names.\nA response to their work:\n\nWhat did they do well that is inspiring?\nWhat could they improve on or explore further?\nDo you trust their results? Why or why not?\n\nIn what ways do you intend for this project to extend or enhance that prior work? (Save the details of how for the Approach section.)\n\nApproach\n\nA problem description or specific question\n\nThis question should be stated in more specific technical terms than the real-world question.\nIt should reference the particular features of your dataset.\nThis question ideally helps answer the real-world question, but it’s okay if it doesn’t.\n\nThe approach that you’ll take to answer that question, probably using some sort of predictive or statistical modeling.\nA description of the data’s provenance: as much as you can, trace the path from the events or measurements all the way to the dataset you’re working with. You might answer:\n\nwhere did the data come from originally?\nWhere did you download it from? As much as you can tell or speculate, how did it end up available there?\n\nThe number of records (rows) in the dataset, and what each one represents.\n\nGive an example of some part of the data in your dataset.\nConsider writing a simple sentence that conveys the information in the first row, as an example.\n\nA list of the features in the dataset and their types.\nAn analysis of the appropriateness of your dataset for your approach. (What’s good about it? What do you wish were better?)\nThis section should also discuss the overall approach of any basic data wrangling needed to get the data into an overall usable form. More specific wrangling may be needed for constructing plots or models later.\n\nExploratory Data Analysis (EDA)\n\nShow plots or tables illustrating the distribution of at least two variables in your dataset. Comment on anything interesting you observe.\nShow plots illustrating bivariate relationships for at least 2 pairs of variables. Comment on anything interesting you observe (e.g., strength of relationship, dependence on other factors).\nSummarize your EDA findings: how do your observations inform the modeling?\n\nModeling\n\nThis section is written for predictive modeling; if you’re doing inferential modeling or clustering, adapt this section as needed.\nDescribe the modeling setup. Clearly state at least:\n\nwhat is the target variable you are trying to predict\nwhich variables (features) you are using to predict it, and why you chose those features\nhow you will measure accuracy (can you give meaningful units?)\nwhat validation method did you choose and why\n\nFit a basic predictive model using one of the techniques we discussed in class (e.g., Decision Trees, Linear/Logistic Regression, Random Forest)\n\nDescribe why you chose that model (and its features and any hyperparameters)\nDescribe what kind of performance you expect from it\n\nReport the results of your basic predictive model via cross-validation.\nMake one or more changes to the predictive model to (attempt to) improve the accuracy. Discuss what changes you made, why you made them, and what the results were.\nThe strongest reports will include insightful visualizations of the model, its predictions, and/or its mistakes, and a discussion of what those plots tell us.\nReport on the final accuracy of your best model on the test set, if applicable.\nAlternative: instead of a supervised prediction task, you can define an unsupervised learning task and use clustering. In this case, clearly state what you want to understand through the clustering, and report your observations.\n\nFindings: Summarize the analyses you performed and what the results told you. What do your findings say about the real-world and prediction (or clustering) questions you posed?\nLimitations: What are some limitations of your analyses? Did you notice any potential biases in the data you used or analysis you did? Any other ethical questions raised during this project?\nFuture Directions: What new questions came up following your exploration of this data? Identify at least one question that would require new data or a new analysis approach, and specify what steps would be required.\n\nYou might additionally walk through what the model predicts, and how it does it, for one or two specific examples, ideally ones that aren’t even part of your dataset.\n(Project descriptions originally thanks to Ofra Amir)",
+    "crumbs": [
+      "Syllabus",
+      "Projects",
+      "Final Project"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Catalog Description\n\n\n\n\n\nAn introduction to the conceptual foundations and practical skills needed to transform data into useful forms and apply predictive analytics to discover patterns and anticipate trends. Primary focus is on the core skills and concepts needed to pull data from a range of sources; to filter, transform, and combine data sets to prepare them for analysis; and to construct quantitative summaries and basic visualizations. Programming is used throughout to assemble data-processing pipelines. Students will also discuss ethical and social considerations of data collection and data-driven systems.\nPrerequisite: CS 104, CS 106, or CS 108. A minimum grade of C in the chosen course is required."
+  },
+  {
+    "objectID": "index.html#communication",
+    "href": "index.html#communication",
+    "title": "Syllabus",
+    "section": "Communication",
+    "text": "Communication\nWe will use the following communication tools:\n\nOutside of class, we’ll communicate primarily using the forums on Perusall. See link on Moodle.\n\nPost questions about assignments, concepts, or when you have problems getting code to run.\nPost answers as well. Answering helps the community and also gives you practice explaining something you just learned.\nPost notes about interesting articles or events.\n\nUse email for personal issues.\nUse Teams for friendly chat; I’ll redirect most questions about course content to Perusall.\n\nYou’ll generally find us responsive on Monday through Friday, but less so on the weekend, particularly Sunday. You’re free to schedule your work as best works for you, but we’ll be trying to observe a Sabbath in our own schedules."
+  },
+  {
+    "objectID": "index.html#every-week",
+    "href": "index.html#every-week",
+    "title": "Syllabus",
+    "section": "Every week",
+    "text": "Every week\n\nPreparation (before class): Readings and quizzes to prepare you for class (on Perusall)\nLecture (in class): We’ll review the material from the preparation, and add some additional content.\nPractice exercises We will usually start some of the week’s practice in class and finish them at home.\n\nWe will typically meet in the classroom on Monday and Wednesday and in the lab on Friday.\nIf you have a laptop, please bring it to Monday and Wednesday classes."
+  },
+  {
+    "objectID": "index.html#every-other-week",
+    "href": "index.html#every-other-week",
+    "title": "Syllabus",
+    "section": "Every other week",
+    "text": "Every other week\n\nPerspectives readings: you’ll read an article about data science and their wider societal implications. After this reading, you will be asked to make comments on the text and interact with your colleagues responses. Perusall has many nice tools to make this a nice shared reading experience. Try not to do it just for the sake of getting the assignment done and get the grade.\nQuizzes (6 on total): usually on Fridays, we will have a 15 to 20 minute quiz on Moodle reviewing and applying the concepts we got from the unit. The quiz will be done in classroom, so you will want to bring your laptop or any other device."
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "Syllabus",
+    "section": "Projects",
+    "text": "Projects\nYou will complete two multi-week projects in this class.\nIn the Midterm Project, you will practice some parts of the data science lifecycle by reproducing a published visualization of your choice from source data. In the Final Project, you will additionally apply predictive analytics. You may choose to use the same or different dataset. Details about the projects\n\n\n\n\n\n\nTeams\n\n\n\n\n\nFinal projects may be completed in teams of up to 3. Teams will have the following additional expectations:\n\nTeams must submit a team contract about how they will work together\nTeams must convince the instructional staff that each team member learned something substantial from completing the project.\nEach team member must submit an assessment of how they and other team members fulfilled their contract."
+  },
+  {
+    "objectID": "index.html#deadlines-and-late-work-policy",
+    "href": "index.html#deadlines-and-late-work-policy",
+    "title": "Syllabus",
+    "section": "Deadlines and late work policy",
+    "text": "Deadlines and late work policy\nUnless stated otherwise, the assignment submissions are due by midnight of the due date. The Moodle calendar will list these due dates/times.\nAnything submitted after the dealine is late, unless you have made prior arrangements with us. For each late assignment, you will be charged 10% for each business-day that you are late (e.g., if an assignment is due on Friday, you may turn it in on Monday at 10% off, Tuesday at 20% off and so on) and you need to email us to tell us which assignment you’re submitting late and how late it is. We will not accept work that is more than one week late unless you talk to us about the circumstances and negotiate a late-submission plan. We will generally grant up to 30% for these negotiated plans. We will also grant you 4 grace days with no penalty, no questions asked. Please note that grace days do not apply to the quizzes or the final project, and that we do not accept or negotiate for late work after the last day of class. If there are exceptional circumstances, please talk to us so we can work something out."
+  },
+  {
+    "objectID": "slides/02 - Wrangling 1/index.html",
+    "href": "slides/02 - Wrangling 1/index.html",
+    "title": "02 - Wrangling 1",
+    "section": "",
+    "text": "Learning objectives for this week:\n\nCreating and loading pandas dataframes\nAccessing dataframe rows and columns\nEvaluating summary statistics in dataframes\nSelecting dataframes\nFiltering dataframes\nDeriving new dataframe columns\nUnderstanding data types and string operations in dataframes",
+    "crumbs": [
+      "Syllabus",
+      "Slides",
+      "02 - Wrangling 1"
+    ]
+  },
+  {
     "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section",
     "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
@@ -400,211 +1137,6 @@
       "Slides",
       "01 - Introduction",
       "09-04 - First day"
-    ]
-  },
-  {
-    "objectID": "tools.html",
-    "href": "tools.html",
-    "title": "Tool References",
-    "section": "",
-    "text": "Markdown\npandas\nPlotly Express or this one\nNovartis Graphics Principles Cheatsheet",
-    "crumbs": [
-      "Syllabus",
-      "Tool References"
-    ]
-  },
-  {
-    "objectID": "tools.html#cheatsheets",
-    "href": "tools.html#cheatsheets",
-    "title": "Tool References",
-    "section": "",
-    "text": "Markdown\npandas\nPlotly Express or this one\nNovartis Graphics Principles Cheatsheet",
-    "crumbs": [
-      "Syllabus",
-      "Tool References"
-    ]
-  },
-  {
-    "objectID": "tools.html#tutorials",
-    "href": "tools.html#tutorials",
-    "title": "Tool References",
-    "section": "Tutorials",
-    "text": "Tutorials\n\nGoogle Colab Overview\n\nMarkdown Guide\n\nPandas Tutor\n\n\nPython tutorials\n\nThe “official” Python tutorial\nCodecademy’s “Learn Python” Tutorial\nfuturecoder python tutorial: nicely done, but only covers the basics\neducative python tutorial: not quite as slick as futurecoder, but it covers some important things that are missing there.\nW3Schools Python Tutorial and Quiz\nKaggle tutorials:\n\nlearn python\nlearn pandas",
-    "crumbs": [
-      "Syllabus",
-      "Tool References"
-    ]
-  },
-  {
-    "objectID": "tools.html#reference-materials",
-    "href": "tools.html#reference-materials",
-    "title": "Tool References",
-    "section": "Reference Materials",
-    "text": "Reference Materials\n\nPlotly (ignore everything in the Plotly docs about “Dash”)\nPython Data Science Handbook\nPython documentation. Especially useful:\n\nbuilt-in functions\ndata types\nother built-in functionality (“standard library”)\nRegular Expression How-To\nthe language reference has way more than you ever wanted to know about Python",
-    "crumbs": [
-      "Syllabus",
-      "Tool References"
-    ]
-  },
-  {
-    "objectID": "tools.html#scikit-learn",
-    "href": "tools.html#scikit-learn",
-    "title": "Tool References",
-    "section": "Scikit-Learn",
-    "text": "Scikit-Learn\nName: scikit-learn, abbreviated sklearn (but not “scikit”); “sci” for “science”, “kit” for “toolkit”\n\nReferences\n\nGetting Started\nUser guide\nGlossary\n\n\n\nExamples of using sklearn\n\nExamples from scikit-learn 1.3.2 documentation",
-    "crumbs": [
-      "Syllabus",
-      "Tool References"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Catalog Description\n\n\n\n\n\nAn introduction to the conceptual foundations and practical skills needed to transform data into useful forms and apply predictive analytics to discover patterns and anticipate trends. Primary focus is on the core skills and concepts needed to pull data from a range of sources; to filter, transform, and combine data sets to prepare them for analysis; and to construct quantitative summaries and basic visualizations. Programming is used throughout to assemble data-processing pipelines. Students will also discuss ethical and social considerations of data collection and data-driven systems.\nPrerequisite: CS 104, CS 106, or CS 108. A minimum grade of C in the chosen course is required."
-  },
-  {
-    "objectID": "index.html#communication",
-    "href": "index.html#communication",
-    "title": "Syllabus",
-    "section": "Communication",
-    "text": "Communication\nWe will use the following communication tools:\n\nOutside of class, we’ll communicate primarily using the forums on Perusall. See link on Moodle.\n\nPost questions about assignments, concepts, or when you have problems getting code to run.\nPost answers as well. Answering helps the community and also gives you practice explaining something you just learned.\nPost notes about interesting articles or events.\n\nUse email for personal issues.\nUse Teams for friendly chat; I’ll redirect most questions about course content to Perusall.\n\nYou’ll generally find us responsive on Monday through Friday, but less so on the weekend, particularly Sunday. You’re free to schedule your work as best works for you, but we’ll be trying to observe a Sabbath in our own schedules."
-  },
-  {
-    "objectID": "index.html#every-week",
-    "href": "index.html#every-week",
-    "title": "Syllabus",
-    "section": "Every week",
-    "text": "Every week\n\nPreparation (before class): Readings and quizzes to prepare you for class (on Perusall)\nLecture (in class): We’ll review the material from the preparation, and add some additional content.\nPractice exercises We will usually start some of the week’s practice in class and finish them at home.\n\nWe will typically meet in the classroom on Monday and Wednesday and in the lab on Friday.\nIf you have a laptop, please bring it to Monday and Wednesday classes."
-  },
-  {
-    "objectID": "index.html#every-other-week",
-    "href": "index.html#every-other-week",
-    "title": "Syllabus",
-    "section": "Every other week",
-    "text": "Every other week\n\nPerspectives readings: you’ll read an article about data science and their wider societal implications. After this reading, you will be asked to make comments on the text and interact with your colleagues responses. Perusall has many nice tools to make this a nice shared reading experience. Try not to do it just for the sake of getting the assignment done and get the grade.\nQuizzes (6 on total): usually on Fridays, we will have a 15 to 20 minute quiz on Moodle reviewing and applying the concepts we got from the unit. The quiz will be done in classroom, so you will want to bring your laptop or any other device."
-  },
-  {
-    "objectID": "index.html#projects",
-    "href": "index.html#projects",
-    "title": "Syllabus",
-    "section": "Projects",
-    "text": "Projects\nYou will complete two multi-week projects in this class.\nIn the Midterm Project, you will practice some parts of the data science lifecycle by reproducing a published visualization of your choice from source data. In the Final Project, you will additionally apply predictive analytics. You may choose to use the same or different dataset. Details about the projects\n\n\n\n\n\n\nTeams\n\n\n\n\n\nFinal projects may be completed in teams of up to 3. Teams will have the following additional expectations:\n\nTeams must submit a team contract about how they will work together\nTeams must convince the instructional staff that each team member learned something substantial from completing the project.\nEach team member must submit an assessment of how they and other team members fulfilled their contract."
-  },
-  {
-    "objectID": "index.html#deadlines-and-late-work-policy",
-    "href": "index.html#deadlines-and-late-work-policy",
-    "title": "Syllabus",
-    "section": "Deadlines and late work policy",
-    "text": "Deadlines and late work policy\nUnless stated otherwise, the assignment submissions are due by midnight of the due date. The Moodle calendar will list these due dates/times.\nAnything submitted after the dealine is late, unless you have made prior arrangements with us. For each late assignment, you will be charged 10% for each business-day that you are late (e.g., if an assignment is due on Friday, you may turn it in on Monday at 10% off, Tuesday at 20% off and so on) and you need to email us to tell us which assignment you’re submitting late and how late it is. We will not accept work that is more than one week late unless you talk to us about the circumstances and negotiate a late-submission plan. We will generally grant up to 30% for these negotiated plans. We will also grant you 4 grace days with no penalty, no questions asked. Please note that grace days do not apply to the quizzes or the final project, and that we do not accept or negotiate for late work after the last day of class. If there are exceptional circumstances, please talk to us so we can work something out."
-  },
-  {
-    "objectID": "final-proj.html",
-    "href": "final-proj.html",
-    "title": "Final Project",
-    "section": "",
-    "text": "The goal of this project is to practice a complete data science workflow: question, data, exploration, modeling, and communication. Results will be presented as a report, supporting code, and a brief presentation to the class. Successful outcomes should include visual, analytical, and perspectival components. The report should be at the level of polish and formality of a blog post (more than a class homework assignment, less than an academic paper). The overview and primary visualizations should be intelligible to a non-technical audience; the methods should be described in precise technical language as appropriate.\nAn important component of this project is a comparative critique of some related prior work. That is, you are not simply demonstrating that you can perform an analysis, but also that you can evaluate the strengths and weaknesses of others’ analyses. This may be the most important take-away from this class for your future career.\n\n\nTeams: Both individual and team projects are permitted, with a mild encouragement towards teams.\nPresentations: The final course meeting (during the designated final exam period) will be devoted to final project presentations. Feedback on others’ projects will be part of your final project grade, so attendance is mandatory.\nThere are two sections of this class, thus two sessions of final project presentations. Refer to the Calvin exam schedule for the official dates; for 2023, it’s Saturday Dec. 9 at 1:30 p.m. and Monday Dec. 11 at 1:30 p.m.. Your team must choose which to present at. You are welcome to attend both sessions to see everyone’s work.\n\n\n\n\nNov 11: Initial proposal. This should include:\n\nA tentative topic (kind of data you want to work with, question you’d like to ask). Include a brief description of what drives your interest in it.\nAn example or two of some data science work you’ve found on the topic already. See below for some guidance on this. Include the URLs of resources you found, and some brief commentary about each one (does it seem good?)\nA proposal of what you’d like to do. A first step will usually be to do an analysis similar to one of the examples you found, and you may not have much idea beyond that at this time. But if you do have some ideas for what you might want to do differently, this is a good place to include them. Note that your overall task should include some modeling (predictive or otherwise).\nTentative Teams: If you have already found people who may be interested in working with you, note that here.\n\nNov 18: Dataset, exploratory visualization, and summary of prior work\n\nYou should have the EDA section of your report complete, and a good start on everything before that.\n\nDec 2: Initial modeling and visualization\nDec 12: Final report\n\n\n\n\nYou can find examples of data science work on sites like Kaggle, TowardsDataScience, Reddit, YouTube, and GitHub. Also check out the TidyTuesday project and r-bloggers.\nYour project should include some modeling, so it should involve more than making visualizations. Predictive modeling is closest to the emphasis of this class, but other kinds of modeling (such as clustering) are often ok.\nYour data should be rich enough to support the kind of modeling you want to do, but not too complex to work with. For example, avoid any dataset larger than 500 MB since it probably won’t fit. Also, avoid image and sound data for similar reasons. (Although if you really want to work with images, there are ways to do this.)\nSome types of projects that have worked well in the past:\n\nParticipating in a Kaggle competition. It should be a competition that is still open. You don’t need to win, but you should be able to do better than the baseline. You should also do some EDA and/or visualization beyond what’s already been done by others.\nReproducing a published analysis. Find a published analysis that you can reproduce, and then extend it in some way. For example, you might find a published analysis that uses a dataset you can’t access, and then find a similar dataset that you can access. Or you might find a published analysis that uses a dataset you can access, and then extend it in some way (e.g., by adding a new feature, or by using a different model).\n\nSome projects that could work great, but should be discussed with the instructor first:\n\nRedoing some class activities using a different toolkit. For example, what if this class were to be taught in JavaScript using ObservableHQ? (Talk with Prof Arnold for detailed ideas.)\nExploring interpretable models. There are some new types of models coming out that are more interpretable, but we have not gotten to discuss them much in class. Perhaps you could explore one of these models and compare it to a more traditional model.\nWorking with a large language model. For example, could you give ChatGPT some example rows from your dataset, then ask it to write a decision tree for you, and evaluate the result? There are losts of\n\n\n\n\n\nNOTES:\n\nYou will likely need to make some choices regarding what variables to include, whether to do some pre-processing (e.g., addressing missing values, generating new variables), etc. Clearly state:\n\nWhat decisions you made\nWhy you made them\nWhat might have been alternative choices.\n\nTell the “rational reconstruction” of the story of how the analysis was done.\n\nDon’t give the play-by-play of everything you tried, every idea you had, etc., but…\nDo include things you tried that led to an important observation later on.\n\nIf you use any code from the Internet, you should acknowledge its source and provide a link.\nYou should submit all of the code needed to replicate your results, but your report should be understandable without looking at the code.\nHere is a template (rendered) that gives one possible outline. You may adapt the outline as needed for your project.\nYou’ll submit both slides and a report. See the Midterm project for submission instructions.\n\nYour report should include the following general elements (though treat this specific outline as a suggestion only; certain reports will need to deviate from this structure in small or large part):\n\nA succinct but descriptive title\nOverview\n\nA real-world question that you’d like to explore, and why it’s interesting.\n\nThis question should be stated in language that is understandable to someone who hasn’t studied data science and doesn’t know the details of your dataset.\nThe best questions include motivation from prior literature that gives, for example, some pattern or relationship that you’d expect to find and why.\n\nA brief (2-4 sentences) high-level description of the dataset: what is the dataset about? Where did it come from? What sort of data does it contain?\n\nPrior Work\n\nA summary of what you have found that others have done with your data or question. Include URLs and author names.\nA response to their work:\n\nWhat did they do well that is inspiring?\nWhat could they improve on or explore further?\nDo you trust their results? Why or why not?\n\nIn what ways do you intend for this project to extend or enhance that prior work? (Save the details of how for the Approach section.)\n\nApproach\n\nA problem description or specific question\n\nThis question should be stated in more specific technical terms than the real-world question.\nIt should reference the particular features of your dataset.\nThis question ideally helps answer the real-world question, but it’s okay if it doesn’t.\n\nThe approach that you’ll take to answer that question, probably using some sort of predictive or statistical modeling.\nA description of the data’s provenance: as much as you can, trace the path from the events or measurements all the way to the dataset you’re working with. You might answer:\n\nwhere did the data come from originally?\nWhere did you download it from? As much as you can tell or speculate, how did it end up available there?\n\nThe number of records (rows) in the dataset, and what each one represents.\n\nGive an example of some part of the data in your dataset.\nConsider writing a simple sentence that conveys the information in the first row, as an example.\n\nA list of the features in the dataset and their types.\nAn analysis of the appropriateness of your dataset for your approach. (What’s good about it? What do you wish were better?)\nThis section should also discuss the overall approach of any basic data wrangling needed to get the data into an overall usable form. More specific wrangling may be needed for constructing plots or models later.\n\nExploratory Data Analysis (EDA)\n\nShow plots or tables illustrating the distribution of at least two variables in your dataset. Comment on anything interesting you observe.\nShow plots illustrating bivariate relationships for at least 2 pairs of variables. Comment on anything interesting you observe (e.g., strength of relationship, dependence on other factors).\nSummarize your EDA findings: how do your observations inform the modeling?\n\nModeling\n\nThis section is written for predictive modeling; if you’re doing inferential modeling or clustering, adapt this section as needed.\nDescribe the modeling setup. Clearly state at least:\n\nwhat is the target variable you are trying to predict\nwhich variables (features) you are using to predict it, and why you chose those features\nhow you will measure accuracy (can you give meaningful units?)\nwhat validation method did you choose and why\n\nFit a basic predictive model using one of the techniques we discussed in class (e.g., Decision Trees, Linear/Logistic Regression, Random Forest)\n\nDescribe why you chose that model (and its features and any hyperparameters)\nDescribe what kind of performance you expect from it\n\nReport the results of your basic predictive model via cross-validation.\nMake one or more changes to the predictive model to (attempt to) improve the accuracy. Discuss what changes you made, why you made them, and what the results were.\nThe strongest reports will include insightful visualizations of the model, its predictions, and/or its mistakes, and a discussion of what those plots tell us.\nReport on the final accuracy of your best model on the test set, if applicable.\nAlternative: instead of a supervised prediction task, you can define an unsupervised learning task and use clustering. In this case, clearly state what you want to understand through the clustering, and report your observations.\n\nFindings: Summarize the analyses you performed and what the results told you. What do your findings say about the real-world and prediction (or clustering) questions you posed?\nLimitations: What are some limitations of your analyses? Did you notice any potential biases in the data you used or analysis you did? Any other ethical questions raised during this project?\nFuture Directions: What new questions came up following your exploration of this data? Identify at least one question that would require new data or a new analysis approach, and specify what steps would be required.\n\nYou might additionally walk through what the model predicts, and how it does it, for one or two specific examples, ideally ones that aren’t even part of your dataset.\n(Project descriptions originally thanks to Ofra Amir)",
-    "crumbs": [
-      "Syllabus",
-      "Projects",
-      "Final Project"
-    ]
-  },
-  {
-    "objectID": "final-proj.html#final-project-a-complete-data-science-process",
-    "href": "final-proj.html#final-project-a-complete-data-science-process",
-    "title": "Final Project",
-    "section": "",
-    "text": "The goal of this project is to practice a complete data science workflow: question, data, exploration, modeling, and communication. Results will be presented as a report, supporting code, and a brief presentation to the class. Successful outcomes should include visual, analytical, and perspectival components. The report should be at the level of polish and formality of a blog post (more than a class homework assignment, less than an academic paper). The overview and primary visualizations should be intelligible to a non-technical audience; the methods should be described in precise technical language as appropriate.\nAn important component of this project is a comparative critique of some related prior work. That is, you are not simply demonstrating that you can perform an analysis, but also that you can evaluate the strengths and weaknesses of others’ analyses. This may be the most important take-away from this class for your future career.\n\n\nTeams: Both individual and team projects are permitted, with a mild encouragement towards teams.\nPresentations: The final course meeting (during the designated final exam period) will be devoted to final project presentations. Feedback on others’ projects will be part of your final project grade, so attendance is mandatory.\nThere are two sections of this class, thus two sessions of final project presentations. Refer to the Calvin exam schedule for the official dates; for 2023, it’s Saturday Dec. 9 at 1:30 p.m. and Monday Dec. 11 at 1:30 p.m.. Your team must choose which to present at. You are welcome to attend both sessions to see everyone’s work.\n\n\n\n\nNov 11: Initial proposal. This should include:\n\nA tentative topic (kind of data you want to work with, question you’d like to ask). Include a brief description of what drives your interest in it.\nAn example or two of some data science work you’ve found on the topic already. See below for some guidance on this. Include the URLs of resources you found, and some brief commentary about each one (does it seem good?)\nA proposal of what you’d like to do. A first step will usually be to do an analysis similar to one of the examples you found, and you may not have much idea beyond that at this time. But if you do have some ideas for what you might want to do differently, this is a good place to include them. Note that your overall task should include some modeling (predictive or otherwise).\nTentative Teams: If you have already found people who may be interested in working with you, note that here.\n\nNov 18: Dataset, exploratory visualization, and summary of prior work\n\nYou should have the EDA section of your report complete, and a good start on everything before that.\n\nDec 2: Initial modeling and visualization\nDec 12: Final report\n\n\n\n\nYou can find examples of data science work on sites like Kaggle, TowardsDataScience, Reddit, YouTube, and GitHub. Also check out the TidyTuesday project and r-bloggers.\nYour project should include some modeling, so it should involve more than making visualizations. Predictive modeling is closest to the emphasis of this class, but other kinds of modeling (such as clustering) are often ok.\nYour data should be rich enough to support the kind of modeling you want to do, but not too complex to work with. For example, avoid any dataset larger than 500 MB since it probably won’t fit. Also, avoid image and sound data for similar reasons. (Although if you really want to work with images, there are ways to do this.)\nSome types of projects that have worked well in the past:\n\nParticipating in a Kaggle competition. It should be a competition that is still open. You don’t need to win, but you should be able to do better than the baseline. You should also do some EDA and/or visualization beyond what’s already been done by others.\nReproducing a published analysis. Find a published analysis that you can reproduce, and then extend it in some way. For example, you might find a published analysis that uses a dataset you can’t access, and then find a similar dataset that you can access. Or you might find a published analysis that uses a dataset you can access, and then extend it in some way (e.g., by adding a new feature, or by using a different model).\n\nSome projects that could work great, but should be discussed with the instructor first:\n\nRedoing some class activities using a different toolkit. For example, what if this class were to be taught in JavaScript using ObservableHQ? (Talk with Prof Arnold for detailed ideas.)\nExploring interpretable models. There are some new types of models coming out that are more interpretable, but we have not gotten to discuss them much in class. Perhaps you could explore one of these models and compare it to a more traditional model.\nWorking with a large language model. For example, could you give ChatGPT some example rows from your dataset, then ask it to write a decision tree for you, and evaluate the result? There are losts of\n\n\n\n\n\nNOTES:\n\nYou will likely need to make some choices regarding what variables to include, whether to do some pre-processing (e.g., addressing missing values, generating new variables), etc. Clearly state:\n\nWhat decisions you made\nWhy you made them\nWhat might have been alternative choices.\n\nTell the “rational reconstruction” of the story of how the analysis was done.\n\nDon’t give the play-by-play of everything you tried, every idea you had, etc., but…\nDo include things you tried that led to an important observation later on.\n\nIf you use any code from the Internet, you should acknowledge its source and provide a link.\nYou should submit all of the code needed to replicate your results, but your report should be understandable without looking at the code.\nHere is a template (rendered) that gives one possible outline. You may adapt the outline as needed for your project.\nYou’ll submit both slides and a report. See the Midterm project for submission instructions.\n\nYour report should include the following general elements (though treat this specific outline as a suggestion only; certain reports will need to deviate from this structure in small or large part):\n\nA succinct but descriptive title\nOverview\n\nA real-world question that you’d like to explore, and why it’s interesting.\n\nThis question should be stated in language that is understandable to someone who hasn’t studied data science and doesn’t know the details of your dataset.\nThe best questions include motivation from prior literature that gives, for example, some pattern or relationship that you’d expect to find and why.\n\nA brief (2-4 sentences) high-level description of the dataset: what is the dataset about? Where did it come from? What sort of data does it contain?\n\nPrior Work\n\nA summary of what you have found that others have done with your data or question. Include URLs and author names.\nA response to their work:\n\nWhat did they do well that is inspiring?\nWhat could they improve on or explore further?\nDo you trust their results? Why or why not?\n\nIn what ways do you intend for this project to extend or enhance that prior work? (Save the details of how for the Approach section.)\n\nApproach\n\nA problem description or specific question\n\nThis question should be stated in more specific technical terms than the real-world question.\nIt should reference the particular features of your dataset.\nThis question ideally helps answer the real-world question, but it’s okay if it doesn’t.\n\nThe approach that you’ll take to answer that question, probably using some sort of predictive or statistical modeling.\nA description of the data’s provenance: as much as you can, trace the path from the events or measurements all the way to the dataset you’re working with. You might answer:\n\nwhere did the data come from originally?\nWhere did you download it from? As much as you can tell or speculate, how did it end up available there?\n\nThe number of records (rows) in the dataset, and what each one represents.\n\nGive an example of some part of the data in your dataset.\nConsider writing a simple sentence that conveys the information in the first row, as an example.\n\nA list of the features in the dataset and their types.\nAn analysis of the appropriateness of your dataset for your approach. (What’s good about it? What do you wish were better?)\nThis section should also discuss the overall approach of any basic data wrangling needed to get the data into an overall usable form. More specific wrangling may be needed for constructing plots or models later.\n\nExploratory Data Analysis (EDA)\n\nShow plots or tables illustrating the distribution of at least two variables in your dataset. Comment on anything interesting you observe.\nShow plots illustrating bivariate relationships for at least 2 pairs of variables. Comment on anything interesting you observe (e.g., strength of relationship, dependence on other factors).\nSummarize your EDA findings: how do your observations inform the modeling?\n\nModeling\n\nThis section is written for predictive modeling; if you’re doing inferential modeling or clustering, adapt this section as needed.\nDescribe the modeling setup. Clearly state at least:\n\nwhat is the target variable you are trying to predict\nwhich variables (features) you are using to predict it, and why you chose those features\nhow you will measure accuracy (can you give meaningful units?)\nwhat validation method did you choose and why\n\nFit a basic predictive model using one of the techniques we discussed in class (e.g., Decision Trees, Linear/Logistic Regression, Random Forest)\n\nDescribe why you chose that model (and its features and any hyperparameters)\nDescribe what kind of performance you expect from it\n\nReport the results of your basic predictive model via cross-validation.\nMake one or more changes to the predictive model to (attempt to) improve the accuracy. Discuss what changes you made, why you made them, and what the results were.\nThe strongest reports will include insightful visualizations of the model, its predictions, and/or its mistakes, and a discussion of what those plots tell us.\nReport on the final accuracy of your best model on the test set, if applicable.\nAlternative: instead of a supervised prediction task, you can define an unsupervised learning task and use clustering. In this case, clearly state what you want to understand through the clustering, and report your observations.\n\nFindings: Summarize the analyses you performed and what the results told you. What do your findings say about the real-world and prediction (or clustering) questions you posed?\nLimitations: What are some limitations of your analyses? Did you notice any potential biases in the data you used or analysis you did? Any other ethical questions raised during this project?\nFuture Directions: What new questions came up following your exploration of this data? Identify at least one question that would require new data or a new analysis approach, and specify what steps would be required.\n\nYou might additionally walk through what the model predicts, and how it does it, for one or two specific examples, ideally ones that aren’t even part of your dataset.\n(Project descriptions originally thanks to Ofra Amir)",
-    "crumbs": [
-      "Syllabus",
-      "Projects",
-      "Final Project"
-    ]
-  },
-  {
-    "objectID": "slides/01 - Introduction/index.html",
-    "href": "slides/01 - Introduction/index.html",
-    "title": "01 - Introduction",
-    "section": "",
-    "text": "Learning objectives for this week:\n\nObserve data science as the efforts of finding meaningfulness in data and automating decisions with data.\nDescribe the typical workflow in a data science project.\nIdentify some application areas of data science.\nIdentify types of datasets used in data science.\nExplore some of the tools that are currently used in data science.\nReflect on skills and virtues that are required for this practice.",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "01 - Introduction"
-    ]
-  },
-  {
-    "objectID": "midterm-proj.html",
-    "href": "midterm-proj.html",
-    "title": "Midterm Project",
-    "section": "",
-    "text": "Replicate and critique a visual.\nFor this project you will pick some existing data science work (a newspapar article, blog post, report, research paper, etc.) and replicate a visual from it using the data wrangling and plotting tools we’re studying.\nYou will then critique the original visualization and propose alternative designs.\nThe project will be done in teams of between 1 and 3. You will submit a single report and make a joint presentation.",
-    "crumbs": [
-      "Syllabus",
-      "Projects",
-      "Midterm Project"
-    ]
-  },
-  {
-    "objectID": "midterm-proj.html#milestones",
-    "href": "midterm-proj.html#milestones",
-    "title": "Midterm Project",
-    "section": "Milestones",
-    "text": "Milestones\n\nWeek 3: Identify possible plots\nThis was done as part of Discussion 2.\n\n\n\n\n\n\nHow to pick a plot?\n\n\n\n\n\nYou can pick one of these approaches:\n\nOrganization-centered: Pick an organization that you’re interested in (company, NGO, government agency, sports team, hospital, school, scientific community, etc.) and find some graphic that is helpful for them as they make decisions.\nIssue-centered: Pick an issue that’s important to you. Find a news article or opinion piece about that issue and try to replicate a visual that they’d use to support their claims. The strongest such projects will pick a claim that you disagree with.\n\n\n\n\n\n\nWeek 4: Plot selection and initial analysis\nUpload a screenshot of one or more potential plots to the Plot Gallery. Your post should include:\n\nScreenshot: A screenshot of the plot (image)\nClaim or Purpose: What the author is trying to say with this plot\nSource: URL, or some other similarly clear description of how to get to the original plot\nEach row is: A short phrase of what each row of the plot dataframe represents (e.g., “The data has one row per day and rider type”.\nData dictionary: A table of (possible) variable names and what they (probably) represent\nData Sources: Potential sources for the data, in the form of URLs or similar. Try downloading and opening the data if you can; report on any anticipated difficulties.\n\nYou don’t have to fill in everything for the initial post; you can come back and fill it in later.\n\n\n\n\n\n\nImportant\n\n\n\nThe plot you choose to replicate should have at least 3 variables.\nIf you really want to make a plot that has fewer than 3 variables, you should be able to explain why it’s still interesting and worth doing.\n\n\n\n\n\n\n\n\nOther Plot Selection Guidelines\n\n\n\nThe plot you choose to replicate:\n\nShould make an interesting claim.\n\nShouldn’t just be about something (e.g., “number of wins by each athlete”)\nMost interesting claims are about relationships (e.g,. “the highest paid athletes don’t necessarily win more”)\nA claim finishes the sentence: “The article uses this graphic to back up the claim that BLANK”.\nIf the article doesn’t make a claim, make one up. Imagine that you’ve gotten in an argument with someone and you show them this plot to back up your claim; what claim were you trying to make?\n\nShould involve at least 3 variables.\n\nIdeally they have to come from several separate data sources that you have to bring together.\n\nShould have some room for improvement, i.e., you’d be interested in trying a different way of presenting the data.\n\nIf you are really stuck, I can simply assign something to do, but I’m hoping to avoid that.\n\n\n\n\nWeek 5: Data\nFind and load the data; write a brief critique of the data.\nFor this milestone, your report should be complete through the “Data” section. See the Report Template below.\n\n\n\n\n\n\nData Selection Guidelines\n\n\n\nThe data you find:\n\nShould come from a reputable source.\n\nIf you use an aggregation site like OurWorldInData, try to track down where they got the data.\n\nShould require at least a little bit of wrangling\n\nBeware of sites where you can download exactly the data for a specific plot\n“Download data for this chart” links are red flags that you may be getting already-wrangled data.\n\n\nSee Some questions to ask if you’re working with data that you didn’t collect yourself.\nIf the wrangling is especially straightforward, you can add depth by:\n\nFinding a different source for the same data\nCritiquing the data collection process\nDescribing alternative choices that could have been made in the data collection or wrangling process and what the consequences of those choices might be.\n\n\n\n\n\nWeek 6: Initial plot and ideas\nMake an initial plot and a todo list of things to improve; sketch ideas for alternative ways to plot the same data.\nYour report should be complete through the “Wrangling” section and have some initial work in the “Replication” and “Alternatives” sections.\n\n\nWeek 8: Presentation and Report\nPresent the original, replication, and alternative plots to the class and in a Quarto report.",
-    "crumbs": [
-      "Syllabus",
-      "Projects",
-      "Midterm Project"
-    ]
-  },
-  {
-    "objectID": "midterm-proj.html#report-and-presentation-details",
-    "href": "midterm-proj.html#report-and-presentation-details",
-    "title": "Midterm Project",
-    "section": "Report and Presentation Details",
-    "text": "Report and Presentation Details\n\nReport Content\nYour report should include the following sections:\n\nOverview of the original plot (include a screenshot) and the claim it makes.\nDesign of the original plot. (plot type, effectiveness)\nData (where’d you get it, anything interesting about it or what you had to do with it)\nWrangling (what did you have to do to get it into a form that you could plot?)\nReplication (show your replication of the original plot)\nAlternative 1: what did you change? why?\nAlternative 2: (same, but can be a sketch rather than a full plot)\nSummary: one or two take-aways\n\n\n\nReport Template\nThis template includes a suggested outline for your report. You may choose to organize your report differently if you have a good reason.\n\n\n\n\n\n\nClick to show the Report Template\n\n\n\n\n\n---\ntitle: \"A title\"\nauthor:\n    - \"Your name\"\n    - \"Partner name\"\nformat:\n  html:\n    embed-resources: true\n    code-tools: true\n    code-fold: true\n---\n\n```{python}\n#| echo: true\nimport pandas as pd\nimport plotly.express as px\n```\n\n```{python}\n#| echo: false\n# Hack to make plotly work in RStudio\nif 'r' in globals() and r['.Platform$GUI'] == \"RStudio\" and r['suppressMessages(requireNamespace(\"htmltools\"))']:\n  r[\".GlobalEnv$to_html &lt;- function(x) { print(htmltools::HTML(x)) }\"] and None\n  def show_plot(p): r.to_html(p._repr_html_())\nelse:\n  def show_plot(p): return p\n```\n\n🚧\nThis template is intended to help you structure your report. Remove placeholders like this and make it your own. Not every question needs to be answered for every project, and some projects will have additional questions. **Your final report should not include any \"under construction\" or template text.**\n\n## Overview\n\n🚧\nWe are interested in TOPIC because STORY. So we chose to replicate a plot from [this article] (INCLUDE THE COMPLETE URL TO THE ARTICLE).\n\n🚧\nOriginal visualization:\n\n![](https://example.com/your-url-here)\n\n🚧\nClaim:\n\n&gt; You can put the claim in a \"block quote\" like this.\n&gt; A concise statement (ideally a quote) of the claim that the article uses the visualization to make (or the claim you invented if there wasn't a clear one)\n\n\n## Design\n\n🚧\nWhat overall type of visualization was chosen? Why might the author have chosen it?\n🚧\nWhat variables are being shown?\n🚧\nWhat visual cues (aka retinal variables or aesthetics) were chosen to represent those data variables?\n🚧\n    For at least one of these variables, describe what makes that choice appropriate or inappropriate.\n🚧\nOverall, what about the visual makes it effective, or ineffective, for making its claim?\n\n\n## Data\n\n### Data Overview\n\n🚧\nWhether you were able to find the original data (if not, why not?)\n🚧\nWhere the data came from\n🚧\n    Direct URL and/or specific instructions for how to obtain it.\n🚧\n    Under what terms is the source allowing you to use the data?\n🚧\n    Try to trace it upstream as close to the source as you can.\n🚧\n    Who worked with the data on its way to you? (Include names and roles, if applicable.)\n🚧\n    What processing may have happened to it: was it aggregated? Anonymized? etc.\n🚧\nWhat might we need to know about the data collection process in order to interpret the data correctly? (e.g., If it’s from a survey–who was surveyed?)\n\n### Data Details\n\n🚧\n```{r load-data}\n# your code to load the data here\n```\n\n🚧\nA low-level description of the size and structure of the data.\n🚧\nHow many rows are there?\nWhat does a single row represent? (Translate the first observation in the dataset into an English sentence.)\n🚧\nWhat might be interesting to know about what information the data does, and doesn’t, provide?\n\n\n### Wrangling\n\n🚧\nDescribe, at a broad level, what you need to do to the data to make it into the form you need for the plot. (e.g., what data types need fixing, whether you need to pivot, what filtering is needed, etc.)\n\n🚧\nAdd code blocks, with appropriate names, for wrangling steps. **Explain the *why* for any choices you make (like filtering data).**\n\n## Replication\n\n🚧\nInclude your replication, along with all code needed.\n🚧\nBriefly describe any difficulties you encountered, both those you overcame and those you still have not. (It’s ok to not have a perfect graph here. If the essential structure is there, don’t worry if the details are a bit different. Focus your attention on making an interesting and polished alternative design.)\n🚧\n\n\n## Alternatives\n\n🚧\nDescribe at least two alternative design choices that could be made in visualizing your data. For each design, include the following sections\n\n### Alternative 1: Design\n\n🚧\nWhat choice did the original visual make? (e.g., to use a particular aesthetic mapping or glyph)\n🚧\nWhat choice does your alternative design make instead? (It should be a reasonable choice, but it doesn’t have to be an improvement.)\n🚧\nHow does that change affect how the visual supports the original claim? Can your redesign now support some different claim?\n\n### Implementation\n\n🚧\nMake a solid attempt to implement your best alternative design.\nIf creating it using plotly is too challenging, you may include a high-fidelity sketch of what the plot would look like (using PowerPoint, a vector graphics tool, or a good-quality scan of a paper or whiteboard), along with a clear description of what you’d need to figure out in order to produce it with code.\n\n## Summary\n\n🚧\nNow that you’ve gone through the whole process, how has your understanding of, and belief in, the original article’s claim changed?\n🚧\nHow faithful was your replication?\n🚧\nCompare your original and alternative designs. Which is best for what purpose?\n🚧\nWhat follow-up questions and ideas do you have about the data or visualization you worked with?\n🚧\nHow do you feel about this whole experience?\n\n## Acknowledgments\n\n🚧\nInclude the full names of any students outside your team who helped you and a brief description of how they helped.\n\n### License\n\nSharing: Would you be okay with sharing your project, and if so, how?\n\nIdeally we'd make a public gallery with all projects, screenshots, and code, but you could choose to:\n\n- Go anonymous (choices: \"anon\" or \"names\")\n- Don't share code? (choices: \"code\" or \"screenshots\" or \"just title\")\n- Restrict to just future students (choices: \"public\" or \"students\").\n\nso, e.g., you might say \"anon, code, students\" or \"names, screenshots, public\".\n\n\n\n\n\nReport Style\nYour report should be:\n\nunderstandable by itself: a reader should not need to see your discussion posts or prior submissions.\nreproducible – if a new version of the data becomes available, anyone should be able to re-run your code and get an updated plot. Things to avoid:\n\npaths that only work on your computer\nmaking modifications to your raw data (e.g., editing it in Excel)\nhard-coding row numbers or other things that are likely to change\n\nunderstandable without the code: a reader should be able to skip over all of the code and understand all of the results.\nAt least one of your visuals (either the original or alternative design) should be high quality, with effort spent getting the details right.\nClean up any messy outputs from code (debugging, etc.)\nWrite succinctly. Bulleted lists are fine when they’re clear.\nUse ordinary text formatting (not headings, blockquotes, etc.) for ordinary prose. Reserve headings and block quotes for headings and quotes.\nFormat your code cleanly. If lazy, select the code and click “Reformat Code” on the Code menu. (Make sure you save first.)\nRead through the report before submitting. Check that you don’t have placeholder text, the headings make sense, etc.\n\nAcademic Integrity: If you take any code from elsewhere, you must state very clearly where it came from and how you changed it. This includes ChatGPT and other AI tools. If you find a plot and it has Plotly code already, I advise against looking at it, and possibly even finding a different plot. Code using a different toolkit (e.g., R) is probably okay.\n\n\nPresentation\nTo practice making data-driven arguments, this project includes a brief presentation, done on VoiceThread.\nKeep it short and simple. The slides should be as follows:\n\nOriginal Plot and Claim\nData (where’d you get it, anything interesting about it or what you had to do with it)\nReplication\nAlternative 1: what did you change? why?\nAlternative 2: (same)\nSummary: one or two take-aways\n\nUse a presentation tool like Google Slides or PowerPoint.\nUse voice comments to narrate. Each team member should make at least one comment.",
-    "crumbs": [
-      "Syllabus",
-      "Projects",
-      "Midterm Project"
-    ]
-  },
-  {
-    "objectID": "midterm-proj.html#logistics",
-    "href": "midterm-proj.html#logistics",
-    "title": "Midterm Project",
-    "section": "Logistics",
-    "text": "Logistics\n\nReport Submission\n\nIf your dataset is less than 10 MB: submit a .zip file with your entire project folder.\nOtherwise: submit just the HTML (and make sure the instructions are very clear about how to get the data)\n\nUse the header from the template, which includes these important settings:\n\nKeep code-tools: true in the header so we can see your source code.\nMake sure you keep embed-resources: true so we can see any images.\n\n\n\n\n\nShared Projects\nRStudio (Posit Workbench) has a feature called Shared Projects that many teams will find helpful.\nTo use it, one person should create a new project in the ~/rprojects folder. Then, they should go to the projects menu in the top-right corner and choose “Share Project”. Type the username of another team member (the part of their email before the @calvin.edu) in the textbox and click Add.\n\n\n\n\n\n\nrprojects folder\n\n\n\nFor shared projects to work, you must create your project within the ~/rprojects folder, i.e., the folder named rprojects within your home (~) folder.",
-    "crumbs": [
-      "Syllabus",
-      "Projects",
-      "Midterm Project"
-    ]
-  },
-  {
-    "objectID": "midterm-proj.html#checklist",
-    "href": "midterm-proj.html#checklist",
-    "title": "Midterm Project",
-    "section": "Checklist",
-    "text": "Checklist\nThe following is the minimal requirements for the project. The project should also go into depth in some area.\n\nOverview\n\nIncludes a screenshot of the original plot\nIncludes a description of the claim made by the original plot (or the claim you’re making if the original doesn’t make a claim)\nIncludes a link to the original plot\n\nDesign\n\nNames the type of the original plot (scatter, bar, etc.)\nIdentifies the variables used in the original plot\nIdentifies the visual cue that each variable is mapped to.\nDiscusses the effectiveness of the original plot\n\nData\n\nIdentifies the source of the data used for the replication (including a link if possible)\nIndicates how many rows and columns are in the data (e.g., “the data has 100 rows and 5 columns”)\nDescribes what a single row represents (e.g., “one row per day per rider type”)\nDescribes the variables in the data (e.g., “the data has columns for date, rider type, and number of rides”)\n\nWrangling\n\nDescribes the overall process of wrangling the data (e.g., “I had to combine data from sources X and Y, then filter out rows that aren’t Z, then calculate the average number of rides per day”)\nIncludes code blocks that show the wrangling process\nGives an example of the data after wrangling (e.g., the .head() and the .info())\n\nReplication\n\nIncludes the replication of the original plot\nReplication has the same general type of plot as the original (can be different in unimportant details like specific colors used, extra annonatiotns, etc.)\nReplication has the same general variables as the original, mapped to the same general visual cues\nDescribes any difficulties encountered in the replication process\nDescribes any relevant differences between the original and replication\n\nAlternatives\n\nIncludes textual descriptions of two alternative ways to plot the same data that are different in a substantive way (e.g., not just a different color scheme) from each other and from the original plot.\nIncludes images of both alternatives. Ideally they’re implemented in code using actual data, but in case that’s too challenging, a detailed and clear sketch on paper or PowerPoint or some online tool is also fine. The sketch should show all the necessary elements and should be understandable without additional explanation.\n\nSummary\n\nIncludes a reflection on the claim of the original plot and how well the original plot supports that claim.\nIncludes a comparison between the original design and at least of the alternative designs that specifies which design is better for what purpose.\n\nAppendix\n\nReport includes a description of where the depth in the project is, i.e., in what areas you went beyond the bare minimal requirements. See “Depth Somewhere” above.\nReport includes what terms you’d be willing to have your report shared under (see the “License” section of the template.)\nReport includes a list of sources used (e.g., specific links to StackOverflow, ChatGPT shared-conversation links, etc.), and the full names of any students outside your team.\n\nMeta\n\nReport was produced using a reproducible workflow (typically Quarto)\nReport is titled appropriately\nAuthors are listed correctly\nReport is concise\nReport is self-contained\nReport is understandable without reading the code\nNo placeholder text remains.\nReport is formatted cleanly (check headings, code outputs, etc.); check that the file shows up correctly on your local computer before submitting.",
-    "crumbs": [
-      "Syllabus",
-      "Projects",
-      "Midterm Project"
-    ]
-  },
-  {
-    "objectID": "midterm-proj.html#purpose",
-    "href": "midterm-proj.html#purpose",
-    "title": "Midterm Project",
-    "section": "Purpose",
-    "text": "Purpose\nThe project will explore the intersection between three things:\n\nThe data\nThe visualization\nThe story that the visualization tells about the data (and, indirectly, about the world)\n\nThe three components to this project involve each of these three things:\n\nData: Obtain some real-world dataset. Trace where it came from and how it’s structured. Load it and process it using the data science toolkit we’re studying to a form that’s appropriate for making the visualization.\nVisualization: Replicate (re-create) a visualization that someone else already made based on that data. Evaluate some of the choices and assumptions that were made in the visualization process: in what ways does the visualization faithfully represent the data (or not)? What sort of stories does the chosen visualization amplify?\nStory: Consider the story that the original source told using the visualization. Is that story accurate? complete? clearly articulated? How did choices in the data collection, preparation, and visualization affect the storytelling? Are there other stories that the data might also be telling?\n\nThis project addresses our course-level learning objectives in this way:\n\nTechnical skills: manipulating data, constructing visualizations, and creating reports.\nCommunication: analyzing choices made in visualization and text with respect to how it tells a story about data. Proposing and implementing changes to improve the clarity of communication.\nEthics and Critical Thinking: identify potential ethical questions (e.g., of transparency, diversity, etc.) that emerge in the process of obtaining, manipulating, and communicating with data.",
-    "crumbs": [
-      "Syllabus",
-      "Projects",
-      "Midterm Project"
     ]
   },
   {

@@ -1,9 +1,9 @@
 ---
 format:
-  pdf:
+  ipynb:
     toc: false
     number-sections: true
-    colorlinks: true
+    number-depth: 1
 ---
 
 # 09-13 - Lab practice 2 (Handout)

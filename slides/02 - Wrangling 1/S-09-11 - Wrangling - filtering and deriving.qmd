@@ -9,11 +9,25 @@ format:
     transition: slide
     scrollable: true
     simplemenu:
+        scale: 0.6
         barhtml:
             header: "<div class='menubar'><a href='index.html'>back</a><ul class='menu'></ul>"
-        scale: 0.67
 revealjs-plugins:
     - simplemenu
 ---
 
-# 09-16 - Wrangling - grouping and pivoting
+# 09-11 - Wrangling - filtering and grouping
+
+##
+
+::: {.smaller}
+
+{{< include /_prayers/representing-fairly.qmd >}}
+
+:::
+
+## Retrieval
+
+{{< include /_content/questions/wr_basics_t1.md >}}
+
+{{< include /_content/concepts/wr_filter_group.qmd >}}
