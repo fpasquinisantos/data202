@@ -1,9 +1,0 @@
----
-format:
-  pdf:
-    toc: false
-    number-sections: true
-    colorlinks: true
----
-
-# 12-11 - Wrap-up (Handout)

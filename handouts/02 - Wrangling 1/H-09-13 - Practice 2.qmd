@@ -1,9 +1,0 @@
----
-format:
-  ipynb:
-    toc: false
-    number-sections: true
-    number-depth: 1
----
-
-# 09-13 - Lab practice 2 (Handout)

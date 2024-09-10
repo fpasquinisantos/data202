@@ -73,7 +73,7 @@ They can be:
 import pandas as pd
 import plotly.express as px
 
-votes = pd.read_csv("../../data/un_uk_us_tr.csv")
+votes = pd.read_csv("../data/un_uk_us_tr.csv")
 ```
 
 ```{python}

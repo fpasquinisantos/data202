@@ -46,7 +46,7 @@ Basically, "enhanced 2-dimensional tables with rich functionality":
   - **Integration**: Easy integration with other Python tools and libraries.
   - **Analysis**: Advanced operations, statistical functions, and more.
 
-# Creating and loading dataframes {data-stack-name="create/load"}
+# Creating and loading dataframes {data-stack-name="create/load" .cell} 
 
 ##
 
@@ -165,14 +165,6 @@ df["Occupation"]
 # Adding and removing {data-stack-name="add/remove"}
 
 ## Adding rows
-Here’s a slide about adding and dropping rows in a Pandas DataFrame:
-
-### Slide 15: Adding and Dropping Rows in Pandas
-
-```markdown
-# Adding and Dropping Rows in Pandas
-
-## Adding Rows
 
 ### 1. Using `append()` method
 

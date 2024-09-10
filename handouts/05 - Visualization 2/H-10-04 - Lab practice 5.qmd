@@ -1,9 +1,0 @@
----
-format:
-  pdf:
-    toc: false
-    number-sections: true
-    colorlinks: true
----
-
-# 10-04 - Lab practice 5 (Handout)

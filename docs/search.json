@@ -1,523 +1,136 @@
 [
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#section",
-    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#section",
-    "title": "1. Filter by a Single Condition",
+    "objectID": "prayers.html",
+    "href": "prayers.html",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "",
-    "text": "Heavenly Father,\nWe come before You, seeking wisdom and discernment in our work with data. Grant us the understanding to represent information truthfully and fairly, knowing that each data point reflects the reality of lives, stories, and experiences.\nGuide our minds as we organize, analyze, and interpret data, so that our actions may honor Your principles of justice and truth. Help us to avoid bias, to present findings transparently, and to use data in ways that uplift and inform rather than mislead or harm.\nMay our efforts in data wrangling and analysis be instruments of clarity, bringing light to hidden truths, and contributing positively to the world around us. Teach us to be humble in our knowledge, always seeking to learn and grow, and to use our skills with integrity and care.\nIn Your wisdom, we trust. Amen.",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-11 - Wrangling - filtering and grouping"
-    ]
+    "text": "This semester, we pray according to this general pattern:"
   },
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#retrieval",
-    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#retrieval",
-    "title": "1. Filter by a Single Condition",
+    "objectID": "prayers.html#monday-prayers---for-us-as-students",
+    "href": "prayers.html#monday-prayers---for-us-as-students",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Monday prayers - for us as students",
+    "text": "Monday prayers - for us as students\n\nFor this class\n\nDear Heavenly Father,\nWe invite Your presence into this classroom.\nLet Your light shine upon us, illuminating the path of learning, so we may contemplate your beauty and love in everything you made.\nMay this classroom be a place of respect, fellowship, and growth. Help us to be open to new ideas, to embrace challenges, and to support one another in our academic endeavors. Bless this class so that it may be a space where minds are enriched, friendships are formed, and hearts are touched.\nGuide our imaginations and desires towards your love and justice, so that we may respond adequately to your call to be Christ’s agents of renewal in the world.\nThrough our Lord Jesus Christ, your Son, who lives and reigns with you in the unity of the Holy Spirit, one God, for ever and ever.\nAmen.\n\n\n\nFor practices\n\nDear Heavenly Father,\nWe start this day asking for your joy and strength in this moment when we are practicing these data science skills.\nPlease let this be a moment of true fellowship and character building in our community of learning.\nBe with us in any difficulties we face. Give us a disposition to help, and humility to be helped.\nGive us wisdom to discern your beauty and justice as we study and practice.\nMay everything we do and learn here be offered to you in praise, gratitude and service to our neighbors.\nIn Jesus name we pray. Amen.\n\n\n\nGo and work\n\nGo and work\nHonor the One who is working on you.\nDo so by making beautiful things,\nBe serving in beautiful ways,\nBy speaking up for the weak whose beauty is being maligned,\nBy filling this city with the aroma of good and beautiful work\nReflect the beautiful work of your heavenly Father,\nNourished now by the grace and mercy of Christ,\nIn the power of the Holy Spirit.\nGod has already accomplished the great work.\nGod goes before you and behind you.\nGod works at your side.\n(Matthew Kaemingk & Cory B. Willson, Work and Worship, p. 140)\n\n\n\nGod the Maker\n\nVERSE 1:\nWe bring our time, we bring our treasure,\nwe lay them down before Your throne.\nYou will make them something greater,\nmore than we could ever know. (chorus)\n\nVERSE 2:\nWe bring our gifts, we bring our power\nplace them in Your sov’reign hand.\nYou will take what we have given,\nYou will use it for Your plan. (chorus)\n\nCHORUS:\nGlory be to God, the Maker\nglory be to God, Creator\nTake our time, use our treasure\nturn them into something greater:\nGlory be to God, the Maker.\n\nVERSE 3:\nThough our hearts are weak from failure,\nbroken dreams and failed attempts,\nshow us that in ev’ry season,\nYou will fill our emptiness. (chorus)\n(God the Maker, The Porter’s Gate)\n\n\n\nKyrie\n\nLet us confess to God those things that are wrong in our work:\nThat the presence of God at work is often overlooked;\nThat creative people are often subjected to long, boring and unrelenting routines;\nThat skills are undeveloped through lack of training;\nThat resources are wasted in shoddy work and the production of unwanted goods;\nThat the maximisation of profit often excludes concern for people;\nThat men and women are discriminated against because of age, race, gender, disability, lack of skill and length of employment;\nThat the poor stand so little chance against the power of the rich, and the world’s destitute are forgotten.\n\n\nLord, have mercy upon us. Forgive us our sins and help us to amend our lives. Amen.\n(https://www.theologyofwork.org/work-in-worship)\n\n\n\nVocational doubt\n\nLord, we pray for ourselves in our daily study and work.\n\nWe give thanks for the skills we already have; we pray for wise and good use of these skills in building your kingdom.\n\nWe pray for those thinking about changing their study and/or work - especially those unhappy or insecure; those feeling undervalued or unfulfilled; those feeling that are in the wrong place; those who can’t wait for 5pm on Friday.\n\nWe pray for those with no sense of direction or purpose or vocation, for those drifting,\nfor those wanting to do a particular job, but unable through disability, illness, lack of confidence or lack of opportunity;\nfor those who are unemployed.\nWe pray for those at school or college now making decisions which will affect our working lives. We pray for all Careers Advisers.\n\nWe pray for those who are teaching us;\nfor our colleagues,\nfor our administrators.\n\n\n\nBad jobs\n\nLord, we remember that there are some who find themselves working on projects whose value they doubt or whose likely outcome they disapprove.\nHelp them, Lord, to decide whether to stay on in the hope of effecting change or whether to leave.  Especially we pray for those forced by economic necessity to remain in uncongenial work.\nMay they know your forgiveness,\nand may the world of science and technology be ever open to your redeeming Spirit,\nthat your will may be fulfilled in all that we do.\nAmen.\n(David Welbourn)"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#section",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#section",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "Heavenly Father,\nWe come before You, seeking wisdom and discernment in our work with data. Grant us the understanding to represent information truthfully and fairly, knowing that each data point reflects the reality of lives, stories, and experiences.\nGuide our minds as we organize, analyze, and interpret data, so that our actions may honor Your principles of justice and truth. Help us to avoid bias, to present findings transparently, and to use data in ways that uplift and inform rather than mislead or harm.\nMay our efforts in data wrangling and analysis be instruments of clarity, bringing light to hidden truths, and contributing positively to the world around us. Teach us to be humble in our knowledge, always seeking to learn and grow, and to use our skills with integrity and care.\nIn Your wisdom, we trust. Amen."
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#retrieval",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#retrieval",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Retrieval",
-    "text": "Retrieval\nOur dataset for this class is about alcohol consumption by secondary school students. The data were obtained in a survey of students math and portuguese language courses, in two schools, and can be found at Kaggle.\nEach row represents a student, and the columns are:\n\nschool - student’s school (binary: ‘GP’ - Gabriel Pereira or ‘MS’ - Mousinho da Silveira)\nsex - student’s sex (binary: ‘F’ - female or ‘M’ - male)\nage - student’s age (numeric: from 15 to 22)\naddress - student’s home address type (binary: ‘U’ - urban or ‘R’ - rural)\nfamsize - family size (binary: ‘LE3’ - less or equal to 3 or ‘GT3’ - greater than 3)\nPstatus - parent’s cohabitation status (binary: ‘T’ - living together or ‘A’ - apart)\nMedu - mother’s education (numeric: 0 - none, 1 - primary education (4th grade), 2 – 5th to 9th grade, 3 – secondary education or 4 – higher education)\nFedu - father’s education (numeric: 0 - none, 1 - primary education (4th grade), 2 – 5th to 9th grade, 3 – secondary education or 4 – higher education)\nMjob - mother’s job (nominal: ‘teacher’, ‘health’ care related, civil ‘services’ (e.g. administrative or police), ‘at_home’ or ‘other’)\nFjob - father’s job (nominal: ‘teacher’, ‘health’ care related, civil ‘services’ (e.g. administrative or police), ‘at_home’ or ‘other’)\nreason - reason to choose this school (nominal: close to ‘home’, school ‘reputation’, ‘course’ preference or ‘other’)\nguardian - student’s guardian (nominal: ‘mother’, ‘father’ or ‘other’)\ntraveltime - home to school travel time (numeric: 1 - &lt;15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, or 4 - &gt;1 hour)\nstudytime - weekly study time (numeric: 1 - &lt;2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, or 4 - &gt;10 hours)\nfailures - number of past class failures (numeric: n if 1&lt;=n&lt;3, else 4)\nschoolsup - extra educational support (binary: yes or no)\nfamsup - family educational support (binary: yes or no)\npaid - extra paid classes within the course subject (Math or Portuguese) (binary: yes or no)\nactivities - extra-curricular activities (binary: yes or no)\nnursery - attended nursery school (binary: yes or no)\nhigher - wants to take higher education (binary: yes or no)\ninternet - Internet access at home (binary: yes or no)\nromantic - with a romantic relationship (binary: yes or no)\nfamrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)\nfreetime - free time after school (numeric: from 1 - very low to 5 - very high)\ngoout - going out with friends (numeric: from 1 - very low to 5 - very high)\nDalc - workday alcohol consumption (numeric: from 1 - very low to 5 - very high)\nWalc - weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)\nhealth - current health status (numeric: from 1 - very bad to 5 - very good)\nabsences - number of school absences (numeric: from 0 to 93)\nG1 - first period grade (numeric: from 0 to 20)\nG2 - second period grade (numeric: from 0 to 20)\nG3 - final grade (numeric: from 0 to 20, output target)\n\nLet’s retrieve what we learned last time:",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-11 - Wrangling - filtering and grouping"
-    ]
+    "text": "Retrieval\nOur dataset for this class is about alcohol consumption by secondary school students. The data were obtained in a survey of students math and portuguese language courses, in two schools, and can be found at Kaggle.\nEach row represents a student, and the columns are:\n\nschool - student’s school (binary: ‘GP’ - Gabriel Pereira or ‘MS’ - Mousinho da Silveira)\nsex - student’s sex (binary: ‘F’ - female or ‘M’ - male)\nage - student’s age (numeric: from 15 to 22)\naddress - student’s home address type (binary: ‘U’ - urban or ‘R’ - rural)\nfamsize - family size (binary: ‘LE3’ - less or equal to 3 or ‘GT3’ - greater than 3)\nPstatus - parent’s cohabitation status (binary: ‘T’ - living together or ‘A’ - apart)\nMedu - mother’s education (numeric: 0 - none, 1 - primary education (4th grade), 2 – 5th to 9th grade, 3 – secondary education or 4 – higher education)\nFedu - father’s education (numeric: 0 - none, 1 - primary education (4th grade), 2 – 5th to 9th grade, 3 – secondary education or 4 – higher education)\nMjob - mother’s job (nominal: ‘teacher’, ‘health’ care related, civil ‘services’ (e.g. administrative or police), ‘at_home’ or ‘other’)\nFjob - father’s job (nominal: ‘teacher’, ‘health’ care related, civil ‘services’ (e.g. administrative or police), ‘at_home’ or ‘other’)\nreason - reason to choose this school (nominal: close to ‘home’, school ‘reputation’, ‘course’ preference or ‘other’)\nguardian - student’s guardian (nominal: ‘mother’, ‘father’ or ‘other’)\ntraveltime - home to school travel time (numeric: 1 - &lt;15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, or 4 - &gt;1 hour)\nstudytime - weekly study time (numeric: 1 - &lt;2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, or 4 - &gt;10 hours)\nfailures - number of past class failures (numeric: n if 1&lt;=n&lt;3, else 4)\nschoolsup - extra educational support (binary: yes or no)\nfamsup - family educational support (binary: yes or no)\npaid - extra paid classes within the course subject (Math or Portuguese) (binary: yes or no)\nactivities - extra-curricular activities (binary: yes or no)\nnursery - attended nursery school (binary: yes or no)\nhigher - wants to take higher education (binary: yes or no)\ninternet - Internet access at home (binary: yes or no)\nromantic - with a romantic relationship (binary: yes or no)\nfamrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)\nfreetime - free time after school (numeric: from 1 - very low to 5 - very high)\ngoout - going out with friends (numeric: from 1 - very low to 5 - very high)\nDalc - workday alcohol consumption (numeric: from 1 - very low to 5 - very high)\nWalc - weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)\nhealth - current health status (numeric: from 1 - very bad to 5 - very good)\nabsences - number of school absences (numeric: from 0 to 93)\nG1 - first period grade (numeric: from 0 to 20)\nG2 - second period grade (numeric: from 0 to 20)\nG3 - final grade (numeric: from 0 to 20, output target)\n\nLet’s retrieve what we learned last time:"
   },
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filter-by-multiple-conditions",
-    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filter-by-multiple-conditions",
-    "title": "1. Filter by a Single Condition",
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filter-by-a-single-condition",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filter-by-a-single-condition",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "1. Filter by a Single Condition",
+    "text": "1. Filter by a Single Condition\n\n# Filter rows where 'age' is greater than 18\nstudents_age_filtered = students[students['age'] &gt; 18]\nstudents_age_filtered.head()\n\n\n\n\n\n\n\n\nschool\nsex\nage\naddress\nfamsize\nPstatus\nMedu\nFedu\nMjob\nFjob\n...\nfamrel\nfreetime\ngoout\nDalc\nWalc\nhealth\nabsences\nG1\nG2\nG3\n\n\n\n\n127\nGP\nF\n19\nU\nGT3\nT\n0\n1\nat_home\nother\n...\n3\n4\n2\n1\n1\n5\n2\n7\n8\n9\n\n\n153\nGP\nM\n19\nU\nGT3\nT\n3\n2\nservices\nat_home\n...\n4\n5\n4\n1\n1\n4\n0\n5\n0\n0\n\n\n210\nGP\nF\n19\nU\nGT3\nT\n3\n3\nother\nother\n...\n4\n3\n3\n1\n2\n3\n10\n8\n8\n8\n\n\n247\nGP\nM\n22\nU\nGT3\nT\n3\n1\nservices\nservices\n...\n5\n4\n5\n5\n5\n1\n16\n6\n8\n8\n\n\n257\nGP\nM\n19\nU\nLE3\nA\n4\n3\nservices\nat_home\n...\n4\n3\n1\n1\n1\n1\n12\n11\n11\n11\n\n\n\n\n5 rows × 33 columns"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filter-by-multiple-conditions",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filter-by-multiple-conditions",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "2. Filter by Multiple Conditions",
-    "text": "2. Filter by Multiple Conditions\n\n# Filter rows where 'age' &gt; 18 and 'G3' &gt; 15\nstudents_multiple_conditions = students[(students['age'] &gt; 18) & (students['G3'] &gt; 15)]\nstudents_multiple_conditions.head()\n\n\n\n\n\n\n\n\nschool\nsex\nage\naddress\nfamsize\nPstatus\nMedu\nFedu\nMjob\nFjob\n...\nfamrel\nfreetime\ngoout\nDalc\nWalc\nhealth\nabsences\nG1\nG2\nG3\n\n\n\n\n306\nGP\nM\n20\nU\nGT3\nA\n3\n2\nservices\nother\n...\n5\n5\n3\n1\n1\n5\n0\n17\n18\n18\n\n\n\n\n1 rows × 33 columns",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-11 - Wrangling - filtering and grouping"
-    ]
+    "text": "2. Filter by Multiple Conditions\n\n# Filter rows where 'age' &gt; 18 and 'G3' &gt; 15\nstudents_multiple_conditions = students[(students['age'] &gt; 18) & (students['G3'] &gt; 15)]\nstudents_multiple_conditions.head()\n\n\n\n\n\n\n\n\nschool\nsex\nage\naddress\nfamsize\nPstatus\nMedu\nFedu\nMjob\nFjob\n...\nfamrel\nfreetime\ngoout\nDalc\nWalc\nhealth\nabsences\nG1\nG2\nG3\n\n\n\n\n306\nGP\nM\n20\nU\nGT3\nA\n3\n2\nservices\nother\n...\n5\n5\n3\n1\n1\n5\n0\n17\n18\n18\n\n\n\n\n1 rows × 33 columns"
   },
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filter-by-categorical-column",
-    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filter-by-categorical-column",
-    "title": "1. Filter by a Single Condition",
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filter-by-categorical-column",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filter-by-categorical-column",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "3. Filter by Categorical Column",
-    "text": "3. Filter by Categorical Column\n\n# Filter rows where 'school' is 'GP'\nstudents_school_gp = students[students['school'] == 'GP']\nstudents_school_gp.head()\n\n\n\n\n\n\n\n\nschool\nsex\nage\naddress\nfamsize\nPstatus\nMedu\nFedu\nMjob\nFjob\n...\nfamrel\nfreetime\ngoout\nDalc\nWalc\nhealth\nabsences\nG1\nG2\nG3\n\n\n\n\n0\nGP\nF\n18\nU\nGT3\nA\n4\n4\nat_home\nteacher\n...\n4\n3\n4\n1\n1\n3\n6\n5\n6\n6\n\n\n1\nGP\nF\n17\nU\nGT3\nT\n1\n1\nat_home\nother\n...\n5\n3\n3\n1\n1\n3\n4\n5\n5\n6\n\n\n2\nGP\nF\n15\nU\nLE3\nT\n1\n1\nat_home\nother\n...\n4\n3\n2\n2\n3\n3\n10\n7\n8\n10\n\n\n3\nGP\nF\n15\nU\nGT3\nT\n4\n2\nhealth\nservices\n...\n3\n2\n2\n1\n1\n5\n2\n15\n14\n15\n\n\n4\nGP\nF\n16\nU\nGT3\nT\n3\n3\nother\nother\n...\n4\n3\n2\n1\n2\n5\n4\n6\n10\n10\n\n\n\n\n5 rows × 33 columns",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-11 - Wrangling - filtering and grouping"
-    ]
+    "text": "3. Filter by Categorical Column\n\n# Filter rows where 'school' is 'GP'\nstudents_school_gp = students[students['school'] == 'GP']\nstudents_school_gp.head()\n\n\n\n\n\n\n\n\nschool\nsex\nage\naddress\nfamsize\nPstatus\nMedu\nFedu\nMjob\nFjob\n...\nfamrel\nfreetime\ngoout\nDalc\nWalc\nhealth\nabsences\nG1\nG2\nG3\n\n\n\n\n0\nGP\nF\n18\nU\nGT3\nA\n4\n4\nat_home\nteacher\n...\n4\n3\n4\n1\n1\n3\n6\n5\n6\n6\n\n\n1\nGP\nF\n17\nU\nGT3\nT\n1\n1\nat_home\nother\n...\n5\n3\n3\n1\n1\n3\n4\n5\n5\n6\n\n\n2\nGP\nF\n15\nU\nLE3\nT\n1\n1\nat_home\nother\n...\n4\n3\n2\n2\n3\n3\n10\n7\n8\n10\n\n\n3\nGP\nF\n15\nU\nGT3\nT\n4\n2\nhealth\nservices\n...\n3\n2\n2\n1\n1\n5\n2\n15\n14\n15\n\n\n4\nGP\nF\n16\nU\nGT3\nT\n3\n3\nother\nother\n...\n4\n3\n2\n1\n2\n5\n4\n6\n10\n10\n\n\n\n\n5 rows × 33 columns"
   },
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filtering-with-the-query-method",
-    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filtering-with-the-query-method",
-    "title": "1. Filter by a Single Condition",
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filtering-with-the-query-method",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#filtering-with-the-query-method",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Filtering with the query() method",
-    "text": "Filtering with the query() method\n1. Filter with query() Method\n\n# Filter using query method\nstudents_query = students.query(\"famsize == 'GT3' and famsup == 'no'\")\nstudents_query.head()\n\n\n\n\n\n\n\n\nschool\nsex\nage\naddress\nfamsize\nPstatus\nMedu\nFedu\nMjob\nFjob\n...\nfamrel\nfreetime\ngoout\nDalc\nWalc\nhealth\nabsences\nG1\nG2\nG3\n\n\n\n\n0\nGP\nF\n18\nU\nGT3\nA\n4\n4\nat_home\nteacher\n...\n4\n3\n4\n1\n1\n3\n6\n5\n6\n6\n\n\n20\nGP\nM\n15\nU\nGT3\nT\n4\n3\nteacher\nother\n...\n4\n4\n1\n1\n1\n1\n0\n13\n14\n15\n\n\n27\nGP\nM\n15\nU\nGT3\nT\n4\n2\nhealth\nservices\n...\n2\n2\n4\n2\n4\n1\n4\n15\n16\n15\n\n\n47\nGP\nM\n16\nU\nGT3\nT\n4\n3\nhealth\nservices\n...\n4\n2\n2\n1\n1\n2\n4\n19\n19\n20\n\n\n55\nGP\nF\n16\nU\nGT3\nA\n2\n1\nother\nother\n...\n5\n3\n4\n1\n1\n2\n8\n8\n9\n10\n\n\n\n\n5 rows × 33 columns",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-11 - Wrangling - filtering and grouping"
-    ]
+    "text": "Filtering with the query() method\n\n# Filter using query method\nstudents_query = students.query(\"famsize == 'GT3' and famsup == 'no'\")\nstudents_query.head()\n\n\n\n\n\n\n\n\nschool\nsex\nage\naddress\nfamsize\nPstatus\nMedu\nFedu\nMjob\nFjob\n...\nfamrel\nfreetime\ngoout\nDalc\nWalc\nhealth\nabsences\nG1\nG2\nG3\n\n\n\n\n0\nGP\nF\n18\nU\nGT3\nA\n4\n4\nat_home\nteacher\n...\n4\n3\n4\n1\n1\n3\n6\n5\n6\n6\n\n\n20\nGP\nM\n15\nU\nGT3\nT\n4\n3\nteacher\nother\n...\n4\n4\n1\n1\n1\n1\n0\n13\n14\n15\n\n\n27\nGP\nM\n15\nU\nGT3\nT\n4\n2\nhealth\nservices\n...\n2\n2\n4\n2\n4\n1\n4\n15\n16\n15\n\n\n47\nGP\nM\n16\nU\nGT3\nT\n4\n3\nhealth\nservices\n...\n4\n2\n2\n1\n1\n2\n4\n19\n19\n20\n\n\n55\nGP\nF\n16\nU\nGT3\nA\n2\n1\nother\nother\n...\n5\n3\n4\n1\n1\n2\n8\n8\n9\n10\n\n\n\n\n5 rows × 33 columns"
   },
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#key-points",
-    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#key-points",
-    "title": "1. Filter by a Single Condition",
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#key-points",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#key-points",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Key Points",
-    "text": "Key Points\n\nSingle Condition: Use simple boolean conditions for basic filtering.\nMultiple Conditions: Combine conditions using & (and) or | (or) operators.\nquery() Method: Use query() for a more readable and expressive way to filter.",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-11 - Wrangling - filtering and grouping"
-    ]
+    "text": "Key Points\n\nSingle Condition: Use simple boolean conditions for basic filtering.\nMultiple Conditions: Combine conditions using & (and) or | (or) operators.\nquery() Method: Use query() for a more readable and expressive way to filter."
   },
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#why",
-    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#why",
-    "title": "1. Filter by a Single Condition",
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#why",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#why",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Why?",
-    "text": "Why?\n\nQuickly compute summary statistics (e.g., mean, sum, count) across different categories or groups.\nThus, we can identify trends, patterns, or differences between groups.\nMain idea:\n\nSplit the data in groups\nApply some operation (count, sum, mean, etc)\nCombine again in a new dataframe.",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-11 - Wrangling - filtering and grouping"
-    ]
+    "text": "Why?\n\nQuickly compute summary statistics (e.g., mean, sum, count) across different categories or groups.\nThus, we can identify trends, patterns, or differences between groups.\nMain idea:\n\nSplit the data in groups\nApply some operation (count, sum, mean, etc)\nCombine again in a new dataframe."
   },
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#example-1-calculate-mean-of-final-grade-g3-for-each-school",
-    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#example-1-calculate-mean-of-final-grade-g3-for-each-school",
-    "title": "1. Filter by a Single Condition",
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#example-1-calculate-mean-of-final-grade-g3-for-each-school",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#example-1-calculate-mean-of-final-grade-g3-for-each-school",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Example 1: Calculate mean of final grade (G3) for each school",
-    "text": "Example 1: Calculate mean of final grade (G3) for each school\n\nLet’s group by school:\n\n\n# Group by 'school' and calculate mean of 'G3'\nstudents_grouped_school = students.groupby('school')\nprint(students_grouped_school)\nprint(type(students_grouped_school))\n\n&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x71eb8c238ca0&gt;\n&lt;class 'pandas.core.groupby.generic.DataFrameGroupBy'&gt;",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-11 - Wrangling - filtering and grouping"
-    ]
+    "text": "Example 1: Calculate mean of final grade (G3) for each school\n\nLet’s group by school:\n\n\n# Group by 'school' and calculate mean of 'G3'\nstudents_grouped_school = students.groupby('school')\nprint(students_grouped_school)\nprint(type(students_grouped_school))\n\n&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7e7e25db6d10&gt;\n&lt;class 'pandas.core.groupby.generic.DataFrameGroupBy'&gt;"
   },
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#checking-group-size",
-    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#checking-group-size",
-    "title": "1. Filter by a Single Condition",
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#checking-group-size",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#checking-group-size",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Checking group size",
-    "text": "Checking group size\n\nstudents.groupby(\"school\").size()\n\nschool\nGP    349\nMS     46\ndtype: int64\n\n\n\nstudents.groupby([\"school\", \"sex\"]).size()\n\nschool  sex\nGP      F      183\n        M      166\nMS      F       25\n        M       21\ndtype: int64",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-11 - Wrangling - filtering and grouping"
-    ]
+    "text": "Checking group size\n\nstudents.groupby(\"school\").size()\n\nschool\nGP    349\nMS     46\ndtype: int64\n\n\n\nstudents.groupby([\"school\", \"sex\"]).size()\n\nschool  sex\nGP      F      183\n        M      166\nMS      F       25\n        M       21\ndtype: int64"
   },
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#aggregating",
-    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#aggregating",
-    "title": "1. Filter by a Single Condition",
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#aggregating",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#aggregating",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Aggregating",
-    "text": "Aggregating\n\nstudents_by_school = (\n  students\n  .groupby(\"school\", as_index=False)\n  .agg(mean_G3=('G3', 'mean'))\n)\nstudents_by_school\n\n\n\n\n\n\n\n\nschool\nmean_G3\n\n\n\n\n0\nGP\n10.489971\n\n\n1\nMS\n9.847826",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-11 - Wrangling - filtering and grouping"
-    ]
+    "text": "Aggregating\n\nstudents_by_school = (\n  students\n  .groupby(\"school\", as_index=False)\n  .agg(mean_G3=('G3', 'mean'))\n)\nstudents_by_school\n\n\n\n\n\n\n\n\nschool\nmean_G3\n\n\n\n\n0\nGP\n10.489971\n\n\n1\nMS\n9.847826"
   },
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#lazy-method",
-    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#lazy-method",
-    "title": "1. Filter by a Single Condition",
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#lazy-method",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#lazy-method",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Lazy method",
-    "text": "Lazy method\n\nstudents.groupby([\"school\", \"sex\"])['G3'].mean()\n\nschool  sex\nGP      F       9.972678\n        M      11.060241\nMS      F       9.920000\n        M       9.761905\nName: G3, dtype: float64\n\n\n\nProblem: not so easy to understand, and doesn’t set the right column name!",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-11 - Wrangling - filtering and grouping"
-    ]
+    "text": "Lazy method\n\nstudents.groupby([\"school\", \"sex\"])['G3'].mean()\n\nschool  sex\nGP      F       9.972678\n        M      11.060241\nMS      F       9.920000\n        M       9.761905\nName: G3, dtype: float64\n\n\n\nProblem: not so easy to understand, and doesn’t set the right column name!"
   },
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#grouping-by-multiple-columns",
-    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#grouping-by-multiple-columns",
-    "title": "1. Filter by a Single Condition",
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#grouping-by-multiple-columns",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#grouping-by-multiple-columns",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Grouping by multiple columns",
-    "text": "Grouping by multiple columns\n\n# Group by 'school' and 'sex' and calculate mean of 'G3'\nstudents_grouped_school_sex = (\n    students\n    .groupby(['school', 'sex'])\n    .agg(mean_G3=('G3', 'mean'))\n)\nstudents_grouped_school_sex\n\n\n\n\n\n\n\n\n\nmean_G3\n\n\nschool\nsex\n\n\n\n\n\nGP\nF\n9.972678\n\n\nM\n11.060241\n\n\nMS\nF\n9.920000\n\n\nM\n9.761905",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-11 - Wrangling - filtering and grouping"
-    ]
+    "text": "Grouping by multiple columns\n\n# Group by 'school' and 'sex' and calculate mean of 'G3'\nstudents_grouped_school_sex = (\n    students\n    .groupby(['school', 'sex'])\n    .agg(mean_G3=('G3', 'mean'))\n)\nstudents_grouped_school_sex\n\n\n\n\n\n\n\n\n\nmean_G3\n\n\nschool\nsex\n\n\n\n\n\nGP\nF\n9.972678\n\n\nM\n11.060241\n\n\nMS\nF\n9.920000\n\n\nM\n9.761905"
   },
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#custom-aggregation-with-agg",
-    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#custom-aggregation-with-agg",
-    "title": "1. Filter by a Single Condition",
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#custom-aggregation-with-agg",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#custom-aggregation-with-agg",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Custom Aggregation with agg()",
-    "text": "Custom Aggregation with agg()\n\n# Custom aggregation functions\ncustom_agg = students.groupby('school')['G3'].agg(['mean', 'max', lambda x: x.mean() + 1])\nprint(custom_agg)\n\n             mean  max  &lt;lambda_0&gt;\nschool                            \nGP      10.489971   20   11.489971\nMS       9.847826   19   10.847826",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-11 - Wrangling - filtering and grouping"
-    ]
+    "text": "Custom Aggregation with agg()\n\n# Custom aggregation functions\ncustom_agg = students.groupby('school')['G3'].agg(['mean', 'max', lambda x: x.mean() + 1])\nprint(custom_agg)\n\n             mean  max  &lt;lambda_0&gt;\nschool                            \nGP      10.489971   20   11.489971\nMS       9.847826   19   10.847826"
   },
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#multiple-functions-with-agg",
-    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#multiple-functions-with-agg",
-    "title": "1. Filter by a Single Condition",
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#multiple-functions-with-agg",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#multiple-functions-with-agg",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Multiple functions with agg()",
-    "text": "Multiple functions with agg()\n\n# Aggregation with multiple functions\nmulti_agg = students.groupby('school').agg({\n  'age': ['mean', 'median'],\n  'G3': ['mean', 'std', 'max']\n})\nprint(multi_agg)\n\n              age                G3              \n             mean median       mean       std max\nschool                                           \nGP      16.521490   16.0  10.489971  4.625397  20\nMS      18.021739   18.0   9.847826  4.237229  19",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-11 - Wrangling - filtering and grouping"
-    ]
+    "text": "Multiple functions with agg()\n\n# Aggregation with multiple functions\nmulti_agg = students.groupby('school').agg({\n  'age': ['mean', 'median'],\n  'G3': ['mean', 'std', 'max']\n})\nprint(multi_agg)\n\n              age                G3              \n             mean median       mean       std max\nschool                                           \nGP      16.521490   16.0  10.489971  4.625397  20\nMS      18.021739   18.0   9.847826  4.237229  19"
   },
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#section-1",
-    "href": "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#section-1",
-    "title": "1. Filter by a Single Condition",
-    "section": "",
-    "text": "A first look at the dataset, in order to visualize and summarize their main characteristics\n\nUnderstand the data structure, detect patterns, identify anomalies, test hypotheses, and check assumptions.",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-11 - Wrangling - filtering and grouping"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section",
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#section-1",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#section-1",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "",
-    "text": "Go and work\nHonor the One who is working on you.\nDo so by making beautiful things,\nBe serving in beautiful ways,\nBy speaking up for the weak whose beauty is being maligned,\nBy filling this city with the aroma of good and beautiful work\nReflect the beautiful work of your heavenly Father,\nNourished now by the grace and mercy of Christ,\nIn the power of the Holy Spirit.\nGod has already accomplished the great work.\nGod goes before you and behind you.\nGod works at your side.\n(Matthew Kaemingk & Cory B. Willson, Work and Worship, p. 140)",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
+    "text": "A first look at the dataset, in order to visualize and summarize their main characteristics\n\nUnderstand the data structure, detect patterns, identify anomalies, test hypotheses, and check assumptions."
   },
   {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#retrieval",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#retrieval",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Retrieval",
-    "text": "Retrieval\n\nWhat are some types of data?\nWhat are some structures and databases used to handle data?",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-1",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-1",
+    "objectID": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#section-2",
+    "href": "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html#section-2",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "",
-    "text": "Data doesn’t come neatly wrapped.\nWrangling decisions have big impacts on analysis and conclusions!",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#the-grammar-of-wrangling",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#the-grammar-of-wrangling",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "The grammar of wrangling",
-    "text": "The grammar of wrangling\n\nOperations:\n\nselect (rows and columns)\nadd/drop columns and rows\nsort\ncalculate summaries\nfilter\ngroup/aggregate\nreshape\njoin",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#pandas",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#pandas",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "pandas",
-    "text": "pandas\n“pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.” https://pandas.pydata.org/\nYou can import the library by doing:\n\nimport pandas as pd\n\n\nThe alias pd is a common convention for referencing Pandas.",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#the-dataframe",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#the-dataframe",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "The Dataframe",
-    "text": "The Dataframe\nBasically, “enhanced 2-dimensional tables with rich functionality”: - Multiple Data Types: Supports various data types in a single structure. - Data Manipulation: Built-in functions for sorting, filtering, and grouping. - Indexing: Efficient access and retrieval of data. - Integration: Easy integration with other Python tools and libraries. - Analysis: Advanced operations, statistical functions, and more.",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-2",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-2",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "",
-    "text": "You can create a DataFrame from various data sources, such as lists, dictionaries, or external files.\nHere’s an example using a dictionary:\n\n# Example data\ndata = {\n    'Occupation': ['Engineer', 'Doctor', 'Teacher', 'Artist', 'Nurse', 'Developer'],\n    'Gender': ['Male', 'Female', 'Female', 'Male', 'Female', 'Male'],\n    'Age': [32, 45, 29, 41, 35, 28],\n    'Level of Education': ['Bachelor', 'PhD', 'Master', 'High School', 'Bachelor', 'Master'],\n    'Weight': [78, 65, 58, 80, 60, 75],\n    'Height': [175, 160, 168, 180, 155, 170]\n}\n\n# Creating the DataFrame\ndf = pd.DataFrame(data)\n\nprint(df)\n\n  Occupation  Gender  Age Level of Education  Weight  Height\n0   Engineer    Male   32           Bachelor      78     175\n1     Doctor  Female   45                PhD      65     160\n2    Teacher  Female   29             Master      58     168\n3     Artist    Male   41        High School      80     180\n4      Nurse  Female   35           Bachelor      60     155\n5  Developer    Male   28             Master      75     170",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-csv-files",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-csv-files",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Loading from CSV Files",
-    "text": "Loading from CSV Files\n\nCSV (Comma-Separated Values) is a common format for storing tabular data.\nExample: Department of Education College Scorecard\n\nSimplified dataset for this exercise: https://calvin-data-science.github.io/data202/data/college_scorecard.csv\n\nTry to load this csv file using the function pd.read_csv(). Use the CSV file as argument!",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-excel-files",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-excel-files",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Loading from Excel Files",
-    "text": "Loading from Excel Files\n\nimport pandas as pd\n\n# Loading an Excel file into a DataFrame\ndf_excel = pd.read_excel('data.xlsx', sheet_name='Sheet1')\n\n# Displaying the first few rows\nprint(df_excel.head())",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-other-file-formats",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-other-file-formats",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Loading from Other File Formats",
-    "text": "Loading from Other File Formats\nPandas can load data from various other formats, including:\n\nJSON: JavaScript Object Notation.\n\n  df_json = pd.read_json('data.json')\n\nSQL Databases: Loading data directly from databases.\n\nfrom sqlalchemy import create_engine\nengine = create_engine('sqlite:///:memory:')\ndf_sql = pd.read_sql('SELECT * FROM table_name', con=engine)\n\nHTML Tables: Extracting data from web pages.\n\ndf_html = pd.read_html('https://example.com')[0]",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#handling-data-while-loading",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#handling-data-while-loading",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Handling Data while Loading",
-    "text": "Handling Data while Loading\n\nWhile loading data, Pandas provides several options to handle:\n\nMissing Values: na_values, fillna()\nDate Parsing: parse_dates, date_parser\nData Types: dtype parameter to specify column data types\nCustom Delimiters: sep for specifying delimiters in text files",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#example-missing-values",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#example-missing-values",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Example: missing values",
-    "text": "Example: missing values\ndf_custom = pd.read_csv('data.csv', na_values=['NA', '?'], parse_dates=['date_column'])",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#selecting-a-row",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#selecting-a-row",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Selecting a row",
-    "text": "Selecting a row\niloc = locate by integer index\n\ndf.iloc[0]\n\nOccupation            Engineer\nGender                    Male\nAge                         32\nLevel of Education    Bachelor\nWeight                      78\nHeight                     175\nName: 0, dtype: object",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#selecting-a-column",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#selecting-a-column",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Selecting a column",
-    "text": "Selecting a column\n\ndf[\"Occupation\"]\n\n0     Engineer\n1       Doctor\n2      Teacher\n3       Artist\n4        Nurse\n5    Developer\nName: Occupation, dtype: object",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#adding-rows",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#adding-rows",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Adding rows",
-    "text": "Adding rows\nHere’s a slide about adding and dropping rows in a Pandas DataFrame:\nSlide 15: Adding and Dropping Rows in Pandas\n# Adding and Dropping Rows in Pandas\n\n## Adding Rows\n\n### 1. Using `append()` method\n\n- **Appending a Single Row**\n\n  ```python\n  # Create a new row as a dictionary\n  new_row = {'Name': 'Eve', 'Gender': 'Female', 'Age': 28, 'Occupation': 'Teacher', 'Education Level': 'Bachelor', 'Height': 165, 'Weight': 55}\n  \n  # Append the new row to the DataFrame\n  df = df.append(new_row, ignore_index=True)",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#removing-rows",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#removing-rows",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Removing Rows",
-    "text": "Removing Rows\n1. using drop() Method\n\nDropping Rows by Index\n# Drop rows with specific index labels\ndf = df.drop([2, 4], axis=0)  # Drops rows with index 2 and 4",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#adding-columns",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#adding-columns",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Adding Columns",
-    "text": "Adding Columns\n1. Using Direct Assignment\n\nAdding a Single Column\n# Add a new column with default values\ndf['NewColumn'] = [10, 20, 30, 40, 50]  # List should match the length of the DataFrame\n\n# Add a new column based on existing columns\ndf['BMI'] = df['Weight'] / (df['Height'] / 100) ** 2",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#removing-columns",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#removing-columns",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Removing Columns",
-    "text": "Removing Columns\n1. Using drop() Method\n\nDropping Single or Multiple Columns\n# Drop a single column\ndf = df.drop('NewColumn', axis=1)\n\n# Drop multiple columns\ndf = df.drop(['BMI', 'Country'], axis=1)",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-3",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-3",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "",
-    "text": "Example: Sorting by a single column\n\n\n# Sorting by a single column in ascending order\nsorted_df = df.sort_values(by='Age')\n\n# Sorting by a single column in descending order\nsorted_df_desc = df.sort_values(by='Age', ascending=False)\n\nsorted_df_desc.head()\n\n\n\n\n\n\n\n\nOccupation\nGender\nAge\nLevel of Education\nWeight\nHeight\n\n\n\n\n1\nDoctor\nFemale\n45\nPhD\n65\n160\n\n\n3\nArtist\nMale\n41\nHigh School\n80\n180\n\n\n4\nNurse\nFemale\n35\nBachelor\n60\n155\n\n\n0\nEngineer\nMale\n32\nBachelor\n78\n175\n\n\n2\nTeacher\nFemale\n29\nMaster\n58\n168",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#sorting-by-multiple-columns",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#sorting-by-multiple-columns",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Sorting by Multiple Columns",
-    "text": "Sorting by Multiple Columns\n\n# Sorting by multiple columns: 'Occupation' ascending, then 'Age' descending\nsorted_multi = df.sort_values(by=['Occupation', 'Age'], ascending=[True, False])\n\nsorted_multi.head()\n\n\n\n\n\n\n\n\nOccupation\nGender\nAge\nLevel of Education\nWeight\nHeight\n\n\n\n\n3\nArtist\nMale\n41\nHigh School\n80\n180\n\n\n5\nDeveloper\nMale\n28\nMaster\n75\n170\n\n\n1\nDoctor\nFemale\n45\nPhD\n65\n160\n\n\n0\nEngineer\nMale\n32\nBachelor\n78\n175\n\n\n4\nNurse\nFemale\n35\nBachelor\n60\n155",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-4",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-4",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "",
-    "text": "Pandas provides easy methods to calculate summary statistics for numerical data.\ndf.describe(): Generates summary statistics for all numerical columns:\n\nCount: Number of non-null entries.\nMean: Average value.\nStandard Deviation (std): Measures data spread.\nMinimum (min) and Maximum (max): Smallest and largest values.\n25%, 50%, 75% Percentiles: Values below which 25%, 50%, and 75% of the data fall.\n\n\n\ndf.describe()\n\n\n\n\n\n\n\n\nAge\nWeight\nHeight\n\n\n\n\ncount\n6.00000\n6.000000\n6.000000\n\n\nmean\n35.00000\n69.333333\n168.000000\n\n\nstd\n6.78233\n9.542886\n9.273618\n\n\nmin\n28.00000\n58.000000\n155.000000\n\n\n25%\n29.75000\n61.250000\n162.000000\n\n\n50%\n33.50000\n70.000000\n169.000000\n\n\n75%\n39.50000\n77.250000\n173.750000\n\n\nmax\n45.00000\n80.000000\n180.000000",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#additional-methods",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#additional-methods",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Additional Methods",
-    "text": "Additional Methods\n\nMean: df['Age'].mean() — Average age of persons.\nMedian: df['Height'].median() — Median height.\nMode: df['Gender'].mode() — Most frequent gender.\nValue Counts: df['Occupation'].value_counts() — Count of each occupation.\n\nUse these methods to quickly gain insights into your dataset!",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-5",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-5",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "",
-    "text": "The table has the function of treating multiplicity itself, distributing it and deriving from it as many effects as possible (Michel Foucault 1997)\n\n\n“All things are vectors” (Alfred North Whitehead, 1960)\n\n\nA Medieval Calendar, November, English psalter (MS. Royal 1DX, f. 14, British Library).\nFor details, see Marchese, Francis T. 2013. “Tables and Early Information Visualization.” In Knowledge Visu­alization Currents, edited by Francis T. Marchese and Ebad Banissi, 35-61. London: Springer",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#vectorization",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#vectorization",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Vectorization",
-    "text": "Vectorization\n\nHow does that affect our knowledge? Is everything reducible to this “rule”?\n\nSimple limitations: narrative text, graph data, structured data, etc.\nWhat is the reasoning we use to consider one row in a list? How do we consider that the “columns” can correctly describe them?",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
-  },
-  {
-    "objectID": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#categorization",
-    "href": "slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#categorization",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Categorization",
-    "text": "Categorization\n\n“You must distinguish between the holy and the common, between the unclean and the clean.” Leviticus 10.10 (NIV)\n\n\nWhen we categorize, we attribute order.",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "02 - Wrangling 1",
-      "09-09 - Wrangling - basic operations"
-    ]
+    "text": "In our student dataset, we can ask, for example:\n\nWhat is the distribution of student ages?\nHow many students are in each school (‘GP’ vs. ‘MS’)?\nDo male and female students have different average grades?\nHow do grades vary based on the mother’s education level (Medu)?\nDoes having internet access at home influence grades?\nWhat is the relationship between family educational support (famsup) and student performance?\nDoes the family relationship quality (famrel) affect free time or study time?"
   },
   {
     "objectID": "midterm-proj.html",
@@ -532,11 +145,11 @@
     ]
   },
   {
-    "objectID": "midterm-proj.html#milestones",
-    "href": "midterm-proj.html#milestones",
+    "objectID": "midterm-proj.html#plot-selection-and-initial-analysis-week-4",
+    "href": "midterm-proj.html#plot-selection-and-initial-analysis-week-4",
     "title": "Midterm Project",
-    "section": "Milestones",
-    "text": "Milestones\n\nWeek 3: Identify possible plots\nThis was done as part of Discussion 2.\n\n\n\n\n\n\nHow to pick a plot?\n\n\n\n\n\nYou can pick one of these approaches:\n\nOrganization-centered: Pick an organization that you’re interested in (company, NGO, government agency, sports team, hospital, school, scientific community, etc.) and find some graphic that is helpful for them as they make decisions.\nIssue-centered: Pick an issue that’s important to you. Find a news article or opinion piece about that issue and try to replicate a visual that they’d use to support their claims. The strongest such projects will pick a claim that you disagree with.\n\n\n\n\n\n\nWeek 4: Plot selection and initial analysis\nUpload a screenshot of one or more potential plots to the Plot Gallery. Your post should include:\n\nScreenshot: A screenshot of the plot (image)\nClaim or Purpose: What the author is trying to say with this plot\nSource: URL, or some other similarly clear description of how to get to the original plot\nEach row is: A short phrase of what each row of the plot dataframe represents (e.g., “The data has one row per day and rider type”.\nData dictionary: A table of (possible) variable names and what they (probably) represent\nData Sources: Potential sources for the data, in the form of URLs or similar. Try downloading and opening the data if you can; report on any anticipated difficulties.\n\nYou don’t have to fill in everything for the initial post; you can come back and fill it in later.\n\n\n\n\n\n\nImportant\n\n\n\nThe plot you choose to replicate should have at least 3 variables.\nIf you really want to make a plot that has fewer than 3 variables, you should be able to explain why it’s still interesting and worth doing.\n\n\n\n\n\n\n\n\nOther Plot Selection Guidelines\n\n\n\nThe plot you choose to replicate:\n\nShould make an interesting claim.\n\nShouldn’t just be about something (e.g., “number of wins by each athlete”)\nMost interesting claims are about relationships (e.g,. “the highest paid athletes don’t necessarily win more”)\nA claim finishes the sentence: “The article uses this graphic to back up the claim that BLANK”.\nIf the article doesn’t make a claim, make one up. Imagine that you’ve gotten in an argument with someone and you show them this plot to back up your claim; what claim were you trying to make?\n\nShould involve at least 3 variables.\n\nIdeally they have to come from several separate data sources that you have to bring together.\n\nShould have some room for improvement, i.e., you’d be interested in trying a different way of presenting the data.\n\nIf you are really stuck, I can simply assign something to do, but I’m hoping to avoid that.\n\n\n\n\nWeek 5: Data\nFind and load the data; write a brief critique of the data.\nFor this milestone, your report should be complete through the “Data” section. See the Report Template below.\n\n\n\n\n\n\nData Selection Guidelines\n\n\n\nThe data you find:\n\nShould come from a reputable source.\n\nIf you use an aggregation site like OurWorldInData, try to track down where they got the data.\n\nShould require at least a little bit of wrangling\n\nBeware of sites where you can download exactly the data for a specific plot\n“Download data for this chart” links are red flags that you may be getting already-wrangled data.\n\n\nSee Some questions to ask if you’re working with data that you didn’t collect yourself.\nIf the wrangling is especially straightforward, you can add depth by:\n\nFinding a different source for the same data\nCritiquing the data collection process\nDescribing alternative choices that could have been made in the data collection or wrangling process and what the consequences of those choices might be.\n\n\n\n\n\nWeek 6: Initial plot and ideas\nMake an initial plot and a todo list of things to improve; sketch ideas for alternative ways to plot the same data.\nYour report should be complete through the “Wrangling” section and have some initial work in the “Replication” and “Alternatives” sections.\n\n\nWeek 8: Presentation and Report\nPresent the original, replication, and alternative plots to the class and in a Quarto report.",
+    "section": "1: Plot selection and initial analysis (Week 4)",
+    "text": "1: Plot selection and initial analysis (Week 4)\nUpload a screenshot of one or more potential plots to the Plot Gallery. Your post should include:\n\nScreenshot: A screenshot of the plot (image)\nClaim or Purpose: What the author is trying to say with this plot\nSource: URL, or some other similarly clear description of how to get to the original plot\nEach row is: A short phrase of what each row of the plot dataframe represents (e.g., “The data has one row per day and rider type”.\nData dictionary: A table of (possible) variable names and what they (probably) represent\nData Sources: Potential sources for the data, in the form of URLs or similar. Try downloading and opening the data if you can; report on any anticipated difficulties.\n\nYou don’t have to fill in everything for the initial post; you can come back and fill it in later.\n\n\n\n\n\n\nImportant\n\n\n\nThe plot you choose to replicate should have at least 3 variables.\nIf you really want to make a plot that has fewer than 3 variables, you should be able to explain why it’s still interesting and worth doing.\n\n\n\n\n\n\n\n\nOther Plot Selection Guidelines\n\n\n\nThe plot you choose to replicate:\n\nShould make an interesting claim.\n\nShouldn’t just be about something (e.g., “number of wins by each athlete”)\nMost interesting claims are about relationships (e.g,. “the highest paid athletes don’t necessarily win more”)\nA claim finishes the sentence: “The article uses this graphic to back up the claim that BLANK”.\nIf the article doesn’t make a claim, make one up. Imagine that you’ve gotten in an argument with someone and you show them this plot to back up your claim; what claim were you trying to make?\n\nShould involve at least 3 variables.\n\nIdeally they have to come from several separate data sources that you have to bring together.\n\nShould have some room for improvement, i.e., you’d be interested in trying a different way of presenting the data.\n\nIf you are really stuck, I can simply assign something to do, but I’m hoping to avoid that.",
     "crumbs": [
       "Syllabus",
       "Projects",
@@ -544,11 +157,11 @@
     ]
   },
   {
-    "objectID": "midterm-proj.html#report-and-presentation-details",
-    "href": "midterm-proj.html#report-and-presentation-details",
+    "objectID": "midterm-proj.html#data-week-5",
+    "href": "midterm-proj.html#data-week-5",
     "title": "Midterm Project",
-    "section": "Report and Presentation Details",
-    "text": "Report and Presentation Details\n\nReport Content\nYour report should include the following sections:\n\nOverview of the original plot (include a screenshot) and the claim it makes.\nDesign of the original plot. (plot type, effectiveness)\nData (where’d you get it, anything interesting about it or what you had to do with it)\nWrangling (what did you have to do to get it into a form that you could plot?)\nReplication (show your replication of the original plot)\nAlternative 1: what did you change? why?\nAlternative 2: (same, but can be a sketch rather than a full plot)\nSummary: one or two take-aways\n\n\n\nReport Template\nThis template includes a suggested outline for your report. You may choose to organize your report differently if you have a good reason.\n\n\n\n\n\n\nClick to show the Report Template\n\n\n\n\n\n---\ntitle: \"A title\"\nauthor:\n    - \"Your name\"\n    - \"Partner name\"\nformat:\n  html:\n    embed-resources: true\n    code-tools: true\n    code-fold: true\n---\n\n```{python}\n#| echo: true\nimport pandas as pd\nimport plotly.express as px\n```\n\n```{python}\n#| echo: false\n# Hack to make plotly work in RStudio\nif 'r' in globals() and r['.Platform$GUI'] == \"RStudio\" and r['suppressMessages(requireNamespace(\"htmltools\"))']:\n  r[\".GlobalEnv$to_html &lt;- function(x) { print(htmltools::HTML(x)) }\"] and None\n  def show_plot(p): r.to_html(p._repr_html_())\nelse:\n  def show_plot(p): return p\n```\n\n🚧\nThis template is intended to help you structure your report. Remove placeholders like this and make it your own. Not every question needs to be answered for every project, and some projects will have additional questions. **Your final report should not include any \"under construction\" or template text.**\n\n## Overview\n\n🚧\nWe are interested in TOPIC because STORY. So we chose to replicate a plot from [this article] (INCLUDE THE COMPLETE URL TO THE ARTICLE).\n\n🚧\nOriginal visualization:\n\n![](https://example.com/your-url-here)\n\n🚧\nClaim:\n\n&gt; You can put the claim in a \"block quote\" like this.\n&gt; A concise statement (ideally a quote) of the claim that the article uses the visualization to make (or the claim you invented if there wasn't a clear one)\n\n\n## Design\n\n🚧\nWhat overall type of visualization was chosen? Why might the author have chosen it?\n🚧\nWhat variables are being shown?\n🚧\nWhat visual cues (aka retinal variables or aesthetics) were chosen to represent those data variables?\n🚧\n    For at least one of these variables, describe what makes that choice appropriate or inappropriate.\n🚧\nOverall, what about the visual makes it effective, or ineffective, for making its claim?\n\n\n## Data\n\n### Data Overview\n\n🚧\nWhether you were able to find the original data (if not, why not?)\n🚧\nWhere the data came from\n🚧\n    Direct URL and/or specific instructions for how to obtain it.\n🚧\n    Under what terms is the source allowing you to use the data?\n🚧\n    Try to trace it upstream as close to the source as you can.\n🚧\n    Who worked with the data on its way to you? (Include names and roles, if applicable.)\n🚧\n    What processing may have happened to it: was it aggregated? Anonymized? etc.\n🚧\nWhat might we need to know about the data collection process in order to interpret the data correctly? (e.g., If it’s from a survey–who was surveyed?)\n\n### Data Details\n\n🚧\n```{r load-data}\n# your code to load the data here\n```\n\n🚧\nA low-level description of the size and structure of the data.\n🚧\nHow many rows are there?\nWhat does a single row represent? (Translate the first observation in the dataset into an English sentence.)\n🚧\nWhat might be interesting to know about what information the data does, and doesn’t, provide?\n\n\n### Wrangling\n\n🚧\nDescribe, at a broad level, what you need to do to the data to make it into the form you need for the plot. (e.g., what data types need fixing, whether you need to pivot, what filtering is needed, etc.)\n\n🚧\nAdd code blocks, with appropriate names, for wrangling steps. **Explain the *why* for any choices you make (like filtering data).**\n\n## Replication\n\n🚧\nInclude your replication, along with all code needed.\n🚧\nBriefly describe any difficulties you encountered, both those you overcame and those you still have not. (It’s ok to not have a perfect graph here. If the essential structure is there, don’t worry if the details are a bit different. Focus your attention on making an interesting and polished alternative design.)\n🚧\n\n\n## Alternatives\n\n🚧\nDescribe at least two alternative design choices that could be made in visualizing your data. For each design, include the following sections\n\n### Alternative 1: Design\n\n🚧\nWhat choice did the original visual make? (e.g., to use a particular aesthetic mapping or glyph)\n🚧\nWhat choice does your alternative design make instead? (It should be a reasonable choice, but it doesn’t have to be an improvement.)\n🚧\nHow does that change affect how the visual supports the original claim? Can your redesign now support some different claim?\n\n### Implementation\n\n🚧\nMake a solid attempt to implement your best alternative design.\nIf creating it using plotly is too challenging, you may include a high-fidelity sketch of what the plot would look like (using PowerPoint, a vector graphics tool, or a good-quality scan of a paper or whiteboard), along with a clear description of what you’d need to figure out in order to produce it with code.\n\n## Summary\n\n🚧\nNow that you’ve gone through the whole process, how has your understanding of, and belief in, the original article’s claim changed?\n🚧\nHow faithful was your replication?\n🚧\nCompare your original and alternative designs. Which is best for what purpose?\n🚧\nWhat follow-up questions and ideas do you have about the data or visualization you worked with?\n🚧\nHow do you feel about this whole experience?\n\n## Acknowledgments\n\n🚧\nInclude the full names of any students outside your team who helped you and a brief description of how they helped.\n\n### License\n\nSharing: Would you be okay with sharing your project, and if so, how?\n\nIdeally we'd make a public gallery with all projects, screenshots, and code, but you could choose to:\n\n- Go anonymous (choices: \"anon\" or \"names\")\n- Don't share code? (choices: \"code\" or \"screenshots\" or \"just title\")\n- Restrict to just future students (choices: \"public\" or \"students\").\n\nso, e.g., you might say \"anon, code, students\" or \"names, screenshots, public\".\n\n\n\n\n\nReport Style\nYour report should be:\n\nunderstandable by itself: a reader should not need to see your discussion posts or prior submissions.\nreproducible – if a new version of the data becomes available, anyone should be able to re-run your code and get an updated plot. Things to avoid:\n\npaths that only work on your computer\nmaking modifications to your raw data (e.g., editing it in Excel)\nhard-coding row numbers or other things that are likely to change\n\nunderstandable without the code: a reader should be able to skip over all of the code and understand all of the results.\nAt least one of your visuals (either the original or alternative design) should be high quality, with effort spent getting the details right.\nClean up any messy outputs from code (debugging, etc.)\nWrite succinctly. Bulleted lists are fine when they’re clear.\nUse ordinary text formatting (not headings, blockquotes, etc.) for ordinary prose. Reserve headings and block quotes for headings and quotes.\nFormat your code cleanly. If lazy, select the code and click “Reformat Code” on the Code menu. (Make sure you save first.)\nRead through the report before submitting. Check that you don’t have placeholder text, the headings make sense, etc.\n\nAcademic Integrity: If you take any code from elsewhere, you must state very clearly where it came from and how you changed it. This includes ChatGPT and other AI tools. If you find a plot and it has Plotly code already, I advise against looking at it, and possibly even finding a different plot. Code using a different toolkit (e.g., R) is probably okay.\n\n\nPresentation\nTo practice making data-driven arguments, this project includes a brief presentation, done on VoiceThread.\nKeep it short and simple. The slides should be as follows:\n\nOriginal Plot and Claim\nData (where’d you get it, anything interesting about it or what you had to do with it)\nReplication\nAlternative 1: what did you change? why?\nAlternative 2: (same)\nSummary: one or two take-aways\n\nUse a presentation tool like Google Slides or PowerPoint.\nUse voice comments to narrate. Each team member should make at least one comment.",
+    "section": "2: Data (Week 5)",
+    "text": "2: Data (Week 5)\nFind and load the data; write a brief critique of the data.\nFor this milestone, your report should be complete through the “Data” section. See the Report Template below.\n\n\n\n\n\n\nData Selection Guidelines\n\n\n\nThe data you find:\n\nShould come from a reputable source.\n\nIf you use an aggregation site like OurWorldInData, try to track down where they got the data.\n\nShould require at least a little bit of wrangling\n\nBeware of sites where you can download exactly the data for a specific plot\n“Download data for this chart” links are red flags that you may be getting already-wrangled data.\n\n\nSee Some questions to ask if you’re working with data that you didn’t collect yourself.\nIf the wrangling is especially straightforward, you can add depth by:\n\nFinding a different source for the same data\nCritiquing the data collection process\nDescribing alternative choices that could have been made in the data collection or wrangling process and what the consequences of those choices might be.",
     "crumbs": [
       "Syllabus",
       "Projects",
@@ -556,11 +169,11 @@
     ]
   },
   {
-    "objectID": "midterm-proj.html#logistics",
-    "href": "midterm-proj.html#logistics",
+    "objectID": "midterm-proj.html#initial-plot-and-ideas-week-6",
+    "href": "midterm-proj.html#initial-plot-and-ideas-week-6",
     "title": "Midterm Project",
-    "section": "Logistics",
-    "text": "Logistics\n\nReport Submission\n\nIf your dataset is less than 10 MB: submit a .zip file with your entire project folder.\nOtherwise: submit just the HTML (and make sure the instructions are very clear about how to get the data)\n\nUse the header from the template, which includes these important settings:\n\nKeep code-tools: true in the header so we can see your source code.\nMake sure you keep embed-resources: true so we can see any images.\n\n\n\n\n\nShared Projects\nRStudio (Posit Workbench) has a feature called Shared Projects that many teams will find helpful.\nTo use it, one person should create a new project in the ~/rprojects folder. Then, they should go to the projects menu in the top-right corner and choose “Share Project”. Type the username of another team member (the part of their email before the @calvin.edu) in the textbox and click Add.\n\n\n\n\n\n\nrprojects folder\n\n\n\nFor shared projects to work, you must create your project within the ~/rprojects folder, i.e., the folder named rprojects within your home (~) folder.",
+    "section": "3: Initial plot and ideas (Week 6)",
+    "text": "3: Initial plot and ideas (Week 6)\nMake an initial plot and a todo list of things to improve; sketch ideas for alternative ways to plot the same data.\nYour report should be complete through the “Wrangling” section and have some initial work in the “Replication” and “Alternatives” sections.",
     "crumbs": [
       "Syllabus",
       "Projects",
@@ -568,11 +181,59 @@
     ]
   },
   {
-    "objectID": "midterm-proj.html#checklist",
-    "href": "midterm-proj.html#checklist",
+    "objectID": "midterm-proj.html#presentation-and-report-week-8",
+    "href": "midterm-proj.html#presentation-and-report-week-8",
     "title": "Midterm Project",
-    "section": "Checklist",
-    "text": "Checklist\nThe following is the minimal requirements for the project. The project should also go into depth in some area.\n\nOverview\n\nIncludes a screenshot of the original plot\nIncludes a description of the claim made by the original plot (or the claim you’re making if the original doesn’t make a claim)\nIncludes a link to the original plot\n\nDesign\n\nNames the type of the original plot (scatter, bar, etc.)\nIdentifies the variables used in the original plot\nIdentifies the visual cue that each variable is mapped to.\nDiscusses the effectiveness of the original plot\n\nData\n\nIdentifies the source of the data used for the replication (including a link if possible)\nIndicates how many rows and columns are in the data (e.g., “the data has 100 rows and 5 columns”)\nDescribes what a single row represents (e.g., “one row per day per rider type”)\nDescribes the variables in the data (e.g., “the data has columns for date, rider type, and number of rides”)\n\nWrangling\n\nDescribes the overall process of wrangling the data (e.g., “I had to combine data from sources X and Y, then filter out rows that aren’t Z, then calculate the average number of rides per day”)\nIncludes code blocks that show the wrangling process\nGives an example of the data after wrangling (e.g., the .head() and the .info())\n\nReplication\n\nIncludes the replication of the original plot\nReplication has the same general type of plot as the original (can be different in unimportant details like specific colors used, extra annonatiotns, etc.)\nReplication has the same general variables as the original, mapped to the same general visual cues\nDescribes any difficulties encountered in the replication process\nDescribes any relevant differences between the original and replication\n\nAlternatives\n\nIncludes textual descriptions of two alternative ways to plot the same data that are different in a substantive way (e.g., not just a different color scheme) from each other and from the original plot.\nIncludes images of both alternatives. Ideally they’re implemented in code using actual data, but in case that’s too challenging, a detailed and clear sketch on paper or PowerPoint or some online tool is also fine. The sketch should show all the necessary elements and should be understandable without additional explanation.\n\nSummary\n\nIncludes a reflection on the claim of the original plot and how well the original plot supports that claim.\nIncludes a comparison between the original design and at least of the alternative designs that specifies which design is better for what purpose.\n\nAppendix\n\nReport includes a description of where the depth in the project is, i.e., in what areas you went beyond the bare minimal requirements. See “Depth Somewhere” above.\nReport includes what terms you’d be willing to have your report shared under (see the “License” section of the template.)\nReport includes a list of sources used (e.g., specific links to StackOverflow, ChatGPT shared-conversation links, etc.), and the full names of any students outside your team.\n\nMeta\n\nReport was produced using a reproducible workflow (typically Quarto)\nReport is titled appropriately\nAuthors are listed correctly\nReport is concise\nReport is self-contained\nReport is understandable without reading the code\nNo placeholder text remains.\nReport is formatted cleanly (check headings, code outputs, etc.); check that the file shows up correctly on your local computer before submitting.",
+    "section": "4: Presentation and Report (Week 8)",
+    "text": "4: Presentation and Report (Week 8)\nPresent the original, replication, and alternative plots in a video and in a iPython Notebook (Google Colab, etc) report.",
+    "crumbs": [
+      "Syllabus",
+      "Projects",
+      "Midterm Project"
+    ]
+  },
+  {
+    "objectID": "midterm-proj.html#report-content",
+    "href": "midterm-proj.html#report-content",
+    "title": "Midterm Project",
+    "section": "Report Content",
+    "text": "Report Content\nYour report should include the following sections:\n\nOverview of the original plot (include a screenshot) and the claim it makes.\nDesign of the original plot. (plot type, effectiveness)\nData (where’d you get it, anything interesting about it or what you had to do with it)\nWrangling (what did you have to do to get it into a form that you could plot?)\nReplication (show your replication of the original plot)\nAlternative 1: what did you change? why?\nAlternative 2: (same, but can be a sketch rather than a full plot)\nSummary: one or two take-aways",
+    "crumbs": [
+      "Syllabus",
+      "Projects",
+      "Midterm Project"
+    ]
+  },
+  {
+    "objectID": "midterm-proj.html#report-template",
+    "href": "midterm-proj.html#report-template",
+    "title": "Midterm Project",
+    "section": "Report Template",
+    "text": "Report Template\nThis template includes a suggested outline for your report. You may choose to organize your report differently if you have a good reason.\n\n\n\n\n\n\nClick to show the Report Template\n\n\n\n\n\n---\ntitle: \"A title\"\nauthor:\n    - \"Your name\"\n    - \"Partner name\"\nformat:\n  html:\n    embed-resources: true\n    code-tools: true\n    code-fold: true\n---\n\n```{python}\n#| echo: true\nimport pandas as pd\nimport plotly.express as px\n```\n\n```{python}\n#| echo: false\n# Hack to make plotly work in RStudio\nif 'r' in globals() and r['.Platform$GUI'] == \"RStudio\" and r['suppressMessages(requireNamespace(\"htmltools\"))']:\n  r[\".GlobalEnv$to_html &lt;- function(x) { print(htmltools::HTML(x)) }\"] and None\n  def show_plot(p): r.to_html(p._repr_html_())\nelse:\n  def show_plot(p): return p\n```\n\n🚧\nThis template is intended to help you structure your report. Remove placeholders like this and make it your own. Not every question needs to be answered for every project, and some projects will have additional questions. **Your final report should not include any \"under construction\" or template text.**\n\n## Overview\n\n🚧\nWe are interested in TOPIC because STORY. So we chose to replicate a plot from [this article] (INCLUDE THE COMPLETE URL TO THE ARTICLE).\n\n🚧\nOriginal visualization:\n\n![](https://example.com/your-url-here)\n\n🚧\nClaim:\n\n&gt; You can put the claim in a \"block quote\" like this.\n&gt; A concise statement (ideally a quote) of the claim that the article uses the visualization to make (or the claim you invented if there wasn't a clear one)\n\n\n## Design\n\n🚧\nWhat overall type of visualization was chosen? Why might the author have chosen it?\n🚧\nWhat variables are being shown?\n🚧\nWhat visual cues (aka retinal variables or aesthetics) were chosen to represent those data variables?\n🚧\n    For at least one of these variables, describe what makes that choice appropriate or inappropriate.\n🚧\nOverall, what about the visual makes it effective, or ineffective, for making its claim?\n\n\n## Data\n\n### Data Overview\n\n🚧\nWhether you were able to find the original data (if not, why not?)\n🚧\nWhere the data came from\n🚧\n    Direct URL and/or specific instructions for how to obtain it.\n🚧\n    Under what terms is the source allowing you to use the data?\n🚧\n    Try to trace it upstream as close to the source as you can.\n🚧\n    Who worked with the data on its way to you? (Include names and roles, if applicable.)\n🚧\n    What processing may have happened to it: was it aggregated? Anonymized? etc.\n🚧\nWhat might we need to know about the data collection process in order to interpret the data correctly? (e.g., If it’s from a survey–who was surveyed?)\n\n### Data Details\n\n🚧\n```{r load-data}\n# your code to load the data here\n```\n\n🚧\nA low-level description of the size and structure of the data.\n🚧\nHow many rows are there?\nWhat does a single row represent? (Translate the first observation in the dataset into an English sentence.)\n🚧\nWhat might be interesting to know about what information the data does, and doesn’t, provide?\n\n\n### Wrangling\n\n🚧\nDescribe, at a broad level, what you need to do to the data to make it into the form you need for the plot. (e.g., what data types need fixing, whether you need to pivot, what filtering is needed, etc.)\n\n🚧\nAdd code blocks, with appropriate names, for wrangling steps. **Explain the *why* for any choices you make (like filtering data).**\n\n## Replication\n\n🚧\nInclude your replication, along with all code needed.\n🚧\nBriefly describe any difficulties you encountered, both those you overcame and those you still have not. (It’s ok to not have a perfect graph here. If the essential structure is there, don’t worry if the details are a bit different. Focus your attention on making an interesting and polished alternative design.)\n🚧\n\n\n## Alternatives\n\n🚧\nDescribe at least two alternative design choices that could be made in visualizing your data. For each design, include the following sections\n\n### Alternative 1: Design\n\n🚧\nWhat choice did the original visual make? (e.g., to use a particular aesthetic mapping or glyph)\n🚧\nWhat choice does your alternative design make instead? (It should be a reasonable choice, but it doesn’t have to be an improvement.)\n🚧\nHow does that change affect how the visual supports the original claim? Can your redesign now support some different claim?\n\n### Implementation\n\n🚧\nMake a solid attempt to implement your best alternative design.\nIf creating it using plotly is too challenging, you may include a high-fidelity sketch of what the plot would look like (using PowerPoint, a vector graphics tool, or a good-quality scan of a paper or whiteboard), along with a clear description of what you’d need to figure out in order to produce it with code.\n\n## Summary\n\n🚧\nNow that you’ve gone through the whole process, how has your understanding of, and belief in, the original article’s claim changed?\n🚧\nHow faithful was your replication?\n🚧\nCompare your original and alternative designs. Which is best for what purpose?\n🚧\nWhat follow-up questions and ideas do you have about the data or visualization you worked with?\n🚧\nHow do you feel about this whole experience?\n\n## Acknowledgments\n\n🚧\nInclude the full names of any students outside your team who helped you and a brief description of how they helped.\n\n### License\n\nSharing: Would you be okay with sharing your project, and if so, how?\n\nIdeally we'd make a public gallery with all projects, screenshots, and code, but you could choose to:\n\n- Go anonymous (choices: \"anon\" or \"names\")\n- Don't share code? (choices: \"code\" or \"screenshots\" or \"just title\")\n- Restrict to just future students (choices: \"public\" or \"students\").\n\nso, e.g., you might say \"anon, code, students\" or \"names, screenshots, public\".",
+    "crumbs": [
+      "Syllabus",
+      "Projects",
+      "Midterm Project"
+    ]
+  },
+  {
+    "objectID": "midterm-proj.html#report-style",
+    "href": "midterm-proj.html#report-style",
+    "title": "Midterm Project",
+    "section": "Report Style",
+    "text": "Report Style\nYour report should be:\n\nunderstandable by itself: a reader should not need to see your discussion posts or prior submissions.\nreproducible – if a new version of the data becomes available, anyone should be able to re-run your code and get an updated plot. Things to avoid:\n\npaths that only work on your computer\nmaking modifications to your raw data (e.g., editing it in Excel)\nhard-coding row numbers or other things that are likely to change\n\nunderstandable without the code: a reader should be able to skip over all of the code and understand all of the results.\nAt least one of your visuals (either the original or alternative design) should be high quality, with effort spent getting the details right.\nClean up any messy outputs from code (debugging, etc.)\nWrite succinctly. Bulleted lists are fine when they’re clear.\nUse ordinary text formatting (not headings, blockquotes, etc.) for ordinary prose. Reserve headings and block quotes for headings and quotes.\nFormat your code cleanly. If lazy, select the code and click “Reformat Code” on the Code menu. (Make sure you save first.)\nRead through the report before submitting. Check that you don’t have placeholder text, the headings make sense, etc.\n\nAcademic Integrity: If you take any code from elsewhere, you must state very clearly where it came from and how you changed it. This includes ChatGPT and other AI tools. If you find a plot and it has Plotly code already, I advise against looking at it, and possibly even finding a different plot. Code using a different toolkit (e.g., R) is probably okay.",
+    "crumbs": [
+      "Syllabus",
+      "Projects",
+      "Midterm Project"
+    ]
+  },
+  {
+    "objectID": "midterm-proj.html#presentation",
+    "href": "midterm-proj.html#presentation",
+    "title": "Midterm Project",
+    "section": "Presentation",
+    "text": "Presentation\nTo practice making data-driven arguments, this project includes a brief presentation, done on VoiceThread.\nKeep it short and simple. The slides should be as follows:\n\nOriginal Plot and Claim\nData (where’d you get it, anything interesting about it or what you had to do with it)\nReplication\nAlternative 1: what did you change? why?\nAlternative 2: (same)\nSummary: one or two take-aways\n\nUse a presentation tool like Google Slides or PowerPoint.\nUse voice comments to narrate. Each team member should make at least one comment.",
     "crumbs": [
       "Syllabus",
       "Projects",
@@ -589,6 +250,18 @@
       "Syllabus",
       "Projects",
       "Midterm Project"
+    ]
+  },
+  {
+    "objectID": "weeks/02.html",
+    "href": "weeks/02.html",
+    "title": "02 - Wrangling 1",
+    "section": "",
+    "text": "Learning objectives for this week:\n\nCreating and loading pandas dataframes\nAccessing dataframe rows and columns\nEvaluating summary statistics in dataframes\nSelecting dataframes\nFiltering dataframes\nDeriving new dataframe columns\nUnderstanding data types and string operations in dataframes",
+    "crumbs": [
+      "Syllabus",
+      "Weeks",
+      "02 - Wrangling 1"
     ]
   },
   {
@@ -647,18 +320,6 @@
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/index.html",
-    "href": "slides/01 - Introduction/index.html",
-    "title": "01 - Introduction",
-    "section": "",
-    "text": "Learning objectives for this week:\n\nObserve data science as the efforts of finding meaningfulness in data and automating decisions with data.\nDescribe the typical workflow in a data science project.\nIdentify some application areas of data science.\nIdentify types of datasets used in data science.\nExplore some of the tools that are currently used in data science.\nReflect on skills and virtues that are required for this practice.",
-    "crumbs": [
-      "Syllabus",
-      "Slides",
-      "01 - Introduction"
-    ]
-  },
-  {
     "objectID": "final-proj.html",
     "href": "final-proj.html",
     "title": "Final Project",
@@ -694,7 +355,7 @@
     "href": "index.html#communication",
     "title": "Syllabus",
     "section": "Communication",
-    "text": "Communication\nWe will use the following communication tools:\n\nOutside of class, we’ll communicate primarily using the forums on Perusall. See link on Moodle.\n\nPost questions about assignments, concepts, or when you have problems getting code to run.\nPost answers as well. Answering helps the community and also gives you practice explaining something you just learned.\nPost notes about interesting articles or events.\n\nUse email for personal issues.\nUse Teams for friendly chat; I’ll redirect most questions about course content to Perusall.\n\nYou’ll generally find us responsive on Monday through Friday, but less so on the weekend, particularly Sunday. You’re free to schedule your work as best works for you, but we’ll be trying to observe a Sabbath in our own schedules."
+    "text": "Communication\nWe will use the following communication tools:\n\nOutside of class, we’ll communicate primarily using the forums on Perusall. See link on Moodle.\n\nPost questions about assignments, concepts, or when you have problems getting code to run.\nPost answers as well. Answering helps the community and also gives you practice explaining something you just learned.\nPost notes about interesting articles or events.\n\nUse email for personal issues.\nUse Teams for friendly chat; I’ll redirect most questions about course content to Perusall.\n\nYou’ll generally find us responsive on Monday through Friday, but less so on the weekend, particularly Sunday. You’re free to schedule your work as best works for you, but we’ll be trying to observe a Sabbath in our own schedules.\nAll readings wil be posted in Perusall. They will be taken from:\n\nLearning Data Science by Sam Lau, Joey Gonzalez, and Deb Nolan. (we’ll abbreviate this LGN).\nFundamentals of Data Visualization by Claus O. Wilke (we’ll abbreviate this as Wilke)\nInterpretable Machine Learning: A Guide for Making Black Box Models Explainable by Christoph Molnar. (we’ll abbreviate this as Molnar)\nFairness and machine learning Limitations and Opportunities by Solon Barocas, Moritz Hardt, Arvind Narayanan. (we’ll abbreviate this BHN)"
   },
   {
     "objectID": "index.html#every-week",
@@ -725,432 +386,600 @@
     "text": "Deadlines and late work policy\nUnless stated otherwise, the assignment submissions are due by midnight of the due date. The Moodle calendar will list these due dates/times.\nAnything submitted after the dealine is late, unless you have made prior arrangements with us. For each late assignment, you will be charged 10% for each business-day that you are late (e.g., if an assignment is due on Friday, you may turn it in on Monday at 10% off, Tuesday at 20% off and so on) and you need to email us to tell us which assignment you’re submitting late and how late it is. We will not accept work that is more than one week late unless you talk to us about the circumstances and negotiate a late-submission plan. We will generally grant up to 30% for these negotiated plans. We will also grant you 4 grace days with no penalty, no questions asked. Please note that grace days do not apply to the quizzes or the final project, and that we do not accept or negotiate for late work after the last day of class. If there are exceptional circumstances, please talk to us so we can work something out."
   },
   {
-    "objectID": "slides/02 - Wrangling 1/index.html",
-    "href": "slides/02 - Wrangling 1/index.html",
-    "title": "02 - Wrangling 1",
+    "objectID": "weeks/01.html",
+    "href": "weeks/01.html",
+    "title": "01 - Introduction",
     "section": "",
-    "text": "Learning objectives for this week:\n\nCreating and loading pandas dataframes\nAccessing dataframe rows and columns\nEvaluating summary statistics in dataframes\nSelecting dataframes\nFiltering dataframes\nDeriving new dataframe columns\nUnderstanding data types and string operations in dataframes",
+    "text": "Learning objectives for this week:\n\nObserve data science as the efforts of finding meaningfulness in data and automating decisions with data.\nDescribe the typical workflow in a data science project.\nIdentify some application areas of data science.\nIdentify types of datasets used in data science.\nExplore some of the tools that are currently used in data science.\nReflect on skills and virtues that are required for this practice.",
     "crumbs": [
       "Syllabus",
-      "Slides",
-      "02 - Wrangling 1"
+      "Weeks",
+      "01 - Introduction"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section",
+    "objectID": "weeks/03.html",
+    "href": "weeks/03.html",
+    "title": "03 - Wrangling 2",
+    "section": "",
+    "text": "Learning objectives for this week:\n\nGrouping rows and summarize columns (“split, apply, combine”).\nPerforming pivot operations on dataframes to reshape data.\nJoining multiple dataframes using different types of joins (inner, outer, left, right)."
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "Go and work\nHonor the One who is working on you.\nDo so by making beautiful things,\nBe serving in beautiful ways,\nBy speaking up for the weak whose beauty is being maligned,\nBy filling this city with the aroma of good and beautiful work\nReflect the beautiful work of your heavenly Father,\nNourished now by the grace and mercy of Christ,\nIn the power of the Holy Spirit.\nGod has already accomplished the great work.\nGod goes before you and behind you.\nGod works at your side.\n(Matthew Kaemingk & Cory B. Willson, Work and Worship, p. 140)"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#retrieval",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#retrieval",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Retrieval",
+    "text": "Retrieval\n\nWhat are some types of data?\nWhat are some structures and databases used to handle data?"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-1",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-1",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "Data doesn’t come neatly wrapped.\nWrangling decisions have big impacts on analysis and conclusions!"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#the-grammar-of-wrangling",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#the-grammar-of-wrangling",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "The grammar of wrangling",
+    "text": "The grammar of wrangling\n\nOperations:\n\nselect (rows and columns)\nadd/drop columns and rows\nsort\ncalculate summaries\nfilter\ngroup/aggregate\nreshape\njoin"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#pandas",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#pandas",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "pandas",
+    "text": "pandas\n“pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.” https://pandas.pydata.org/\nYou can import the library by doing:\n\nimport pandas as pd\n\n\nThe alias pd is a common convention for referencing Pandas."
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#the-dataframe",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#the-dataframe",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "The Dataframe",
+    "text": "The Dataframe\nBasically, “enhanced 2-dimensional tables with rich functionality”: - Multiple Data Types: Supports various data types in a single structure. - Data Manipulation: Built-in functions for sorting, filtering, and grouping. - Indexing: Efficient access and retrieval of data. - Integration: Easy integration with other Python tools and libraries. - Analysis: Advanced operations, statistical functions, and more."
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-2",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-2",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "You can create a DataFrame from various data sources, such as lists, dictionaries, or external files.\nHere’s an example using a dictionary:\n\n# Example data\ndata = {\n    'Occupation': ['Engineer', 'Doctor', 'Teacher', 'Artist', 'Nurse', 'Developer'],\n    'Gender': ['Male', 'Female', 'Female', 'Male', 'Female', 'Male'],\n    'Age': [32, 45, 29, 41, 35, 28],\n    'Level of Education': ['Bachelor', 'PhD', 'Master', 'High School', 'Bachelor', 'Master'],\n    'Weight': [78, 65, 58, 80, 60, 75],\n    'Height': [175, 160, 168, 180, 155, 170]\n}\n\n# Creating the DataFrame\ndf = pd.DataFrame(data)\n\nprint(df)\n\n  Occupation  Gender  Age Level of Education  Weight  Height\n0   Engineer    Male   32           Bachelor      78     175\n1     Doctor  Female   45                PhD      65     160\n2    Teacher  Female   29             Master      58     168\n3     Artist    Male   41        High School      80     180\n4      Nurse  Female   35           Bachelor      60     155\n5  Developer    Male   28             Master      75     170"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-csv-files",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-csv-files",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Loading from CSV Files",
+    "text": "Loading from CSV Files\n\nCSV (Comma-Separated Values) is a common format for storing tabular data.\nExample: Department of Education College Scorecard\n\nSimplified dataset for this exercise: https://calvin-data-science.github.io/data202/data/college_scorecard.csv\n\nTry to load this csv file using the function pd.read_csv(). Use the CSV file as argument!"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-excel-files",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-excel-files",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Loading from Excel Files",
+    "text": "Loading from Excel Files\n\nimport pandas as pd\n\n# Loading an Excel file into a DataFrame\ndf_excel = pd.read_excel('data.xlsx', sheet_name='Sheet1')\n\n# Displaying the first few rows\nprint(df_excel.head())"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-other-file-formats",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#loading-from-other-file-formats",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Loading from Other File Formats",
+    "text": "Loading from Other File Formats\nPandas can load data from various other formats, including:\n\nJSON: JavaScript Object Notation.\n\n  df_json = pd.read_json('data.json')\n\nSQL Databases: Loading data directly from databases.\n\nfrom sqlalchemy import create_engine\nengine = create_engine('sqlite:///:memory:')\ndf_sql = pd.read_sql('SELECT * FROM table_name', con=engine)\n\nHTML Tables: Extracting data from web pages.\n\ndf_html = pd.read_html('https://example.com')[0]"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#handling-data-while-loading",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#handling-data-while-loading",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Handling Data while Loading",
+    "text": "Handling Data while Loading\n\nWhile loading data, Pandas provides several options to handle:\n\nMissing Values: na_values, fillna()\nDate Parsing: parse_dates, date_parser\nData Types: dtype parameter to specify column data types\nCustom Delimiters: sep for specifying delimiters in text files"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#example-missing-values",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#example-missing-values",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Example: missing values",
+    "text": "Example: missing values\ndf_custom = pd.read_csv('data.csv', na_values=['NA', '?'], parse_dates=['date_column'])"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#selecting-a-row",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#selecting-a-row",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Selecting a row",
+    "text": "Selecting a row\niloc = locate by integer index\n\ndf.iloc[0]\n\nOccupation            Engineer\nGender                    Male\nAge                         32\nLevel of Education    Bachelor\nWeight                      78\nHeight                     175\nName: 0, dtype: object"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#selecting-a-column",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#selecting-a-column",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Selecting a column",
+    "text": "Selecting a column\n\ndf[\"Occupation\"]\n\n0     Engineer\n1       Doctor\n2      Teacher\n3       Artist\n4        Nurse\n5    Developer\nName: Occupation, dtype: object"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#adding-rows",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#adding-rows",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Adding rows",
+    "text": "Adding rows\n1. Using append() method\n\nAppending a Single Row\n# Create a new row as a dictionary\nnew_row = {'Name': 'Eve', 'Gender': 'Female', 'Age': 28, 'Occupation': 'Teacher', 'Education Level': 'Bachelor', 'Height': 165, 'Weight': 55}\n\n# Append the new row to the DataFrame\ndf = df.append(new_row, ignore_index=True)"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#removing-rows",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#removing-rows",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Removing Rows",
+    "text": "Removing Rows\n1. using drop() Method\n\nDropping Rows by Index\n# Drop rows with specific index labels\ndf = df.drop([2, 4], axis=0)  # Drops rows with index 2 and 4"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#adding-columns",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#adding-columns",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Adding Columns",
+    "text": "Adding Columns\n1. Using Direct Assignment\n\nAdding a Single Column\n# Add a new column with default values\ndf['NewColumn'] = [10, 20, 30, 40, 50]  # List should match the length of the DataFrame\n\n# Add a new column based on existing columns\ndf['BMI'] = df['Weight'] / (df['Height'] / 100) ** 2"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#removing-columns",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#removing-columns",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Removing Columns",
+    "text": "Removing Columns\n1. Using drop() Method\n\nDropping Single or Multiple Columns\n# Drop a single column\ndf = df.drop('NewColumn', axis=1)\n\n# Drop multiple columns\ndf = df.drop(['BMI', 'Country'], axis=1)"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-3",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-3",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "Example: Sorting by a single column\n\n\n# Sorting by a single column in ascending order\nsorted_df = df.sort_values(by='Age')\n\n# Sorting by a single column in descending order\nsorted_df_desc = df.sort_values(by='Age', ascending=False)\n\nsorted_df_desc.head()\n\n\n\n\n\n\n\n\nOccupation\nGender\nAge\nLevel of Education\nWeight\nHeight\n\n\n\n\n1\nDoctor\nFemale\n45\nPhD\n65\n160\n\n\n3\nArtist\nMale\n41\nHigh School\n80\n180\n\n\n4\nNurse\nFemale\n35\nBachelor\n60\n155\n\n\n0\nEngineer\nMale\n32\nBachelor\n78\n175\n\n\n2\nTeacher\nFemale\n29\nMaster\n58\n168"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#sorting-by-multiple-columns",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#sorting-by-multiple-columns",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Sorting by Multiple Columns",
+    "text": "Sorting by Multiple Columns\n\n# Sorting by multiple columns: 'Occupation' ascending, then 'Age' descending\nsorted_multi = df.sort_values(by=['Occupation', 'Age'], ascending=[True, False])\n\nsorted_multi.head()\n\n\n\n\n\n\n\n\nOccupation\nGender\nAge\nLevel of Education\nWeight\nHeight\n\n\n\n\n3\nArtist\nMale\n41\nHigh School\n80\n180\n\n\n5\nDeveloper\nMale\n28\nMaster\n75\n170\n\n\n1\nDoctor\nFemale\n45\nPhD\n65\n160\n\n\n0\nEngineer\nMale\n32\nBachelor\n78\n175\n\n\n4\nNurse\nFemale\n35\nBachelor\n60\n155"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-4",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-4",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "Pandas provides easy methods to calculate summary statistics for numerical data.\ndf.describe(): Generates summary statistics for all numerical columns:\n\nCount: Number of non-null entries.\nMean: Average value.\nStandard Deviation (std): Measures data spread.\nMinimum (min) and Maximum (max): Smallest and largest values.\n25%, 50%, 75% Percentiles: Values below which 25%, 50%, and 75% of the data fall.\n\n\n\ndf.describe()\n\n\n\n\n\n\n\n\nAge\nWeight\nHeight\n\n\n\n\ncount\n6.00000\n6.000000\n6.000000\n\n\nmean\n35.00000\n69.333333\n168.000000\n\n\nstd\n6.78233\n9.542886\n9.273618\n\n\nmin\n28.00000\n58.000000\n155.000000\n\n\n25%\n29.75000\n61.250000\n162.000000\n\n\n50%\n33.50000\n70.000000\n169.000000\n\n\n75%\n39.50000\n77.250000\n173.750000\n\n\nmax\n45.00000\n80.000000\n180.000000"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#additional-methods",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#additional-methods",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Additional Methods",
+    "text": "Additional Methods\n\nMean: df['Age'].mean() — Average age of persons.\nMedian: df['Height'].median() — Median height.\nMode: df['Gender'].mode() — Most frequent gender.\nValue Counts: df['Occupation'].value_counts() — Count of each occupation.\n\nUse these methods to quickly gain insights into your dataset!"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-5",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#section-5",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "",
+    "text": "The table has the function of treating multiplicity itself, distributing it and deriving from it as many effects as possible (Michel Foucault 1997)\n\n\n“All things are vectors” (Alfred North Whitehead, 1960)\n\n\nA Medieval Calendar, November, English psalter (MS. Royal 1DX, f. 14, British Library).\nFor details, see Marchese, Francis T. 2013. “Tables and Early Information Visualization.” In Knowledge Visu­alization Currents, edited by Francis T. Marchese and Ebad Banissi, 35-61. London: Springer"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#vectorization",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#vectorization",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Vectorization",
+    "text": "Vectorization\n\nHow does that affect our knowledge? Is everything reducible to this “rule”?\n\nSimple limitations: narrative text, graph data, structured data, etc.\nWhat is the reasoning we use to consider one row in a list? How do we consider that the “columns” can correctly describe them?"
+  },
+  {
+    "objectID": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#categorization",
+    "href": "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html#categorization",
+    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
+    "section": "Categorization",
+    "text": "Categorization\n\n“You must distinguish between the holy and the common, between the unclean and the clean.” Leviticus 10.10 (NIV)\n\n\nWhen we categorize, we attribute order."
+  },
+  {
+    "objectID": "weeks/introduction.html#section",
+    "href": "weeks/introduction.html#section",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "",
     "text": "Dear Heavenly Father,\nWe invite Your presence into this classroom.\nLet Your light shine upon us, illuminating the path of learning, so we may contemplate your beauty and love in everything you made.\nMay this classroom be a place of respect, fellowship, and growth. Help us to be open to new ideas, to embrace challenges, and to support one another in our academic endeavors. Bless this class so that it may be a space where minds are enriched, friendships are formed, and hearts are touched.\nGuide our imaginations and desires towards your love and justice, so that we may respond adequately to your call to be Christ’s agents of renewal in the world.\nThrough our Lord Jesus Christ, your Son, who lives and reigns with you in the unity of the Holy Spirit, one God, for ever and ever.\nAmen.",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#objectives",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#objectives",
+    "objectID": "weeks/introduction.html#objectives",
+    "href": "weeks/introduction.html#objectives",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Objectives",
     "text": "Objectives\nUpon successful completion of this course students will be able to:\n\nPrepare tabular data for visualization and analytics by constructing generalizable workflows for loading, transforming, joining, and reshaping data.\nCreate, interpret, critique, and refine graphical and tabular visualizations of data.\nTranslate a real-world need into an appropriate analytics task, considering available data.\nSelect analytics methods appropriate to the data and task from among the approaches surveyed in the course.\nInterpret the outcomes of selected predictive analytics techniques.\nCommunicate analytics results using reports that clearly motivate the problem and approach, elucidate the data used, and present both the strengths and shortcomings of analytics results.\nDiscuss ethical and social considerations of data collection and data-driven systems.\n\nAdditionally, using transparent reproducible workflows and regularly acknowledging limitations will help students practice virtues including integrity, humility, and justice.",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#lets-know-each-other",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#lets-know-each-other",
+    "objectID": "weeks/introduction.html#lets-know-each-other",
+    "href": "weeks/introduction.html#lets-know-each-other",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Let’s know each other",
     "text": "Let’s know each other\nStand up and sit when someone says what you would say:\n\n1st round: major\n2nd round: favorite sport\n3rd round: favorite board game",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#who-am-i",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#who-am-i",
+    "objectID": "weeks/introduction.html#who-am-i",
+    "href": "weeks/introduction.html#who-am-i",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Who am I?",
     "text": "Who am I?\nProf. Fernando Santos\n\nFrom São Carlos, Brazil 🇧🇷\n\nPortuguese, not Spanish!\nCerrado (“brazilian savannah”), not jungle!\n\nMajor in computer engineering, PhD in complex systems modeling\nMarried to Jemima, dad of Suzana (6) and Natanael (4)",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#our-relationship",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#our-relationship",
+    "objectID": "weeks/introduction.html#our-relationship",
+    "href": "weeks/introduction.html#our-relationship",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Our relationship",
     "text": "Our relationship\nHeidelberg Catechism Q&A 107:\nWhen god forbids envy, hatred, and anger, he commands us to [h] love our neighbor as ourselves; to show [i] patience, peace, [j] meekness, [k] mercy, and all kindness, towards him, [l] and prevent his hurt as much as in us lies’ and that we [m] do good, even to our enemies.\n\n[a]: Mat. 5:21,22; Prov. 12:18; Mat. 26:52\n[b]: Eph. 4:26; Rom. 12:19; Mat. 5:39,40\n[c]: Mat. 4:5,6,7; Col. 2:23\n[d]: Gen. 9:6; Mat. 26:52; Rom. 13:4\n[e]: James 1:20; Gal. 5:20\n[f]: Rom. 1:29; 1John 2:9\n[g]: 1John 3:15\n[h]: Mat. 22:39; Mat. 7:12\n[i]: Rom. 12:10\n[j]: Eph. 4:2; Gal. 6:1,2; Mat. 5:5; Rom. 12:18\n[k]: Ex. 23:5\n[l]: Mat. 5:45\n[m]: Rom. 12:20",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#syllabus-bingo",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#syllabus-bingo",
+    "objectID": "weeks/introduction.html#syllabus-bingo",
+    "href": "weeks/introduction.html#syllabus-bingo",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Syllabus Bingo",
     "text": "Syllabus Bingo\n\n\n\n\n\n\n\n\n\nQuizzes\nWebsites I need to register\nStudy sessions\n\n\nSoftware we are using\nOffice hours\nChatGPT\n\n\nReadings\nDiversity and inclusion\nSchedule",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#why-data",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#why-data",
+    "objectID": "weeks/introduction.html#why-data",
+    "href": "weeks/introduction.html#why-data",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Why data?",
     "text": "Why data?\nA form of recording experience and information…\n\nExplicit, accessible, transparent\nAmplifies reasoning and perception\nCan be automated",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#however-data-are-also-limited.",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#however-data-are-also-limited.",
+    "objectID": "weeks/introduction.html#however-data-are-also-limited.",
+    "href": "weeks/introduction.html#however-data-are-also-limited.",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "However, data are also limited.",
     "text": "However, data are also limited.\nThey can be:\n\nimprecise (including: what it can mean for someone may not mean the same thing for another);\nambiguous (may mean multiple things depending on the context);\nnot comprehensive enough (or what we call biased - it is limited to some specific population or situation and thus is not generalizable);\ndistorted (“artifacts” - we cannot always be sure it is being transmitted or recorded faithfully);\nor even not timely enough (things changed since we got them).",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#data-science-lifecycles",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#data-science-lifecycles",
+    "objectID": "weeks/introduction.html#data-science-lifecycles",
+    "href": "weeks/introduction.html#data-science-lifecycles",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Data science lifecycles",
     "text": "Data science lifecycles",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#do-we-need-everything",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#do-we-need-everything",
+    "objectID": "weeks/introduction.html#do-we-need-everything",
+    "href": "weeks/introduction.html#do-we-need-everything",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Do we need everything?",
     "text": "Do we need everything?\n\nIt depends on the level of insight…",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#structures-and-databases",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#structures-and-databases",
+    "objectID": "weeks/introduction.html#structures-and-databases",
+    "href": "weeks/introduction.html#structures-and-databases",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Structures and databases",
     "text": "Structures and databases\n\nTables\nSpreadsheets (Excel, etc.)\nDataframes (pandas)\nSQL databases\nHierarchical (XML, JSON, YAML)\nAnd many others…",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#application-areas",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#application-areas",
+    "objectID": "weeks/introduction.html#application-areas",
+    "href": "weeks/introduction.html#application-areas",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Application Areas",
     "text": "Application Areas\n\nNatural Sciences🔬\nHumanities🏛️\nHealth🩺\nLaw & Policy⚖️\nBusiness📈\nIndustry🏭\nArt, Sports & Entertainment🎭",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#the-data",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#the-data",
+    "objectID": "weeks/introduction.html#the-data",
+    "href": "weeks/introduction.html#the-data",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "The data",
     "text": "The data\n\nvotes\n\n\n\n\n\n\n\n\ncountry\nyear\nissue\npercent_yes\n\n\n\n\n0\nTurkey\n1946\nColonialism\n0.800000\n\n\n1\nTurkey\n1946\nEconomic development\n0.600000\n\n\n2\nTurkey\n1946\nHuman rights\n0.000000\n\n\n3\nTurkey\n1947\nColonialism\n0.222222\n\n\n4\nTurkey\n1947\nEconomic development\n0.500000\n\n\n...\n...\n...\n...\n...\n\n\n1207\nUS\n2019\nArms control and disarmament\n0.187500\n\n\n1208\nUS\n2019\nEconomic development\n0.187500\n\n\n1209\nUS\n2019\nHuman rights\n0.357143\n\n\n1210\nUS\n2019\nPalestinian conflict\n0.000000\n\n\n1211\nUS\n2019\nNuclear weapons and material\n0.058824\n\n\n\n\n1212 rows × 4 columns\n\n\n\n\n\nErik Voeten “Data and Analyses of Voting in the UN General Assembly” Routledge Handbook of International Organization, edited by Bob Reinalda (published May 27, 2013). Available at http://ssrn.com/abstract=2111149",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-1",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-1",
+    "objectID": "weeks/introduction.html#section-1",
+    "href": "weeks/introduction.html#section-1",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "",
     "text": "px.scatter(votes, x='year', y='percent_yes')",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-2",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-2",
+    "objectID": "weeks/introduction.html#section-2",
+    "href": "weeks/introduction.html#section-2",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "",
     "text": "px.scatter(votes, x='year', y='percent_yes',\n    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1)",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-3",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-3",
+    "objectID": "weeks/introduction.html#section-3",
+    "href": "weeks/introduction.html#section-3",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "",
     "text": "px.scatter(votes, x='year', y='percent_yes',\n    color='country',\n    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1)",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-4",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-4",
+    "objectID": "weeks/introduction.html#section-4",
+    "href": "weeks/introduction.html#section-4",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "",
     "text": "px.scatter(votes, x='year', y='percent_yes',\n    color='country',\n    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1,\n    trendline='lowess')",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-5",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-5",
+    "objectID": "weeks/introduction.html#section-5",
+    "href": "weeks/introduction.html#section-5",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "",
     "text": "px.scatter(votes, x='year', y='percent_yes',\n    color='country',\n    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1,\n    labels={\"percent_yes\": \"% Yes Votes\", \"year\": \"Year\", \"country\": \"Country\"},\n    trendline='lowess',\n    title=\"Percentage of 'Yes' votes in the UN General Assembly\")",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-6",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-6",
+    "objectID": "weeks/introduction.html#section-6",
+    "href": "weeks/introduction.html#section-6",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "",
     "text": "px.scatter(votes, x='year', y='percent_yes',\n    color='country',\n    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1,\n    labels={\"percent_yes\": \"% Yes Votes\", \"year\": \"Year\", \"country\": \"Country\"},\n    trendline='lowess',\n    title=\"Percentage of 'Yes' votes in the UN General Assembly\"\n).update_traces(marker_size=2) # Smaller markers",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-7",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-7",
+    "objectID": "weeks/introduction.html#section-7",
+    "href": "weeks/introduction.html#section-7",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "",
     "text": "px.scatter(votes, x='year', y='percent_yes',\n    color='country',\n    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1,\n    labels={\"percent_yes\": \"% Yes Votes\", \"year\": \"Year\", \"country\": \"Country\"},\n    trendline='lowess',\n    title=\"Percentage of 'Yes' votes in the UN General Assembly\"\n).update_traces(marker_size=2 # Smaller markers\n).for_each_annotation(lambda a: a.update(text=a.text.split(\"=\", 1)[-1])) # Remove the \"issue=\"",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-8",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-8",
+    "objectID": "weeks/introduction.html#section-8",
+    "href": "weeks/introduction.html#section-8",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "",
     "text": "px.scatter(votes, x='year', y='percent_yes',\n    color='country',\n    facet_col='issue', facet_col_wrap=3, facet_col_spacing=.1,\n    labels={\"percent_yes\": \"% Yes Votes\", \"year\": \"Year\", \"country\": \"Country\"},\n    trendline='lowess',\n    title=\"Percentage of 'Yes' votes in the UN General Assembly\"\n).update_traces(marker_size=2 # Smaller markers\n).for_each_annotation(lambda a: a.update(text=a.text.split(\"=\", 1)[-1]) # Remove the \"issue=\"\n).update_yaxes(tickformat=\",.0%\") # Percent labels",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#python-or-r",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#python-or-r",
+    "objectID": "weeks/introduction.html#python-or-r",
+    "href": "weeks/introduction.html#python-or-r",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Python or R?",
     "text": "Python or R?\n\n\n\n\n\n\n\n\nCriteria\nPython\nR\n\n\n\n\nCommunity and Support\nLarge and growing community, with extensive resources and tutorials available. Popular in industry and academia.\nStrong community in academia, especially in fields like statistics, bioinformatics, and social sciences.\n\n\nEase of Learning\nEasier for beginners, especially with programming experience.\nSteeper learning curve, particularly for those new to programming.\n\n\nData Visualization\nStrong, with libraries like Matplotlib, Seaborn, Plotly, and Bokeh. Interactive visualizations are well-supported.\nExcellent, with ggplot2 being one of the most powerful visualization libraries. However, interactive visualizations are less integrated.\n\n\nMachine Learning\nExtensive support with libraries like scikit-learn, TensorFlow, and PyTorch. Broad adoption in industry.\nAdequate support for machine learning, though Python libraries are more robust and widely used in industry.\n\n\nStatistical Analysis\nGood for general-purpose analysis; extensive libraries, though more basic for advanced statistical techniques.\nExcellent for complex statistical analysis; originally designed for statisticians and excels in this area.\n\n\nIntegration and Flexibility\nHighly flexible, integrates well with other languages and systems (e.g., C, C++, Java, SQL). Versatile for many tasks beyond data science.\nPrimarily focused on statistical computing, less flexible for other types of programming or integration with non-statistical systems.\n\n\nPerformance and Scalability\nGenerally faster for large datasets, especially with optimized libraries (e.g., NumPy, Dask). Better for large-scale production environments.\nCan be slower with large datasets, though packages like data.table improve performance. Not as well-suited for big data as Python.\n\n\nDeployment\nStrong tools for deploying models in production (e.g., Flask, FastAPI, Streamlit). Easy to integrate with web services and databases.\nMore challenging to deploy in production; Shiny can be used for web applications but is less flexible than Python tools.",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#why-programming",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#why-programming",
+    "objectID": "weeks/introduction.html#why-programming",
+    "href": "weeks/introduction.html#why-programming",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Why programming?",
     "text": "Why programming?\n\nWhy not just Excel?\n\nIndeed, it can be useful for simple tasks.\n\nHowever, Python/R are…\n\nmore reproducible\nmore scalable\neasier to automate\nmore analytics libraries\nmore visualization libraries\nmore integration with other tools\nlarge community and ecosystem\nopen-source and free to use\nalthough: harder to learn and use",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#libraries",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#libraries",
+    "objectID": "weeks/introduction.html#libraries",
+    "href": "weeks/introduction.html#libraries",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Libraries",
     "text": "Libraries\n\nData manipulation and analysis: pandas\n\nAlternatives: Ibis, Polars, Dask\n\nVisualization: plotly\n\nAlternatives: matplotlib, seaborn, altair\n\nModeling and machine learning: Scikit-learn\n\nAlternatives: TensorFlow, PyTorch, XGBoost",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#communication-and-publishing-platforms",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#communication-and-publishing-platforms",
+    "objectID": "weeks/introduction.html#communication-and-publishing-platforms",
+    "href": "weeks/introduction.html#communication-and-publishing-platforms",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Communication and publishing platforms",
     "text": "Communication and publishing platforms\n\nJupyter Notebooks in Google Colab (we’ll be using those)\n\nOther useful publishing platforms: Streamlit and Shiny",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#curiosity",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#curiosity",
+    "objectID": "weeks/introduction.html#curiosity",
+    "href": "weeks/introduction.html#curiosity",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Curiosity",
     "text": "Curiosity\nThomas Aquinas speaks of the difference between studiositas (virtue) and curiositas (vice) (see more in this interesting article).\nThere are at least 7 vices of curiosity:\n\nARROGANCE: seeking knowledge of things that no one is supposed to know;\nNOSYNESS: seeking knowledge that may belong to some people, but not to us;\nDISTRACTION: seeking knowledge of things that are not convenient to know at a certain time;\nIMMODERATION: wanting to know something with an unhealthy desire (all forms of curiosity are failures of temperance, but this label helps to isolate this specific aspect);\nIMPERTINENCE: seeking to know things in a more certain way than one can know, doing violence to the object of knowledge;\nSUPERFICIALITY: disrespecting the object of knowledge, being content with a superficial understanding and quickly moving on to something else;\nPOSSESSIVENESS: delighting not in the object of knowledge, but in the act of knowing it. It resembles, on an intellectual level, the vice of greed.",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#integrity",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#integrity",
+    "objectID": "weeks/introduction.html#integrity",
+    "href": "weeks/introduction.html#integrity",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Integrity",
     "text": "Integrity\nIt’s tempting to say something that isn’t entirely true, or to manipulate the collection/analysis/reporting process to yield the answer you want.\nSo we will practice:\n\nEvaluating claims that others use data to make\nClearly articulating our analysis decisions and rationale\nReproducibility\nUsing exploratory analytics to validate data against assumptions",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#hospitality",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#hospitality",
+    "objectID": "weeks/introduction.html#hospitality",
+    "href": "weeks/introduction.html#hospitality",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Hospitality",
     "text": "Hospitality\nWe can choose to use our tools to elucidate and clarify, rather than obscure.\nSo we will practice:\n\nClear visual communication\nClarity of code and process\nWriting explanations that are accessible and appropriate to audience.",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#compassion-and-justice",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#compassion-and-justice",
+    "objectID": "weeks/introduction.html#compassion-and-justice",
+    "href": "weeks/introduction.html#compassion-and-justice",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "Compassion and Justice",
     "text": "Compassion and Justice\nData Science can both cause harm and reveal it.\nSo we will:\n\nStudy examples of how data might cause harm\nStudy examples of how harm might be mitigated or revealed",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-9",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#section-9",
+    "objectID": "weeks/introduction.html#section-9",
+    "href": "weeks/introduction.html#section-9",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "",
     "text": "Manipulating dataframes\n\nSelecting\nFiltering\nGrouping\nReshaping\nJoining\n\nVisualizing data\n\nTypes\nMappings\nCritique\n\nModeling data (only an overview; we won’t go too deep)\n\nLinear models\n\nLinear regression\nLogistic regressing\nRegularization methods\n\nTree-based models\nEnsemble methods\n\nRandom forests\nBagging, boosting and stacking\n\nUnsupervised learning\n\nBasic clustering with k-means\nDimensionality reduction with PCA\n\nSome ways to deal with time-series data\nSome ways to deal with missing data\nSome ways to deal with fairness\nSome ways to deal with interpretability",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
   },
   {
-    "objectID": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#what-we-will-not-cover",
-    "href": "slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html#what-we-will-not-cover",
+    "objectID": "weeks/introduction.html#what-we-will-not-cover",
+    "href": "weeks/introduction.html#what-we-will-not-cover",
     "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
     "section": "What we will not cover",
     "text": "What we will not cover\n\nNeural networks and deep learning\nSome linear methdos (SVMs, polynomial regression, LDA, GLMs, GAMs)\nOptimization algorithms (gradient descent, bayesian, genetic)\nCausal models (SEM, SCM, etc)\nProbabilistic graphical models (Bayesian networks, Markov models)\nLots of unsupervised methods (association rule learning, autoencoders, SOMs)",
     "crumbs": [
       "Syllabus",
-      "Slides",
+      "Weeks",
       "01 - Introduction",
       "09-04 - First day"
     ]
-  },
-  {
-    "objectID": "prayers.html",
-    "href": "prayers.html",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "",
-    "text": "This semester, we pray according to this general pattern:"
-  },
-  {
-    "objectID": "prayers.html#monday-prayers---for-us-as-students",
-    "href": "prayers.html#monday-prayers---for-us-as-students",
-    "title": "DATA 202 (Wrangling and Analytics), Fall 2024",
-    "section": "Monday prayers - for us as students",
-    "text": "Monday prayers - for us as students\n\nFor this class\n\nDear Heavenly Father,\nWe invite Your presence into this classroom.\nLet Your light shine upon us, illuminating the path of learning, so we may contemplate your beauty and love in everything you made.\nMay this classroom be a place of respect, fellowship, and growth. Help us to be open to new ideas, to embrace challenges, and to support one another in our academic endeavors. Bless this class so that it may be a space where minds are enriched, friendships are formed, and hearts are touched.\nGuide our imaginations and desires towards your love and justice, so that we may respond adequately to your call to be Christ’s agents of renewal in the world.\nThrough our Lord Jesus Christ, your Son, who lives and reigns with you in the unity of the Holy Spirit, one God, for ever and ever.\nAmen.\n\n\n\nFor practices\n\nDear Heavenly Father,\nWe start this day asking for your joy and strength in this moment when we are practicing these data science skills.\nPlease let this be a moment of true fellowship and character building in our community of learning.\nBe with us in any difficulties we face. Give us a disposition to help, and humility to be helped.\nGive us wisdom to discern your beauty and justice as we study and practice.\nMay everything we do and learn here be offered to you in praise, gratitude and service to our neighbors.\nIn Jesus name we pray. Amen.\n\n\n\nGo and work\n\nGo and work\nHonor the One who is working on you.\nDo so by making beautiful things,\nBe serving in beautiful ways,\nBy speaking up for the weak whose beauty is being maligned,\nBy filling this city with the aroma of good and beautiful work\nReflect the beautiful work of your heavenly Father,\nNourished now by the grace and mercy of Christ,\nIn the power of the Holy Spirit.\nGod has already accomplished the great work.\nGod goes before you and behind you.\nGod works at your side.\n(Matthew Kaemingk & Cory B. Willson, Work and Worship, p. 140)\n\n\n\nGod the Maker\n\nVERSE 1:\nWe bring our time, we bring our treasure,\nwe lay them down before Your throne.\nYou will make them something greater,\nmore than we could ever know. (chorus)\n\nVERSE 2:\nWe bring our gifts, we bring our power\nplace them in Your sov’reign hand.\nYou will take what we have given,\nYou will use it for Your plan. (chorus)\n\nCHORUS:\nGlory be to God, the Maker\nglory be to God, Creator\nTake our time, use our treasure\nturn them into something greater:\nGlory be to God, the Maker.\n\nVERSE 3:\nThough our hearts are weak from failure,\nbroken dreams and failed attempts,\nshow us that in ev’ry season,\nYou will fill our emptiness. (chorus)\n(God the Maker, The Porter’s Gate)\n\n\n\nKyrie\n\nLet us confess to God those things that are wrong in our work:\nThat the presence of God at work is often overlooked;\nThat creative people are often subjected to long, boring and unrelenting routines;\nThat skills are undeveloped through lack of training;\nThat resources are wasted in shoddy work and the production of unwanted goods;\nThat the maximisation of profit often excludes concern for people;\nThat men and women are discriminated against because of age, race, gender, disability, lack of skill and length of employment;\nThat the poor stand so little chance against the power of the rich, and the world’s destitute are forgotten.\n\n\nLord, have mercy upon us. Forgive us our sins and help us to amend our lives. Amen.\n(https://www.theologyofwork.org/work-in-worship)\n\n\n\nVocational doubt\n\nLord, we pray for ourselves in our daily study and work.\n\nWe give thanks for the skills we already have; we pray for wise and good use of these skills in building your kingdom.\n\nWe pray for those thinking about changing their study and/or work - especially those unhappy or insecure; those feeling undervalued or unfulfilled; those feeling that are in the wrong place; those who can’t wait for 5pm on Friday.\n\nWe pray for those with no sense of direction or purpose or vocation, for those drifting,\nfor those wanting to do a particular job, but unable through disability, illness, lack of confidence or lack of opportunity;\nfor those who are unemployed.\nWe pray for those at school or college now making decisions which will affect our working lives. We pray for all Careers Advisers.\n\nWe pray for those who are teaching us;\nfor our colleagues,\nfor our administrators.\n\n\n\nBad jobs\n\nLord, we remember that there are some who find themselves working on projects whose value they doubt or whose likely outcome they disapprove.\nHelp them, Lord, to decide whether to stay on in the hope of effecting change or whether to leave.  Especially we pray for those forced by economic necessity to remain in uncongenial work.\nMay they know your forgiveness,\nand may the world of science and technology be ever open to your redeeming Spirit,\nthat your will may be fulfilled in all that we do.\nAmen.\n(David Welbourn)"
   }
 ]

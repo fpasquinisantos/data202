@@ -7,30 +7,19 @@ project:
     - "!*-template.qmd"
     - "!*-wip.qmd"
     - "!*scraps.qmd"
-    - "!slides/03*/*"
-    - "!slides/04*/*"
-    - "!slides/05*/*"
-    - "!slides/06*/*"
-    - "!slides/07*/*"
-    - "!slides/08*/*"
-    - "!slides/09*/*"
-    - "!slides/10*/*"
-    - "!slides/11*/*"
-    - "!slides/12*/*"
-    - "!slides/13*/*"
-    - "!slides/14*/*"
-    - "!handouts/03*/*"
-    - "!handouts/04*/*"
-    - "!handouts/05*/*"
-    - "!handouts/06*/*"
-    - "!handouts/07*/*"
-    - "!handouts/08*/*"
-    - "!handouts/09*/*"
-    - "!handouts/10*/*"
-    - "!handouts/11*/*"
-    - "!handouts/12*/*"
-    - "!handouts/13*/*"
-    - "!handouts/14*/*"
+    - "!weeks/03*/*"
+    - "!weeks/04*/*"
+    - "!weeks/05*/*"
+    - "!weeks/06*/*"
+    - "!weeks/07*/*"
+    - "!weeks/08*/*"
+    - "!weeks/09*/*"
+    - "!weeks/10*/*"
+    - "!weeks/11*/*"
+    - "!weeks/12*/*"
+    - "!weeks/13*/*"
+    - "!weeks/14*/*"
+    - "!handouts/*"
 
 website:
   title: "DATA 202 (Wrangling and Analytics), Fall 2024"
@@ -40,6 +29,8 @@ website:
       - index.qmd
       - text: "Google Colab"
         href: "https://colab.research.google.com/"
+      - text: "Moodle page"
+        href: "https://moodle.calvin.edu/course/view.php?id=63709"
   sidebar:
     contents:
       - tools.qmd
@@ -48,8 +39,22 @@ website:
         contents:
           - midterm-proj.qmd
           - final-proj.qmd
-      - auto: "slides/"
+      - section: "Weeks"
         icon: "person-workspace"
+        contents:
+          - section: "01 - Introduction"
+            href: weeks/01.qmd
+            contents:
+              - weeks/introduction.qmd
+              - text: "09-06 Practice 1"
+                href: https://colab.research.google.com/drive/1UigQ8CZaWPtrRVV6Iqqk2ikFAyh1bh4s?usp=drive_link
+          - section: "02 - Wrangling 1"
+            href: weeks/02.qmd
+            contents:
+              - text: "09-09 - Wrangling - basic operations"
+                href: https://colab.research.google.com/drive/1TjnQfqofUG3yn4pJ1PVyC67o1i1vW_bU?usp=drive_link
+              - text: "09-11 - Wrangling - selecting, filtering and deriving"
+                href: https://colab.research.google.com/drive/1UVQBbO2OgWnCSbDR1E7kH5hEL55-MaWM?usp=sharing
   page-navigation: true
 
 format:

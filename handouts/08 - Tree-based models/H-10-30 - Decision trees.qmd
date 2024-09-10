@@ -1,9 +1,0 @@
----
-format:
-  pdf:
-    toc: false
-    number-sections: true
-    colorlinks: true
----
-
-# 10-30 - Decision trees (Handout)

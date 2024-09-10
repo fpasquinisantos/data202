@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cs.calvin.edu/courses/data/202/fsantos/slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html</loc>
+    <loc>https://cs.calvin.edu/courses/data/202/fsantos/prayers.html</loc>
+    <lastmod>2024-08-20T19:41:48.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cs.calvin.edu/courses/data/202/fsantos/weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.html</loc>
     <lastmod>2024-08-29T15:40:19.161Z</lastmod>
   </url>
   <url>
-    <loc>https://cs.calvin.edu/courses/data/202/fsantos/slides/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html</loc>
-    <lastmod>2024-08-29T15:34:20.070Z</lastmod>
+    <loc>https://cs.calvin.edu/courses/data/202/fsantos/midterm-proj.html</loc>
+    <lastmod>2024-09-10T13:52:25.892Z</lastmod>
   </url>
   <url>
-    <loc>https://cs.calvin.edu/courses/data/202/fsantos/midterm-proj.html</loc>
-    <lastmod>2024-07-30T19:43:24.000Z</lastmod>
+    <loc>https://cs.calvin.edu/courses/data/202/fsantos/weeks/02.html</loc>
+    <lastmod>2024-08-19T15:56:49.220Z</lastmod>
   </url>
   <url>
     <loc>https://cs.calvin.edu/courses/data/202/fsantos/tools.html</loc>
     <lastmod>2024-08-21T21:47:47.443Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cs.calvin.edu/courses/data/202/fsantos/slides/01 - Introduction/index.html</loc>
-    <lastmod>2024-08-19T15:55:50.356Z</lastmod>
   </url>
   <url>
     <loc>https://cs.calvin.edu/courses/data/202/fsantos/final-proj.html</loc>
@@ -26,18 +26,22 @@
   </url>
   <url>
     <loc>https://cs.calvin.edu/courses/data/202/fsantos/index.html</loc>
-    <lastmod>2024-08-22T02:48:20.048Z</lastmod>
+    <lastmod>2024-09-05T13:47:41.000Z</lastmod>
   </url>
   <url>
-    <loc>https://cs.calvin.edu/courses/data/202/fsantos/slides/02 - Wrangling 1/index.html</loc>
-    <lastmod>2024-08-19T15:56:49.220Z</lastmod>
+    <loc>https://cs.calvin.edu/courses/data/202/fsantos/weeks/01.html</loc>
+    <lastmod>2024-08-19T15:55:50.356Z</lastmod>
   </url>
   <url>
-    <loc>https://cs.calvin.edu/courses/data/202/fsantos/slides/01 - Introduction/S-09-04 - What is, application areas and workflow.html</loc>
+    <loc>https://cs.calvin.edu/courses/data/202/fsantos/weeks/03.html</loc>
+    <lastmod>2024-08-19T15:57:18.965Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cs.calvin.edu/courses/data/202/fsantos/weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.html</loc>
+    <lastmod>2024-08-29T15:34:20.070Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cs.calvin.edu/courses/data/202/fsantos/weeks/introduction.html</loc>
     <lastmod>2024-08-22T03:01:59.426Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cs.calvin.edu/courses/data/202/fsantos/prayers.html</loc>
-    <lastmod>2024-08-20T19:41:48.000Z</lastmod>
   </url>
 </urlset>

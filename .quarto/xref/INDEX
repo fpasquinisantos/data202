@@ -285,5 +285,161 @@
   },
   "slides/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.qmd": {
     "S-09-11 - Wrangling - filtering and deriving.html": "474de81d"
+  },
+  "weeks/01.qmd": {
+    "01.html": "50764e1f"
+  },
+  "weeks/02.qmd": {
+    "02.html": "f7227e71"
+  },
+  "weeks/03 - Wrangling 2/S-09-16 - Wrangling - reshaping and tidying.qmd": {
+    "S-09-16 - Wrangling - reshaping and tidying.html": "79993426"
+  },
+  "weeks/03 - Wrangling 2/S-09-18 - Wrangling - joining.qmd": {
+    "S-09-18 - Wrangling - joining.html": "b8e05ac4"
+  },
+  "weeks/03 - Wrangling 2/index.qmd": {
+    "index.html": "08e4944a"
+  },
+  "weeks/04 - Visualization 1/S-09-23 - Elements of a plot.qmd": {
+    "S-09-23 - Elements of a plot.html": "790d1991"
+  },
+  "weeks/04 - Visualization 1/S-09-25 - Types of plots.qmd": {
+    "S-09-25 - Types of plots.html": "467d752c"
+  },
+  "weeks/04 - Visualization 1/index.qmd": {
+    "index.html": "106219ad"
+  },
+  "weeks/05 - Visualization 2/S-09-30 - Visualization design.qmd": {
+    "S-09-30 - Visualization design.html": "73995126"
+  },
+  "weeks/05 - Visualization 2/S-10-02 - Interactivity and sonification.qmd": {
+    "S-10-02 - Interactivity and sonification.html": "bd3afcb3"
+  },
+  "weeks/05 - Visualization 2/index.qmd": {
+    "index.html": "01b7163d"
+  },
+  "weeks/06 - Modeling basics/S-10-07 - Model types, definitions, k-nearest neighbors.qmd": {
+    "S-10-07 - Model types, definitions, k-nearest neighbors.html": "d287ebb3"
+  },
+  "weeks/06 - Modeling basics/S-10-09 - Train-test split and cross validation.qmd": {
+    "S-10-09 - Train-test split and cross validation.html": "455e3e4e"
+  },
+  "weeks/06 - Modeling basics/index.qmd": {
+    "index.html": "e5a78c4d"
+  },
+  "weeks/07 - Linear models/S-10-14 - Linear regression.qmd": {
+    "S-10-14 - Linear regression.html": "8b361d79"
+  },
+  "weeks/07 - Linear models/S-10-16 - Logistic regression.qmd": {
+    "S-10-16 - Logistic regression.html": "db68789a"
+  },
+  "weeks/07 - Linear models/S-10-18 - Lab practice 7.qmd": {
+    "S-10-18 - Lab practice 7.html": "4faa7fb5"
+  },
+  "weeks/07 - Linear models/index.qmd": {
+    "index.html": "9d04e632"
+  },
+  "weeks/08 - Tree-based models/S-10-28 - Regularization.qmd": {
+    "S-10-28 - Regularization.html": "967abf74"
+  },
+  "weeks/08 - Tree-based models/S-10-30 - Decision trees.qmd": {
+    "S-10-30 - Decision trees.html": "848c2c7b"
+  },
+  "weeks/08 - Tree-based models/S-11-01 - Lab practice 8.qmd": {
+    "S-11-01 - Lab practice 8.html": "037e4e40"
+  },
+  "weeks/08 - Tree-based models/index.qmd": {
+    "index.html": "2840aff9"
+  },
+  "weeks/09 - Ensemble methods/S-11-04 - Random forests.qmd": {
+    "S-11-04 - Random forests.html": "9c67ccff"
+  },
+  "weeks/09 - Ensemble methods/S-11-06 - Bagging, boosting and stacking.qmd": {
+    "S-11-06 - Bagging, boosting and stacking.html": "9bfdb2ac"
+  },
+  "weeks/09 - Ensemble methods/S-11-08 - Lab practice 9.qmd": {
+    "S-11-08 - Lab practice 9.html": "30eb6aac"
+  },
+  "weeks/09 - Ensemble methods/index.qmd": {
+    "index.html": "1701854c"
+  },
+  "weeks/10 - Unsupervised learning/S-11-11 - k-means.qmd": {
+    "S-11-11 - k-means.html": "aff46e99"
+  },
+  "weeks/10 - Unsupervised learning/S-11-13 - PCA.qmd": {
+    "S-11-13 - PCA.html": "111c5d30"
+  },
+  "weeks/10 - Unsupervised learning/S-11-15 - Lab practice 10.qmd": {
+    "S-11-15 - Lab practice 10.html": "d1d0f653"
+  },
+  "weeks/10 - Unsupervised learning/index.qmd": {
+    "index.html": "60b273e4"
+  },
+  "weeks/11 - Time-series and missing data/S-11-18 - Time-series analysis.qmd": {
+    "S-11-18 - Time-series analysis.html": "38025d57"
+  },
+  "weeks/11 - Time-series and missing data/S-11-20 - Dealing with missing data.qmd": {
+    "S-11-20 - Dealing with missing data.html": "90ba6845"
+  },
+  "weeks/11 - Time-series and missing data/S-11-22 - Lab practice 11.qmd": {
+    "S-11-22 - Lab practice 11.html": "fb0cbf00"
+  },
+  "weeks/11 - Time-series and missing data/index.qmd": {
+    "index.html": "db029bd4"
+  },
+  "weeks/12 - Fairness methods/S-11-25 - Fairness methods.qmd": {
+    "S-11-25 - Fairness methods.html": "966205e8"
+  },
+  "weeks/12 - Fairness methods/index.qmd": {
+    "index.html": "8bb58936"
+  },
+  "weeks/13 - Interpretability methods/S-12-02 - Global interpretability methods.qmd": {
+    "S-12-02 - Global interpretability methods.html": "5c304521"
+  },
+  "weeks/13 - Interpretability methods/S-12-04 - Local interpretability methods.qmd": {
+    "S-12-04 - Local interpretability methods.html": "ac2b9a88"
+  },
+  "weeks/13 - Interpretability methods/S-12-06 - Lab practice 12.qmd": {
+    "S-12-06 - Lab practice 12.html": "1be9ff84"
+  },
+  "weeks/13 - Interpretability methods/index.qmd": {
+    "index.html": "1c88240d"
+  },
+  "weeks/14 - Wrap-up/S-12-09 - Project Pitching.qmd": {
+    "S-12-09 - Project Pitching.html": "81b14067"
+  },
+  "weeks/14 - Wrap-up/S-12-11 - Wrap-up.qmd": {
+    "S-12-11 - Wrap-up.html": "e64a6e2b"
+  },
+  "weeks/14 - Wrap-up/index.qmd": {
+    "index.html": "3920a07c"
+  },
+  "handouts/03 - Wrangling 2/H-09-16 - Wrangling - grouping and pivoting.qmd": {
+    "H-09-16---Wrangling---grouping-and-pivoting.tex": "b1ce861b"
+  },
+  "slides/09 - Ensemble methods/S-11-04 - Random forests.qmd": {
+    "S-11-04 - Random forests.html": "f4f66c86"
+  },
+  "slides/09 - Ensemble methods/S-11-06 - Bagging, boosting and stacking.qmd": {
+    "S-11-06 - Bagging, boosting and stacking.html": "a807c5c9"
+  },
+  "slides/09 - Ensemble methods/S-11-08 - Lab practice 9.qmd": {
+    "S-11-08 - Lab practice 9.html": "06341262"
+  },
+  "slides/09 - Ensemble methods/index.qmd": {
+    "index.html": "0c773a4e"
+  },
+  "weeks/02 - Wrangling 1/S-09-09 - Wrangling - basic operations.qmd": {
+    "S-09-09 - Wrangling - basic operations.html": "87592063"
+  },
+  "weeks/02 - Wrangling 1/S-09-11 - Wrangling - filtering and deriving.qmd": {
+    "S-09-11 - Wrangling - filtering and deriving.html": "d4327b5e"
+  },
+  "weeks/introduction.qmd": {
+    "introduction.html": "e0d55263"
+  },
+  "weeks/03.qmd": {
+    "03.html": "334a51a6"
   }
 }

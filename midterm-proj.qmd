@@ -26,21 +26,9 @@ Going deeper in one area may mean that you don't go as deep in another area. For
 If you're unsure whether a specific requirement applies to your project, ask.
 :::
 
-## Milestones
+# Milestones
 
-### Week 3: Identify possible plots
-
-This was done as part of Discussion 2.
-
-::: {.callout-tip collapse="true" title="How to pick a plot?"}
-
-You can pick one of these approaches:
-
-- **Organization-centered**: Pick an organization that you're interested in (company, NGO, government agency, sports team, hospital, school, scientific community, etc.) and find some graphic that is helpful for them as they make decisions.
-- **Issue-centered**: Pick an issue that's important to you. Find a news article or opinion piece about that issue and try to replicate a visual that they’d use to support their claims. The strongest such projects will pick a claim that you *disagree* with.
-:::
-
-### Week 4: Plot selection and initial analysis
+## 1: Plot selection and initial analysis (Week 4)
 
 Upload a screenshot of one or more potential plots to the Plot Gallery. Your post should include:
 
@@ -74,7 +62,7 @@ The plot you choose to replicate:
 If you are really stuck, I can simply assign something to do, but I’m hoping to avoid that.
 :::
 
-### Week 5: Data
+## 2: Data (Week 5)
 
 Find and load the data; write a brief critique of the data.
 
@@ -100,21 +88,20 @@ If the wrangling is especially straightforward, you can add depth by:
 
 :::
 
-
-### Week 6: Initial plot and ideas
+## 3: Initial plot and ideas (Week 6)
 
 Make an initial plot and a todo list of things to improve; sketch ideas for alternative ways to plot the same data.
 
 Your report should be complete through the "Wrangling" section and have some initial work in the "Replication" and "Alternatives" sections.
 
-### Week 8: Presentation and Report
+## 4: Presentation and Report (Week 8)
 
-Present the original, replication, and alternative plots to the class and in a Quarto report.
+Present the original, replication, and alternative plots in a video and in a iPython Notebook (Google Colab, etc) report.
 
 
-## Report and Presentation Details
+# Report and Presentation Details
 
-### Report Content
+## Report Content
 
 Your report should include the following sections:
 
@@ -127,7 +114,7 @@ Your report should include the following sections:
 - **Alternative 2**: (same, but can be a sketch rather than a full plot)
 - **Summary**: one or two take-aways
 
-### Report Template
+## Report Template
 
 This template includes a suggested outline for your report. You may choose to organize your report differently if you have a good reason.
 
@@ -143,8 +130,7 @@ print(("`````"))
 
 :::
 
-
-### Report Style
+## Report Style
 
 Your report should be:
 
@@ -163,7 +149,7 @@ Your report should be:
 
 **Academic Integrity**: If you take any code from elsewhere, you **must** state very clearly where it came from and how you changed it. This includes ChatGPT and other AI tools. If you find a plot and it has Plotly code already, I advise against looking at it, and possibly even finding a different plot. Code using a different toolkit (e.g., R) is probably okay.
 
-### Presentation
+## Presentation
 
 To practice making data-driven arguments, this project includes a brief presentation, done on VoiceThread.
 
@@ -180,9 +166,7 @@ Use a presentation tool like Google Slides or PowerPoint.
 
 Use voice comments to narrate. Each team member should make at least one comment.
 
-## Logistics
-
-### Report Submission
+# Report Submission
 
 - If your dataset is *less than 10 MB*: submit a **`.zip` file** with your entire project folder.
 - Otherwise: submit just the HTML (and make sure the instructions are *very clear* about how to get the data)
@@ -190,18 +174,7 @@ Use voice comments to narrate. Each team member should make at least one comment
     - Keep `code-tools: true` in the header so we can see your source code.
     - Make sure you keep `embed-resources: true` so we can see any images.  
 
-
-### Shared Projects
-
-RStudio (Posit Workbench) has a feature called Shared Projects that many teams will find helpful.
-
-To use it, one person should create a *new* project in the `~/rprojects` folder. Then, they should go to the projects menu in the top-right corner and choose "Share Project". Type the username of another team member (the part of their email before the `@calvin.edu`) in the textbox and click Add.
-
-::: {.callout-warning title="rprojects folder"}
-For shared projects to work, you *must* create your project within the `~/rprojects` folder, i.e., the folder named `rprojects` within your home (`~`) folder.
-:::
-
-## Checklist
+# Checklist
 
 The following is the minimal requirements for the project. The project should also go into depth in some area.
 
@@ -240,7 +213,7 @@ The following is the minimal requirements for the project. The project should al
   - [ ] Report includes what terms you'd be willing to have your report shared under (see the "License" section of the template.)
   - [ ] Report includes a list of sources used (e.g., specific links to StackOverflow, ChatGPT shared-conversation links, etc.), and the full names of any students outside your team.
 - Meta
-  - [ ] Report was produced using a reproducible workflow (typically Quarto)
+  - [ ] Report was produced using a reproducible workflow (i.e., iPython Notebook)
   - [ ] Report is titled appropriately
   - [ ] Authors are listed correctly
   - [ ] Report is concise
@@ -249,7 +222,7 @@ The following is the minimal requirements for the project. The project should al
   - [ ] No placeholder text remains.
   - [ ] Report is formatted cleanly (check headings, code outputs, etc.); check that the file shows up correctly on your local computer before submitting.
 
-## Purpose
+# Purpose
 
 The project will explore the intersection between three things:
 

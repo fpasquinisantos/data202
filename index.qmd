@@ -63,23 +63,9 @@ tr:nth-child(even) {
 
 # Staff
 
--   Professor Fernando Pasquini Santos - fs33\\\*\\\*at\\\*\\\*calvin.edu
+-   Professor Fernando Pasquini Santos - fs33
     -   office hours: at NH291, Mondays 4-5 pm, Wednesdays 11-12 am
--   Lab assistant: TBA
--   Grader: TBA
-
-## Communication
-
-We will use the following communication tools:
-
--   Outside of class, we'll communicate primarily using the forums on Perusall. See link on Moodle.
-    -   Post *questions* about assignments, concepts, or when you have problems getting code to run.
-    -   Post *answers* as well. Answering helps the community and also gives you practice explaining something you just learned.
-    -   Post *notes* about interesting articles or events.
--   Use **email** for personal issues.
--   Use **Teams** for friendly chat; I'll redirect most questions about course content to Perusall.
-
-You'll generally find us responsive on Monday through Friday, but less so on the weekend, particularly Sunday. You're free to schedule your work as best works for you, but we'll be trying to observe a Sabbath in our own schedules.
+-   Grader: David Kim - jk267
 
 # Textbook
 
@@ -140,18 +126,32 @@ Unless stated otherwise, the assignment submissions are **due by midnight** of t
 
 Unless otherwise arranged, grades will be weighted as follows:
 
+-   Reading preparation and discussion: 10%
 -   Quizzes (6): 30%
 -   Projects: 35%
     -   Midterm project: 10%
     -   Final project: 25%
 -   Practice exercises: 25%
--   Discussion forums: 10%
 
 Your lowest quiz score will get thrown out.
 
 Late work will be accepted without penalty if you make prior arrangements or present documentation of a hardship. No late work will be accepted after Reading Recess.
 
 Changes to this policy may be made at the instructor's discretion.
+
+# Communication
+
+We will use the following communication tools:
+
+-   Outside of class, we'll communicate primarily using the forums on Perusall. See link on Moodle.
+    -   Post *questions* about assignments, concepts, or when you have problems getting code to run.
+    -   Post *answers* as well. Answering helps the community and also gives you practice explaining something you just learned.
+    -   Post *notes* about interesting articles or events.
+-   Use **email** for personal issues.
+-   Use **Teams** for friendly chat; I'll redirect most questions about course content to Perusall.
+
+You'll generally find us responsive on Monday through Friday, but less so on the weekend, particularly Sunday. You're free to schedule your work as best works for you, but we'll be trying to observe a Sabbath in our own schedules.
+
 
 # Academic Integrity
 
