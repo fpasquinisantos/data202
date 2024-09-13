@@ -1,0 +1,9 @@
+Material ID,Cell Viability (%),Inflammatory Response (Rating),Test Duration (Days),Condition
+B001,90,Low,14,In vitro
+B002,80,Moderate,14,In vitro
+B003,75,Moderate,28,In vivo
+B004,85,Low,28,In vivo
+B006,95,None,21,In vitro
+B007,78,High,14,In vivo
+B009,92,Low,14,In vitro
+B010,89,Moderate,21,In vivo

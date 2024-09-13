@@ -1,0 +1,9 @@
+Material ID,Material Name,Young's Modulus (GPa),Tensile Strength (MPa),Elongation at Break (%)
+B001,PLA,3.5,50.0,6.0
+B002,PCL,0.4,24.0,500.0
+B003,Chitosan,1.5,40.0,10.0
+B004,Collagen,0.5,15.0,120.0
+B005,Titanium Alloy,105.0,950.0,10.0
+B006,HA,50.0,120.0,0.5
+B007,Gelatin,0.05,1.5,300.0
+B008,Magnesium Alloy,45.0,220.0,7.0

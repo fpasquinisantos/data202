@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>prayers – DATA 202 (Wrangling and Analytics), Fall 2024</title>
+<title>04 - Visualization 1 – DATA 202 (Wrangling and Analytics), Fall 2024</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +68,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed">
@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">DATA 202 (Wrangling and Analytics), Fall 2024</span>
     </a>
   </div>
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
@@ -111,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">04 - Visualization 1</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -125,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tools.html" class="sidebar-item-text sidebar-link">
+  <a href="../tools.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tool References</span></a>
   </div>
 </li>
@@ -141,13 +141,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./midterm-proj.html" class="sidebar-item-text sidebar-link">
+  <a href="../midterm-proj.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Midterm Project</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./final-proj.html" class="sidebar-item-text sidebar-link">
+  <a href="../final-proj.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Final Project</span></a>
   </div>
 </li>
@@ -165,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./weeks/01.html" class="sidebar-item-text sidebar-link">
+            <a href="../weeks/01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">01 - Introduction</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -174,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./weeks/introduction.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/introduction.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">09-04 - First day</span></a>
   </div>
 </li>
@@ -188,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./weeks/02.html" class="sidebar-item-text sidebar-link">
+            <a href="../weeks/02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">02 - Wrangling 1</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -216,180 +216,40 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="4">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#monday-prayers---for-us-as-students" id="toc-monday-prayers---for-us-as-students" class="nav-link active" data-scroll-target="#monday-prayers---for-us-as-students">Monday prayers - for us as students</a>
-  <ul>
-  <li><a href="#for-this-class" id="toc-for-this-class" class="nav-link" data-scroll-target="#for-this-class">For this class</a></li>
-  <li><a href="#for-practices" id="toc-for-practices" class="nav-link" data-scroll-target="#for-practices">For practices</a></li>
-  <li><a href="#go-and-work" id="toc-go-and-work" class="nav-link" data-scroll-target="#go-and-work">Go and work</a></li>
-  <li><a href="#god-the-maker" id="toc-god-the-maker" class="nav-link" data-scroll-target="#god-the-maker">God the Maker</a></li>
-  <li><a href="#kyrie" id="toc-kyrie" class="nav-link" data-scroll-target="#kyrie">Kyrie</a></li>
-  <li><a href="#vocational-doubt" id="toc-vocational-doubt" class="nav-link" data-scroll-target="#vocational-doubt">Vocational doubt</a></li>
-  <li><a href="#bad-jobs" id="toc-bad-jobs" class="nav-link" data-scroll-target="#bad-jobs">Bad jobs</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">04 - Visualization 1</h1>
+</div>
 
 
 
-<p>This semester, we pray according to this general pattern:</p>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Learning objectives for this week:</p>
 <ul>
-<li><strong>Monday</strong>: for us as students, as citizens and as neighbors</li>
-<li><strong>Wednesday</strong>: for those affected by what we study</li>
-<li><strong>Friday</strong>: <em>lectio continua</em>, open to what God will say. (This semester we will choose a reading from the week’s Lectionary.)</li>
+<li>Identify and describe the basic elements of a plot (title, axis labels, legend, etc.).</li>
+<li>Map dataframe columns to elements of plots</li>
+<li>Customize and setting plot parameters</li>
+<li>Create and interpret various types of plots (line, bar, scatter, histogram, etc.).</li>
 </ul>
-<section id="monday-prayers---for-us-as-students" class="level2">
-<h2 class="anchored" data-anchor-id="monday-prayers---for-us-as-students">Monday prayers - for us as students</h2>
-<section id="for-this-class" class="level3">
-<h3 class="anchored" data-anchor-id="for-this-class">For this class</h3>
-<blockquote class="blockquote">
-<p>Dear Heavenly Father,<br>
-We invite Your presence into this classroom.<br>
-Let Your light shine upon us, illuminating the path of learning, so we may contemplate your beauty and love in everything you made.<br>
-May this classroom be a place of respect, fellowship, and growth. Help us to be open to new ideas, to embrace challenges, and to support one another in our academic endeavors. Bless this class so that it may be a space where minds are enriched, friendships are formed, and hearts are touched.<br>
-Guide our imaginations and desires towards your love and justice, so that we may respond adequately to your call to be Christ’s agents of renewal in the world.<br>
-Through our Lord Jesus Christ, your Son, who lives and reigns with you in the unity of the Holy Spirit, one God, for ever and ever.<br>
-Amen.</p>
-</blockquote>
-</section>
-<section id="for-practices" class="level3">
-<h3 class="anchored" data-anchor-id="for-practices">For practices</h3>
-<blockquote class="blockquote">
-<p>Dear Heavenly Father,<br>
-We start this day asking for your joy and strength in this moment when we are practicing these data science skills.<br>
-Please let this be a moment of true fellowship and character building in our community of learning.<br>
-Be with us in any difficulties we face. Give us a disposition to help, and humility to be helped.<br>
-Give us wisdom to discern your beauty and justice as we study and practice.<br>
-May everything we do and learn here be offered to you in praise, gratitude and service to our neighbors.<br>
-In Jesus name we pray. Amen.</p>
-</blockquote>
-</section>
-<section id="go-and-work" class="level3">
-<h3 class="anchored" data-anchor-id="go-and-work">Go and work</h3>
-<blockquote class="blockquote">
-<p>Go and work<br>
-Honor the One who is working on you.<br>
-Do so by making beautiful things,<br>
-Be serving in beautiful ways,<br>
-By speaking up for the weak whose beauty is being maligned,<br>
-By filling this city with the aroma of good and beautiful work</p>
-<p>Reflect the beautiful work of your heavenly Father,<br>
-Nourished now by the grace and mercy of Christ,<br>
-In the power of the Holy Spirit.</p>
-<p>God has already accomplished the great work.<br>
-God goes before you and behind you.<br>
-God works at your side.</p>
-<p>(Matthew Kaemingk &amp; Cory B. Willson, <em>Work and Worship</em>, p.&nbsp;140)</p>
-</blockquote>
-</section>
-<section id="god-the-maker" class="level3">
-<h3 class="anchored" data-anchor-id="god-the-maker">God the Maker</h3>
-<blockquote class="blockquote">
-<p>VERSE 1:<br>
-We bring our time, we bring our treasure,<br>
-we lay them down before Your throne.<br>
-You will make them something greater,<br>
-more than we could ever know. (chorus)<br>
-<br>
-VERSE 2:<br>
-We bring our gifts, we bring our power<br>
-place them in Your sov’reign hand.<br>
-You will take what we have given,<br>
-You will use it for Your plan. (chorus)<br>
-<br>
-CHORUS:<br>
-Glory be to God, the Maker<br>
-glory be to God, Creator<br>
-Take our time, use our treasure<br>
-turn them into something greater:<br>
-Glory be to God, the Maker.<br>
-<br>
-VERSE 3:<br>
-Though our hearts are weak from failure,<br>
-broken dreams and failed attempts,<br>
-show us that in ev’ry season,<br>
-You will fill our emptiness. (chorus)<br>
-<a href="https://theportersgate.bandcamp.com/track/god-the-maker-feat-latifah-alattas">(<em>God the Maker, The Porter’s Gate)</em></a></p>
-</blockquote>
-</section>
-<section id="kyrie" class="level3">
-<h3 class="anchored" data-anchor-id="kyrie">Kyrie</h3>
-<blockquote class="blockquote">
-<p>Let us confess to God those things that are wrong in our work:<br>
-That the presence of God at work is often overlooked;<br>
-That creative people are often subjected to long, boring and unrelenting routines;<br>
-That skills are undeveloped through lack of training;<br>
-That resources are wasted in shoddy work and the production of unwanted goods;<br>
-That the maximisation of profit often excludes concern for people;<br>
-That men and women are discriminated against because of age, race, gender, disability, lack of skill and length of employment;<br>
-That the poor stand so little chance against the power of the rich, and the world’s destitute are forgotten.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Lord, have mercy upon us. Forgive us our sins and help us to amend our lives. <strong>Amen</strong>.<br>
-(https://www.theologyofwork.org/work-in-worship)</p>
-</blockquote>
-</section>
-<section id="vocational-doubt" class="level3">
-<h3 class="anchored" data-anchor-id="vocational-doubt">Vocational doubt</h3>
-<blockquote class="blockquote">
-<p>Lord, we pray for ourselves in our daily study and work.<br>
-<br>
-We give thanks for the skills we already have; we pray for wise and good use of these skills in building your kingdom.<br>
-<br>
-We pray for those thinking about changing their study and/or work - especially those unhappy or insecure; those feeling undervalued or unfulfilled; those feeling that are in the wrong place; those who can’t wait for 5pm on Friday.<br>
-<br>
-We pray for those with no sense of direction or purpose or vocation, for those drifting,<br>
-for those wanting to do a particular job, but unable through disability, illness, lack of confidence or lack of opportunity;<br>
-for those who are unemployed.<br>
-We pray for those at school or college now making decisions which will affect our working lives. We pray for all Careers Advisers.<br>
-<br>
-We pray for those who are teaching us;<br>
-for our colleagues,<br>
-for our administrators.</p>
-</blockquote>
-</section>
-<section id="bad-jobs" class="level3">
-<h3 class="anchored" data-anchor-id="bad-jobs">Bad jobs</h3>
-<blockquote class="blockquote">
-<p>Lord, we remember that there are some who find themselves working on projects whose value they doubt or whose likely outcome they disapprove.<br>
-Help them, Lord, to decide whether to stay on in the hope of effecting change or whether to leave.&nbsp; Especially we pray for those forced by economic necessity to remain in uncongenial work.<br>
-May they know your forgiveness,<br>
-and may the world of science and technology be ever open to your redeeming Spirit,<br>
-that your will may be fulfilled in all that we do.<br>
-<strong>Amen</strong>.<br>
-(David Welbourn)</p>
-</blockquote>
-<!--
-
-## Wednesday prayers
-
-### Curiosity and data science
-
-### Discrimination
-
-### Love and compassion through data
-
-### Deception in visualization
-
-### Ethics of prediction
-
-### Living within automation
-
-### Eloquence and transparency
-
--->
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

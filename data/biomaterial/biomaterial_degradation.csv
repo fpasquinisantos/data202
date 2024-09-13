@@ -1,0 +1,14 @@
+Material ID,Degradation Rate (% per week),Environment,Test Duration (Weeks)
+B001,5.2,Aqueous,10
+B002,1.8,Aqueous,12
+B003,0.5,Aqueous,8
+B005,0.01,Body Fluids,52
+B006,4.5,Aqueous,6
+B007,8.0,Aqueous,5
+B008,10.0,Body Fluids,4
+B009,7.5,Acidic Solution,8
+B010,6.2,Alkaline Solution,6
+B011,6.5,Aqueous,12
+B012,7.0,Body Fluids,8
+B013,2.5,Organic Solvent,6
+B014,9.0,Air,4

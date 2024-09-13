@@ -1,0 +1,7 @@
+Environment,pH Range,Temperature (°C),Composition
+Aqueous,6.5-8.5,25,"Water, salts"
+Body Fluids,7.2-7.4,37,"Plasma, electrolytes"
+Air,N/A,20,"Oxygen, nitrogen"
+Acidic Solution,2.0-4.0,25,"Hydrochloric acid, water"
+Alkaline Solution,10-12,25,"Sodium hydroxide, water"
+Organic Solvent,6.0-7.0,25,"Ethanol, chloroform, acetone"

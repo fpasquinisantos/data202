@@ -1,0 +1,9 @@
+Material ID,Condition,Cell Viability Day 7 (%),Cell Viability Day 14 (%),Cell Viability Day 28 (%)
+B001,In vitro,80,85,90
+B002,In vitro,75,78,80
+B003,In vivo,70,73,75
+B004,In vivo,85,87,90
+B005,In vitro,95,98,99
+B006,In vivo,90,92,95
+B007,In vitro,78,82,85
+B008,In vivo,65,68,70
