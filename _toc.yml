@@ -4,6 +4,7 @@
 format: jb-book
 root: syllabus
 chapters:
+- file: 09_06_Practice1
 - file: markdown
 - file: notebooks
 - file: markdown-notebooks

@@ -1,4 +1,4 @@
-# Syllabus
+# DATA 202 - Wrangling and Analytics
 
 ::: {.callout-note collapse="true" title="Catalog Description"}
 An introduction to the conceptual foundations and practical skills needed to transform data into useful forms and apply predictive analytics to discover patterns and anticipate trends. Primary focus is on the core skills and concepts needed to pull data from a range of sources; to filter, transform, and combine data sets to prepare them for analysis; and to construct quantitative summaries and basic visualizations. Programming is used throughout to assemble data-processing pipelines. Students will also discuss ethical and social considerations of data collection and data-driven systems.
