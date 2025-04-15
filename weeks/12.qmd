@@ -1,0 +1,10 @@
+---
+title: "12 - Fairness"
+format:
+  html:
+    toc-expand: 4
+---
+
+Learning objectives for this week:
+
+- Understand different measures of fairness in machine learning and the broader ethical views sustaining them.

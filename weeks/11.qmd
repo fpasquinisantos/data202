@@ -1,0 +1,14 @@
+---
+title: "11 - Time-series and missing data"
+format:
+  html:
+    toc-expand: 4
+---
+
+Learning objectives for this week:
+
+- Understand the unique characteristics of time-series data and how this affects data science analyses
+- Explore some feature engineering techniques for time-series data, such as time lagging, rolling windows and cyclic features
+- Perform a rolling forecast horizon to validate machine learning models for time-series
+- Understand types of missing data: Missing Completely at Random (MCAR), Missing at Random (MAR) and Missing Not at Random (MNAR)
+- Explore some data imputation techniques for missing data and understand when to use them

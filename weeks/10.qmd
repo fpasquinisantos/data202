@@ -1,0 +1,14 @@
+---
+title: "10 - Unsupervised Learning"
+format:
+  html:
+    toc-expand: 4
+---
+
+Learning objectives for this week:
+
+- Conduct dimensionality reduction in data using PCA and understand its applications.
+- Understand the purpose of clustering and its many types and variations.
+- Perform k-means clustering and interpret the results.
+- Choose right values of k in k-means using different measures.
+- Understand and perform basic hierarchical clustering methods and interpret the resulting dendrograms.

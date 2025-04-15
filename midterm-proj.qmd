@@ -118,17 +118,7 @@ Your report should include the following sections:
 
 This template includes a suggested outline for your report. You may choose to organize your report differently if you have a good reason.
 
-::: {.callout-note collapse="true" title="Click to show the Report Template"}
-
-```{python}
-#| echo: false
-#| output: asis
-print("`````python")
-print(open('midterm-proj-template.qmd').read())
-print(("`````"))
-```
-
-:::
+[Midterm Project Template (Google Colab)](https://colab.research.google.com/drive/16Q2VtL3UkyYkHfV95gATTOhnP7MQxCUV?usp=sharing)
 
 ## Report Style
 

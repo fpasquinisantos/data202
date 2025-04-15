@@ -1,0 +1,14 @@
+---
+title: "08 - Regularization and Trees"
+format:
+  html:
+    toc-expand: 4
+---
+
+Learning objectives for this week:
+
+- Understand the concepts of overfitting and underfitting and how this reflects a variance-bias tradeoff
+- Understand and perform cross-validation to evaluate model performance.
+- Understand the idea of regularization and apply L1, L2 and Elastic Net regularization to linear models.
+- Perform hyperparameter tuning with techniques such as Grid Search and Random Search
+- Build and interpret decision tree models.

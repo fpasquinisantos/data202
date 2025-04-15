@@ -1,0 +1,16 @@
+---
+title: "06 - Modeling basics"
+format:
+  html:
+    toc-expand: 4
+---
+
+Learning objectives for this week:
+
+- Understand basic machine learning learning terminology such as target/feature, supervised/unsupervised and classification/regression.
+- Understand the k-nearest neighbors algorithm and its applications.
+- Perform train-test splits for training models.
+- Understand confusion matrices for classification models.
+- Implement one-hot encoding  to transform categorical variables into a format suitable for machine learning models.
+- Implement feature scaling techniques to transform the features into a normalized range.
+- Construct machine learning pipelines to streamline data preprocessing.
