@@ -1,8 +1,0 @@
----
-title: "09 - Ensemble methods"
-format:
-  html:
-    toc-expand: 4
----
-
-Learning objectives for this week:
