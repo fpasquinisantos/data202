@@ -2,9 +2,21 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: syllabus
-chapters:
-- file: 09_06_Practice_1
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+root: index
+parts:
+  - caption:
+    chapters:
+      - file: syllabus
+        sections:
+          - file: learning_objectives
+          - file: schedule
+          - file: activities
+          - file: grading
+          - file: policies
+      - file: yourprogress
+      - file: projects
+      - file: introduction
+  - caption: I. Wrangling
+    numbered: true
+    chapters:
+      - file: wr01_dataframes
