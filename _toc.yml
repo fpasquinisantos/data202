@@ -15,8 +15,24 @@ parts:
           - file: policies
       - file: yourprogress
       - file: projects
+  - caption: Getting Started
+    chapters:
       - file: introduction
-  - caption: I. Wrangling
+      - file: python_review
+  - caption: Wrangling
     numbered: true
     chapters:
       - file: wr01_dataframes
+      - file: wr02_basic_plotting
+      - file: wr03_grouping
+      - file: wr04_reshaping
+      - file: wr05_joining
+  - caption: Practices
+    chapters:
+      - file: practice01
+      - file: practice02
+      - file: practice03
+      - file: practice04
+      - file: practice05
+      - file: practice06
+      - file: practice07

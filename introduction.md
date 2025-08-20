@@ -13,3 +13,12 @@ kernelspec:
 ---
 
 # Introduction
+
+```{admonition} Learning Objectives Covered
+:class: dropdown
+|||
+|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| WRA01 | I can identify common **data types** such as categorical, numerical, strings, dates, and time-series.                                                                                    |
+```
+
+Coming soon.

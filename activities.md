@@ -1,28 +1,57 @@
-# Logistics
-
-Resubmissions are important...
-
-## Weekly Schedule
+# Assignments and Activities
 
 ## Quizzes
-- In paper. I'll return the paper on next class.
+- **Usually on Mondays**, covering the learning objectives from the previous week.
+- In case you want to **re-attempt questions from previous learning objectives**, the quiz will include some extra questions from previous weeks. (Thus you can show your updated knowledge on those.)
+- They will be done **on paper**, at the beginning of the class.
+- You will (usually) have **20 minutes** to complete them.
+- **No electronic devices allowed**.
+- I will grade them and return them to you in the next class.
 
-## Reports
-- One week to submit
-- One week for feedback
-- One week for resubmission
+```{admonition} Quiz Dates
+:class: dropdown
+Quiz | Date
+|------|---------|
+| Quiz 1 | 09-12 |
+| Quiz 2 | 09-22 |
+| Quiz 3 | 09-29 |
+| Quiz 4 | 10-06 |
+| Quiz 5 | 10-13 |
+| Quiz 6 | 10-27 |
+| Quiz 7 | 11-03 |
+| Quiz 8 | 11-10 |
+| Quiz 9 | 11-17 |
+| Quiz 10 | 12-01 |
+| Quiz 11 | 12-08 |
+```
 
-(table of dates)
+## Practices
+- Our practices will be on Fridays, and they will be focused on applying the concepts learned during the week.
+- You will be required to **submit the solutions as a report on Moodle by the next Monday**.
+- After you submit, we will **grade your report and provide feedback**.
+- You will have the opportunity to **resubmit** your report after receiving feedback, to improve your grade. The resubmission deadline will be one week after the feedback is given.
+- Keep an eye on the deadlines:
+  - **Report due date**: usually the next Monday after the practice.
+  - **Feedback date** (return): the Monday after the report is due.
+  - **Resubmission date**: the Monday after the feedback date.
 
-## Communication
+```{admonition} Submission Dates
+:class: dropdown
+Report | Due Date | Feedback Date | Resubmission Date
+|----------|---------|----------------|------------------|
+| Practice 1 | 09-15 | 09-22 | 09-29 |
+| Practice 2 | 09-22 | 09-29 | 10-03 |
+| Practice 3 | 09-29 | 10-06 | 10-10 |
+| Practice 4 | 10-06 | 10-13 | 10-17 |
+| Practice 5 | 10-13 | 10-20 | 10-24 |
+| Practice 6 | 10-27 | 11-03 | 11-07 |
+| Practice 7 | 11-03 | 11-10 | 11-14 |
+| Practice 8 | 11-10 | 11-17 | 11-21 |
+| Practice 9 | 11-17 | 11-24 | 11-28 |
+| Practice 10 | 11-24 | 12-01 | 12-05 |
+| Practice 11 | 12-08 | 12-15 | 12-19 |
+```
 
-We will use the following communication tools:
+## Projects
 
--   Outside of class, we'll communicate primarily using Moodle.
-    -   Post *questions* about assignments, concepts, or when you have problems getting code to run.
-    -   Post *answers* as well. Answering helps the community and also gives you practice explaining something you just learned.
-    -   Post *notes* about interesting articles or events.
--   Use **email** for personal issues.
--   Use **Teams** for friendly chat; I'll redirect most questions about course content to Moodle.
-
-You'll generally find us responsive on Monday through Friday, but less so on the weekend, particularly Sunday. You're free to schedule your work as best works for you, but we'll be trying to observe a Sabbath in our own schedules.
+We will have two projects in this course, each with a different focus. The first project will be focused on data wrangling and visualization, while the second project will involve building and interpreting predictive models. More details about the projects will be provided in the [project specifications page](projects.md).

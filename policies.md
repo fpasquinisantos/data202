@@ -6,6 +6,15 @@ Unless stated otherwise, all submissions are **due by midnight** of the due date
 
 Late work will be accepted without penalty if you make prior arrangements or present evidence of a hardship.
 
+Keep in mind that although I'm allowing retakes/resubmissions and willing to respect your personal circumstances, there is a practical limit to how long I can wait for a submission and then grade or provide feedback. Late work will mess up my (and the grader's) schedule, so don't expect a careful grading/feedback if you submit late.
+
+Remember: learning doesn't happen all at once in the last minute, and if you had some circumstances that impeded you to work on a regular schedule, we will need to arrange things with the broader academic administration. So, please, let me know as soon as possible if you are constantly having trouble meeting deadlines.
+
+## Use of LLMs (aka "AI")
+We encourage you to use LLMs (Large Language Models, such as ChatGPT) to help you learn and remember concepts and some specific syntax. However, we also want to ensure that you are learning the material yourself and not just relying on these tools.
+ -You must **not** use them to write your assignments for you. This means: **don't use LLMs to do "question-answer-copy-paste"** with your reports and projects. (Like: passing the question or requirement to an LLM, copying the answer, and pasting it into your report or project.)
+- Believe it or not, it is easy to see when you have used an LLM to write your code, and if you are really understanding what your code is doing (like manipulating variables, data structures, calling functions, etc.). So keep in mind that if you use an LLM, **you must be able to explain your code and how it works**. If something is unclear or strange, this will be returned and asked about in the review-and-feedback process.
+
 ## Academic Integrity
 
 As the [Calvin Academic Integrity Policy](https://calvin.edu/directory/policies/academic-integrity-policy) says, "At Calvin, the student-faculty relationship is based on trust and mutual respect."
@@ -20,6 +29,18 @@ Data science is a fundamentally collaborative endeavor. Collaboration brings the
         2.  Retype any code yourself, from memory, even if you have to switch back and forth a lot. (This will help *you* internalize what you're borrowing.)
         3.  Beware that there is lots of *bad* code out there. Strive to do better.
 -   **When** asking for help (and everyone *should* ask for help when they need it), *try to solve the problem on your own first*. This is critical. Then, when you ask for help, share *what you've tried* and *what leads you to think it's not working.* (not just "It's not working!!")
+
+## Communication
+
+We will use the following communication tools:
+-   Outside of class, we'll communicate primarily using Moodle.
+    -   Post *questions* about assignments, concepts, or when you have problems getting code to run.
+    -   Post *answers* as well. Answering helps the community and also gives you practice explaining something you just learned.
+    -   Post *notes* about interesting articles or events.
+-   Use **email** for personal issues.
+-   Use **Teams** for friendly chat; I'll redirect most questions about course content to Moodle.
+
+You'll generally find us responsive on Monday through Friday, but less so on the weekend, particularly Sunday. You're free to schedule your work as best works for you, but we'll be trying to observe a Sabbath in our own schedules.
 
 ## Special Circumstances
 

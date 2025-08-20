@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>1. Dataframes &#8212; DATA-202 - Predictive Analytics</title>
+    <title>1. Dataframe Basics &#8212; DATA-202 - Predictive Analytics</title>
   
   
   
@@ -60,7 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'wr01_dataframes';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Introduction" href="introduction.html" />
+    <link rel="next" title="2. Basic Plotting" href="wr02_basic_plotting.html" />
+    <link rel="prev" title="Python Review + Numpy" href="python_review.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -181,19 +182,37 @@
         <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="syllabus.html">Syllabus</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="learning_objectives.html">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="schedule.html">Schedule</a></li>
-<li class="toctree-l2"><a class="reference internal" href="activities.html">Logistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schedule.html">Class Schedule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="activities.html">Assignments and Activities</a></li>
 <li class="toctree-l2"><a class="reference internal" href="grading.html">Grading</a></li>
 <li class="toctree-l2"><a class="reference internal" href="policies.html">Policies</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="yourprogress.html">Your Progress</a></li>
-<li class="toctree-l1"><a class="reference internal" href="projects.html">Projects</a></li>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">Project Specifications</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">I. Wrangling</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python_review.html">Python Review + Numpy</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wrangling</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Dataframes</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Dataframe Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wr02_basic_plotting.html">2. Basic Plotting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wr03_grouping.html">3. Grouping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wr04_reshaping.html">4. Reshaping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wr05_joining.html">5. Joining</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Practices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="practice01.html">Practice 01: Dataframes and Plotting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice02.html">Practice 02: Grouping and Reshaping Dataframes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice03.html">Practice 03: Joining Dataframes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice04.html">Practice 04: EDA with Histograms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice05.html">Practice 05: EDA with Bar, Scatter, and Line Plots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice06.html">Practice 06: Classification with kNNs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice07.html">Practice 07: Decision Trees and Hyperparameter Tuning</a></li>
 </ul>
 
     </div>
@@ -443,7 +462,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Dataframes</h1>
+    <h1>Dataframe Basics</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -457,8 +476,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="dataframes">
-<h1><span class="section-number">1. </span>Dataframes<a class="headerlink" href="#dataframes" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="dataframe-basics">
+<h1><span class="section-number">1. </span>Dataframe Basics<a class="headerlink" href="#dataframe-basics" title="Link to this heading">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">
@@ -492,13 +511,22 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="introduction.html"
+       href="python_review.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Introduction</p>
+        <p class="prev-next-title">Python Review + Numpy</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="wr02_basic_plotting.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Basic Plotting</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>

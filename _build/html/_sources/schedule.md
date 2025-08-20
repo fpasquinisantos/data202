@@ -1,12 +1,17 @@
-# Schedule
+# Class Schedule
 
-Subject to change. Updates will be made here.
+Our weekly schedule will consist of (usually):
+- Monday: content/discussion + quiz
+- Wednesday: content/discussion
+- Friday: practice session (a report will be required to be submitted in the next Monday)
+
+Below is the schedule for the semester, with the content and activities planned for each week. The dates are tentative and may change as needed.
 
 | Week | Date            | Content                              | Quizzes |
 |------|-----------------|--------------------------------------|---------|
 |   1  | Wednesday 09-03 | Intro                                |         |
 |      |    Friday 09-05 | Python review                        |         |
-|   2  |    Monday 09-08 | Basic dataframe   operations         |         |
+|   2  |    Monday 09-08 | Basic dataframe operations           |         |
 |      | Wednesday 09-10 | Plotly Express                       |         |
 |      |    Friday 09-12 | Practice 1 (WRA01-04,   VIS01-02)    |         |
 |   3  |    Monday 09-15 | Grouping dataframes                  | Quiz 1  |

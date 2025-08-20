@@ -1,4 +1,6 @@
-# Projects
+# Project Specifications
+
+Coming soon.
 
 % You will complete two multi-week projects in this class.
 
