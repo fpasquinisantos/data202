@@ -1,11 +1,4 @@
 ---
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-    format_version: 0.13
-    jupytext_version: 1.11.5
 kernelspec:
   display_name: Python 3
   language: python
@@ -21,6 +14,11 @@ kernelspec:
 | WRA02 | I can create and work with **arrays using NumPy**.                                                                                                                                       |
 ```
 This review will cover the basics of Python lists and NumPy arrays, which are foundational for data science tasks. We will explore their differences, strengths, and limitations.
+
+```{code-cell}
+print("Here's some python!")
+```
+
 
 ## 1. Python Lists
 
