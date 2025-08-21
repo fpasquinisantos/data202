@@ -26,12 +26,13 @@ project:
         - file: activities.md
         - file: grading.md
         - file: policies.md
-    - file: yourprogress.md
+    - url: https://fpasquinisantos.github.io/YourProgress
+      title: Your Progress
     - title: Getting Started
       children:
         - file: introduction.md
         - file: python_review.md
-    - title: Wrangling
+    - title: I. Wrangling
       children:
         - file: wr01_dataframes.md
         - file: wr02_basic_plotting.md
@@ -47,4 +48,3 @@ site:
   options:
       logo: logo.png
   #   favicon: favicon.ico
-    

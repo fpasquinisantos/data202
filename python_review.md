@@ -2,11 +2,11 @@
 title: "Python Review"
 subtitle: aaa
 subject: Getting Started
-authors:
-  - name: ""
+author: ""
 kernelspec:
   name: python3
   display_name: 'Python 3'
+  language: python
 jupytext:
   formats: ipynb,md:myst
   text_representation:

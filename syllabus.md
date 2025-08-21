@@ -23,21 +23,16 @@ Course materials are (mostly) taken from:
 -   [Fairness and machine learning Limitations and Opportunities](https://fairmlbook.org/) by Solon Barocas, Moritz Hardt, Arvind Narayanan.
 
 ```{include} learning_objectives.md
-:heading-offset: 1
 ```
 
 ```{include} schedule.md
-:heading-offset: 1
 ```
 
 ```{include} activities.md
-:heading-offset: 1
 ```
 
 ```{include} grading.md
-:heading-offset: 1
 ```
 
 ```{include} policies.md
-:heading-offset: 1
 ```
