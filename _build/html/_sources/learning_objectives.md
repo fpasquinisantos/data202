@@ -12,8 +12,8 @@
 | WRA04 | I can explain the **strengths and limitations of representing** the world with tabular data.                                                                                             |
 | WRA05 | I can clean and transform text data using **string operations** in dataframes.                                                                                                           |
 | WRA06 | I can **group dataframes** to calculate aggregates such as counts, means, or sums.                                                                                                       |
-| WRA07 | I can identify and use **primary keys** to connect related tables.                                                                                                                       |
-| WRA08 | I can **reshape data using melt and pivot** to move between wide and long formats.                                                                                                       |
+| WRA07 | I can **reshape data using melt and pivot** to move between wide and long formats.                                                                                                       |
+| WRA08 | I can identify and use **primary keys** to connect related tables.                                                                                                                       |
 | WRA09 | I can **join dataframes** using different join types (inner, left, right, outer).                                                                                                        |
 | WRA10 | I can identify how processes like sorting, categorizing, or reducing data may **simplify or distort the underlying phenomena**.                  |
 

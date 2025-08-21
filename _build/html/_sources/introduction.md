@@ -21,6 +21,8 @@ kernelspec:
 | WRA01 | I can identify common **data types** such as categorical, numerical, strings, dates, and time-series.                                                                                    |
 ```
 
+
+
 - Make a spreadsheet with students
 	- major
 	- favorite sport
