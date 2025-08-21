@@ -39,6 +39,7 @@ html:
 launch_buttons:
   notebook_interface: "jupyterlab"  # or "classic"
   binderhub_url: "https://mybinder.org"
+  colab_url: "https://deepnote.com"
   thebe: true
 
 thebe:
