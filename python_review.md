@@ -23,6 +23,17 @@ jupytext:
 This review will cover the basics of Python lists and NumPy arrays, which are foundational for data science tasks. We will explore their differences, strengths, and limitations.
 
 ```{code-cell}
+---
+editable: true
+trusted: true
+slideshow:
+  slide_type: slide
+"@deathbeds/jupyterlab-fonts":
+  styles:
+    "":
+      "body[data-jp-deck-mode='presenting'] &":
+        zoom: "300%"
+---
 print("Here's some python!")
 ```
  
@@ -66,6 +77,11 @@ print("Here's some python!")
 
 ---
 
++++ {"editable": true,
+     "trusted": true,
+     "slideshow": {"slide_type": "slide"},
+     "@deathbeds/jupyterlab-fonts": {"styles": {"": {"body[data-jp-deck-mode='presenting'] &": {"zoom": "300%"}}}}
+    }
 ## 2. NumPy Arrays
 
 * **Definition**: NumPy arrays (`ndarray`) are **homogeneous** data containers designed for numerical computing. They enable efficient storage and fast elementwise operations.
