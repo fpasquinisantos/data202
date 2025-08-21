@@ -13,3 +13,13 @@ kernelspec:
 ---
 
 # Joining
+
+```{admonition} Learning Objectives Covered
+:class: dropdown
+|||
+|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| WRA08 | I can identify and use **primary keys** to connect related tables.                                                                                                                       |
+| WRA09 | I can **join dataframes** using different join types (inner, left, right, outer).                                                                                                        |
+```
+
+Coming soon.

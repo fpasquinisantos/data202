@@ -36,3 +36,10 @@ launch_buttons:
   notebook_interface: "jupyterlab"  # or "classic"
   binderhub_url: "https://mybinder.org"
   thebe: true
+
+thebe:
+  binder:
+    repo: fpasquinisantos/data202    # <org-or-user>/<repo>
+    branch: master                   # or main, must match reality
+    url: https://mybinder.org
+  kernelName: python3

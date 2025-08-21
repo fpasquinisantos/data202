@@ -30,9 +30,3 @@ parts:
   - caption: Practices
     chapters:
       - file: practice01
-      - file: practice02
-      - file: practice03
-      - file: practice04
-      - file: practice05
-      - file: practice06
-      - file: practice07

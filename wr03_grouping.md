@@ -13,3 +13,13 @@ kernelspec:
 ---
 
 # Grouping
+
+```{admonition} Learning Objectives Covered
+:class: dropdown
+|||
+|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| WRA05 | I can clean and transform text data using **string operations** in dataframes.                                                                                                           |
+| WRA06 | I can **group dataframes** to calculate aggregates such as counts, means, or sums.                                                                                                       |
+```
+
+Coming soon.

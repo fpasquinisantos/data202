@@ -11,24 +11,33 @@ Keep in mind that although I'm allowing retakes/resubmissions and willing to res
 Remember: learning doesn't happen all at once in the last minute, and if you had some circumstances that impeded you to work on a regular schedule, we will need to arrange things with the broader academic administration. So, please, let me know as soon as possible if you are constantly having trouble meeting deadlines.
 
 ## Use of LLMs (aka "AI")
+
 We encourage you to use LLMs (Large Language Models, such as ChatGPT) to help you learn and remember concepts and some specific syntax. However, we also want to ensure that you are learning the material yourself and not just relying on these tools.
- -You must **not** use them to write your assignments for you. This means: **don't use LLMs to do "question-answer-copy-paste"** with your reports and projects. (Like: passing the question or requirement to an LLM, copying the answer, and pasting it into your report or project.)
+
+- You must **not** use them to just write for you. This means: **don't use LLMs to do "question-answer-copy-paste"** with your reports and projects. (Like: passing the question or requirement to an LLM, copying the answer, and pasting it into your report or project.)
+  - Why? 1. Because this is not how you learn; 2. Because LLMs are not always correct; 3. Because LLMs can get too much verbose and impersonal --- they don't know your context or your purpose --- and thus, by using them without any restriction, you are just showing that you don't care about what you are doing.
+
 - Believe it or not, it is easy to see when you have used an LLM to write your code, and if you are really understanding what your code is doing (like manipulating variables, data structures, calling functions, etc.). So keep in mind that if you use an LLM, **you must be able to explain your code and how it works**. If something is unclear or strange, this will be returned and asked about in the review-and-feedback process.
+  - Some tips:
+    1.  Record what helped you.
+        - If you got code from an LLM, copy the prompt you used to get that code.
+        - If you got code from a website, copy the URL of the page where you got it.
+        - If you got code from a book, copy the book title and page number.
+    2.  Retype any code yourself, from memory, even if you have to switch back and forth a lot. (This will help *you* internalize what you're borrowing.)
+    3.  Beware that there is lots of *bad* code out there, including with LLMs. Strive to do better.
 
 ## Academic Integrity
 
 As the [Calvin Academic Integrity Policy](https://calvin.edu/directory/policies/academic-integrity-policy) says, "At Calvin, the student-faculty relationship is based on trust and mutual respect."
 
-Data science is a fundamentally collaborative endeavor. Collaboration brings the benefits of multiple perspectives, needed to tackle complex problems faithfully and responsibly. But teamwork also brings the risk of one person doing all of the "learning" for the other. Thus:
+We will add that: data science is a fundamentally collaborative endeavor. Collaboration brings the benefits of multiple perspectives, needed to tackle complex problems faithfully and responsibly. But teamwork also brings the risk of one person doing all of the "learning" for the other. Thus:
 
--   *Collaboration on homework and labs is encouraged*. For integrity, humility, and gratitude, you should acknowledge any help you receive by name in your submission.
+-   *Collaboration on assignments is encouraged*. However, for integrity, humility, and gratitude, you should acknowledge any help you receive by name in your submission.
     -   Even if you work side by side with someone, *submissions should be your own words and code*.
-    -   *Exception*: Some assignments will be pair or team work. The assignment will indicate which.
     -   It is okay and sometimes encouraged to look up how to do something online! But if you do:
-        1.  Record the exact URL that had the information that helped you. (This will help improve our instructional materials for next year.)
-        2.  Retype any code yourself, from memory, even if you have to switch back and forth a lot. (This will help *you* internalize what you're borrowing.)
-        3.  Beware that there is lots of *bad* code out there. Strive to do better.
--   **When** asking for help (and everyone *should* ask for help when they need it), *try to solve the problem on your own first*. This is critical. Then, when you ask for help, share *what you've tried* and *what leads you to think it's not working.* (not just "It's not working!!")
+
+-   **When** asking for help (and everyone *should* ask for help when they need it), *try to solve the problem on your own first*. This is critical. Then, when you ask for help, share *what you've tried* and *what leads you to think it's not working.*
+    -   In other words, **don't just say "It's not working!!"**
 
 ## Communication
 

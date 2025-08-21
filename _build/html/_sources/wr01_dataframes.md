@@ -13,3 +13,13 @@ kernelspec:
 ---
 
 # Dataframe Basics
+
+```{admonition} Learning Objectives Covered
+:class: dropdown
+|||
+|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| WRA03 | I can explore dataframes using pandas - **accessing, sorting, filtering and modifying** them.                                                                                            |
+| WRA04 | I can explain the **strengths and limitations of representing** the world with tabular data.                                                                                             |
+```
+
+Coming soon.
