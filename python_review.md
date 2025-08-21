@@ -20,7 +20,7 @@ This review will cover the basics of Python lists and NumPy arrays, which are fo
 ```{code-cell}
 print("Here's some python!")
 ```
- a
+ 
 
 ## 1. Python Lists
 
