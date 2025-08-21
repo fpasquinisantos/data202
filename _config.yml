@@ -32,6 +32,10 @@ html:
   use_issues_button: true
   use_repository_button: true
 
+html:
+  extra_js:
+    - _static/thebe.min.js
+
 launch_buttons:
   notebook_interface: "jupyterlab"  # or "classic"
   binderhub_url: "https://mybinder.org"
