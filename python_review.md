@@ -1,11 +1,13 @@
 ---
+title: "Get started with websites"
+subtitle: Build a website with Jupyter Book
+subject: Jupyter Book tutorial
+description: Get up and running with Jupyter Book for a simple website.
 kernelspec:
   display_name: Python 3
   language: python
   name: python3
 ---
-
-# Python Review + Numpy
 
 ```{admonition} Learning Objectives Covered
 :class: dropdown
