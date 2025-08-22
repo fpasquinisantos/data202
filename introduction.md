@@ -27,7 +27,8 @@ jupyter:
 ```
 
 +++ {"slideshow": {"slide_type": "slide"}  }
-## Defining data science
+
+# Defining data science
 
 Using data to search for **meaningfulness** in creation.
 
@@ -36,6 +37,7 @@ Using data to search for **meaningfulness** in creation.
 - **Infer/predict**: "can we conclude that CO2 levels are rising?"
 
 +++ {"slideshow": {"slide_type": "slide"}  }
+
 ## Why data?
 
 A form of recording experience and information...
@@ -45,6 +47,7 @@ A form of recording experience and information...
 - Can be automated
 
 +++ {"slideshow": {"slide_type": "slide"}  }
+
 ## However, data are also limited.
 
 They can be:
@@ -123,7 +126,7 @@ They can be:
 | **Performance and Scalability** | Generally faster for large datasets, especially with optimized libraries (e.g., NumPy, Dask). Better for large-scale production environments. | Can be slower with large datasets, though packages like data.table improve performance. Not as well-suited for big data as Python. |
 | **Deployment**             | Strong tools for deploying models in production (e.g., Flask, FastAPI, Streamlit). Easy to integrate with web services and databases. | More challenging to deploy in production; Shiny can be used for web applications but is less flexible than Python tools. |
 
-### Libraries
+## Libraries
 
 - **Data manipulation and analysis**: [pandas](https://pandas.pydata.org/)
   - Alternatives: [Ibis](https://ibis-project.org/), [Polars](https://pola.rs/), [Dask](https://www.dask.org/)
@@ -132,7 +135,7 @@ They can be:
 - **Modeling and machine learning**: [Scikit-learn](https://scikit-learn.org/stable/)
   - Alternatives: [TensorFlow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/), [XGBoost](https://github.com/dmlc/xgboost)
 
-### Communication and publishing platforms
+## Communication and publishing platforms
 
 - Jupyter Notebooks hosted in [Google Colab](https://colab.research.google.com/) (we'll be using those)
 - Other useful publishing platforms: [Streamlit](https://streamlit.io/) and [Shiny](https://shiny.posit.co/)
