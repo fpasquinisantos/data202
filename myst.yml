@@ -22,6 +22,7 @@ project:
     - file: index.md
     - file: syllabus.md
       children:
+        - file: learning_objectives.md
         - file: schedule.md
         - file: activities.md
         - file: grading.md

@@ -11,12 +11,6 @@ jupytext:
   text_representation:
     extension: .md
     format_name: myst
-jupyter:
-  "@deathbeds/jupyterlab-fonts":
-    styles:
-      "":                           # empty selector = whole notebook
-        "body[data-jp-deck-mode='presenting'] &":
-          zoom: "250%"
 ---
 
 ```{admonition} Learning Objectives Covered
@@ -24,13 +18,14 @@ jupyter:
 |||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | WRA01 | I can identify common **data types** such as categorical, numerical, strings, dates, and time-series.                                                                                    |
+| WRA04 | I can explain the **strengths and limitations of representing** the world with tabular data.                                                                                             |
 ```
 
 +++ {"slideshow": {"slide_type": "slide"}  }
 
-# Defining data science
+# Data science
 
-Using data to search for **meaningfulness** in creation.
+"Using data to search for **meaningfulness** in creation."
 
 - **Describe/characterize**: "what is the current level of CO2 in the atmosphere?"
 - **Relate**: "what factors are associated with CO2 levels?"
@@ -44,7 +39,7 @@ A form of recording experience and information...
 
 - Explicit, accessible, transparent
 - Amplifies reasoning and perception
-- Can be automated
+- Can be dealt with in automated ways
 
 +++ {"slideshow": {"slide_type": "slide"}  }
 
