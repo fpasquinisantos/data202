@@ -1,6 +1,5 @@
 ---
 title: "Python Review"
-subtitle: aaa
 subject: Getting Started
 author: ""
 kernelspec:
@@ -12,6 +11,12 @@ jupytext:
   text_representation:
     extension: .md
     format_name: myst
+jupyter:
+  "@deathbeds/jupyterlab-fonts":
+    styles:
+      "":                           # empty selector = whole notebook
+        "body[data-jp-deck-mode='presenting'] &":
+          zoom: "250%"
 ---
 
 ```{admonition} Learning Objectives Covered
@@ -24,15 +29,8 @@ This review will cover the basics of Python lists and NumPy arrays, which are fo
 
 ```{code-cell}
 ---
-editable: true
-trusted: true
 slideshow:
   slide_type: slide
-"@deathbeds/jupyterlab-fonts":
-  styles:
-    "":
-      "body[data-jp-deck-mode='presenting'] &":
-        zoom: "300%"
 ---
 print("Here's some python!")
 ```
@@ -77,11 +75,9 @@ print("Here's some python!")
 
 ---
 
-+++ {"editable": true,
-     "trusted": true,
-     "slideshow": {"slide_type": "slide"},
-     "@deathbeds/jupyterlab-fonts": {"styles": {"": {"body[data-jp-deck-mode='presenting'] &": {"zoom": "300%"}}}}
-    }
+
++++ {"slideshow": {"slide_type": "slide"}  }
+
 ## 2. NumPy Arrays
 
 * **Definition**: NumPy arrays (`ndarray`) are **homogeneous** data containers designed for numerical computing. They enable efficient storage and fast elementwise operations.
