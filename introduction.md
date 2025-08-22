@@ -92,6 +92,24 @@ They can be:
 +++ {"slideshow": {"slide_type": "slide"}  }
 # Tools We are Using
 
+
+## Why programming?
+
+- Why not just Excel?
+  - Indeed, it can be useful for simple tasks.
+  
+- However, Python/R are...
+	- more reproducible
+	- more scalable
+	- easier to automate
+	- more analytics libraries
+	- more visualization libraries
+	- more integration with other tools
+	- large community and ecosystem
+	- open-source and free to use
+	- although: harder to learn and use
+
++++ {"slideshow": {"slide_type": "slide"}  }
 ## Python or R?
 
 | **Criteria**              | **Python**                                                        | **R**                                                           |
@@ -104,24 +122,6 @@ They can be:
 | **Integration and Flexibility** | Highly flexible, integrates well with other languages and systems (e.g., C, C++, Java, SQL). Versatile for many tasks beyond data science. | Primarily focused on statistical computing, less flexible for other types of programming or integration with non-statistical systems. |
 | **Performance and Scalability** | Generally faster for large datasets, especially with optimized libraries (e.g., NumPy, Dask). Better for large-scale production environments. | Can be slower with large datasets, though packages like data.table improve performance. Not as well-suited for big data as Python. |
 | **Deployment**             | Strong tools for deploying models in production (e.g., Flask, FastAPI, Streamlit). Easy to integrate with web services and databases. | More challenging to deploy in production; Shiny can be used for web applications but is less flexible than Python tools. |
-
-+++ {"slideshow": {"slide_type": "slide"}  }
-## Why programming?
-
-- Why not just Excel?
-  - Indeed, it can be useful for simple tasks.
-- However, Python/R are...
-	- more reproducible
-	- more scalable
-	- easier to automate
-	- more analytics libraries
-	- more visualization libraries
-	- more integration with other tools
-	- large community and ecosystem
-	- open-source and free to use
-	- although: harder to learn and use
-
-![](/img/data_excel.jpg)
 
 ### Libraries
 
