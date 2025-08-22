@@ -223,11 +223,16 @@ So we will:
    8. Some ways to deal with fairness
    9. Some ways to deal with interpretability
 
-## What we will not cover
+## What we will not cover (so much stuff!)
 
 - Neural networks and deep learning
-- Some linear methdos (SVMs, polynomial regression, LDA, GLMs, GAMs)
+- Natural language processing (NLP) - transformers, word embeddings, etc
 - Optimization algorithms (gradient descent, bayesian, genetic)
+- Other linear methods (SVMs, polynomial regression, LDA, GLMs, GAMs)
+- Multiclass classification
+- Semi-supervised learning
+- Active learning
+- Reinforcement learning
 - Causal models (SEM, SCM, etc)
 - Probabilistic graphical models (Bayesian networks, Markov models)
-- Lots of unsupervised methods (association rule learning, autoencoders, SOMs)
+- Lots of other unsupervised methods (association rule learning, autoencoders, SOMs)
