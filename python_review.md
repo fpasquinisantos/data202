@@ -25,67 +25,136 @@ jupyter:
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | WRA02 | I can create and work with **arrays using NumPy**.                                                                                                                                       |
 ```
-This review will cover the basics of Python lists and NumPy arrays, which are foundational for data science tasks. We will explore their differences, strengths, and limitations.
+
+%```{code-cell}
+%---
+%slideshow:
+%  slide_type: slide
+%---
+%print("Here's some python!")
+%```
+
+"What do we need to remember about Python to get started with data science?"
+
+1. Lists
+2. List comprehensions
+3. Tuples
+4. Dictionaries
+5. Object attributes and methods
+6. String manipulation
+7. NumPy arrays
+ 
+(Content generated with the help of ChatGPT. Take a look at the examples and see if you are up to speed!)
+
++++ {"slideshow": {"slide_type": "slide"}  }
+# 1. Lists
+
+* Ordered, mutable collections.
 
 ```{code-cell}
----
-slideshow:
-  slide_type: slide
----
-print("Here's some python!")
+nums = [1, 2, 3, 4]
+nums[0]        # 1
+nums.append(5) # [1,2,3,4,5]
+nums[2] = 10   # [1,2,10,4,5]
 ```
- 
 
-## 1. Python Lists
++++ {"slideshow": {"slide_type": "slide"}  }
+# 2. List Comprehensions
 
-* **Definition**: A list is a built-in Python data structure that can hold an ordered collection of elements of *different* types.
-* **Creation**:
+* Concise way to create new lists.
 
-  ```python
-  numbers = [1, 2, 3, 4, 5]
-  mixed = [1, "apple", 3.14, True]
-  ```
-* **Indexing & Slicing**:
+```{code-cell}
+squares = [x**2 for x in range(5)]   # [0,1,4,9,16]
+evens = [x for x in range(10) if x%2==0]  # [0,2,4,6,8]
+```
 
-  ```python
-  numbers[0]      # first element → 1
-  numbers[-1]     # last element → 5
-  numbers[1:4]    # slice → [2, 3, 4]
-  ```
-* **Updating & Appending**:
++++ {"slideshow": {"slide_type": "slide"}  }
+# 3. Tuples
 
-  ```python
-  numbers[2] = 10   # [1, 2, 10, 4, 5]
-  numbers.append(6) # [1, 2, 10, 4, 5, 6]
-  ```
-* **Iteration**:
+* Immutable, ordered collections. Often used for function returns.
 
-  ```python
-  for item in numbers:
-      print(item)
-  ```
-* **Limitations for Data Science**:
+```{code-cell}
+point = (3, 4)
+x, y = point   # tuple unpacking
 
-  * Operations like addition and multiplication work on the *structure* (concatenation, repetition), not elementwise math.
+def min_max(values):
+    return (min(values), max(values))  # returns a tuple
+
+result = min_max([5, 2, 9, 1])
+print(result)      # (1, 9)
+low, high = result # tuple unpacking
+print(low, high)   # 1 9
+
+```
+
++++ {"slideshow": {"slide_type": "slide"}  }
+# 4. Dictionaries
+
+* Key–value pairs, fast lookups.
+
+```{code-cell}
+student = {"name": "Alice", "age": 20}
+student["age"]      # 20
+student["grade"] = "A"
+for k, v in student.items():
+    print(k, v)
+```
+
++++ {"slideshow": {"slide_type": "slide"}  }
+# 5. Object Attributes and Methods
+
+* Attributes = stored values; Methods = functions bound to objects.
+* Attention to syntax: `object.method()` vs `function(object)`.
+* Attention to *mutability*: some methods modify in place, others return new objects!
+  * Strings are immutable, so string methods return new strings.
+  * Lists are mutable, so list methods often modify the list in place.
+  * But be careful: sometimes methods return new objects even for mutable types (e.g., `sorted()`)... it depends on the method!
+
+```python
+s = "hello"
+s.upper()      # method → "HELLO"
+s.islower()    # method → True/False
+len(s)         # function, not method → 5
+```
+
++++ {"slideshow": {"slide_type": "slide"}  }
+# 6. String Manipulation
+
+* Common operations useful in wrangling text data.
+
+```python
+text = "  data,science,rocks!  "
+text.strip()             # "data,science,rocks!"
+text.split(",")          # ["data","science","rocks!"]
+"-".join(["data","science"])  # "data-science"
+text.replace("rocks", "rules")  # "  data,science,rules!  "
+```
+
++++ {"slideshow": {"slide_type": "slide"}  }
+# 7. NumPy Arrays
+
+* Python lists are flexible containers, but not optimized for numerical computing.
+* Operations like addition and multiplication work on the *structure* (concatenation, repetition), not elementwise math.
 
     ```python
     [1, 2, 3] + [4, 5, 6]   # → [1, 2, 3, 4, 5, 6]
     [1, 2, 3] * 2           # → [1, 2, 3, 1, 2, 3]
     ```
 
----
-
++++ {"slideshow": {"slide_type": "slide"}  }
+* **Definition**: NumPy arrays (`ndarray`) are **homogeneous** data containers designed for numerical computing. They enable efficient storage and fast elementwise operations.
 
 +++ {"slideshow": {"slide_type": "slide"}  }
 
-## 2. NumPy Arrays
+* How to use them?
 
-* **Definition**: NumPy arrays (`ndarray`) are **homogeneous** data containers designed for numerical computing. They enable efficient storage and fast elementwise operations.
 * **Importing NumPy**:
 
   ```python
   import numpy as np
   ```
+
++++ {"slideshow": {"slide_type": "slide"}  }
 * **Creation**:
 
   ```python
@@ -94,6 +163,8 @@ print("Here's some python!")
   ones = np.ones((2, 3))      # 2×3 matrix of ones
   rng = np.arange(0, 10, 2)   # [0, 2, 4, 6, 8]
   ```
+
++++ {"slideshow": {"slide_type": "slide"}  }
 * **Indexing & Slicing**:
 
   ```python
@@ -101,6 +172,8 @@ print("Here's some python!")
   arr[-1]    # → 5
   arr[1:4]   # → [2 3 4]
   ```
+
++++ {"slideshow": {"slide_type": "slide"}  }
 * **Vectorized Operations**:
 
   ```python
@@ -109,6 +182,8 @@ print("Here's some python!")
   ```
 
   → Unlike lists, NumPy applies operations **elementwise**.
+
++++ {"slideshow": {"slide_type": "slide"}  }
 * **Aggregations**:
 
   ```python
@@ -116,6 +191,8 @@ print("Here's some python!")
   arr.mean()    # 3.0
   arr.std()     # 1.414...
   ```
+
++++ {"slideshow": {"slide_type": "slide"}  }
 * **2D Arrays (Matrices)**:
 
   ```python
@@ -126,159 +203,88 @@ print("Here's some python!")
   mat[:, 1]    # second column → [2 5]
   ```
 
----
-
-## 3. Why Use NumPy in Data Science?
++++ {"slideshow": {"slide_type": "slide"}  }
+## Why Use NumPy Arrays in Data Science?
 
 * **Speed**: Arrays are implemented in C under the hood → much faster than Python lists for numerical tasks.
 * **Convenience**: Vectorized operations avoid explicit loops.
 * **Foundation**: Libraries like pandas, SciPy, scikit-learn, and TensorFlow are all built on NumPy.
 
----
-
-✅ **Takeaway**:
-
-* Use **lists** when you need flexible collections of mixed data.
-* Use **NumPy arrays** when working with numerical data and scientific computing, as they are optimized for speed and mathematical operations.
-
----
-
++++ {"slideshow": {"slide_type": "slide"}  }
 # Practice Exercises
 
-## Part 1. Python Lists
+- Get together with a partner and work through these exercises.
 
-1. **Create a list of numbers** from 1 to 10.
+### 1. Lists (Mutability)
 
-   * Print the first element, last element, and the slice from index 3 to 7.
-2. **Modify the list** by changing the 5th element to `100`.
-3. **Append and remove**: add the number `11` to the end, then remove the first element.
-4. What happens if you try:
-
-   ```python
-   [1, 2, 3] + [4, 5, 6]
-   [1, 2, 3] * 2
-   ```
+* **Partner A**: Create a list of numbers `[2, 4, 6, 8]`. Use `.append()` to add `10`.
+* **Partner B**: Replace the second element with `100`, then remove the first element.
+* **Together**: Discuss: did the list methods modify the object in place, or return a new list?
 
 ---
 
-## Part 2. NumPy Basics
+### 2. List Comprehensions
 
-1. **Create a NumPy array** with the numbers `[1, 2, 3, 4, 5]`.
-
-   * Multiply the array by `10` and print the result.
-   * Add `[10, 20, 30, 40, 50]` elementwise.
-2. **Generate arrays**:
-
-   * A vector of 10 zeros.
-   * A vector of numbers from 0 to 20 stepping by 2.
-   * A 3×3 matrix of ones.
-3. **Indexing and slicing**:
-
-   ```python
-   arr = np.arange(10, 20)
-   ```
-
-   * Get the 3rd element.
-   * Slice elements from index 2 to 6.
-   * Retrieve the last three elements.
+* **Partner A**: Write a comprehension that generates the cubes of numbers 0–5.
+* **Partner B**: Write a comprehension that selects only words longer than 3 letters from `["AI", "data", "science", "ML"]`.
+* **Together**: Compare with a `for` loop version — which feels more natural?
 
 ---
 
-## Part 3. NumPy Operations
+### 3. Tuples (Function Returns)
 
-1. Create an array with values from 1 to 100.
-
-   * Compute the sum, mean, and standard deviation.
-2. Make a 2D array:
-
-   ```python
-   mat = np.array([[10, 20, 30],
-                   [40, 50, 60],
-                   [70, 80, 90]])
-   ```
-
-   * Select the element in row 1, column 2.
-   * Slice the second column.
-   * Compute the mean of the entire matrix.
+* **Partner A**: Write a function `stats(values)` that returns `(min, max, mean)` as a tuple.
+* **Partner B**: Call the function with `[10, 20, 30, 40]` and unpack into `lo, hi, avg`.
+* **Together**: Discuss why tuples are convenient for returning multiple results.
 
 ---
 
-## Part 4. Bridge Between Lists and Arrays
+### 4. Dictionaries
 
-1. Start with:
-
-   ```python
-   mylist = [1, 2, 3, 4, 5]
-   ```
-
-   * Convert it into a NumPy array.
-   * Square all values (show how NumPy differs from plain Python).
+* **Partner A**: Create a dictionary for a course: `{"name": "Data Science", "credits": 3}`.
+* **Partner B**: Add a key `"professor"` with your name. Then loop through keys and values.
+* **Together**: Why are dictionaries so useful for representing structured data?
 
 ---
 
-# Challenges
+### 5. Object Attributes & Methods
 
-### 1. Dice Simulation
-
-* Use `np.random.randint` to simulate rolling two dice 1,000 times.
-* Store the sums in a NumPy array.
-* Find the most frequent sum.
-* (Hint: `np.bincount` or `np.unique(..., return_counts=True)`)
+* **Partner A**: Start with `s = "Data Science"`. Call a method that makes it lowercase.
+* **Partner B**: Use `len(s)` to count characters.
+* **Together**: Discuss: which operations were methods, which were functions? Which returned new objects?
 
 ---
 
-### 2. Normalization
+### 6. String Manipulation
 
-* Create an array of 20 random numbers between 50 and 100.
-* Normalize them so the values are between 0 and 1.
-
-  $$
-  x_{norm} = \frac{x - \min(x)}{\max(x) - \min(x)}
-  $$
+* **Partner A**: Take `"  python,data,science  "`, strip whitespace, and split by commas.
+* **Partner B**: Replace `"data"` with `"info"` and re-join the list with `"-"`.
+* **Together**: Why is string cleaning critical before analysis?
 
 ---
 
-### 3. Temperature Data
+### 7. NumPy Arrays
 
-* Suppose you have daily temperature readings for a week in Fahrenheit stored in a list:
+* **Partner A**: Create an array `np.arange(1,6)`. Multiply the array by 10.
+* **Partner B**: Create a 2×3 matrix of ones. Slice out the second column.
+* **Together**: Try `arr + [10,20,30,40,50]` — what happens compared to lists?
 
-  ```python
-  temps_F = [72, 75, 68, 70, 74, 77, 73]
-  ```
-* Convert this list to a NumPy array.
-* Convert all temperatures to Celsius using:
+### 8. Small Dataset Wrangling (NumPy)
 
-  $$
-  C = (F - 32) \times \frac{5}{9}
-  $$
-* Find the average weekly temperature in Celsius.
+We have student scores in a 2D NumPy array:
 
----
+```python
+import numpy as np
 
-### 4. Vectorized Filtering
+scores = np.array([
+    [88, 92, 95],
+    [78, 85, 80],
+    [90, 91, 89],
+    [70, 72, 68]
+])
+```
 
-* Generate 100 random integers between 0 and 100 in a NumPy array.
-* Extract only the even numbers.
-* Compute the mean of these even numbers.
-
----
-
-### 5. Small Dataset Wrangling
-
-* Create a 2D NumPy array representing student scores:
-
-  ```python
-  scores = np.array([
-      [88, 92, 95],
-      [78, 85, 80],
-      [90, 91, 89],
-      [70, 72, 68]
-  ])
-  ```
-
-  * Each row = a student; columns = assignments.
-  * Compute the average score per student (row means).
-  * Compute the average score per assignment (column means).
-  * Identify the student with the highest overall average.
-
----
+* **Partner A**: Compute the **average score per student** (row means).
+* **Partner B**: Compute the **average score per assignment** (column means).
+* **Together**: Identify which student has the **highest overall average**.
+  * Bonus: return both the index of the student and their average.

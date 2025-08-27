@@ -90,7 +90,7 @@ They can be:
 +++ {"slideshow": {"slide_type": "slide"}  }
 # Tools We are Using
 
-
++++ {"slideshow": {"slide_type": "slide"}  }
 ## Why programming?
 
 - Why not just Excel?
@@ -121,6 +121,7 @@ They can be:
 | **Performance and Scalability** | Generally faster for large datasets, especially with optimized libraries (e.g., NumPy, Dask). Better for large-scale production environments. | Can be slower with large datasets, though packages like data.table improve performance. Not as well-suited for big data as Python. |
 | **Deployment**             | Strong tools for deploying models in production (e.g., Flask, FastAPI, Streamlit). Easy to integrate with web services and databases. | More challenging to deploy in production; Shiny can be used for web applications but is less flexible than Python tools. |
 
++++ {"slideshow": {"slide_type": "slide"}  }
 ## Libraries
 
 - **Data manipulation and analysis**: [pandas](https://pandas.pydata.org/)
@@ -130,11 +131,13 @@ They can be:
 - **Modeling and machine learning**: [Scikit-learn](https://scikit-learn.org/stable/)
   - Alternatives: [TensorFlow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/), [XGBoost](https://github.com/dmlc/xgboost)
 
++++ {"slideshow": {"slide_type": "slide"}  }
 ## Communication and publishing platforms
 
 - Jupyter Notebooks hosted in [Google Colab](https://colab.research.google.com/) (we'll be using those)
 - Other useful publishing platforms: [Streamlit](https://streamlit.io/) and [Shiny](https://shiny.posit.co/)
 
++++ {"slideshow": {"slide_type": "slide"}  }
 # Skills, Knowledge and Virtues
 
 - *Skill*: how to work with the tools
@@ -143,6 +146,7 @@ They can be:
 
   - All of them need to be developed and practiced *in community*.
 
++++ {"slideshow": {"slide_type": "slide"}  }
 ## Curiosity
 
 Thomas Aquinas speaks of the difference between *studiositas* (virtue) and *curiositas* (vice) (see more in this [interesting article](https://www.jstor.org/stable/44504870)).
@@ -157,11 +161,13 @@ There are at least 7 vices of curiosity:
 - SUPERFICIALITY: disrespecting the object of knowledge, being content with a superficial understanding and quickly moving on to something else;
 - POSSESSIVENESS: delighting not in the object of knowledge, but in the act of knowing it. It resembles, on an intellectual level, the vice of greed.
 
++++ {"slideshow": {"slide_type": "slide"}  }
 So we will practice:
 * Noticing and reporting our analysis decisions and possible alternatives
 * Acknowledging limitations
 * Validation of results
 
++++ {"slideshow": {"slide_type": "slide"}  }
 ## Integrity
 
 It’s tempting to say something that isn’t entirely true, or to manipulate the collection/analysis/reporting process to yield the answer you want.
@@ -173,6 +179,7 @@ So we will practice:
 * Reproducibility
 * Using exploratory analytics to validate data against assumptions
 
++++ {"slideshow": {"slide_type": "slide"}  }
 ## Hospitality
 
 We can choose to use our tools to elucidate and clarify, rather than obscure.
@@ -183,6 +190,7 @@ So we will practice:
 * Clarity of code and process
 * Writing explanations that are accessible and appropriate to audience.
 
++++ {"slideshow": {"slide_type": "slide"}  }
 ## Compassion and Justice
 
 Data Science can both cause harm and reveal it.
@@ -192,6 +200,7 @@ So we will:
 * Study examples of how data might cause harm
 * Study examples of how harm might be mitigated or revealed
 
++++ {"slideshow": {"slide_type": "slide"}  }
 # Our itinerary
 
 1. Manipulating dataframes
@@ -221,6 +230,7 @@ So we will:
    8. Some ways to deal with fairness
    9. Some ways to deal with interpretability
 
++++ {"slideshow": {"slide_type": "slide"}  }
 ## What we will not cover (so much stuff!)
 
 - Neural networks and deep learning

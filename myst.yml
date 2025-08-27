@@ -29,6 +29,7 @@ project:
         - file: policies.md
     - url: https://fpasquinisantos.github.io/YourProgress
       title: Your Progress
+    - file: toolguide.md
     - title: Getting Started
       children:
         - file: introduction.md
