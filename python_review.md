@@ -11,12 +11,6 @@ jupytext:
   text_representation:
     extension: .md
     format_name: myst
-jupyter:
-  "@deathbeds/jupyterlab-fonts":
-    styles:
-      "":                           # empty selector = whole notebook
-        "body[data-jp-deck-mode='presenting'] &":
-          zoom: "250%"
 ---
 
 ```{admonition} Learning Objectives Covered
