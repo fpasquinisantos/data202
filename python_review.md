@@ -13,21 +13,6 @@ jupytext:
     format_name: myst
 ---
 
-```{admonition} Learning Objectives Covered
-:class: dropdown
-|||
-|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| WRA02 | I can create and work with **arrays using NumPy**.                                                                                                                                       |
-```
-
-%```{code-cell}
-%---
-%slideshow:
-%  slide_type: slide
-%---
-%print("Here's some python!")
-%```
-
 "What do we need to remember about Python to get started with data science?"
 
 1. Lists

@@ -6,16 +6,14 @@
 :class: dropdown
 |||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| WRA01 | I can identify common **data types** such as categorical, numerical, strings, dates, and time-series.                                                                                    |
-| WRA02 | I can create and work with **arrays using NumPy**.                                                                                                                                       |
-| WRA03 | I can explore dataframes using pandas - **accessing, sorting, filtering and modifying** them.                                                                                            |
-| WRA04 | I can explain the **strengths and limitations of representing** the world with tabular data.                                                                                             |
-| WRA05 | I can clean and transform text data using **string operations** in dataframes.                                                                                                           |
-| WRA06 | I can **group dataframes** to calculate aggregates such as counts, means, or sums.                                                                                                       |
-| WRA07 | I can **reshape data using melt and pivot** to move between wide and long formats.                                                                                                       |
-| WRA08 | I can identify and use **primary keys** to connect related tables.                                                                                                                       |
-| WRA09 | I can **join dataframes** using different join types (inner, left, right, outer).                                                                                                        |
-| WRA10 | I can identify how processes like sorting, categorizing, or reducing data may **simplify or distort the underlying phenomena**.                  |
+| WRA01 | I can explore dataframes using pandas - **accessing, sorting, filtering and modifying** them.                                                                                            |
+| WRA02 | I can explain the **strengths and limitations of representing** the world with tabular data.                                                                                             |
+| WRA03 | I can clean and transform text data using **string operations** in dataframes.                                                                                                           |
+| WRA04 | I can **group dataframes** to calculate aggregates such as counts, means, or sums.                                                                                                       |
+| WRA05 | I can **reshape data using melt and pivot** to move between wide and long formats.                                                                                                       |
+| WRA06 | I can identify and use **primary keys** to connect related tables.                                                                                                                       |
+| WRA07 | I can **join dataframes** using different join types (inner, left, right, outer).                                                                                                        |
+| WRA08 | I can identify how processes like sorting, categorizing, or reducing data may **simplify or distort the underlying phenomena**.                  |
 
 ```
 

@@ -36,11 +36,7 @@ project:
         - file: python_review.md
     - title: I. Wrangling
       children:
-        - file: wr01_dataframes.md
-        - file: wr02_basic_plotting.md
-        - file: wr03_grouping.md
-        - file: wr04_reshaping.md
-        - file: wr05_joining.md
+        - pattern: '01wrangling/wr*.md'
     - title: Practices
       children:
         - file: practice01.md

@@ -1,4 +1,7 @@
-# Tool Guide
+---
+title: "Tool Guide"
+author: ""
+---
 
 We will be using the following tools in this course:
 

@@ -13,14 +13,6 @@ jupytext:
     format_name: myst
 ---
 
-```{admonition} Learning Objectives Covered
-:class: dropdown
-|||
-|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| WRA01 | I can identify common **data types** such as categorical, numerical, strings, dates, and time-series.                                                                                    |
-| WRA04 | I can explain the **strengths and limitations of representing** the world with tabular data.                                                                                             |
-```
-
 +++ {"slideshow": {"slide_type": "slide"}  }
 
 # Data science

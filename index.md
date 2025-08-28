@@ -12,8 +12,6 @@ In this course, you’ll learn how to make sense of tabular data: how to organiz
 
 :::{grid-item-card}
 :link: syllabus
-:link-type: doc
-:class-header: bg-light
 
 Our Syllabus 📚
 ^^^
@@ -22,9 +20,7 @@ Course structure, grading, and policies.
 :::
 
 :::{grid-item-card}
-:link: yourprogress
-:link-type: doc
-:class-header: bg-light
+:link: https://fpasquinisantos.github.io/YourProgress
 
 Your progress 📈
 ^^^
@@ -35,8 +31,6 @@ Check the learning objectives you have achieved and the ones you still have to.
 
 :::{grid-item-card}
 :link: projects
-:link-type: doc
-:class-header: bg-light
 
 Project specifications 📂
 ^^^
