@@ -1,15 +1,16 @@
 ---
+title: "Dataframe Basics"
+subject: Wrangling
+author: ""
+kernelspec:
+  name: python3
+  display_name: 'Python 3'
+  language: python
 jupytext:
   formats: ipynb,md:myst
   text_representation:
     extension: .md
     format_name: myst
-    format_version: 0.13
-    jupytext_version: 1.17.3
-kernelspec:
-  name: conda-base-py
-  display_name: Python [conda env:base] *
-  language: python
 ---
 
 ```{admonition} Learning Objectives Covered
@@ -20,25 +21,23 @@ kernelspec:
 | WRA04 | I can explain the **strengths and limitations of representing** the world with tabular data.                                                                                             |
 ```
 
-```{code-cell} ipython3
+
+```{code-cell}
+from pathlib import Path
 import pandas as pd
 
-emperors = pd.read_csv("../datasets/roman_emperors.csv")
+HERE = Path(__file__).parent if "__file__" in globals() else Path.cwd()
+df = pd.read_csv(HERE / "datasets" / "roman_emperors.csv")
 ```
 
-```{code-cell} ipython3
+```{code-cell}
 emperors.head()
 ```
-
-Say something else...
 
 Begin through data framework object
 
 Careful when modifying dataframe
 - running once, running twice
-
-
-+++
 
 # A short history of tables
 
