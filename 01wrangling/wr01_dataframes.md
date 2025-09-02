@@ -1,4 +1,7 @@
 ---
+title: "Dataframe Basics"
+subject: Wrangling
+author: ""
 jupytext:
   formats: ipynb,md:myst
   text_representation:
@@ -22,7 +25,7 @@ kernelspec:
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
-# Tables were always a part of human culture
+## Tables were always a part of human culture
 
 > "The first systematically structured tables (see e.g., Fig. 3.2) originated in Mesopotamia about 1850 BCE [22]. The evolution of cuneiform from a pictographic into a symbolic language that supported the phonetics of spoken Sumerian created a compact language that facilitated accounting practice as well. In an analysis of Mesopotamian tables from this period, Robson [22] has found striking similarities with contemporary counterparts. These similarities may be seen in Fig. 3.2, which shows both the obverse and reverse sides of a cuneiform tablet from the temple of Enlil at Nippur. It is a record of sources of revenue and monthly disbursements to 46 temple personnel by its bursar Ḫunabi for the year 1295 BCE [23]. There are column headings and row titles. Column headings at the top of the table specify month names. Names and professions are shown in the right-hand column (e.g., seeress, weaver, overseer, temple servant). Eighteen of the individuals listed receive no payment for all or half the year (Notice the blank “smooth” cells along rows). These individuals are classified as either dead or fugitive. Grid locations within the table contain numerical information that are part of calculations, flowing first down a column, and then across a row. Subtotals for each individual are given every six months, culminating with a yearly total adjacent to row labels. The table is annotated with explanatory interpolations under columns containing totals, and a summary column at the table’s end." [](https://doi.org/10.1007/978-1-4471-4303-1_3)
 
