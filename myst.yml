@@ -27,7 +27,7 @@ project:
         - file: activities.md
         - file: grading.md
         - file: policies.md
-    - url: https://fpasquinisantos.github.io/YourProgress
+    - url: https://fpasquinisantos.github.io/grading/data202progress.html
       title: Your Progress
     - file: toolguide.md
     - title: Getting Started
@@ -42,7 +42,6 @@ project:
         - file: practice01.md
   downloads:
     - file: datasets/roman_emperors.csv
-    
 site:
   template: book-theme
   options:

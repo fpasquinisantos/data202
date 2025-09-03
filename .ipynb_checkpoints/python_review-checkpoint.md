@@ -1,7 +1,4 @@
 ---
-title: "Python Review"
-subject: "Getting Started"
-author: ""
 jupytext:
   text_representation:
     extension: .md
