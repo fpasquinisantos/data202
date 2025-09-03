@@ -15,6 +15,15 @@ jupytext:
 
 +++ {"slideshow": {"slide_type": "slide"}  }
 
+> Dear Heavenly Father,
+> As we gather here today to embark on a new journey of learning, we invite Your presence into this classroom.
+> Bless each student with wisdom, understanding, and a thirst for knowledge. Let Your light shine upon us, illuminating the path of learning, so we may contemplate your beauty and love in everything you made.
+> May this classroom be a place of respect, fellowship, and growth. Help us to be open to new ideas, to embrace challenges, and to support one another in our academic endeavors. Bless this class so that it may be a space where minds are enriched, friendships are formed, and hearts are touched.
+> Guide our imaginations and desires towards your love and justice, so that we may respond adequately to your call to be Christ’s agents of renewal in the world.
+> Through our Lord Jesus Christ, your Son, who lives and reigns with you in the unity of the Holy Spirit, one God, for ever and ever.
+> Amen.
+
++++ {"slideshow": {"slide_type": "slide"}  }
 # Data science
 
 "Using data to search for **meaningfulness** in creation."

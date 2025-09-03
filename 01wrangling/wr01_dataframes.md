@@ -1,7 +1,4 @@
 ---
-title: "Dataframe Basics"
-subject: Wrangling
-author: ""
 jupytext:
   formats: ipynb,md:myst
   text_representation:
@@ -25,7 +22,7 @@ kernelspec:
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
-## Tables were always a part of human culture
+# Tables were always a part of human culture
 
 > "The first systematically structured tables (see e.g., Fig. 3.2) originated in Mesopotamia about 1850 BCE [22]. The evolution of cuneiform from a pictographic into a symbolic language that supported the phonetics of spoken Sumerian created a compact language that facilitated accounting practice as well. In an analysis of Mesopotamian tables from this period, Robson [22] has found striking similarities with contemporary counterparts. These similarities may be seen in Fig. 3.2, which shows both the obverse and reverse sides of a cuneiform tablet from the temple of Enlil at Nippur. It is a record of sources of revenue and monthly disbursements to 46 temple personnel by its bursar Ḫunabi for the year 1295 BCE [23]. There are column headings and row titles. Column headings at the top of the table specify month names. Names and professions are shown in the right-hand column (e.g., seeress, weaver, overseer, temple servant). Eighteen of the individuals listed receive no payment for all or half the year (Notice the blank “smooth” cells along rows). These individuals are classified as either dead or fugitive. Grid locations within the table contain numerical information that are part of calculations, flowing first down a column, and then across a row. Subtotals for each individual are given every six months, culminating with a yearly total adjacent to row labels. The table is annotated with explanatory interpolations under columns containing totals, and a summary column at the table’s end." [](https://doi.org/10.1007/978-1-4471-4303-1_3)
 
@@ -283,9 +280,10 @@ Nikephoros Basilakes,1078,1078,,East,Usurper,,Rebel against Nikephoros III
 
 # Dataframes
 
-Dataframes are the primary data structure for working with tabular data in Python. They are provided by the `pandas` library, which is a powerful and flexible tool for data manipulation and analysis.
+Dataframes are the primary data structure for working with tabular data in Python. They are provided by the `pandas` library.
 
-Dataframes are "tables with steroids". They provide a wide range of functionalities, including:
+Take them as "tables with steroids". They provide a wide range of functionalities, including:
+
 - **Accessing data:** You can access specific rows, columns, or cells in a dataframe using labels or integer-based indexing.
 - **Modifying data:** You can add, remove, or modify columns and rows in a dataframe.
 - **Handling missing data:** You can identify, remove, or fill in missing data in a dataframe.
@@ -325,19 +323,233 @@ emperors.head()
 emperors.dtypes
 ```
 
-## Loading and filling missing values
+- All "object"? This is the generic type in `pandas`.
+- When `load_csv()` runs, it tries to fit what it finds to a certain `dtype`. If it can't, it sets it to the default `object`.
+  - Now, **a question**: why did `Reign_Start` and `Reign_End` weren't numerical?
+ 
+By the way, usual `dtypes` are:
+- `object` = legacy string/mixed type.
+- `string` = modern dedicated string dtype.
+- `int64` / `float64` = numeric.
+- `Int64` / `Float64` = nullable numeric.
+- `bool` / `boolean` = legacy vs. nullable Boolean.
+- `datetime64[ns]`, `timedelta64[ns]` = time types.
+- `category`, `Period`, `Interval`, `Sparse` = specialized efficiency types (we won't see them)
 
++++
 
+If you want to load a dataframe as strings or other types, you can, however, do:
 
-## Selecting rows and columns
+```{code-cell} ipython3
+emperors = pd.read_csv("../datasets/roman_emperors.csv", dtype=str)
+```
 
-## Adding and removing
+Or, to specify specific columns (you don't need to specify all):
 
-## Sorting
+```{code-cell} ipython3
+emperors = pd.read_csv(
+    "../datasets/roman_emperors.csv",
+    dtype={
+        "Name": "string",
+        "Reign_Start": "string",   # keep messy years as text
+        "Reign_End": "string",
+        "Dynasty": "string",
+        "Region": "string",
+        "Legitimacy": "string",
+    }
+)
+```
+
+To convert dtypes, you will use methods like `as_type()`, `to_numeric()` and `to_datetime()`. We'll cover those in more detail later.
+
++++
+
+## Missing values
+
+- Did you notice that some values have `NaN`? This is the placeholder for missing values.
+- Usually it is ok to leave them like that, but sometimes you may want to do some operations, like:
+
++++
+
+1. Fill with placeholders (best for presentation/teaching)
+
+```{code-cell} ipython3
+emperors["Cause_of_Death"] = emperors["Cause_of_Death"].fillna("Unknown")
+```
+
+2. Drop rows with missing data
+
+```{code-cell} ipython3
+emperors.dropna(subset=["Reign_End_Year"], inplace=True)
+```
+
+:::{warning}
+
+Did you notice the difference between usage of methods `fillna` and `dropna`? Observe that one returns a new dataframe, and another does the operation in the dataframe. ALWAYS pay attention to that!
+
+:::
+
++++
+
+## Selecting columns
+
+Very simple! Look:
+
+```{code-cell} ipython3
+emperors["Name"] # single column
+```
+
+```{code-cell} ipython3
+emperors[["Name","Cause_of_Death"]]
+```
+
+## Selecting rows
+
+- Two ways:
+
+### 1. By numerical index (`iloc`)
+- Notice that every dataframe has a first column with numerical indexes. You can access rows by pointing them!
+- For example:
+
+```{code-cell} ipython3
+# First row
+emperors.iloc[0]
+
+# First 5 rows
+emperors.iloc[:5]
+
+# Row at position 10
+emperors.iloc[10]
+```
+
+### 2. By key indexing (`loc`)
+
+- You can, however, change these numerical indexes to other things. (It becomes something like a Python dictionary)
+- For example, make the `"Name"` column the index column:
+
+```{code-cell} ipython3
+# After setting index
+emperors_key = emperors.set_index("Name")
+emperors_key.loc["Nero"]         # Row for Emperor Nero
+```
 
 ## Filtering
 
-## Creating new columns
+- `pandas` is so powerful that lets you even filter rows according to a condition!
+- For example:
+
+```{code-cell} ipython3
+# All emperors who died by assassination
+emperors[emperors["Cause_of_Death"] == "Assassination"]
+
+# Emperors from the Julio-Claudian dynasty
+emperors[emperors["Dynasty"] == "Julio-Claudian"]
+
+# Emperors with reigns longer than 20 years
+emperors[emperors["Reign_End_Year"] - emperors["Reign_Start_Year"] > 20]
+```
+
+You can also combine conditions using `&` (AND), `|` (OR), `~` (NOT) and parentheses:
+
+```{code-cell} ipython3
+# Julio-Claudian emperors who were assassinated
+emperors[(emperors["Dynasty"] == "Julio-Claudian") & 
+         (emperors["Cause_of_Death"] == "Assassination")]
+```
+
+## Adding and removing rows
+
+Perfect — let’s build on the row-selection lesson with **adding and removing rows** in pandas. This fits nicely after selection, because students can see how a DataFrame isn’t static — you can grow or shrink it.
+
+---
+
+# 🏛 Adding and Removing Rows in pandas
+
+---
+
+## 1. Adding rows
+
+### a. Add a single row with `loc`
+
+If the index doesn’t exist yet, pandas creates a new row:
+
+```python
+# Add a fictional emperor
+emperors.loc[len(emperors)] = [
+    "Testus Maximus",   # Name
+    "999",              # Reign_Start
+    "1000",             # Reign_End
+    "Imaginary",        # Dynasty
+    "Nowhere",          # Region
+    "Usurper",          # Legitimacy
+    "Unknown",          # Cause_of_Death
+    "Demonstration row" # Notes
+]
+```
+
+---
+
+### b. Add multiple rows with `pd.concat`
+
+Use when you want to add more than one at once:
+
+```python
+new_rows = pd.DataFrame([
+    {"Name": "Fictivus I", "Reign_Start": "1001", "Reign_End": "1002",
+     "Dynasty": "Imaginary", "Region": "Nowhere", "Legitimacy": "Official",
+     "Cause_of_Death": "Unknown", "Notes": "Teaching example"},
+    {"Name": "Fictivus II", "Reign_Start": "1003", "Reign_End": "1005",
+     "Dynasty": "Imaginary", "Region": "Nowhere", "Legitimacy": "Usurper",
+     "Cause_of_Death": "Suicide", "Notes": "Teaching example"}
+])
+
+emperors = pd.concat([emperors, new_rows], ignore_index=True)
+```
+
+---
+
+## 2. Removing rows
+
+### a. By index position
+
+```python
+# Remove row at index 0
+emperors = emperors.drop(index=0)
+```
+
+### b. By condition
+
+```python
+# Remove all "Imaginary" dynasty emperors
+emperors = emperors[emperors["Dynasty"] != "Imaginary"]
+```
+
+---
+
+## 3. Resetting the index
+
+After dropping rows, the index may have gaps. You can reset it:
+
+```python
+emperors = emperors.reset_index(drop=True)
+```
+
+---
+
+✅ **Summary for students**:
+
+* Use `.loc[len(df)] = [...]` for a quick one-row add.
+* Use `pd.concat([...])` to add multiple rows.
+* Use `.drop()` to remove rows by index.
+* Use boolean filtering to remove rows by condition.
+* Use `.reset_index()` to tidy up after deletions.
+
+---
+
+
++++
+
+## Adding and removing columns
 
 :::{warning}
 
@@ -348,7 +560,11 @@ Careful when modifying dataframe
 
 +++
 
-# Problems with tabular data
+## Sorting
+
++++
+
+# Limitations of tabular data
 
 In the case of our dataset, there are a lot of issues with it:
 
