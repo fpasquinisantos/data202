@@ -1,4 +1,7 @@
 ---
+title: "Basic DataFrame Operations"
+subject: Wrangling
+author: ""
 jupytext:
   formats: ipynb,md:myst
   text_representation:
@@ -277,6 +280,24 @@ Nikephoros Basilakes,1078,1078,,East,Usurper,,Rebel against Nikephoros III
 (You can also open it in Excel or another spreadsheet application to see a more user-friendly representation of the data.)
 
 +++ {"slideshow": {"slide_type": "slide"}}
+# Limitations of tabular data
+
+In the case of our dataset, there are a lot of issues with it:
+
+- **Recognition disputes:** Some entries (Gallic, Palmyrene, British regimes; many Byzantine rebels) were not universally recognized as 'Roman emperor' contemporaneously.
+- **Overlapping reigns:** Co-emperors, tetrarchs, and rival claimants create overlapping intervals that break any simple linear 'successor' model.
+- **Date uncertainty:** Short-lived regimes (esp. 3rd-century usurpers) have poorly attested start/end dates; many are rounded to years and can be off by months or days.
+- **Dynasty ambiguity:** Later Roman/Byzantine 'dynasties' are conventional labels; lineage can be matrilineal, adoptive, or purely political.
+- **Cause-of-death ambiguity:** Ancient sources often conflict (illness vs. poisoning; murder vs. battle); many entries are generic.
+- **Category leakage:** Labels like 'Official', 'Usurper', 'Breakaway Emperor', and 'Latin Emperor' are modern simplifications of complex legitimacy claims.
+- **Scope breadth:** Dataset intentionally mixes **Roman (West), Eastern Roman/Byzantine, Latin Empire, and Nicaean exile emperors** to demonstrate integration hazards.
+- **Dubious figures:** A few entries (e.g., **Sponsian**, **Domitianus II**, **Silbannacus**) are included although their historicity is disputed.
+- **Non-emperor rulers included:** Regents or kings (e.g., **Zenobia**, **Odaenathus**) are included to highlight edge cases of titulature and authority.
+- **Regional tags are coarse:** 'East', 'West', 'Gaul/Britain', 'Palmyra/East' are rough; borders and control shifted frequently.
+- **Terminology drift:** The title 'emperor' (imperator/augustus/basileus) evolved; using one column to capture it loses nuance.
+- **Data normalization risk:** Sorting by year, collapsing duplicates, or enforcing uniqueness will silently falsify complex co-rulerships.
+
++++ {"slideshow": {"slide_type": "slide"}}
 
 # Dataframes
 
@@ -307,6 +328,7 @@ import pandas as pd
 emperors = pd.read_csv("../datasets/roman_emperors.csv")
 ```
 
++++ {"slideshow": {"slide_type": "slide"}}
 ## Exploring the dataframe - its attributes and methods
 
 Notice that our `emperors` object is a dataframe. It has attributes and methods that we can use to explore and manipulate the data.
@@ -317,6 +339,7 @@ You can check these attributes and methods using the `dir()` function, or by usi
 emperors.head()
 ```
 
++++ {"slideshow": {"slide_type": "slide"}}
 ## Checking column data types
 
 ```{code-cell} ipython3
@@ -326,7 +349,9 @@ emperors.dtypes
 - All "object"? This is the generic type in `pandas`.
 - When `load_csv()` runs, it tries to fit what it finds to a certain `dtype`. If it can't, it sets it to the default `object`.
   - Now, **a question**: why did `Reign_Start` and `Reign_End` weren't numerical?
- 
+
++++ {"slideshow": {"slide_type": "slide"}}
+
 By the way, usual `dtypes` are:
 - `object` = legacy string/mixed type.
 - `string` = modern dedicated string dtype.
@@ -336,7 +361,7 @@ By the way, usual `dtypes` are:
 - `datetime64[ns]`, `timedelta64[ns]` = time types.
 - `category`, `Period`, `Interval`, `Sparse` = specialized efficiency types (we won't see them)
 
-+++
++++ {"slideshow": {"slide_type": "slide"}}
 
 If you want to load a dataframe as strings or other types, you can, however, do:
 
@@ -362,7 +387,7 @@ emperors = pd.read_csv(
 
 To convert dtypes, you will use methods like `as_type()`, `to_numeric()` and `to_datetime()`. We'll cover those in more detail later.
 
-+++
++++ {"slideshow": {"slide_type": "slide"}}
 
 ## Missing values
 
@@ -389,7 +414,7 @@ Did you notice the difference between usage of methods `fillna` and `dropna`? Ob
 
 :::
 
-+++
++++ {"slideshow": {"slide_type": "slide"}}
 
 ## Selecting columns
 
@@ -400,9 +425,16 @@ emperors["Name"] # single column
 ```
 
 ```{code-cell} ipython3
-emperors[["Name","Cause_of_Death"]]
+emperors[["Name","Cause_of_Death"]] # multiple columns 
 ```
 
+Attention to the list inside the subscript! This is wrong, and will give an error:
+
+```{code-cell} ipython3
+emperors["Name","Cause_of_Death"]
+```
+
++++ {"slideshow": {"slide_type": "slide"}}
 ## Selecting rows
 
 - Two ways:
@@ -422,6 +454,7 @@ emperors.iloc[:5]
 emperors.iloc[10]
 ```
 
++++ {"slideshow": {"slide_type": "slide"}}
 ### 2. By key indexing (`loc`)
 
 - You can, however, change these numerical indexes to other things. (It becomes something like a Python dictionary)
@@ -433,6 +466,15 @@ emperors_key = emperors.set_index("Name")
 emperors_key.loc["Nero"]         # Row for Emperor Nero
 ```
 
+:::{warning}
+
+If you set a column as index, remember it (usually) must be unique — otherwise .loc["Nero"] might return you multiple rows.
+
+:::
+
++++
+
++++ {"slideshow": {"slide_type": "slide"}}
 ## Filtering
 
 - `pandas` is so powerful that lets you even filter rows according to a condition!
@@ -449,6 +491,7 @@ emperors[emperors["Dynasty"] == "Julio-Claudian"]
 emperors[emperors["Reign_End_Year"] - emperors["Reign_Start_Year"] > 20]
 ```
 
++++ {"slideshow": {"slide_type": "slide"}}
 You can also combine conditions using `&` (AND), `|` (OR), `~` (NOT) and parentheses:
 
 ```{code-cell} ipython3
@@ -457,23 +500,14 @@ emperors[(emperors["Dynasty"] == "Julio-Claudian") &
          (emperors["Cause_of_Death"] == "Assassination")]
 ```
 
-## Adding and removing rows
++++ {"slideshow": {"slide_type": "slide"}}
+## Adding rows
 
-Perfect — let’s build on the row-selection lesson with **adding and removing rows** in pandas. This fits nicely after selection, because students can see how a DataFrame isn’t static — you can grow or shrink it.
-
----
-
-# 🏛 Adding and Removing Rows in pandas
-
----
-
-## 1. Adding rows
-
-### a. Add a single row with `loc`
+### Add a single row with `loc`
 
 If the index doesn’t exist yet, pandas creates a new row:
 
-```python
+```{code-cell} ipython3
 # Add a fictional emperor
 emperors.loc[len(emperors)] = [
     "Testus Maximus",   # Name
@@ -485,15 +519,41 @@ emperors.loc[len(emperors)] = [
     "Unknown",          # Cause_of_Death
     "Demonstration row" # Notes
 ]
+emperors.tail()
 ```
 
----
++++ {"slideshow": {"slide_type": "slide"}}
+:::{warning}
 
-### b. Add multiple rows with `pd.concat`
+Have you noticed that if you execute this code cell more than once, it will add lots of repeated rows?
 
-Use when you want to add more than one at once:
+THIS IS DANGEROUS WITH JUPYTER NOTEBOOKS. It means that, if you do something out of order, you will have to go back to start and load the dataset again.
 
-```python
+So, when using these notebooks, you are usually expecting that each block of code can be run and re-run from top to bottom. That is why it is usually a good idea to save every new modification to a new variable (even if it costs more memory)... like this:
+:::
+
+```{code-cell} ipython3
+# SAFE RUNNING CODE
+more_emperors = emperors.copy()
+more_emperors.loc[len(emperors)] = [
+    "Testus Maximus",   # Name
+    "999",              # Reign_Start
+    "1000",             # Reign_End
+    "Imaginary",        # Dynasty
+    "Nowhere",          # Region
+    "Usurper",          # Legitimacy
+    "Unknown",          # Cause_of_Death
+    "Demonstration row" # Notes
+]
+more_emperors.tail()
+```
+
++++ {"slideshow": {"slide_type": "slide"}}
+### Add multiple rows with `pd.concat`
+
+Use a concatenation when you want to add more than one at once:
+
+```{code-cell} ipython3
 new_rows = pd.DataFrame([
     {"Name": "Fictivus I", "Reign_Start": "1001", "Reign_End": "1002",
      "Dynasty": "Imaginary", "Region": "Nowhere", "Legitimacy": "Official",
@@ -502,87 +562,112 @@ new_rows = pd.DataFrame([
      "Dynasty": "Imaginary", "Region": "Nowhere", "Legitimacy": "Usurper",
      "Cause_of_Death": "Suicide", "Notes": "Teaching example"}
 ])
-
 emperors = pd.concat([emperors, new_rows], ignore_index=True)
+emperors
 ```
 
----
++++ {"slideshow": {"slide_type": "slide"}}
+## Removing rows
 
-## 2. Removing rows
+### By index position
 
-### a. By index position
-
-```python
+```{code-cell} ipython3
 # Remove row at index 0
 emperors = emperors.drop(index=0)
 ```
 
-### b. By condition
+### By condition
 
-```python
+Just filter those out!
+
+```{code-cell} ipython3
 # Remove all "Imaginary" dynasty emperors
 emperors = emperors[emperors["Dynasty"] != "Imaginary"]
 ```
 
----
-
-## 3. Resetting the index
++++ {"slideshow": {"slide_type": "slide"}}
+### Reset the indexes!
 
 After dropping rows, the index may have gaps. You can reset it:
 
-```python
+```{code-cell} ipython3
 emperors = emperors.reset_index(drop=True)
 ```
 
----
+Again, always keep in mind that these are usually not repeatable chunks of code! If you try to run them again, you'll probably have problems...
 
-✅ **Summary for students**:
++++ {"slideshow": {"slide_type": "slide"}}
 
-* Use `.loc[len(df)] = [...]` for a quick one-row add.
-* Use `pd.concat([...])` to add multiple rows.
-* Use `.drop()` to remove rows by index.
-* Use boolean filtering to remove rows by condition.
-* Use `.reset_index()` to tidy up after deletions.
+## Adding columns
 
----
+Different ways:
 
+```{code-cell} ipython3
+# set all to a constant value
+emperors["Empire"] = "Roman"  
 
-+++
+# Calculated from existing columns
+emperors["Reign_Length"] = emperors["Reign_End"].astype(int) - emperors["Reign_Start"].str.extract(r"(\d+)").astype(int)
 
-## Adding and removing columns
+# Boolean (True/False) flag
+emperors["Is_Assassinated"] = emperors["Cause_of_Death"].str.contains("Assassination", na=False)
+```
+
++++ {"slideshow": {"slide_type": "slide"}}
+## Removing columns (i.e., drop)
+
+Use `.drop()` with `axis=1`:
+
+```{code-cell} ipython3
+# Remove the Dynasty column
+emperors_no_dynasty = emperors.drop("Dynasty", axis=1)
+
+# Remove multiple columns at once
+emperors_no_years = emperors.drop(["Reign_Start", "Reign_End"], axis=1)
+```
 
 :::{warning}
 
-Careful when modifying dataframe
-- running once, running twice
+If you use `inplace=True`, the original DataFrame is modified directly.
+Safer practice: assign the result to a **new variable**.
 
 :::
 
 +++
 
++++ {"slideshow": {"slide_type": "slide"}}
 ## Sorting
 
-+++
+```{code-cell} ipython3
+# Sort emperors by the year they started their reign
+emperors.sort_values("Reign_Start")
+emperors.head()
+```
 
-# Limitations of tabular data
+```{code-cell} ipython3
+# Sort by reign end, latest first
+emperors.sort_values("Reign_End", ascending=False)
+```
 
-In the case of our dataset, there are a lot of issues with it:
+```{code-cell} ipython3
+# Sort by Dynasty first, then by Reign_Start
+emperors.sort_values(["Dynasty", "Reign_Start"])
+```
 
-- **Recognition disputes:** Some entries (Gallic, Palmyrene, British regimes; many Byzantine rebels) were not universally recognized as 'Roman emperor' contemporaneously.
-- **Overlapping reigns:** Co-emperors, tetrarchs, and rival claimants create overlapping intervals that break any simple linear 'successor' model.
-- **Date uncertainty:** Short-lived regimes (esp. 3rd-century usurpers) have poorly attested start/end dates; many are rounded to years and can be off by months or days.
-- **Dynasty ambiguity:** Later Roman/Byzantine 'dynasties' are conventional labels; lineage can be matrilineal, adoptive, or purely political.
-- **Cause-of-death ambiguity:** Ancient sources often conflict (illness vs. poisoning; murder vs. battle); many entries are generic.
-- **Category leakage:** Labels like 'Official', 'Usurper', 'Breakaway Emperor', and 'Latin Emperor' are modern simplifications of complex legitimacy claims.
-- **Scope breadth:** Dataset intentionally mixes **Roman (West), Eastern Roman/Byzantine, Latin Empire, and Nicaean exile emperors** to demonstrate integration hazards.
-- **Dubious figures:** A few entries (e.g., **Sponsian**, **Domitianus II**, **Silbannacus**) are included although their historicity is disputed.
-- **Non-emperor rulers included:** Regents or kings (e.g., **Zenobia**, **Odaenathus**) are included to highlight edge cases of titulature and authority.
-- **Regional tags are coarse:** 'East', 'West', 'Gaul/Britain', 'Palmyra/East' are rough; borders and control shifted frequently.
-- **Terminology drift:** The title 'emperor' (imperator/augustus/basileus) evolved; using one column to capture it loses nuance.
-- **Data normalization risk:** Sorting by year, collapsing duplicates, or enforcing uniqueness will silently falsify complex co-rulerships.
+:::{warning}
 
-## Think, pair, share
-1. What are some strengths of using tabular data to represent information?
-2. What are some limitations of using tabular data to represent information?
-3. Is the dataset objective or subjective? What is the role of human judgment in creating this dataset?
-4. What do you think about this claim: "Tables are technologies of comparison. Comparison is something possible and useful, but not always."
+By default, `.sort_values()` returns a new DataFrame.
+If you want to change the original directly, use `inplace=True`!
+
+:::
+
++++ {"slideshow": {"slide_type": "slide"}}
+
+**IMPORTANT:** what happens with the row index numbers?
+- They remain there! (Important if you want to trace original order)
+- If you want to assign new index numbers, you will have to use `reset_index()`!
+
+```{code-cell} ipython3
+emperors_sorted = emperors.sort_values("Reign_End").reset_index(drop=True)
+emperors
+```

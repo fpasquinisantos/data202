@@ -1,7 +1,4 @@
 ---
-title: "Introduction"
-subject: "Getting Started"
-author: ""
 jupytext:
   text_representation:
     extension: .md
