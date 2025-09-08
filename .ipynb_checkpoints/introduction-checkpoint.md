@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-subject: Getting Started
+subject: "Getting Started"
 author: ""
 jupytext:
   text_representation:
@@ -8,6 +8,10 @@ jupytext:
     format_name: myst
     format_version: 0.13
     jupytext_version: 1.17.3
+kernelspec:
+  name: conda-base-py
+  display_name: Python [conda env:base] *
+  language: python
 ---
 
 +++ {"slideshow": {"slide_type": "slide"}}
