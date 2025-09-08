@@ -40,8 +40,6 @@ project:
     - title: Practices
       children:
         - file: practices/practice01.ipynb
-  downloads:
-    - file: datasets/roman_emperors.csv
 site:
   template: book-theme
   options:
