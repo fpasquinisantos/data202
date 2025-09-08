@@ -39,7 +39,7 @@ project:
         - pattern: '01wrangling/wr*.md'
     - title: Practices
       children:
-        - file: practice01.md
+        - file: practices/practice01.ipynb
   downloads:
     - file: datasets/roman_emperors.csv
 site:
