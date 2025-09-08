@@ -1,5 +1,5 @@
 ---
-title: "Joining"
+title: "5. Joining"
 subject: Wrangling
 author: ""
 kernelspec:

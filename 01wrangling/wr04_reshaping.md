@@ -1,5 +1,5 @@
 ---
-title: "Reshaping"
+title: "4. Reshaping"
 subject: Wrangling
 author: ""
 kernelspec:

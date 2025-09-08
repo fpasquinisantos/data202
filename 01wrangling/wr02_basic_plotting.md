@@ -1,5 +1,5 @@
 ---
-title: "Basic Plotting"
+title: "2. Basic Plotting"
 subject: Wrangling
 author: ""
 jupytext:

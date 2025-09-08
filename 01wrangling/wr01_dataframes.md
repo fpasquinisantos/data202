@@ -1,5 +1,5 @@
 ---
-title: "Basic DataFrame Operations"
+title: "1. Basic DataFrame Operations"
 subject: Wrangling
 author: ""
 jupytext:
