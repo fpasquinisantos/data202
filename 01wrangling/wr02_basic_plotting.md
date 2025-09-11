@@ -23,6 +23,7 @@ kernelspec:
 | VIS02 | I can **choose appropriate visual encodings** (e.g., axes, color, size, symbol, text) to represent variables in visualizations.                                                              |
 ```
 
++++ {"slideshow": {"slide_type": "slide"}}
 # Why visualizing?
 
 - Text and numbers alone sometimes are not sufficient to communicate information such as magnitude, ranking, relationship, etc - we may need other **metaphors** for representing information so that we can *see better*.
@@ -31,15 +32,13 @@ kernelspec:
   - As also everyday objects (bar, pie, line, heat, violin, waterfall, box)
 - This is specially true when we need to explore a big dataset in which we still may not know what to look for. (this is called **exploratory data analysis**)
 
-+++ {"id": "nAYsvGSfVWPJ"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 - Sometimes groupings, aggregations and summary statistics can mislead us!
 
 Observe this [dataset](https://cran.r-project.org/web/packages/datasauRus/vignettes/Datasaurus.html):
 
 ```{code-cell} ipython3
-:id: C0XxcGOdws6p
-
 import pandas as pd
 
 datasaurus_dozen = pd.read_csv("https://cs.calvin.edu/courses/data/202/fsantos/datasets/datasaurus.csv")
@@ -47,32 +46,26 @@ datasaurus_dozen
 ```
 
 ```{code-cell} ipython3
-:id: ohJWHaeVwtTc
-
 datasaurus_dozen.groupby("dataset").size()
 ```
 
 ```{code-cell} ipython3
-:id: qi7UChL9xLyd
-
 selected_datasets = datasaurus_dozen[datasaurus_dozen['dataset'].isin(["away", "bullseye", "dots", "star", "dino"])]
 selected_datasets.groupby("dataset").mean()
 ```
 
-+++ {"id": "79NYr2imxMV9"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 Now, the surprise when we plot the different data:
 
 ```{code-cell} ipython3
-:id: EOGn0Y1exO0-
-
 import plotly.express as px
 
 px.scatter(selected_datasets, x="x", y="y", facet_col="dataset",
            width=1000, height=300)
 ```
 
-+++ {"id": "6raL1nEd109E"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 # Dataset: product sales ([link]())
 
@@ -90,6 +83,7 @@ The dataset consists of simulated sales data for a range of products.
 8. **Season**: The season in which the data was recorded.
 9. **Supplier**: The supplier of the product.
 
++++ {"slideshow": {"slide_type": "slide"}}
 ```{code-cell} ipython3
 :id: XtE6_B5UtCXO
 
@@ -99,7 +93,7 @@ sales = pd.read_csv("https://cs.calvin.edu/courses/data/202/fsantos/datasets/pro
 sales
 ```
 
-+++ {"id": "axHZnSOEpKX4"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 # Characterizing variables
 
@@ -111,7 +105,7 @@ Complete the list, identifying if the variable is:
   - Non-ordered
   - Ordered
 
-+++ {"id": "TNy8lHuXrk0F"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 1. **Product ID**: categorical, non-ordered
 2. **Sales**: numerical, continuous
@@ -123,7 +117,7 @@ Complete the list, identifying if the variable is:
 8. **Season**:
 9. **Supplier**:
 
-+++
++++ {"slideshow": {"slide_type": "slide"}}
 
 # Plotly Express
 
@@ -131,7 +125,7 @@ Plotly Express is a high-level plotting library that makes it very easy to creat
 - It works directly with pandas DataFrames, so you can pass column names as arguments instead of manually looping through data.
 - Documentation can be found [here](https://plotly.com/python-api-reference/generated/plotly.express.scatter).
 
-+++ {"id": "ZY6bNsy-pqsn"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 # Basic idea: mapping variables to visual cues
 
@@ -149,7 +143,7 @@ For example, considering a scatter plot, you can use these visual cues:
 - `animation_frame`
 - `facet_row`, `facet_col`
 
-+++ {"id": "NzQBxcNH23N4"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 For example:
 
@@ -167,11 +161,12 @@ fig = px.scatter(
 fig.show()
 ```
 
++++ {"slideshow": {"slide_type": "slide"}}
 - Now, let's try mapping these cues to other variables! (Use the example code as basis)
 - Use other plot types! (see next)
 - What are the most interesting plots you can find? Show that to your colleagues!
 
-+++
++++ {"slideshow": {"slide_type": "slide"}}
 
 ## Plot Types available in Plotly Express:
 
@@ -219,7 +214,7 @@ fig.show()
 * `px.line_3d` – 3D line plots.
 * `px.scatter_matrix` – scatterplot matrix (pairwise relationships).
 
-+++ {"id": "kOstdfbB1jJs"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 ## An interesting observation: Simpson's Paradox
 
@@ -241,7 +236,7 @@ fig = px.scatter(
 fig.show()
 ```
 
-+++ {"id": "XuJwwgjU16x_"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 Now, let's make a different plot for every category of product:
 
@@ -269,7 +264,7 @@ fig.show()
 
 *Simpson's Paradox occurs when a trend that appears in several different groups of data reverses when the data are combined. This paradox highlights how relationships between variables can change based on how data are grouped or aggregated.*
 
-+++ {"id": "D8lzPWHrp4wh"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 # Guides: adding text and other details
 
@@ -277,7 +272,7 @@ fig.show()
 
 However, we also need to set title, axis names, etc...
 
-+++ {"id": "UJ8fTrxbvCUI"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 ## Setting titles and axes' labels
 
@@ -301,7 +296,7 @@ fig.update_layout(
 )
 ```
 
-+++ {"id": "JxVC-Tpj8TdP"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 ## Updating axes' ticks
 
@@ -323,7 +318,7 @@ fig.update_yaxes(
 fig.show()
 ```
 
-+++ {"id": "L2vkc00y83Uj"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 ## Adding marginal plots
 
@@ -350,7 +345,7 @@ fig = px.scatter(
 fig.show()
 ```
 
-+++ {"id": "FMAETXfZ9Okn"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 You can also set `marginal_x` and `marginal_y` as:
 - `histogram`: Displays a histogram of the values along the x-axis. This is useful for visualizing the frequency distribution of the variable.
@@ -358,7 +353,7 @@ You can also set `marginal_x` and `marginal_y` as:
 - `violin`: Displays a violin plot of the values along the x-axis. Violin plots show the distribution of the data and can be more informative than box plots by illustrating the density of the data at different values.
 - `rug`: Displays a rug plot, which shows individual data points along the axis. This can be useful for showing the density of observations without additional aggregation.
 
-+++ {"id": "85vJrcKmqQf5"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 # Theme: styling our plot
 
@@ -376,7 +371,7 @@ fig.update_traces(marker=dict(color='black'))
 fig.show()
 ```
 
-+++ {"id": "EWE-ZPcR7Jnj"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 - Or suppose I want to change the color scale of my points in order to account for color blindness:
 
@@ -406,7 +401,7 @@ fig = px.scatter(
 fig.show()
 ```
 
-+++ {"id": "E94ryWAq6fxC"}
++++ {"slideshow": {"slide_type": "slide"}}
 
 What are other stylings you can use with plotly? Check this [page](https://plotly.com/python/styling-plotly-express/).
 

@@ -13,13 +13,13 @@ Below is the schedule for the semester, with the content and activities planned 
 |      |    Friday 09-05 | Python review                        |         |
 |   2  |    Monday 09-08 | Basic dataframe operations           |         |
 |      | Wednesday 09-10 | Plotly Express                       |         |
-|      |    Friday 09-12 | Practice 1 (WRA01-04,   VIS01-02)    |         |
+|      |    Friday 09-12 | Practice 1 (WRA01-02,   VIS01-02)    |         |
 |   3  |    Monday 09-15 | Grouping dataframes                  | Quiz 1  |
 |      | Wednesday 09-17 | Reshaping dataframes                 |         |
-|      |    Friday 09-19 | Practice 2 (WRA05-07)                |         |
+|      |    Friday 09-19 | Practice 2 (WRA04-06)                |         |
 |   4  |    Monday 09-22 | Joining dataframes                   | Quiz 2  |
 |      | Wednesday 09-24 | Project 1 Follow-Up                  |         |
-|      |    Friday 09-26 | Practice 3 (WRA08-10)                |         |
+|      |    Friday 09-26 | Practice 3 (WRA07-08)                |         |
 |   5  |    Monday 09-29 | Plotly Graph Objects                 | Quiz 3  |
 |      | Wednesday 10-01 | Histograms                           |         |
 |      |    Friday 10-03 | Practice 4 (VIS03-07)                |         |
