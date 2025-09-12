@@ -39,7 +39,8 @@ project:
         - pattern: '01wrangling/wr*.md'
     - title: Practices
       children:
-        - file: practices/practice01.ipynb
+        - url: https://colab.research.google.com/drive/1lQVwMFHCmMUDpAem4VBXyPxzrv-0bTMu?usp=drive_link
+          title: Practice 01
 site:
   template: book-theme
   options:
