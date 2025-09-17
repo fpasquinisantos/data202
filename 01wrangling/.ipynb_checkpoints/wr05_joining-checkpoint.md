@@ -219,7 +219,7 @@ Trivia:
 
 +++ {"id": "WsX4BVrqo2dq"}
 
-## Exploring other types of joins
+## Exploring other types of joins **(📝Your Turn!)**
 
 +++ {"id": "4AVZX5wnqg0z"}
 
