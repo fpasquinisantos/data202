@@ -27,9 +27,7 @@ kernelspec:
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
-![](https://images.unsplash.com/photo-1619037961380-5ab533fc7129?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-
-# Dataset - personal health monitoring ([link](https://cs.calvin.edu/courses/data/202/fsantos/health-monitoring.csv))
+# Dataset - personal health monitoring ([link](https://fpasquinisantos.github.io/datasets/health_monitoring.csv))
 
 This dataset contains personal health data collected from four members of the Johnson family over several days. It includes information on their physical activity, sleep duration, heart rate, blood pressure, and the food they consumed.
 
@@ -63,49 +61,17 @@ This dataset contains personal health data collected from four members of the Jo
 
 import pandas as pd
 
-monitoring = pd.read_csv('https://cs.calvin.edu/courses/data/202/fsantos/health_monitoring.csv')
+monitoring = pd.read_csv('../datasets/homeless.csv')
 monitoring
 ```
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
-# Retrieval questions
+# Retrieval
 
-- Create a new column Total Calories Burned based on the number of steps. Assume that 0.05 calories are burned per step.
-
-```{code-cell} ipython3
-:id: t6cDAkh1FAw4
-
-
-```
-
-+++ {"slideshow": {"slide_type": "slide"}}
-
-- Filter the dataset to only show records where the individual slept for more than 7 hours.
-
-```{code-cell} ipython3
-:id: kTZZMXIkFSs6
-
-
-```
-
-+++ {"slideshow": {"slide_type": "slide"}}
-
-- Group the data by `Name` and calculate the average `Heart Rate (bpm)` and `Steps` for each individual. Check who has the higher average `Steps`.
-
-```{code-cell} ipython3
-:id: 9e33fPI1vH3T
-
-
-```
-
-+++ {"slideshow": {"slide_type": "slide"}}
-
+•	Filter the dataset to only show records where the individual slept for more than 7 hours.
+•	Group the data by Name and calculate the average Heart Rate (bpm) and Steps for each individual. Check who has the higher average Steps.
 •	Create two new columns, splitting the Blood Pressure (mmHg) column into systolic and diastolic values.
-
-```{code-cell} ipython3
-
-```
 
 +++ {"slideshow": {"slide_type": "slide"}}
 

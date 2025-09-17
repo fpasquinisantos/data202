@@ -58,7 +58,7 @@ We will use **pandas string operations** and **regular expressions (regex)** to 
 import pandas as pd
 
 # Load the messy dataset
-df = pd.read_csv('homeless.csv')
+df = pd.read_csv('../datasets/homeless.csv')
 df.head()
 ```
 
