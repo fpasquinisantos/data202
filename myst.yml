@@ -30,6 +30,7 @@ project:
     - url: https://fpasquinisantos.github.io/grading/data202progress.html
       title: Your Progress
     - file: toolguide.md
+    - file: prayers.md
     - title: Getting Started
       children:
         - file: introduction.md

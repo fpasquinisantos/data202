@@ -1,4 +1,7 @@
 ---
+title: "5. Joining"
+subject: Wrangling
+author: ""
 jupytext:
   formats: ipynb,md:myst
   text_representation:
