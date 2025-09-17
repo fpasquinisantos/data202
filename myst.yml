@@ -41,6 +41,8 @@ project:
       children:
         - url: https://colab.research.google.com/drive/1lQVwMFHCmMUDpAem4VBXyPxzrv-0bTMu?usp=drive_link
           title: Practice 01
+        - url: https://colab.research.google.com/drive/183WwiF-PikhVRfi_v16MsDKyahAe_2sr?usp=drive_link
+          title: Practice 02
 site:
   template: book-theme
   options:
