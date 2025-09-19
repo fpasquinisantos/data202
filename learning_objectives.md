@@ -13,7 +13,7 @@
 | WRA05 | I can **reshape data using melt and pivot** to move between wide and long formats.                                                                                                       |
 | WRA06 | I can identify and use **primary keys** to connect related tables.                                                                                                                       |
 | WRA07 | I can **join dataframes** using different join types (inner, left, right, outer).                                                                                                        |
-| WRA08 | I can identify how processes like sorting, categorizing, or reducing data may **simplify or distort the underlying phenomena**.                  |
+| WRA08 | I can identify how wrangling operations like grouping, reshaping and joining data may **simplify or distort the underlying phenomena**.                  |
 
 ```
 

@@ -22,7 +22,6 @@ kernelspec:
 |||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | WRA05 | I can **reshape data using melt and pivot** to move between wide and long formats.                                                                                                       |
-| WRA09 | I can identify how processes like sorting, categorizing, or reducing data may **simplify or distort the underlying phenomena**.                  |
 ```
 
 +++ {"slideshow": {"slide_type": "slide"}}
