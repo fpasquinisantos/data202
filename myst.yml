@@ -44,6 +44,9 @@ project:
           title: Practice 01
         - url: https://colab.research.google.com/drive/183WwiF-PikhVRfi_v16MsDKyahAe_2sr?usp=drive_link
           title: Practice 02
+    - title: Projects
+      children:
+        - file: midterm_project.md
 site:
   template: book-theme
   options:

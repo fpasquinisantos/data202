@@ -1,0 +1,250 @@
+---
+title: "Midterm Project"
+author: ""
+jupytext:
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: 0.13
+    jupytext_version: 1.17.3
+kernelspec:
+  name: conda-base-py
+  display_name: Python [conda env:base] *
+  language: python
+---
+
+**Replicate and critique a visual**.
+
+For this project you will pick some existing data science work (a newspapar article, blog post, report, research paper, etc.) and replicate a visual from it using the data wrangling and plotting tools we're studying.
+
+You will then critique the original visualization and propose alternative designs.
+
+The project will be done in teams of between 1 and 3. You will submit a single report and make a joint presentation.
+
+::: {.callout-note title="Depth Somewhere"}
+This document details various requirements for the project. Not all requirements will make sense for every project, though. 
+
+The overall goal is that your project has depth *somewhere*. For example, you may choose to go deeper in:
+
+- understanding where the data came from
+- wrangling the data
+- analyzing the visualization and designing alternatives
+- thinking deeply about who the audience of the visualization is and making well-motivated design choices
+- making a high-quality plot
+
+Going deeper in one area may mean that you don't go as deep in another area. For example, if the data wrangling is very difficult, we will have lower expectations for other parts of the project.
+
+If you're unsure whether a specific requirement applies to your project, ask.
+:::
+
+The SLOs covered in this project are:
+
+|||
+|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| PRO01 | I can **search for, select, and critically evaluate datasets** based on their provenance, structure, completeness, and suitability for the question I want to investigate.                   |
+| PRO02 | I can **prepare and transform data** using appropriate wrangling techniques to support a specific analysis or communication goal.                                                            |
+| PRO03 | I can **organize my notebook** to clearly communicate the story of my analysis to an audience.                                                                                               |
+| PRO04 | I can **document the operations** I perform in a clear and reproducible way using both code and markdown commentary.                                                                         |
+| PRO05 | I can **draw appropriate conclusions** from my analysis and clearly acknowledge its limitations, especially regarding uncertainty, fairness, and the generalizability of findings.           |
+| PRO06 | I can **choose appropriate visualizations** to explore and communicate patterns in the data, and explain how each supports the question and audience understanding.                          |
+
+# Milestones
+
+## 1: Plot selection and initial analysis (Week 5)
+
+Upload a screenshot of one or more potential plots to the Plot Gallery. Your post should include:
+
+- **Screenshot**: A screenshot of the plot (image)
+- **Claim or Purpose**: What the author is trying to say with this plot
+- **Source**: URL, or some other similarly clear description of how to get to the original plot
+- **Each row is**: A short phrase of what each row of the plot dataframe represents (e.g., "The data has one row per day and rider type".
+- **Data dictionary**: A table of (possible) variable names and what they (probably) represent
+- **Data Sources**: Potential sources for the data, in the form of URLs or similar. Try downloading and opening the data if you can; report on any anticipated difficulties.
+
+You don't have to fill in everything for the initial post; you can come back and fill it in later.
+
+::: {.callout-important}
+The plot you choose to replicate **should have at least 3 variables**.
+
+If you really want to make a plot that has fewer than 3 variables, you should be able to explain why it's still interesting and worth doing.
+:::
+
+::: {.callout-note title="Other Plot Selection Guidelines"}
+The plot you choose to replicate:
+
+- Should make an interesting *claim*.
+  - Shouldn't just be *about* something (e.g., "number of wins by each athlete")
+  - Most interesting claims are about *relationships* (e.g,. "the highest paid athletes don't necessarily win more")
+  - A claim finishes the sentence: "The article uses this graphic to back up the claim that BLANK".
+  - **If the article doesn't make a claim, make one up.** Imagine that you've gotten in an argument with someone and you show them this plot to back up your claim; what claim were you trying to make?
+- Should involve **at least 3 variables**.
+  - Ideally they have to come from several separate data sources that you have to bring together.
+- Should have some room for improvement, i.e., you'd be interested in trying a different way of presenting the data.
+
+If you are really stuck, I can simply assign something to do, but I’m hoping to avoid that.
+:::
+
+## 2: Data (Week 6)
+
+Find and load the data; write a brief critique of the data.
+
+For this milestone, your report should be complete through the "Data" section. See the [Report Template](#report-template) below.
+
+::: {.callout-note title="Data Selection Guidelines"}
+
+The data you find:
+
+- Should come from a reputable source.
+  - If you use an aggregation site like [OurWorldInData](https://ourworldindata.org/), try to track down where *they* got the data.
+- Should require at least a little bit of wrangling
+  - *Beware* of sites where you can download *exactly* the data for a specific plot
+  - "Download data for this chart" links are red flags that you may be getting already-wrangled data.
+
+See [Some questions to ask if you're working with data that you didn't collect yourself](http://bit.ly/quaesita_notyours).
+
+If the wrangling is especially straightforward, you can add depth by:
+
+- Finding a different source for the same data
+- Critiquing the data collection process
+- Describing alternative choices that could have been made in the data collection or wrangling process and what the consequences of those choices might be.
+
+:::
+
+## 3: Initial plot and ideas (Week 7)
+
+Make an initial plot and a todo list of things to improve; sketch ideas for alternative ways to plot the same data.
+
+Your report should be complete through the "Wrangling" section and have some initial work in the "Replication" and "Alternatives" sections.
+
+## 4: Presentation and Report (Week 8)
+
+Upload the original, replication, and alternative plots in a video and in a iPython Notebook (Google Colab, etc) report.
+
+
+# Report and Presentation Details
+
+## Report Content
+
+Your report should include the following sections:
+
+- **Overview** of the original plot (include a screenshot) and the claim it makes.
+- **Design** of the original plot. (plot type, effectiveness)
+- **Data** (where'd you get it, anything interesting about it or what you had to do with it)
+- **Wrangling** (what did you have to do to get it into a form that you could plot?)
+- **Replication** (show your replication of the original plot)
+- **Alternative 1**: what did you change? why?
+- **Alternative 2**: (same, but can be a sketch rather than a full plot)
+- **Summary**: one or two take-aways
+
+## Report Style
+
+Your report should be:
+
+- *understandable by itself*: a reader should not need to see your discussion posts or prior submissions.
+- *reproducible* -- if a new version of the data becomes available, anyone should be able to re-run your code and get an updated plot. Things to avoid:
+  - paths that only work on your computer
+  - making modifications to your raw data (e.g., editing it in Excel)
+  - hard-coding row numbers or other things that are likely to change
+- *understandable without the code*: a reader should be able to skip over all of the code and understand all of the results.
+- At least one of your visuals (either the original or alternative design) should be high quality, with effort spent getting the details right.
+- Clean up any messy outputs from code (debugging, etc.)
+- Write succinctly. Bulleted lists are fine when they're clear.
+- Use ordinary text formatting (not headings, blockquotes, etc.) for ordinary prose. Reserve headings and block quotes for headings and quotes.
+- Format your code cleanly. If lazy, select the code and click "Reformat Code" on the Code menu. (Make sure you save first.)
+- Read through the report before submitting. Check that you don't have placeholder text, the headings make sense, etc.
+
+**Academic Integrity**: If you take any code from elsewhere, you **must** state very clearly where it came from and how you changed it. This includes ChatGPT and other AI tools. If you find a plot and it has Plotly code already, I advise against looking at it, and possibly even finding a different plot. Code using a different toolkit (e.g., R) is probably okay.
+
+# Report Submission
+
+- If your dataset is *less than 10 MB*: submit a **`.zip` file** with your entire project folder.
+- Otherwise: submit just the HTML (and make sure the instructions are *very clear* about how to get the data)
+  - Use the header from the template, which includes these important settings:
+    - Keep `code-tools: true` in the header so we can see your source code.
+    - Make sure you keep `embed-resources: true` so we can see any images.  
+
+# Checklist
+
+The following is the minimal requirements for the project. The project should also go into depth in some area.
+
+- Overview
+  - [ ] Includes a screenshot of the original plot
+  - [ ] Includes a description of the claim made by the original plot (or the claim you're making if the original doesn't make a claim)
+  - [ ] Includes a link to the original plot
+- Design
+  - [ ] Names the type of the original plot (scatter, bar, etc.)
+  - [ ] Identifies the variables used in the original plot
+  - [ ] Identifies the visual cue that each variable is mapped to.
+  - [ ] Discusses the effectiveness of the original plot
+- Data
+  - [ ] Identifies the source of the data used for the replication (including a link if possible)
+  - [ ] Indicates how many rows and columns are in the data (e.g., "the data has 100 rows and 5 columns")
+  - [ ] Describes what a single row represents (e.g., "one row per day per rider type")
+  - [ ] Describes the variables in the data (e.g., "the data has columns for date, rider type, and number of rides")
+- Wrangling
+  - [ ] Describes the overall process of wrangling the data (e.g., "I had to combine data from sources X and Y, then filter out rows that aren't Z, then calculate the average number of rides per day")
+  - [ ] Includes code blocks that show the wrangling process
+  - [ ] Gives an example of the data after wrangling (e.g., the `.head()` and the `.info()`)
+- Replication
+  - [ ] Includes the replication of the original plot
+  - [ ] Replication has the same general type of plot as the original (can be different in unimportant details like specific colors used, extra annonatiotns, etc.)
+  - [ ] Replication has the same general variables as the original, mapped to the same general visual cues
+  - [ ] Describes any difficulties encountered in the replication process
+  - [ ] Describes any relevant differences between the original and replication
+- Alternatives
+  - [ ] Includes textual descriptions of two alternative ways to plot the same data that are different in a substantive way (e.g., not just a different color scheme) from each other and from the original plot.
+  - [ ] Includes images of both alternatives. Ideally they're implemented in code using actual data, but in case that's too challenging, a detailed and clear sketch on paper or PowerPoint or some online tool is also fine. The sketch should show all the necessary elements and should be understandable without additional explanation.
+- Summary
+  - [ ] Includes a reflection on the claim of the original plot and how well the original plot supports that claim.
+  - [ ] Includes a comparison between the original design and at least of the alternative designs that specifies which design is better for what purpose.
+- Appendix
+  - [ ] Report includes a description of where the depth in the project is, i.e., in what areas you went beyond the bare minimal requirements. See "Depth Somewhere" above.
+  - [ ] Report includes what terms you'd be willing to have your report shared under (see the "License" section of the template.)
+  - [ ] Report includes a list of sources used (e.g., specific links to StackOverflow, ChatGPT shared-conversation links, etc.), and the full names of any students outside your team.
+- Meta
+  - [ ] Report was produced using a reproducible workflow (i.e., iPython Notebook)
+  - [ ] Report is titled appropriately
+  - [ ] Authors are listed correctly
+  - [ ] Report is concise
+  - [ ] Report is self-contained
+  - [ ] Report is understandable without reading the code
+  - [ ] No placeholder text remains.
+  - [ ] Report is formatted cleanly (check headings, code outputs, etc.); check that the file shows up correctly on your local computer before submitting.
+
+# Purpose
+
+The project will explore the intersection between three things:
+
+* The data
+* The visualization
+* The story that the visualization tells about the data (and, indirectly, about the world)
+
+The three components to this project involve each of these three things:
+
+* **Data**: Obtain some real-world dataset. Trace where it came from and how it's structured. Load it and process it *using the data science toolkit we're studying* to a form that's appropriate for making the visualization.
+* **Visualization**: Replicate (re-create) a visualization that someone else already made based on that data. Evaluate some of the choices and assumptions that were made in the visualization process: in what ways does the visualization faithfully represent the data (or not)? What sort of stories does the chosen visualization amplify?
+* **Story**: Consider the story that the original source told using the visualization. Is that story accurate? complete? clearly articulated? How did choices in the data collection, preparation, and visualization affect the storytelling? Are there other stories that the data might also be telling?
+
+This project addresses our course-level learning objectives in this way:
+
+* **Technical skills**: manipulating data, constructing visualizations, and creating reports.
+* **Communication**: analyzing choices made in visualization and text with respect to how it tells a story about data. Proposing and implementing changes to improve the clarity of communication.
+* **Ethics and Critical Thinking**: identify potential ethical questions (e.g., of transparency, diversity, etc.) that emerge in the process of obtaining, manipulating, and communicating with data.
+
+<!--
+## Grading Guide
+
+
+Overall
+
+- Data
+  - Wrangling (20)
+  - Discussion (15)
+- Visualization
+  - Analysis (15)
+  - Quality (20)
+  - Alternatives (20)
+- Report
+  - legibility (5)
+  - reproducibility (5)
+-->
