@@ -21,8 +21,6 @@ kernelspec:
 :class: dropdown
 |||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| WRA06 | I can identify and use **primary keys** to connect related tables.                                                                                                                       |
-| WRA07 | I can **join dataframes** using different join types (inner, left, right, outer).                                                                                                        |
 | WRA08 | I can identify how wrangling operations like grouping, reshaping and joining data may **simplify or distort the underlying phenomena**.                  |
 ```
 
