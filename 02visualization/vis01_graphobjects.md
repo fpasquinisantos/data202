@@ -211,10 +211,6 @@ fig.show()
 
 ---
 
-Got it — thanks for clarifying. You want the reflection less on “ethics of stacked vs grouped” and more on **automation vs control** and **portability vs transparency** in visualization grammars. Here’s a structured reflection you could use for reading or as a wrap-up slide:
-
----
-
 # Reflection: Visualization Grammars
 
 Graphing libraries are not neutral. They encode decisions made by developers about what should be easy, what should be hard, and what defaults should represent “good” visualization.
