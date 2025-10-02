@@ -25,7 +25,6 @@
 | VIS02 | I can **choose appropriate visual encodings** (e.g., axes, color, size, symbol, text) to represent variables in visualizations.                                                              |
 | VIS03 | I can create and modify visualizations using **Plotly Graph Objects** by understanding and applying its object-oriented structure.   |
 | VIS04 | I can **customize common plot elements** such as axes, tick marks, labels, and titles.                                                                                                       |
-| VIS05 | I can evaluate the social implications of **surveillance** in data practices, like issues of privacy, agency, and power dynamics.                                                                                                       |
 | VIS06 | I can **create and adjust histograms** to explore the distribution of a variable, choosing meaningful bin sizes and scales that reveal patterns.                                             |
 | VIS07 | I can **interpret histograms** to describe patterns such as skew, modality, and spread, and use this insight to inform further analysis.                                                     |
 | VIS08 | I can explain how different types of relationships (correlation, trends, comparisons) map to **plot types like bar, scatter, or line plots**.                                                |

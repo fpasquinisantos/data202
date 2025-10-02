@@ -20,8 +20,7 @@ kernelspec:
 |||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | VIS03 | I can create and modify visualizations using **Plotly Graph Objects** by understanding and applying its object-oriented structure.   |
-| VIS04 | I can **customize common plot elements** such as axes, tick marks, labels, and titles.                                                                                                       |
-| VIS05 | I can evaluate the social implications of **surveillance** in data practices, like issues of privacy, agency, and power dynamics.                                                                                                       |
+| VIS04 | I can **customize common plot elements** such as axes, tick marks, labels, and titles.                                                                                                       | 
 ```
 
 [Practice Exercises for this class](https://colab.research.google.com/drive/1Y41IuK3C0uUz3Xamu8CPC4VJvk0uXJbH)
