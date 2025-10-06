@@ -41,6 +41,9 @@ project:
     - title: II. Visualization
       children:
         - pattern: '02visualization/vis*.md'
+    - title: III. Modeling
+      children:
+        - pattern: '03visualization/mod*.md'
     - title: Practices
       children:
         - url: https://colab.research.google.com/drive/1lQVwMFHCmMUDpAem4VBXyPxzrv-0bTMu?usp=drive_link

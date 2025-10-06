@@ -28,7 +28,6 @@
 | VIS06 | I can **create and adjust histograms** to explore the distribution of a variable, choosing meaningful bin sizes and scales that reveal patterns.                                             |
 | VIS07 | I can **interpret histograms** to describe patterns such as skew, modality, and spread, and use this insight to inform further analysis.                                                     |
 | VIS08 | I can explain how different types of relationships (correlation, trends, comparisons) map to **plot types like bar, scatter, or line plots**.                                                |
-| VIS09 | I can use **facets, hover text, annotations, and interactivity** in Plotly Express to support storytelling and pattern discovery.                                                            |
 | VIS10 | I can identify **ways in which visualizations might mislead or distort**, and suggest improvements to ensure clarity and fairness.                                                           |
 
 ```

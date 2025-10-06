@@ -91,17 +91,6 @@ fig.show()
 ```
 
 +++ {"slideshow": {"slide_type": "slide"}}
-## Strip/Swarm Plots
-
-- Strip and swarm plots are differentiated basically by the way the points are organized. There is no consistent definition in the literature, though.
-
-```{code-cell} ipython3
-px.strip(stars, x='Metallicity (Z)', y='Star_Type',
-               title='Strip Plot of Metallicity and Star Type',
-               labels={'x': 'Metallicity (Z)', 'y': 'Star Type'})
-```
-
-+++ {"slideshow": {"slide_type": "slide"}}
 ## Line Plots
 
 - More useful for temporal or ordered variables!
@@ -444,6 +433,17 @@ fig = px.line_polar(avg_values,
 # Show the radar plot
 fig.show()
 
+```
+
++++ {"slideshow": {"slide_type": "slide"}}
+## Strip/Swarm Plots
+
+- Strip and swarm plots are differentiated basically by the way the points are organized. There is no consistent definition in the literature, though.
+
+```{code-cell} ipython3
+px.strip(stars, x='Metallicity (Z)', y='Star_Type',
+               title='Strip Plot of Metallicity and Star Type',
+               labels={'x': 'Metallicity (Z)', 'y': 'Star Type'})
 ```
 
 +++ {"slideshow": {"slide_type": "slide"}}
