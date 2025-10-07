@@ -88,8 +88,6 @@ If you are really stuck, I can simply assign something to do, but I’m hoping t
 
 Find and load the data; write a brief critique of the data.
 
-For this milestone, your report should be complete through the "Data" section. See the [Report Template](#report-template) below.
-
 ::: {.callout-note title="Data Selection Guidelines"}
 
 The data you find:
@@ -128,10 +126,10 @@ Upload the original, replication, and alternative plots in a video and in a iPyt
 Your report should include the following sections:
 
 - **Overview** of the original plot (include a screenshot) and the claim it makes.
-- **Design** of the original plot. (plot type, effectiveness)
+- **Design** of the original plot. (plot type, effectiveness) (if it is there)
 - **Data** (where'd you get it, anything interesting about it or what you had to do with it)
 - **Wrangling** (what did you have to do to get it into a form that you could plot?)
-- **Replication** (show your replication of the original plot)
+- **Replication** (show your replication of the original plot) (if it is there)
 - **Alternative 1**: what did you change? why?
 - **Alternative 2**: (same, but can be a sketch rather than a full plot)
 - **Summary**: one or two take-aways
@@ -159,9 +157,6 @@ Your report should be:
 
 - If your dataset is *less than 10 MB*: submit a **`.zip` file** with your entire project folder.
 - Otherwise: submit just the HTML (and make sure the instructions are *very clear* about how to get the data)
-  - Use the header from the template, which includes these important settings:
-    - Keep `code-tools: true` in the header so we can see your source code.
-    - Make sure you keep `embed-resources: true` so we can see any images.  
 
 # Checklist
 
@@ -199,7 +194,6 @@ The following is the minimal requirements for the project. The project should al
   - [ ] Includes a comparison between the original design and at least of the alternative designs that specifies which design is better for what purpose.
 - Appendix
   - [ ] Report includes a description of where the depth in the project is, i.e., in what areas you went beyond the bare minimal requirements. See "Depth Somewhere" above.
-  - [ ] Report includes what terms you'd be willing to have your report shared under (see the "License" section of the template.)
   - [ ] Report includes a list of sources used (e.g., specific links to StackOverflow, ChatGPT shared-conversation links, etc.), and the full names of any students outside your team.
 - Meta
   - [ ] Report was produced using a reproducible workflow (i.e., iPython Notebook)
