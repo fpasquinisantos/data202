@@ -125,8 +125,6 @@ Upload the original, replication, and alternative plots in a video and in a iPyt
 
 Your report should include the following sections:
 
-- **Overview** of the original plot (include a screenshot) and the claim it makes. (if there is one)
-- **Design** of the original plot. (plot type, effectiveness) (if it is there)
 - **Data** (where'd you get it, anything interesting about it or what you had to do with it)
 - **Wrangling** (what did you have to do to get it into a form that you could plot?)
 - **Replication** (show your replication of the original plot) (if it is there)
