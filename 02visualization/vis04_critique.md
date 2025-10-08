@@ -42,11 +42,16 @@ If you miss one of the three, you miss everything!
 - Be **hospitable** to your audience.
 - Don't expect to finish soon - **get feedback, revise, redo**.
 
-For example: this is should have taken a lot of work: [](https://www.behance.net/gallery/13486555/Infographic-Data-Visualisation-Collection)
+For example: this is should have taken a lot of work: [Infographic Data Visualization Collection](https://www.behance.net/gallery/13486555/Infographic-Data-Visualisation-Collection)
 
-In contrast, take a look at some examples from [](https://viz.wtf/) (sorry for the bad language)
+In contrast, take a look at some examples from [WTF Visualization](https://viz.wtf/) (sorry for the bad language)
 
-And here: [](https://blog.coupler.io/misleading-data-visualization-examples/)
+And here: [Misleading Data Visualization Examples](https://blog.coupler.io/misleading-data-visualization-examples/)
+
+- Finally, use the "Thumper Principle": If you can't say something nice, don't say anything at all.
+  - You use visualization to help you "see" the numbers better. If it is not achieving that, don't do it!
+
+![](thumper.png)
 
 ## Novartis' cheat sheet
 
