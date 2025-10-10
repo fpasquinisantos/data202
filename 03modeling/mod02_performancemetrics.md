@@ -1,4 +1,7 @@
 ---
+title: "2. Model Evaluation"
+subject: Modeling
+author: ""
 jupytext:
   formats: ipynb,md:myst
   text_representation:

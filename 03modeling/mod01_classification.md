@@ -1,4 +1,7 @@
 ---
+title: "1. Classification Basics"
+subject: Modeling
+author: ""
 jupytext:
   formats: ipynb,md:myst
   text_representation:
