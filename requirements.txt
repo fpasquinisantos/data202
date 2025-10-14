@@ -8,3 +8,5 @@ pandas
 myst-nb
 jupyterlab-slideshow
 jupyterlab-myst
+plotly
+scikit-learn

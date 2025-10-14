@@ -13,12 +13,7 @@ kernelspec:
   language: python
 ---
 
----
-title: "Final Project"
----
-
-
-## **Final Project**: A complete Data Science process
+# **Final Project**: A complete Data Science process
 
 ![](https://r4ds.hadley.nz/diagrams/data-science/base.png)
 
@@ -26,6 +21,18 @@ The goal of this project is to practice a complete data science workflow: questi
 Results will be presented as a report, supporting code, and a brief presentation to the class. Successful outcomes should include visual, analytical, and perspectival components. The report should be at the level of polish and formality of a blog post (more than a class homework assignment, less than an academic paper). The overview and primary visualizations should be intelligible to a non-technical audience; the methods should be described in precise technical language as appropriate.
 
 An important component of this project is a *comparative critique* of some related prior work. That is, you are not simply demonstrating that you can perform an analysis, but also that you can evaluate the strengths and weaknesses of others' analyses. This may be the most important take-away from this class for your future career.
+
+The SLOs covered in this project are:
+
+|||
+|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| PRO01 | I can **search for, select, and critically evaluate datasets** based on their provenance, structure, completeness, and suitability for the question I want to investigate.                   |
+| PRO02 | I can **prepare and transform data** using appropriate wrangling techniques to support a specific analysis or communication goal.                                                            |
+| PRO03 | I can **organize my notebook** to clearly communicate the story of my analysis to an audience.                                                                                               |
+| PRO04 | I can **document the operations** I perform in a clear and reproducible way using both code and markdown commentary.                                                                         |
+| PRO05 | I can **draw appropriate conclusions** from my analysis and clearly acknowledge its limitations, especially regarding uncertainty, fairness, and the generalizability of findings.           |
+| PRO07 | I can **select and justify modeling techniques** (e.g., classification, regression, clustering) that align with the data type and purpose of the analysis.                                   |
+| PRO08 | I can **evaluate models** using both metrics and contextual fit, reflecting on trade-offs such as accuracy vs. interpretability.                                                             |
 
 ### Logistics
 
