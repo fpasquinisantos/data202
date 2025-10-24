@@ -56,7 +56,7 @@ project:
           title: Practice 04
         - url: https://colab.research.google.com/drive/11kdbdFphnQo1SaO08bj_ZKikhWFel1H9?usp=drive_link
           title: Practice 05
-          url: https://colab.research.google.com/drive/1rlyw4Z4yFk4Ce2kgr6duJI2o0WNrzqOt?usp=drive_link
+        - url: https://colab.research.google.com/drive/1rlyw4Z4yFk4Ce2kgr6duJI2o0WNrzqOt?usp=drive_link
           title: Practice 06
     - title: Projects
       children:
