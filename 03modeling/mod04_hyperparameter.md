@@ -1,5 +1,5 @@
 ---
-title: "4. Hyperparameter Tuning"
+title: "4. Preprocessing and Tuning"
 subject: Modeling
 author: ""
 jupytext:
@@ -23,4 +23,12 @@ kernelspec:
 | MOD08 | I can **tune hyperparameters** using grid search or similar methods.                                                                                                                         |
 ```
 
-Coming soon.
+By the end of this class, students should be able to:
+
+Explain why scaling and encoding are needed for certain models.
+
+Apply StandardScaler and OneHotEncoder using ColumnTransformer or Pipeline.
+
+Use GridSearchCV to find good hyperparameters.
+
+Compare how preprocessing affects kNN and decision tree performance.

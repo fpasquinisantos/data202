@@ -1,7 +1,4 @@
 ---
-title: "3. Decision Trees"
-subject: Modeling
-author: ""
 jupytext:
   formats: ipynb,md:myst
   text_representation:
@@ -23,7 +20,7 @@ kernelspec:
 | MOD06 | I can explain how tree depth and complexity relate to **overfitting** in decision trees.                                                                                                     |
 ```
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "L51S7PHpv4aI"}
 
 # Dataset: blood tests and autism
 
@@ -31,8 +28,6 @@ We'll use an example from a [2017 PLOS Computational Biology paper](https://jour
 
 - Typically autism is diagnosed by behavioral symptoms
 - If we could diagnose autism from a blood test, we could diagnose it earlier
-
-+++ {"slideshow": {"slide_type": "slide"}}
 
 The data has units on the second row, so we'll skip that row.
 
@@ -49,7 +44,7 @@ autism = pd.read_csv("https://cs.calvin.edu/courses/data/202/fsantos/datasets/au
 autism.head()
 ```
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "4aUoZ-Z1x7PJ"}
 
 We have 3 kinds of data about 206 children:
 
@@ -66,7 +61,7 @@ outputId: 566a8e54-c6d9-494d-8bd2-e2f7c93a79ff
 autism.groupby("Group", as_index=False).size()
 ```
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "apZ8m9FSx127"}
 
 2. Concentrations of various metabolites in a blood sample:
 
@@ -80,7 +75,7 @@ outputId: 3b4ccf94-a12d-49fd-95be-6150ad8dc841
 print('\n'.join(f'- {column_name}' for column_name in autism.columns[1:-1]))
 ```
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "09T6DyUAx5Nv"}
 
 3. For the ASD children only, a measure of life skills ("Vineland ABC")
 
@@ -95,7 +90,7 @@ outputId: f51a0b58-595f-47ba-bcd3-5963097c5fe5
 autism.groupby("Group", as_index=False).agg(mean_vineland=("Vineland ABC", "mean"))
 ```
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "X-VyJcVLx-Bh"}
 
 # Some EDA
 
@@ -127,7 +122,7 @@ px.box(
 )
 ```
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "gLADyl1OyNrl"}
 
 Better question for predictive task: **Which of these metabolites help us distinguish autism?**
 
@@ -157,7 +152,7 @@ outputId: b8f30fde-fb8b-42f0-e468-9c2c10f183fe
 )
 ```
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "oMtDhzPzl1og"}
 
 # Setting up for training
 
@@ -188,9 +183,11 @@ print("Training set shape: {}".format(train.shape))
 print("Test set shape: {}".format(test.shape))
 ```
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "nYOclGQAyzmX"}
 
 # Dummy and Uniform Random Guesses
+
++++ {"id": "OKWDJs9HmD24"}
 
 - What if we always guessed the most common outcome?
 
@@ -229,7 +226,7 @@ ConfusionMatrixDisplay.from_estimator(
 )
 ```
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "WLt-hJVVmfD0"}
 
 - Or what if we guess uniformly at random?
 
@@ -265,9 +262,11 @@ ConfusionMatrixDisplay.from_estimator(
 )
 ```
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "tlSJbmoix8qZ"}
 
 # Decision Trees
+
++++ {"id": "YkGwU7YOmvXr"}
 
 - Let's use a new model: decision tree.
 
@@ -316,7 +315,7 @@ ConfusionMatrixDisplay.from_estimator(
 )
 ```
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "yR040C6dm197"}
 
 - Decision trees are VERY MUCH interpretable! Look at this:
 
@@ -333,7 +332,7 @@ from sklearn.tree import plot_tree
 plot_tree(tree, feature_names=feature_columns, class_names=[negative_outcome, positive_outcome]);
 ```
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "JJyZ7-3In_ai"}
 
 What is each node showing?:
 - `% oxidized <= 0.171`: the decision criteria to go left or right.
@@ -344,7 +343,15 @@ What is each node showing?:
 - `class`: class Prediction; if the node is a leaf, this shows the final predicted class.
   - if it is not in the end node (leaf), it is the *potential* prediction.
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "c9o1nIEnnLME"}
+
+**Exercise:** let's go through some rows of our dataset and try to predict ourselves using this model!
+
++++ {"id": "dDBllUlsrill"}
+
+**Question**: is the feature `% oxidized` a good predictor? (Look back to our plots)
+
++++ {"id": "h1NcEAhJpkGC"}
 
 ## Go deeper!
 
@@ -383,7 +390,7 @@ test["pred_tree"] = tree.predict(test[feature_columns])
 print("Test accuracy: ", accuracy_score(test[target_column], test["pred_tree"]))
 ```
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "AP9K88nQq1op"}
 
 ## Even deeper!
 
@@ -411,14 +418,14 @@ test["pred_tree"] = tree.predict(test[feature_columns])
 print("Test accuracy: ", accuracy_score(test[target_column], test["pred_tree"]))
 ```
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "pDP6qz39rni-"}
 
 ## Avoiding overfits
 
 - Our tree can overfit if it's too big/deep.
 - So, we have some way to deal with that...
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "kRenLxHdsB7s"}
 
 ### 1. Choosing the right hyperparameters ("pre-pruning")
 
@@ -428,9 +435,11 @@ We have to correctly choose:
    - **Min Samples Leaf**: Minimum number of samples required to be a leaf node.
    - **Max Features**: The number of features to consider when looking for the best split.
 
++++ {"id": "QJGbGj29sXRx"}
+
 - **Question**: does that mean we need to perform some grid search to get the best ones?
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "Td2mfwEjtXDG"}
 
 ### 2. Post-pruning with Cost Complexity Pruning (`ccp_alpha`)
 
@@ -479,7 +488,7 @@ pruned_model = DecisionTreeClassifier(random_state=42, ccp_alpha=optimal_alpha)
 pruned_model.fit(train[feature_columns], train[target_column])
 ```
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "I03znfVPsmUH"}
 
 ## A summary
 
@@ -491,9 +500,11 @@ pruned_model.fit(train[feature_columns], train[target_column])
    - **Overfitting prone**
    - **Instable** (small changes in the data can result in a completely different tree structure)
 
-+++ {"slideshow": {"slide_type": "slide"}}
++++ {"id": "823t4hwOtTRk"}
 
 ## Mechanical decision making
+
++++ {"id": "JQpEr8egwmKo"}
 
 **Is intelligence just the following of a flowchart or decision tree?**
 - There are many reasons to believe that is not the case...
