@@ -19,7 +19,7 @@ For this project you will pick some existing data science work (a newspapar arti
 
 You will then critique the original visualization and propose alternative designs.
 
-The project will be done in teams of between 1 and 3. You will submit a single report and make a joint presentation.
+The project will be done in teams of between 1 and 3. You will submit a single report.
 
 ::: {.callout-note title="Depth Somewhere"}
 This document details various requirements for the project. Not all requirements will make sense for every project, though. 
@@ -114,12 +114,12 @@ Make an initial plot and a todo list of things to improve; sketch ideas for alte
 
 Your report should be complete through the "Wrangling" section and have some initial work in the "Replication" and "Alternatives" sections.
 
-## 4: Presentation and Report (Week 8)
+## 4: Report (Week 8)
 
 Upload the original, replication, and alternative plots in a video and in a iPython Notebook (Google Colab, etc) report.
 
 
-# Report and Presentation Details
+# Report Details
 
 ## Report Content
 

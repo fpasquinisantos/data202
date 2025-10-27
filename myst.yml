@@ -61,6 +61,7 @@ project:
     - title: Projects
       children:
         - file: midtermproject.md
+        - file: finalproject.md
 site:
   template: book-theme
   options:
