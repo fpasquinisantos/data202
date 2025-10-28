@@ -1,7 +1,4 @@
 ---
-title: "4. Preprocessing and Hyperparameter Tuning"
-subject: Modeling
-author: ""
 jupytext:
   formats: ipynb,md:myst
   text_representation:
@@ -53,12 +50,6 @@ penguins.info()
 
 Now we will use all of the features to predict the species of penguin!
 
-But, first, let's drop the missing values (we'll see how to deal with these later...)
-
-```{code-cell} ipython3
-penguins_full = penguins.dropna().copy()
-```
-
 # Feature Engineering
 
 Feature engineering is the process of transforming raw data into features that would make machine learning models work better.
@@ -92,138 +83,11 @@ It involves these aspects:
 
 +++
 
-# Preprocessing with scikit-learn
-
-You can check all methods in the module documentation: [https://scikit-learn.org/stable/api/sklearn.preprocessing.html#module-sklearn.preprocessing](https://scikit-learn.org/stable/api/sklearn.preprocessing.html#module-sklearn.preprocessing)
-
-For now, let's separate numerical from categorical features. They need to be handled differently!
-(And let's ignore `Year` for now...)
-
-```{code-cell} ipython3
-# Separate numerical and categorical features
-X_num = penguins_full[["bill_length_mm", "bill_depth_mm", "flipper_length_mm", "body_mass_g"]]
-X_cat = penguins_full[["island", "sex"]]
-y = penguins_full["species"]
-```
-
-(We are not considering "year" - is it really a good feature? Probably not...)
-
-+++
-
 # Preprocessing numerical features
-
-If we are going to use kNN, it will try to calculate distances. However, look at the ranges of values in 
-
-Won't this affect the distance calculations?
-
-```{code-cell} ipython3
-import plotly.express as px
-
-fig = px.box(X_num, title='Boxplot of Numerical Features')
-fig.show()
-```
-
-That's why we need to scale and standardize them.
-
-We can use scikit-learn `StandardScale` to normalize the values with a mean of 0 and standard deviation of 1:
-
-```{code-cell} ipython3
-
-```
-
-**BIG QUESTION**: Do we need to use this if we were using a Decision Tree?
-
-+++
-
-scikit-learn also has other scalers, like `MinMaxScaler`... you can check other options in the documentation.
 
 +++
 
 # Preprocessing categorical features
-
-`scikit-learn` won't let you use categorical columns as features! See...
-
-```{code-cell} ipython3
-
-```
-
-How to convert those to numerical representation? We have two options...
-
-+++
-
-## 1. If the variable is ordered: `OrdinalEncoder`
-
-You can use `OrdinalEncoder` if you have categories like "low", "medium", "high".
-
-```{code-cell} ipython3
-from sklearn.preprocessing import OrdinalEncoder
-import numpy as np
-
-# Simulated 'vitality' data with ordered categories
-vitality_data = np.array(['low', 'medium', 'high', 'medium', 'low', 'high']).reshape(-1, 1)
-
-# Fit and transform the data
-vitality_encoded = OrdinalEncoder(categories=[['low', 'medium', 'high']]).fit_transform(vitality_data)
-
-# Display original and encoded values
-print("Original vitality data:")
-print(vitality_data.flatten())
-print("\nEncoded vitality data:")
-print(vitality_encoded.flatten())
-```
-
-*(Do we need to scale these, too? There is almost no need - other numerical features are in the range of -1 and +1, and this goes from 0 to 2. In the case of kNN, this won't make a big difference in distance calculations!)*
-
-+++
-
-## 2. If the variable is non-ordered (most common): `OneHotEncoder`
-
-One-Hot Encoding creates new binary columns for each possible category, marking 1 when that category is present and 0 otherwise.
-
-We can do this with the `pandas` method called `get_dummies`. Look:
-
-```{code-cell} ipython3
-island_dummies = pd.get_dummies(X_cat["island"])
-island_dummies.head()
-```
-
-But we can also use `OneHotEncoder` in scikit-learn
-
-```{code-cell} ipython3
-from sklearn.preprocessing import OneHotEncoder
-
-encoder = OneHotEncoder(sparse_output=False)
-X_encoded = encoder.fit_transform(X_cat[["island"]])
-
-# it is already encoded, but we can visualize the dataframe using:
-X_encoded_df = pd.DataFrame(X_encoded, columns=encoder.get_feature_names_out(['island']))
-
-X_encoded_df.head()
-```
-
-### ATTENTION: The dummy variable trap
-
-One issue with One-Hot Encoding is the **dummy variable trap**, where the encoded variables are linearly dependent. For example, if you have three categories (Red, Green, Blue), knowing two of the columns automatically determines the third. This redundancy can sometimes lead to issues in some models.
-
-In our case, this means we should use the argument `drop='first'`. Check now our result:
-
-```{code-cell} ipython3
-from sklearn.preprocessing import OneHotEncoder
-
-encoder = OneHotEncoder(sparse_output=False, drop='first')
-X_encoded = encoder.fit_transform(X_cat[["island"]])
-
-# it is already encoded, but we can visualize the dataframe using:
-X_encoded_df = pd.DataFrame(X_encoded, columns=encoder.get_feature_names_out(['island']))
-
-X_encoded_df.head()
-```
-
-### Parameters in `OneHotEncoder`
-- **`handle_unknown`**: By default, OneHotEncoder will throw an error if an unknown category is encountered. Set `handle_unknown='ignore'` to skip unknown categories.
-- **`drop`**: Specify categories to drop. For example, you can set `drop='first'` to avoid the dummy variable trap by dropping one category per feature.
-- **`sparse_output`**: Whether to return a sparse matrix or a dense array. `sparse_output=True` is the default, which is memory efficient for large datasets.
-  - in our case, we used `sparse_output` in order to be able to convert our data back to a dataframe!
 
 +++
 
@@ -240,168 +104,12 @@ Pipelines are useful for:
 - **Code Organization**: Helps encapsulate different steps, making the code easier to read and maintain.
 - **Hyperparameter Tuning**: Pipelines can be combined with grid searches or cross-validation to tune hyperparameters across multiple steps (we'll be looking at those later).
 
-An example, using a StandardScaler and only numerical features:
+An example, using a Scaler:
 
-```{code-cell} ipython3
-from sklearn.model_selection import train_test_split
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import StandardScaler
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import accuracy_score
++++
 
-# Train-test split on numerical features
-X_num_train, X_num_test, X_cat_train, X_cat_test, y_train, y_test = train_test_split(
-    X_num, X_cat, y, test_size=0.2, random_state=42
-)
+# Hyperparameter Tuning - GridSearchCV
 
-# Create a pipeline with StandardScaler and KNeighborsClassifier
-knn_pipeline = Pipeline([
-    ('scaler', StandardScaler()), # 1st stage: scaling
-    ('knn', KNeighborsClassifier(n_neighbors=5)) # 2nd stage: model
-])
+Grid Search already includes Cross-Validation!
 
-# Train the pipeline using only the numerical training data
-knn_pipeline.fit(X_num_train, y_train)
-
-# Make predictions on the numerical test data
-y_pred_knn = knn_pipeline.predict(X_num_test)
-
-# Evaluate the model
-accuracy_knn = accuracy_score(y_test, y_pred_knn)
-print(f"Accuracy of kNN model with only numerical features: {accuracy_knn}")
-```
-
-## Column Transformers
-
-- A special type of pipeline can be set to apply operations to specific columns. This is the `Column Transformer`. We can set them as:
-
-```{code-cell} ipython3
-from sklearn.compose import ColumnTransformer
-
-preprocessor = ColumnTransformer(
-    transformers=[
-        ('num', StandardScaler(), ["bill_length_mm", "bill_depth_mm", "flipper_length_mm", "body_mass_g"]),
-        ('cat', OneHotEncoder(drop='first'), ["island", "sex"])
-    ])
-```
-
-- Observe that these have tuples containing `('name', 'operation', [<list of columns to which it will be applied>])`
-- We applied a scaler to numerical features and one-hot encoding to categorical features!
-
-- Now we can connect this preprocessor to the main pipeline:
-
-```{code-cell} ipython3
-knn_pipeline = Pipeline([
-    ('preprocessor', preprocessor),
-    ('classifier', KNeighborsClassifier(n_neighbors=5))
-])
-```
-
-Finally, we do our data split, training and testing:
-
-```{code-cell} ipython3
-X = penguins_full.drop(['species','year'], axis=1)
-y = penguins_full['species']
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-knn_pipeline.fit(X_train, y_train)
-
-y_pred = knn_pipeline.predict(X_test)
-
-accuracy = accuracy_score(y_test, y_pred)
-print(f"Accuracy: {accuracy}")
-```
-
-# Grid Search
-
-How to get scikit-learn to search for the best parameters for our models? Enter `GridSearchCV` - it will range through any combination of parameters you want and check some measures - plus, it will also perform a cross-validation analysis!
-
-For example, if we want to choose the best parameters for a DecisionTree:
-
-```{code-cell} ipython3
-from sklearn.model_selection import GridSearchCV
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.pipeline import Pipeline
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.metrics import accuracy_score
-
-# Assuming X_train, X_test, y_train, y_test, preprocessor are already defined
-
-# Create a pipeline with the preprocessor and the Decision Tree classifier
-pipeline_dt = Pipeline(steps=[('preprocessor', preprocessor),
-                              ('classifier', DecisionTreeClassifier())])
-
-# Define the parameter grid for the Decision Tree model
-param_grid_dt = {
-    'classifier__max_depth': [None, 5, 10, 15, 20], # Example parameters for Decision Tree
-    'classifier__min_samples_split': [2, 5, 10, 20],
-    'classifier__min_samples_leaf': [1, 5, 10, 20]
-}
-
-# Create a GridSearchCV object for the Decision Tree
-grid_search_dt = GridSearchCV(pipeline_dt, param_grid_dt, cv=5, scoring='accuracy') # Using accuracy as the scoring metric
-
-# Fit the grid search to the training data
-grid_search_dt.fit(X_train, y_train)
-
-# Print the best parameters and the best cross-validation score
-print("Best parameters found for Decision Tree: ", grid_search_dt.best_params_)
-print("Best cross-validation accuracy for Decision Tree: ", grid_search_dt.best_score_)
-
-# Evaluate the best Decision Tree model on the test set
-best_dt_model = grid_search_dt.best_estimator_
-y_pred_best_dt = best_dt_model.predict(X_test)
-accuracy_best_dt = accuracy_score(y_test, y_pred_best_dt)
-print(f"Test set accuracy with best Decision Tree parameters: {accuracy_best_dt}")
-```
-
-Or if we want to search for the best among DecisionTree and kNN: (awesome, isn't it?)
-
-```{code-cell} ipython3
-from sklearn.model_selection import GridSearchCV
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.pipeline import Pipeline
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.metrics import accuracy_score
-
-# Create a pipeline with the preprocessor and a placeholder for the classifier
-pipeline_all = Pipeline(steps=[('preprocessor', preprocessor),
-                           ('classifier', None)]) # Placeholder for the classifier
-
-# Define the parameter grid for both models
-# We use a list of dictionaries for different estimators and their parameters
-param_grid = [
-    {
-        'classifier': [KNeighborsClassifier()], # First classifier: kNN
-        'classifier__n_neighbors': [3, 5, 7, 9, 11, 13, 15]
-    },
-    {
-        'classifier': [DecisionTreeClassifier()], # Second classifier: Decision Tree
-        'classifier__max_depth': [None, 5, 10, 15], # Example parameters for Decision Tree
-        'classifier__min_samples_split': [2, 5, 10]
-    }
-]
-
-# Create a GridSearchCV object
-grid_search = GridSearchCV(pipeline_all, param_grid, cv=5, scoring='accuracy') # Using accuracy as the scoring metric
-
-# Fit the grid search to the training data
-grid_search.fit(X_train, y_train)
-
-# Print the best parameters and the best cross-validation score
-print("Best parameters found: ", grid_search.best_params_)
-print("Best cross-validation accuracy: ", grid_search.best_score_)
-
-# Evaluate the best model on the test set
-best_model = grid_search.best_estimator_
-y_pred_best = best_model.predict(X_test)
-accuracy_best = accuracy_score(y_test, y_pred_best)
-print(f"Test set accuracy with best parameters: {accuracy_best}")
-
-# You can also access the results for each model
-# print(grid_search.cv_results_)
-```
+Apply StandardScaler and OneHotEncoder using ColumnTransformer or Pipeline.

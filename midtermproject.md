@@ -154,4 +154,4 @@ Your report should be:
 # Report Submission
 
 - If your dataset is *less than 10 MB*: submit a **`.zip` file** with your entire project folder.
-- Otherwise: submit just the HTML (and make sure the instructions are *very clear* about how to get the data)
+- Otherwise: submit just a page, HTML or Google Colab link (and make sure the instructions are *very clear* about how to get the data)
