@@ -249,9 +249,12 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 
+X = df.drop('species_type', axis=1)
+y = df['species']
+
 # Train-test split on numerical features
-X_num_train, X_num_test, X_cat_train, X_cat_test, y_train, y_test = train_test_split(
-    X_num, X_cat, y, test_size=0.2, random_state=42
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
 )
 
 # Create a pipeline with StandardScaler and KNeighborsClassifier
