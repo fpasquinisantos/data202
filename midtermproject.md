@@ -116,7 +116,7 @@ Your report should be complete through the "Wrangling" section and have some ini
 
 ## 4: Report (Week 8)
 
-Upload the original, replication, and alternative plots in a video and in a iPython Notebook (Google Colab, etc) report.
+Upload your work in a iPython Notebook (Google Colab, etc) report.
 
 
 # Report Details
