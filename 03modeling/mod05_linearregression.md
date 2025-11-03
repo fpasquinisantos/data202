@@ -159,8 +159,6 @@ colab:
   base_uri: https://localhost:8080/
 outputId: 2dffa8fc-bc01-4fde-d6e0-a037aefaaa01
 ---
-# prompt: get the model coefficients
-
 coefficients = lr_model.coef_
 
 feature_names = X.columns
@@ -206,39 +204,39 @@ For linear regression to perform optimally, the following assumptions should gen
 
 To evaluate the performance of a linear regression model, several metrics can be used:
 
-### **1. Mean Absolute Error (MAE)**
+## 1. Mean Absolute Error (MAE)
 
 Measures the **average magnitude** of the errors between predictions and actual values, **without considering their direction**.
 
-[
+$$
 \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| y_i - \hat{y}_i \right|
-]
+$$
 
 where:
 
-* ( y_i ) = actual (true) value
-* ( \hat{y}_i ) = predicted value
-* ( n ) = number of observations
+* $ y_i $ = actual (true) value
+* $ \hat{y}_i $ = predicted value
+* $ n $ = number of observations
 
 ---
 
-### **2. Mean Squared Error (MSE)**
+### 2. Mean Squared Error (MSE)
 
 Measures the **average squared difference** between actual and predicted values. Squaring emphasizes **larger errors** more heavily.
 
-[
+$$
 \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
-]
+$$
 
 ---
 
-### **3. Root Mean Squared Error (RMSE)**
+## 3. Root Mean Squared Error (RMSE)
 
 The **square root of MSE**, which brings the error metric back to the **same units as the target variable**.
 
-[
+$$
 \text{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 }
-]
+$$
 
 ```{code-cell} ipython3
 ---
@@ -267,39 +265,35 @@ print(f"Root Mean Squared Error (RMSE): {rmse:.2f}")
 
 We can also use the percentage versions of the common regression error metrics — each expressing errors relative to the true value rather than in absolute units:
 
-### 1. **MAPE — Mean Absolute Percentage Error**
+## 4. MAPE — Mean Absolute Percentage Error
 
 This is the **percentage version of MAE**.
 It expresses the average absolute error as a percentage of the actual values:
 
-[
+$$
 \text{MAPE} = \frac{1}{n} \sum_{i=1}^{n} \left|\frac{y_i - \hat{y}_i}{y_i}\right| \times 100%
-]
+$$
 
 * **Interpretation:** On average, the model’s predictions are off by *X%* of the true value.
 * **Caveats:** Not defined when ( y_i = 0 ); also heavily penalizes small denominators.
 
----
-
-### 2. **RMSPE — Root Mean Square Percentage Error**
+## 5. RMSPE — Root Mean Square Percentage Error
 
 This is the **percentage version of RMSE**:
 
-[
+$$
 \text{RMSPE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left(\frac{y_i - \hat{y}_i}{y_i}\right)^2 } \times 100%
-]
+$$
 
 * Similar to MAPE but more sensitive to larger errors due to squaring.
 
----
-
-### 3. **MSPE — Mean Square Percentage Error**
+## 6. MSPE — Mean Square Percentage Error
 
 This is the **percentage version of MSE**:
 
-[
+$$
 \text{MSPE} = \frac{1}{n} \sum_{i=1}^{n} \left(\frac{y_i - \hat{y}_i}{y_i}\right)^2 \times 100%
-]
+$$
 
 * Rarely used directly because its unit is “percent squared,” which is awkward to interpret.
 * RMSPE is preferred since it brings it back to percentage scale.
@@ -308,7 +302,7 @@ This is the **percentage version of MSE**:
 
 Because we have the problem of values close to zero, we actually end up using normalized measures...
 
-### **Normalized Errors**
+## 7. Normalized Errors (EAR and nRMSE)
 
 Sometimes instead of percentage, we use **normalized errors**, dividing by the mean or range of actuals:
 
@@ -319,13 +313,13 @@ Then multiplied by 100 to express as a percentage.
 
 Thus, we will measure average prediction error relative to the **average of the observed values** — essentially a percentage-style indicator of how large the typical error is compared to the data’s magnitude.
 
-[
+$$
 \text{EAR} = \frac{\text{MAE}}{\bar{y}} \times 100%
-]
+$$
 
 where
-(\text{MAE} = \frac{1}{n} \sum |y_i - \hat{y}_i|)
-and (\bar{y} = \frac{1}{n} \sum y_i)
+($\text{MAE} = \frac{1}{n} \sum |y_i - \hat{y}_i|$)
+and ($\bar{y} = \frac{1}{n} \sum y_i$)
 
 For example:
 
@@ -391,7 +385,7 @@ In the context of linear models, overfitting occurs if the model has too many pa
 
 +++ {"id": "gX_dNU1Er0-H"}
 
-## Let's try it
+Let's try it!
 
 ```{code-cell} ipython3
 :id: zrvbySQGpU_0
