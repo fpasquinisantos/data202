@@ -1,7 +1,4 @@
 ---
-title: "8. Ensemble Methods"
-subject: Modeling
-author: ""
 jupytext:
   formats: ipynb,md:myst
   text_representation:

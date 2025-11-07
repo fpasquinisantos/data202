@@ -1,5 +1,5 @@
 ---
-title: "5. Missing and Unbalanced Data"
+title: "6. Missing and Unbalanced Data"
 subject: Modeling
 author: ""
 jupytext:
