@@ -58,6 +58,10 @@ project:
           title: Practice 05
         - url: https://colab.research.google.com/drive/1rlyw4Z4yFk4Ce2kgr6duJI2o0WNrzqOt?usp=drive_link
           title: Practice 06
+        - url: https://colab.research.google.com/drive/16TaJscTeB6t5o9lJdpJjY5gHxlhhC5be?usp=drive_link
+          title: Practice 07
+        - url: https://colab.research.google.com/drive/1Z7vdc2YIJfpahzPaVttx88x27cDYQWJb?usp=drive_link
+          title: Practice 08
     - title: Projects
       children:
         - file: midtermproject.md

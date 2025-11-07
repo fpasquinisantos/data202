@@ -20,7 +20,6 @@ kernelspec:
 |||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | MOD11 | I can handle **missing data** using techniques such as imputation or row removal, and justify my approach.                                                                                   |
-| MOD12 | I can address **unbalanced data** using methods such as resampling or class weighting, and justify my approach.                                                                                                       |
 ```
 
 +++ {"id": "955WWS6Jw9LI"}
@@ -41,7 +40,7 @@ Common causes include:
 
 Understanding the type of missing data helps in choosing the right imputation or handling strategy. There are three main types:
 
-   - **Missing Completely at Random (MCAR)**: Data is missing purely by chance, and the missingness is unrelated to both the observed and unobserved data. In this case, the absence of data has no pattern or correlation with any variable.
+   - **Missing Completely at Random (MCAR)**: Data is missing purely by chance or "accident", and the missingness is unrelated to both the observed and unobserved data. In this case, the absence of data has no pattern or correlation with any variable.
      - **Example**: A sensor fails randomly and doesn’t record values at certain time points, but the failure is unrelated to the environment or sensor readings.
      - **Implication**: Since data is missing completely randomly, removing or imputing it does not introduce bias.
 
@@ -520,14 +519,15 @@ print("\nClassification Report after Imputation:\n", report)
 
 +++ {"id": "dgYXtCVfCti2"}
 
-### Time-Series Specific Imputation
-- For time-series data, methods like **forward fill** (use the last known value) or **interpolation** (linearly interpolate between known values) are often used.
-     - **Pros**: Suitable for temporal data and maintains temporal consistency.
-     - **Cons**: Forward fill may not work well if large gaps exist in the data, and interpolation can introduce errors if the missingness is not linear.
-
+### 
 +++ {"id": "tuTOtUIVCXj3"}
 
 ### Other ideas
+
+- **Time-Series Specific Imputation**: For time-series data, methods like **forward fill** (use the last known value) or **interpolation** (linearly interpolate between known values) are often used.
+   - **Pros**: Suitable for temporal data and maintains temporal consistency.
+   - **Cons**: Forward fill may not work well if large gaps exist in the data, and interpolation can introduce errors if the missingness is not linear.
+
 
 - **Multiple Imputation**: Instead of imputing a single value, multiple imputed datasets are generated, each with different plausible values for the missing data. The models are trained on each dataset, and results are combined to reflect the uncertainty in the imputations.
   - **Pros**: Provides a better estimate of variability and uncertainty than single imputation.
@@ -668,7 +668,6 @@ A summary/guide:
 | **Regression Imputation** | MAR, continuous data                       | Overfitting risk, assumes linearity             |
 | **k-NN Imputation**       | MAR, continuous/categorical                | Sensitive to outliers, computationally expensive|
 | **MICE (Multiple Imputation)**| MAR, high missingness, continuous/categorical | Computational cost, model complexity           |
-| **Time-Series Specific Imputation** | Time-series data (e.g., Forward Fill, Interpolation) | May not work well with large gaps or non-linear patterns |
 | **Maximum Likelihood**    | MAR, MNAR (with assumptions)               | Requires correct model specification            |
 | **Bayesian Methods**      | MAR, MNAR                                  | Complex implementation, requires expertise      |
 | **Indicator Variable**    | MNAR                                       | Assumes missingness conveys additional info     |
