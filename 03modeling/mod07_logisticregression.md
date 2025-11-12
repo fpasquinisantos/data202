@@ -240,14 +240,14 @@ fig.show()
 
 # ROC Curves (Receiver-Operation Characteristic)
 
-What if we start adjusting the decision boundary? Instead of using 0.5 as cutoff point, let's adjust to 0.7 and see how our measures will change.
+What if we start adjusting the decision boundary? Instead of using 0.5 as cutoff point, let's adjust to 0.2 and see how our measures will change.
 
 ```{code-cell} ipython3
-# Recalculate predictions with a new threshold of 0.7
-y_pred_threshold_07 = (y_pred_proba >= 0.7).astype(int)
+# Recalculate predictions with a new threshold of 0.2
+y_pred_threshold_02 = (y_pred_proba >= 0.2).astype(int)
 
 # Calculate the confusion matrix with the new predictions
-cm_07 = confusion_matrix(y_test, y_pred_threshold_07)
+cm_07 = confusion_matrix(y_test, y_pred_threshold_02)
 
 # Create a heatmap for better visualization
 plt.figure(figsize=(8, 6))
@@ -256,7 +256,7 @@ sns.heatmap(cm_07, annot=True, fmt='d', cmap='Blues', cbar=False,
             yticklabels=['Actual 0', 'Actual 1'])
 plt.xlabel('Predicted Label')
 plt.ylabel('True Label')
-plt.title('Confusion Matrix with Threshold = 0.7')
+plt.title('Confusion Matrix with Threshold = 0.2')
 plt.show()
 ```
 
@@ -278,8 +278,8 @@ fig = px.scatter(
     hover_data={'test': True, 'prediction': True, 'probability': ':0.3f'} # Show original values on hover
 )
 
-# Add a horizontal line for the classification threshold at 0.7
-fig.add_vline(x=0.7, line_width=2, line_dash='dash', line_color='green', annotation_text='Threshold = 0.7', annotation_position='top right')
+# Add a horizontal line for the classification threshold at 0.2
+fig.add_vline(x=0.2, line_width=2, line_dash='dash', line_color='green', annotation_text='Threshold = 0.2', annotation_position='top right')
 
 # Customize y-axis ticks to show actual 0 and 1 without jitter
 fig.update_yaxes(
@@ -297,7 +297,7 @@ fig.update_layout(
 fig.show()
 ```
 
-Now, you may suspect what we will try to do... let's make probabilities range from 0 to 1 and calculate the True Positive Rate and the False Positive Rate for each of them.
+Now, you may suspect what we will try to do... let's make probabilities range from 0 to 1 and calculate Precision and Recall for each of them.
 
 ```{code-cell} ipython3
 from sklearn.metrics import confusion_matrix
@@ -318,14 +318,14 @@ for threshold in thresholds:
     # b. Calculate confusion matrix components
     TN, FP, FN, TP = confusion_matrix(y_test, y_pred_thresholded).ravel()
 
-    # c. Calculate True Positive Rate (TPR = Recall)
-    tpr = TP / (TP + FN) if (TP + FN) != 0 else 0.0
+    # c. Calculate Recall
+    recall = TP / (TP + FN) if (TP + FN) != 0 else 0.0
 
     # d. Calculate False Positive Rate (FPR)
-    fpr = FP / (FP + TN) if (FP + TN) != 0 else 0.0
+    precision = TP / (FP + TN) if (FP + TN) != 0 else 0.0
 
     # e. Append a dictionary containing the current threshold, calculated tpr, and fpr to the results list
-    results.append({'Threshold': threshold, 'tpr': tpr, 'fpr': fpr})
+    results.append({'Threshold': threshold, 'precision': precision, 'recall': recall})
 
 # 4. Convert the list of results into a pandas DataFrame
 precision_recall_df = pd.DataFrame(results)
@@ -334,19 +334,39 @@ print(precision_recall_df.head())
 print(precision_recall_df.tail())
 ```
 
-What if we try to plot these values? The name of this plot is called ROC Curve.
+What if we try to plot these values?
 
 ```{code-cell} ipython3
+from sklearn.metrics import roc_curve, RocCurveDisplay, auc
+import matplotlib.pyplot as plt
 
+# Calculate ROC curve values: False Positive Rate (fpr), True Positive Rate (tpr), and thresholds
+fpr, tpr, thresholds = roc_curve(y_test, y_pred_proba)
+
+# Calculate the Area Under the Curve (AUC) for the ROC curve
+roc_auc = auc(fpr, tpr)
+
+# Create the ROC curve plot using RocCurveDisplay
+plt.figure(figsize=(8, 6))
+roc_display = RocCurveDisplay(fpr=fpr, tpr=tpr, roc_auc=roc_auc, estimator_name='Logistic Regression')
+roc_display.plot()
+
+plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--', label='Random Classifier') # Add random classifier line
+plt.title('Receiver Operating Characteristic (ROC) Curve - Scikit-learn')
+plt.xlabel('False Positive Rate')
+plt.ylabel('True Positive Rate')
+plt.legend(loc='lower right')
+plt.grid(True)
+plt.show()
 ```
 
-Definition: A **ROC curve** (Receiver Operating Characteristic curve) is a graphical tool used to evaluate the performance of a **binary classification model**. It shows the trade-off between a model’s **sensitivity** (true positive rate) and its **specificity** (false positive rate) at various classification thresholds.
+Definition: A **ROC curve** (Receiver Operating Characteristic curve) is a graphical tool used to evaluate the performance of a **binary classification model**. It shows the trade-off between a model’s **recall** (true positive rate) and its **specificity** (False positive rate, which is "1 - precision") at various classification thresholds.
 
 ---
 
 ### **Key concepts**
 
-* **True Positive Rate (TPR)** — also called **Recall** or **Sensitivity**:
+* **True Positive Rate (TPR)** — also called **Recall**:
   [
   \text{TPR} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}}
   ]
@@ -356,14 +376,14 @@ Definition: A **ROC curve** (Receiver Operating Characteristic curve) is a graph
   [
   \text{FPR} = \frac{\text{False Positives}}{\text{False Positives} + \text{True Negatives}}
   ]
-  Measures how often the model incorrectly identifies negatives as positives.
+  Measures how often the model incorrectly identifies negatives as positives. It is basically "1 - precision".
 
 ---
 
 ### **How the ROC curve works**
 
-* The x-axis shows **FPR (1 - specificity)**.
-* The y-axis shows **TPR (sensitivity)**.
+* The x-axis shows **FPR (1 - precision)** (which is also called "sensitivity").
+* The y-axis shows **TPR (recall)**.
 * Each point on the curve corresponds to a different **threshold** for deciding whether a prediction is “positive” or “negative”.
 
 By moving the threshold, you can make the model more or less strict in predicting positives, which changes both TPR and FPR.
@@ -634,12 +654,10 @@ According to [Barocas, Hardt & Narayanan](https://fairmlbook.org/relative.html):
 | Maximum Accuracy          | Use the sensitive attribute and discriminate based on them. (unethical)  |
 | Group Unawareness         | Don't use the sensitive attribute for prediction. (risk of proxy discrimination) |
 | Demographic Parity        | Equal positive prediction rates across groups.                       |
-| Equality of Opportunity   | Equal True Positive Rates (TPR) across groups.                       |
-| Predictive Equality       | Equal False Positive Rates (FPR) across groups.                      |
-| Equalized Odds            | Equal TPR and FPR across groups.                                     |
-| Error Rate Parity         | Equal error rates (FPR and/or FNR) across groups.                    |
-| Precision Parity         | Equal precision across groups. |
-| Overall Accuracy Equality | Equal overall accuracy across groups.                        |
+| Accuracy Equality         | Equal overall accuracy across groups.                           |
+| Equality of Opportunity   | Equal Recall across groups.                                       |
+| Predictive Equality       | Equal Precision across groups.                      |
+
 
 Beyond those, we can have more sophisticated procedures, like:
 - **Individual Fairness**: instead of considering groups, put the focus on individuals with similar characteristics (i.e., no predefined notion of groups)
