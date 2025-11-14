@@ -1,7 +1,4 @@
 ---
-title: "9. PCA"
-subject: Modeling
-author: ""
 jupytext:
   formats: ipynb,md:myst
   text_representation:
