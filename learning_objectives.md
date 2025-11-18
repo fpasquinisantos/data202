@@ -47,7 +47,6 @@
 | MOD09 | I can train and evaluate **linear regression models** using metrics such as MAE, RMSE, and R².                                                                                               |
 | MOD10 | I can apply **regularization techniques** (e.g., Lasso or Ridge) to reduce overfitting in regression models.                                                                                 |
 | MOD11 | I can handle **missing data** using techniques such as imputation or row removal, and justify my approach.                                                                                   |
-| MOD12 | I can address **unbalanced data** using methods such as resampling or class weighting, and justify my approach.                                                                                                       |
 | MOD13 | I can apply and evaluate **logistic regression models** using probability thresholds and ROC curves.                                                                                   |
 | MOD14 | I can evaluate models for **potential bias and unfair outcomes** across subgroups using techniques such as disaggregated performance metrics, demographic parity and equalized odds.         |
 | MOD15 | I can apply **ensemble techniques** such as bagging, boosting, or random forests to improve model performance.                                                                           |

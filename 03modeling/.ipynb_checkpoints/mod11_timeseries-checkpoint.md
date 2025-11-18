@@ -1,7 +1,4 @@
 ---
-title: "11. Time-series data"
-subject: Modeling
-author: ""
 jupytext:
   formats: ipynb,md:myst
   text_representation:

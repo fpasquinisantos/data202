@@ -1,7 +1,4 @@
 ---
-title: "10. Clustering"
-subject: Modeling
-author: ""
 jupytext:
   formats: ipynb,md:myst
   text_representation:

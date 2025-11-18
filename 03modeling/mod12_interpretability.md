@@ -1,5 +1,5 @@
 ---
-title: "12. Interpretability"
+title: "12. Interpretability Methods"
 subject: Modeling
 author: ""
 jupytext:
