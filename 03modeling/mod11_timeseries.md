@@ -19,7 +19,6 @@ kernelspec:
 :class: dropdown
 |||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| MOD18 | I can recognize cases where **predictions may influence outcomes** in ways that are ethically or socially problematic.  |
 | MOD19 | I can prepare and model **time-series data** using appropriate feature engineering (e.g., lag features, rolling statistics) and time-aware train-test splits.                                |
 ```
 

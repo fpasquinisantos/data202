@@ -52,7 +52,6 @@
 | MOD15 | I can apply **ensemble techniques** such as bagging, boosting, or random forests to improve model performance.                                                                           |
 | MOD16 | I can perform **Principal Component Analysis (PCA)** to reduce the number of variables before modeling or visualization.                                                                     |
 | MOD17 | I can apply **k-means clustering** to group unlabeled data and use metrics to evaluate cluster assignments.                                                                                  |
-| MOD18 | I can recognize cases where **predictions may influence outcomes** in ways that are ethically or socially problematic.  |
 | MOD19 | I can prepare and model **time-series data** using appropriate feature engineering (e.g., lag features, rolling statistics) and time-aware train-test splits.                                |
 | MOD20 | I can use some **interpretability methods** like feature importance, SHAP, or partial dependence plots to understand some model results.                                                          |
 

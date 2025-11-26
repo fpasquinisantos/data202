@@ -239,7 +239,6 @@ for cluster_id in range(len(set(kmeans.labels_))):
 
 ## Testing with less clusters
 
-
 ```{code-cell} ipython3
 ---
 id: WFwqUtobZowD
@@ -415,7 +414,6 @@ print(f"Optimal number of clusters (based on Davies-Bouldin Index): {optimal_k}"
 | **Initialization**       | Sensitive to initial centroid placement. | Sensitive to initial medoid selection.  | No initialization needed; density estimation governs clustering. | Requires tuning of `ε` and `minPts`.       |
 | **Advantages**           | Simple, fast, and scalable.           | Robust to noise and can use various distance metrics. | Automatically determines the number of clusters; no predefined `k`. | Identifies noise and clusters of arbitrary shapes. |
 | **Limitations**          | Struggles with non-spherical clusters, varying densities, and outliers. | Less efficient for large datasets; sensitive to initial medoids. | Computationally intensive; sensitive to kernel bandwidth selection. | Poor performance with overlapping clusters or uniform densities. |
-
 
 +++ {"id": "DyzJCuT2mp6U"}
 

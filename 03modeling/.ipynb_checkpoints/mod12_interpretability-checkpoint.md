@@ -1,7 +1,4 @@
 ---
-title: "12. Interpretability"
-subject: Modeling
-author: ""
 jupytext:
   formats: ipynb,md:myst
   text_representation:
