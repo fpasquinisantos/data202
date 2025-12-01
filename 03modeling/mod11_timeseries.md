@@ -321,6 +321,8 @@ data.loc[:, 'day_of_week_cos'] = np.cos(2 * np.pi * data['day_of_week'] / 7)
 
 **Randomly splitting time-series data into training and test sets can be very problematic**, as it violates the temporal structure. Future values depend on past ones, so the test data must always follow the training data in time.
 
+For example: suppose you are trying to predict a value on Monday but then using random samples from the future (e.g., Wednesday) or from some random point in the past to train the model. This would lead to overly optimistic performance estimates.
+
 What are our alternatives, then?
 
 +++ {"id": "ja0FfABtpNby"}
