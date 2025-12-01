@@ -402,11 +402,12 @@ test_data = pd.concat(test_blocks)
 
 We have two options, though:
 - **Fixed-size rolling window**
-  - Use if historical patterns (even older data) are relevant for predictions.
-  - Suitable for datasets like energy consumption where seasonal and long-term trends play a significant role.
-- **Expanding size rolling window**
   - Use if recent data is more relevant, and older data may no longer reflect current behavior.
   - Suitable for highly dynamic systems like stock prices or real-time applications.
+
+- **Expanding size rolling window**
+  - Use if historical patterns (even older data) are relevant for predictions.
+  - Suitable for datasets like energy consumption where seasonal and long-term trends play a significant role.
 
 Scikit-learn `TimeSeriesSplit` is an expanding size rolling window by default:
 
