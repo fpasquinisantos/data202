@@ -47,16 +47,7 @@ kernelspec:
 	- **When we don't want users to actually end up exploiting or "gaming" the system**.
 		- For example, in standardized tests or admission processes, where disclosing decision criteria might encourage candidates to tailor their responses artificially. Or in fraud detection models, where too much transparency about why transactions are flagged could help fraudsters learn to evade detection.  
 
-+++ {"id": "ZyXlVPL8sYqu"}
-
-Let's think about the frenzy we live in during this time. Think about the [excesses of digital life that so easily overwhelm us and desensibilize](https://philarchive.org/archive/NGUMOPv2). Let's confess it, and pray:
-
-> Unexpected God, your advent alarms us. Wake us from drowsy worship, from the sleep that neglects love, and the sedative of misdirected frenzy. Awaken us now to your coming, and bend our angers into your peace. Amen.
-(Revised Common Lectionary)
-
 +++ {"id": "QQ2Bn_d_awD5"}
-
-# Remembering...
 
 ## Global versus local interpretability
 - **Global:** aims to provide an understanding of **the overall behavior** of the trained model across the entire dataset.
